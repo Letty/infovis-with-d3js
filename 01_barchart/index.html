@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>02 - Barchart</title>
+
+	<script src="../library/d3.min.js"></script>
+
+	<style>
+		.bar{
+			fill: #7a9160;
+		}
+		text{
+			font-family:"Open Sans";
+		}
+	</style>
+
+</head>
+<body>
+
+<script type="text/javascript">
+
+	window.onload = function () {
+
+		var data = [
+			[1, 20],
+			[2, 17],
+			[3, 21],
+			[4, 4],
+			[5, 17],
+			[6, 22],
+			[7, 15],
+			[8, 27],
+			[9, 22],
+			[10, 21]
+		];
+
+		var margin = {top: 5, bottom: 20, left: 40, right: 7};
+
+		var height = 200 - margin.top - margin.bottom,
+			width = 350 - margin.left - margin.right;
+		var svg = d3.select('body').append('svg')
+			.attr('height', height + margin.top + margin.bottom)
+			.attr('width', width + margin.left + margin.right)
+			.append('g')
+			.attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+		var x = d3.scaleBand()
+			.rangeRound([0, width])
+			.padding(0.1)
+			.domain(data.map(function (d) {
+				return d[0];
+			}));
+
+		var y = d3.scaleLinear()
+			.rangeRound([height, 0])
+			.domain([0, d3.max(data, function (d) {
+				return d[1];
+			})]);
+
+		svg.append('g')
+			.attr('class', 'axis axis--x')
+			.attr('transform', 'translate(0,' + height + ')')
+			.call(d3.axisBottom(x));
+
+		svg.append('g')
+			.attr('class', 'axis axis--y')
+			.call(d3.axisLeft(y));
+
+		svg.selectAll('.bar')
+			.data(data)
+			.enter().append('rect')
+			.attr('class', 'bar')
+			.attr('x', function (d) {
+				return x(d[0])
+			})
+			.attr('y', function (d) {
+				return y(d[1])
+			})
+			.attr('width', x.bandwidth())
+			.attr('height', function (d) {
+				return height - y(d[1]);
+			})
+	};
+</script>
+
+</body>
+</html>
