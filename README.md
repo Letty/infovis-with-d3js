@@ -24,3 +24,15 @@ For every session is a numbered folder. The material inside is:
 * 21.06 - How to start with visualization projects
 * 05.07 - git..?
 * 12.07 - PRESENTATION
+
+## Useful Links
+* [Mozilla Developer Network](https://developer.mozilla.org/en-US/)
+	- [JavaScript Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+* [D3js](https://d3js.org/)
+	- [API Reference](https://github.com/d3/d3/blob/master/API.md)
+	- [Examples](https://github.com/d3/d3/wiki/Gallery)
+* [SVG by W3C](https://www.w3.org/TR/SVG/) 
+* [Khan Academy](https://www.khanacademy.org/computing/computer-programming)
+* [Stackeoverflow](http://stackoverflow.com/)
+* otherwise ask the [duck](https://duckduckgo.com/)
+* WebDev try and error in the browser [JSFiddle](http://jsfiddle.net/)
