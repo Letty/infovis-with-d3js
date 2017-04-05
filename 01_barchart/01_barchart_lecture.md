@@ -164,4 +164,4 @@ the example css for the bars would be
 * the magic of chains
 
 ## References
-* (SVG Primitives)[https://www.w3.org/TR/SVG/shapes.html]
+* [SVG Primitives](https://www.w3.org/TR/SVG/shapes.html)
