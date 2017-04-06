@@ -6,13 +6,13 @@
     * or if you use pyhton 3 ```python -m http.server <portnumber>``
     replace  ```<portnumber>``` with a four digit number
     * check your browser under  ```localhost:<portnumber>```
-* copy the example of my github repository 
+* copy the example (index.html) of my github repository 
     you can also check out the complete repository. but make sure: everytime you make ```git pull``` it will have conflicts if you are also working in this directory.
 * start the webserver in the directory of the example. note: you can only have one server with on port by the same time. if you need more server, you have to use different port numbers
 * play around with the example  
     - change the numbers in the data
     - change the colors
-    - have a look inside the inspector
+    - have a look inside the [inspector](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools)
 * copy the example for the practice
     - again, play around
     - change the rectangles to circles, which attributes are the same, which are different
