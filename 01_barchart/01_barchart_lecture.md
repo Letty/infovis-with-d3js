@@ -64,15 +64,15 @@ The hidden magic:
 * scaling for your data
 
 ## Logical order to program a bar chart
-* define hight, width and margins for your canvas
-* add the canvas to your DOM, set a hight and width for your canvas
+* define height, width and margins for your canvas
+* add the canvas to your DOM, set a height and width for your canvas
 * choose a scaling function - which scale fits your data, calc min/max of your data
 * draw axis on the canvas
 * draw bars or other primitives on the canvas
 * add interaction and/or animations
 
 ## Add SVG to DOM
-define your hight, width and margins
+define your height, width and margins
 
     var margin = {top: 5, bottom: 20, left: 40, right: 7};
     var height = 200 - margin.top - margin.bottom;
