@@ -2,12 +2,14 @@
 
 ## Visualization
 Visualization Pipeline:
+
 Data -> Filtering -> Mapping -> Rendering -> Graphic 
-data: scraping, simulation, observation..
-filtering: data cleaning, calculations, transformations..
-mapping: transform data into a graphical representation, Position, size, shape, color.. 
-rendering: positioning of geometries in space, x-y-Coordinates in charts or long-lat on maps
-graphic: graphic/video with or without interaction
+
+* data: scraping, simulation, observation..
+* filtering: data cleaning, calculations, transformations..
+* mapping: transform data into a graphical representation, Position, size, shape, color.. 
+* rendering: positioning of geometries in space, x-y-Coordinates in charts or long-lat on maps
+* graphic: graphic/video with or without interaction
 
 ### Visual Attributes
 ![](visualattributes.png)
@@ -137,12 +139,11 @@ the example css for the bars would be
 
 
 ## SVG Primitives
-(reference with attributes )
-* Rectangles : <rect> - with x, y and width and height
-* Circle:  <circle> - cx, cy, r
-* Ellipse <ellipse> - cx, cy, rx, ry
-* Line <line> - y1 x1, y2 x2
-* Path <path> - d 
+* Rectangles : `<rect>` - with x, y and width and height
+* Circle:  `<circle>` - cx, cy, r
+* Ellipse `<ellipse>` - cx, cy, rx, ry
+* Line `<line>` - y1 x1, y2 x2
+* Path `<path>` - d 
 
 ## Chaining
 * means simplifying code by calling multiple functions of one object
@@ -165,3 +166,4 @@ the example css for the bars would be
 
 ## References
 * [SVG Primitives](https://www.w3.org/TR/SVG/shapes.html)
+* [Browser Developer Tools](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools)
