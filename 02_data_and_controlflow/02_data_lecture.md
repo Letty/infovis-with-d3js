@@ -156,6 +156,12 @@ function name(parameters){
 }
 ```
 
+## You learned today
+* loading external datasets
+* loops to iterate over data
+* conditions inside your code
+* how functions work
+
 ## References
 * [d3.request to load datasets](https://github.com/d3/d3-request)
 * [Date Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)
