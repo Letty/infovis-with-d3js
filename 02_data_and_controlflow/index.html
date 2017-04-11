@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Loading Datasets</title>
+	<script src="../library/d3.min.js"></script>
+
+</head>
+<body>
+
+<script>
+
+
+	window.onload = function () {
+
+		d3.csv('iris.csv'
+			, function (d) {
+				return {
+					id: +d.Id,
+					petalLengthCm: +d.PetalLengthCm,
+					petalWidthCm: +d.PetalWidthCm,
+					sepalLengthCm: +d.SepalLengthCm,
+					sepalWidthCm: +d.SepalWidthCm
+				};
+			}
+			, function (err, data) {
+				if (err) console.log(err);
+					data.forEach(function (d) {
+						d.Id = +d.Id;
+						d.PetalLengthCm = +d.PetalLengthCm;
+						d.PetalWidthCm = +d.PetalWidthCm;
+						d.SepalLengthCm = +d.SepalLengthCm;
+						d.SepalWidthCm = +d.SepalWidthCm;
+					});
+
+				console.log(data);
+
+			})
+
+	};
+
+
+</script>
+</body>
+</html>
