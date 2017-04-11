@@ -1,0 +1,436 @@
+[
+	{
+		"date": {
+			"year": "2016",
+			"month": "03",
+			"day": "01"
+		},
+		"rain": "0",
+		"temp": "2",
+		"maxtemp": "5",
+		"mintemp": "-1",
+		"humidity": "72",
+		"minhumidity": "53",
+		"maxhumidity": "80"
+	},
+	{
+		"date": {
+			"year": "2016",
+			"month": "03",
+			"day": "02"
+		},
+		"rain": "1",
+		"temp": "4",
+		"maxtemp": "9",
+		"mintemp": "0",
+		"humidity": "82",
+		"minhumidity": "66",
+		"maxhumidity": "93"
+	},
+	{
+		"date": {
+			"year": "2016",
+			"month": "03",
+			"day": "03"
+		},
+		"rain": "0",
+		"temp": "4",
+		"maxtemp": "7",
+		"mintemp": "1",
+		"humidity": "76",
+		"minhumidity": "57",
+		"maxhumidity": "93"
+	},
+	{
+		"date": {
+			"year": "2016",
+			"month": "03",
+			"day": "04"
+		},
+		"rain": "0",
+		"temp": "4",
+		"maxtemp": "9",
+		"mintemp": "-2",
+		"humidity": "67",
+		"minhumidity": "43",
+		"maxhumidity": "93"
+	},
+	{
+		"date": {
+			"year": "2016",
+			"month": "03",
+			"day": "05"
+		},
+		"rain": "1",
+		"temp": "6",
+		"maxtemp": "8",
+		"mintemp": "4",
+		"humidity": "70",
+		"minhumidity": "57",
+		"maxhumidity": "81"
+	},
+	{
+		"date": {
+			"year": "2016",
+			"month": "03",
+			"day": "06"
+		},
+		"rain": "1",
+		"temp": "3",
+		"maxtemp": "5",
+		"mintemp": "1",
+		"humidity": "90",
+		"minhumidity": "81",
+		"maxhumidity": "93"
+	},
+	{
+		"date": {
+			"year": "2016",
+			"month": "03",
+			"day": "07"
+		},
+		"rain": "1",
+		"temp": "2",
+		"maxtemp": "6",
+		"mintemp": "-2",
+		"humidity": "84",
+		"minhumidity": "61",
+		"maxhumidity": "100"
+	},
+	{
+		"date": {
+			"year": "2016",
+			"month": "03",
+			"day": "08"
+		},
+		"rain": "0",
+		"temp": "2",
+		"maxtemp": "8",
+		"mintemp": "-4",
+		"humidity": "79",
+		"minhumidity": "49",
+		"maxhumidity": "100"
+	},
+	{
+		"date": {
+			"year": "2016",
+			"month": "03",
+			"day": "09"
+		},
+		"rain": "0",
+		"temp": "3",
+		"maxtemp": "9",
+		"mintemp": "-3",
+		"humidity": "70",
+		"minhumidity": "37",
+		"maxhumidity": "93"
+	},
+	{
+		"date": {
+			"year": "2016",
+			"month": "03",
+			"day": "10"
+		},
+		"rain": "1",
+		"temp": "5",
+		"maxtemp": "8",
+		"mintemp": "2",
+		"humidity": "78",
+		"minhumidity": "66",
+		"maxhumidity": "93"
+	},
+	{
+		"date": {
+			"year": "2016",
+			"month": "03",
+			"day": "11"
+		},
+		"rain": "0",
+		"temp": "4",
+		"maxtemp": "5",
+		"mintemp": "3",
+		"humidity": "80",
+		"minhumidity": "65",
+		"maxhumidity": "93"
+	},
+	{
+		"date": {
+			"year": "2016",
+			"month": "03",
+			"day": "12"
+		},
+		"rain": "0",
+		"temp": "3",
+		"maxtemp": "5",
+		"mintemp": "1",
+		"humidity": "74",
+		"minhumidity": "65",
+		"maxhumidity": "87"
+	},
+	{
+		"date": {
+			"year": "2016",
+			"month": "03",
+			"day": "13"
+		},
+		"rain": "0",
+		"temp": "2",
+		"maxtemp": "4",
+		"mintemp": "1",
+		"humidity": "72",
+		"minhumidity": "65",
+		"maxhumidity": "81"
+	},
+	{
+		"date": {
+			"year": "2016",
+			"month": "03",
+			"day": "14"
+		},
+		"rain": "0",
+		"temp": "3",
+		"maxtemp": "7",
+		"mintemp": "-1",
+		"humidity": "75",
+		"minhumidity": "61",
+		"maxhumidity": "93"
+	},
+	{
+		"date": {
+			"year": "2016",
+			"month": "03",
+			"day": "15"
+		},
+		"rain": "1",
+		"temp": "4",
+		"maxtemp": "6",
+		"mintemp": "3",
+		"humidity": "76",
+		"minhumidity": "61",
+		"maxhumidity": "100"
+	},
+	{
+		"date": {
+			"year": "2016",
+			"month": "03",
+			"day": "16"
+		},
+		"rain": "0",
+		"temp": "5",
+		"maxtemp": "9",
+		"mintemp": "1",
+		"humidity": "62",
+		"minhumidity": "40",
+		"maxhumidity": "81"
+	},
+	{
+		"date": {
+			"year": "2016",
+			"month": "03",
+			"day": "17"
+		},
+		"rain": "0",
+		"temp": "4",
+		"maxtemp": "12",
+		"mintemp": "-4",
+		"humidity": "60",
+		"minhumidity": "33",
+		"maxhumidity": "93"
+	},
+	{
+		"date": {
+			"year": "2016",
+			"month": "03",
+			"day": "18"
+		},
+		"rain": "1",
+		"temp": "4",
+		"maxtemp": "7",
+		"mintemp": "1",
+		"humidity": "83",
+		"minhumidity": "70",
+		"maxhumidity": "93"
+	},
+	{
+		"date": {
+			"year": "2016",
+			"month": "03",
+			"day": "19"
+		},
+		"rain": "0",
+		"temp": "6",
+		"maxtemp": "10",
+		"mintemp": "2",
+		"humidity": "75",
+		"minhumidity": "50",
+		"maxhumidity": "93"
+	},
+	{
+		"date": {
+			"year": "2016",
+			"month": "03",
+			"day": "20"
+		},
+		"rain": "1",
+		"temp": "6",
+		"maxtemp": "8",
+		"mintemp": "2",
+		"humidity": "82",
+		"minhumidity": "66",
+		"maxhumidity": "93"
+	},
+	{
+		"date": {
+			"year": "2016",
+			"month": "03",
+			"day": "21"
+		},
+		"rain": "1",
+		"temp": "5",
+		"maxtemp": "8",
+		"mintemp": "2",
+		"humidity": "84",
+		"minhumidity": "71",
+		"maxhumidity": "93"
+	},
+	{
+		"date": {
+			"year": "2016",
+			"month": "03",
+			"day": "22"
+		},
+		"rain": "1",
+		"temp": "7",
+		"maxtemp": "9",
+		"mintemp": "5",
+		"humidity": "82",
+		"minhumidity": "71",
+		"maxhumidity": "87"
+	},
+	{
+		"date": {
+			"year": "2016",
+			"month": "03",
+			"day": "23"
+		},
+		"rain": "1",
+		"temp": "5",
+		"maxtemp": "7",
+		"mintemp": "1",
+		"humidity": "85",
+		"minhumidity": "61",
+		"maxhumidity": "100"
+	},
+	{
+		"date": {
+			"year": "2016",
+			"month": "03",
+			"day": "24"
+		},
+		"rain": "0",
+		"temp": "3",
+		"maxtemp": "8",
+		"mintemp": "-2",
+		"humidity": "83",
+		"minhumidity": "61",
+		"maxhumidity": "100"
+	},
+	{
+		"date": {
+			"year": "2016",
+			"month": "03",
+			"day": "25"
+		},
+		"rain": "1",
+		"temp": "6",
+		"maxtemp": "8",
+		"mintemp": "5",
+		"humidity": "85",
+		"minhumidity": "65",
+		"maxhumidity": "100"
+	},
+	{
+		"date": {
+			"year": "2016",
+			"month": "03",
+			"day": "26"
+		},
+		"rain": "0",
+		"temp": "10",
+		"maxtemp": "14",
+		"mintemp": "6",
+		"humidity": "71",
+		"minhumidity": "44",
+		"maxhumidity": "100"
+	},
+	{
+		"date": {
+			"year": "2016",
+			"month": "03",
+			"day": "27"
+		},
+		"rain": "1",
+		"temp": "10",
+		"maxtemp": "16",
+		"mintemp": "4",
+		"humidity": "67",
+		"minhumidity": "36",
+		"maxhumidity": "81"
+	},
+	{
+		"date": {
+			"year": "2016",
+			"month": "03",
+			"day": "28"
+		},
+		"rain": "1",
+		"temp": "10",
+		"maxtemp": "16",
+		"mintemp": "4",
+		"humidity": "63",
+		"minhumidity": "31",
+		"maxhumidity": "87"
+	},
+	{
+		"date": {
+			"year": "2016",
+			"month": "03",
+			"day": "29"
+		},
+		"rain": "1",
+		"temp": "7",
+		"maxtemp": "10",
+		"mintemp": "4",
+		"humidity": "80",
+		"minhumidity": "66",
+		"maxhumidity": "93"
+	},
+	{
+		"date": {
+			"year": "2016",
+			"month": "03",
+			"day": "30"
+		},
+		"rain": "1",
+		"temp": "7",
+		"maxtemp": "11",
+		"mintemp": "3",
+		"humidity": "76",
+		"minhumidity": "54",
+		"maxhumidity": "93"
+	},
+	{
+		"date": {
+			"year": "2016",
+			"month": "03",
+			"day": "31"
+		},
+		"rain": "1",
+		"temp": "7",
+		"maxtemp": "11",
+		"mintemp": "3",
+		"humidity": "69",
+		"minhumidity": "47",
+		"maxhumidity": "87"
+	}
+]
