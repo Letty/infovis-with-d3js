@@ -13,30 +13,89 @@
 
 	window.onload = function () {
 
+		/**
+		 	Example for loading json files
+		 	keep in mind, data is just visilbe inside the {} of the loading function
+		 /*
+
+		// d3.json('berlinweather.json', function(error, data){
+		// 	console.log(data)
+		// })
+
+		/**
+			Example for loading csv files
+			d3.csv(filename, rowfunction, callbackfunction)
+			row function is commented out
+		*/
 		d3.csv('iris.csv'
-			, function (d) {
-				return {
-					id: +d.Id,
-					petalLengthCm: +d.PetalLengthCm,
-					petalWidthCm: +d.PetalWidthCm,
-					sepalLengthCm: +d.SepalLengthCm,
-					sepalWidthCm: +d.SepalWidthCm
-				};
-			}
+			// , function (d) {
+			// 	return {
+			// 		id: +d.Id,
+			// 		petalLengthCm: +d.PetalLengthCm,
+			// 		petalWidthCm: +d.PetalWidthCm
+			// 	};
+			// }
 			, function (err, data) {
 				if (err) console.log(err);
-					data.forEach(function (d) {
+
+				// loop to transform strings into numbers via '+'
+				data.forEach(function (d) {
 						d.Id = +d.Id;
 						d.PetalLengthCm = +d.PetalLengthCm;
 						d.PetalWidthCm = +d.PetalWidthCm;
 						d.SepalLengthCm = +d.SepalLengthCm;
 						d.SepalWidthCm = +d.SepalWidthCm;
+						console.log(d);
 					});
 
-				console.log(data);
+				// Example to count three species inside the data
+					var s1 = 0;
+					var s2 = 0;
+					var s3 = 0;
+					var others = 0;
 
+					data.forEach(function(d){
+
+						// if-else example
+						// if(d.Species === 'Iris-setosa'){
+						// 	s1 = s1 + 1;
+						// }else if(d.Species === 'Iris-versicolor'){
+						// 	s2 = s2 + 1;
+						// }else{
+						// 	s3 = s3 + 1;
+						// }
+
+						// switch example
+						switch(d.Species){
+        					case 'Iris-setosa':
+            					s1++;
+            					break;
+        					case 'Iris-versicolor':
+            					s2++;
+            					break;
+        					case 'Iris-virginica':
+            					s3++;
+            					break;
+        					default: 
+            					console.log(d);
+    					}
+					})
+					// showing counts
+					console.log(s1);
+					console.log(s2);
+					console.log(s3);
+
+
+					// loop examples
+
+					for(var i = 99; i < data.length; i++){
+						console.log(data[i])
+					}
+
+					data.forEach(function(d){
+						console.log(d)
+					})
 			})
-
 	};
 
 
