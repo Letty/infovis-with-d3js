@@ -45,7 +45,7 @@ Data -> Filtering -> Mapping -> Rendering -> Graphic
 
 <script type="text/javascript"> 
     // javascript here
-</scrip>
+</script>
 </body>
 </html>
 ```
