@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Example 19 April 2017</title>
+
+	<script type="text/javascript" src="../library/d3.min.js"></script>
+
+	<style>
+		.dot{
+			fill: steelblue;
+
+		}
+	</style>
+
+</head>
+<body>
+
+<script type="text/javascript">
+	window.onload = function (){
+
+		var margin = { top: 10, left: 25, bottom: 20, right: 10};
+		var width = 400 - margin.left - margin.right;
+		var height = 300 - margin.top - margin.bottom;
+
+		var svg = d3.select('body')
+					.append('svg')
+						.attr('width', width + margin.left + margin.right)
+						.attr('height', height + margin.top + margin.bottom)
+					.append('g')
+						.attr('transform', 'translate('+margin.left+','+margin.top+')');
+
+		d3.csv('iris.csv', function (error, data){
+
+			data.forEach(function(d){
+				d.SepalLengthCm = +d.SepalLengthCm;
+				d.SepalWidthCm = +d.SepalWidthCm;
+				d.PetalLengthCm = +d.PetalLengthCm;
+				d.PetalWidthCm = +d.PetalWidthCm;
+			})
+
+			var x = d3.scaleLinear()
+					.range([0,width])
+					.domain(d3.extent(data, function(d){return d.SepalLengthCm; }));
+
+			var y = d3.scaleLinear()
+					.range([height, 0])
+					.domain(d3.extent(data, function(d){return d.SepalWidthCm; }));
+
+			svg.append('g')
+				.call(d3.axisLeft(y))
+
+			svg.append('g')
+				.attr('transform', 'translate(0,'+height+')')
+				.call(d3.axisBottom(x))
+
+			svg.selectAll('.dot')
+			.data(data)
+			.enter().append('circle')
+			.attr('class', 'dot')
+			.attr('r', 3)
+			.attr('cy', function(d){ return y(d.SepalWidthCm);})
+			.attr('cx', function (d){ return x(d.SepalLengthCm);})
+		})
+	};
+</script>
+</body>
+</html>
