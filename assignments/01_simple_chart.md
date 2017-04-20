@@ -17,7 +17,7 @@ And also what is your geometric primitive (rectangles[4], circles[5], lines[6])
 * your Visualizations has to work without any errors in the developer console
 * choose the right primitives 
 * customize your visualization in terms of colors / strokes
-* presentation in the course: explain your process, any interesting insides insight the dataset?
+* presentation in the course: explain your process, any interesting insights inside the dataset?
 
 ## Dates
 
