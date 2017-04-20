@@ -5,9 +5,9 @@ The first assignment is more like another hands on part. You should become a sen
 * which parts of the visualization can be proceed before loading the data 
 * which parts need the data to be excecuted
 
-There are two different datasets, one dataset is about the Earth Similarity Index (ESI) for exoplanets [1]. It has one file with more then three dimensions. You can choose two or three dimension to show on one visualisation. You are free to choose but the ESI is of course a important dimension.
+There are two different datasets, the first dataset is about the Earth Similarity Index (ESI) for exoplanets [1]. It has one file with more then three dimensions. You can choose two or three dimension to show on one visualisation. You are free to choose but the ESI is of course an important dimension.
 
-The other dataset consists of 30 separate file about the exchange rates of currencies [2]. The base currency is Euro (1 Euro = xx money units in the other currency). Choose one file / currency that you would like to visualize.
+The other dataset consists of 30 separate files about the exchange rates of currencies [2]. The base currency is Euro (1 Euro = xx money units in the other currency). Choose one file / currency that you would like to visualize.
 
 For both, keep in mind how you choose a scaling function based on your data dimension (linear, time based, ordinal)[3]
 And also what is your geometric primitive (rectangles[4], circles[5], lines[6])
