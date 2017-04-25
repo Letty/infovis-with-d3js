@@ -12,20 +12,21 @@ For every session is a numbered folder. The material inside is:
 
 * 05.04 - Introducing D3js with barcharts
 * 12.04 - Data structures and control flow
-* 19.04 - Multiple datasets in one chart
+* 19.04 - Live Coding Example
 * 26.04 - API Reading
 * 03.05 - PRESENTATION
 * 10.05 - Event handling
 * 17.05 - Changing data inside visualizations
 * 24.05 - PRESENTATION
 * 31.05 - Maps
-* 07.06 - Graphs and treemaps; Layouts for visualizations
+* 07.06 - Multiple datasets in one chart / Graphs and treemaps; Layouts for visualizations
 * 14.06 - PRESENTATION
 * 21.06 - How to start with visualization projects
 * 05.07 - git..?
 * 12.07 - PRESENTATION
 
 ## Useful Links
+* [SVG Crowbar](https://nytimes.github.io/svg-crowbar/) extracting SVG's from websites
 * [Mozilla Developer Network](https://developer.mozilla.org/en-US/)
 	- [JavaScript Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 * [D3js](https://d3js.org/)
@@ -34,5 +35,6 @@ For every session is a numbered folder. The material inside is:
 * [SVG by W3C](https://www.w3.org/TR/SVG/) 
 * [Khan Academy](https://www.khanacademy.org/computing/computer-programming)
 * [Stackeoverflow](http://stackoverflow.com/)
+* [CSSClasses](http://cssclass.es/materials/)
 * otherwise ask the [duck](https://duckduckgo.com/)
 * WebDev try and error in the browser [JSFiddle](http://jsfiddle.net/)
