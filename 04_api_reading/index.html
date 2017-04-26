@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Example 19 April 2017</title>
+
+	<script type="text/javascript" src="../library/d3.min.js"></script>
+
+	<style>
+		.dot {
+			fill: steelblue;
+
+		}
+	</style>
+
+</head>
+<body>
+
+<script type="text/javascript">
+	window.onload = function () {
+
+		var margin = {top: 10, left: 25, bottom: 20, right: 10};
+		var width = 400 - margin.left - margin.right;
+		var height = 300 - margin.top - margin.bottom;
+
+		//mapping an ordinal scale to 10 colors
+		var color = d3.scaleOrdinal(d3.schemeCategory10);
+
+		var svg = d3.select('body')
+			.append('svg')
+			.attr('width', width + margin.left + margin.right)
+			.attr('height', height + margin.top + margin.bottom)
+			.append('g')
+			.attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+		d3.csv('iris.csv'
+			// , 
+			// function (d){
+			// 	return {
+			// 		sepal: d.SepalLengthCm +' '+ d.SepalWidthCm,
+			// 		sepalSum: +d.SepalLengthCm + +d.SepalWidthCm,
+			// 		species: d.Species
+			// 	} 
+			// }
+		,function (error, data) {
+
+			var filteredData = data.filter(function(d){
+				return +d.PetalWidthCm < 1;
+			})
+
+			console.log(filteredData)
+
+			// data.sort(function(a, b) {
+
+			//   // var nameA = a.Species.toUpperCase(); // ignore upper and lowercase
+			//   // var nameB = b.Species.toUpperCase(); // ignore upper and lowercase
+
+			//   if (+a.PetalWidthCm < +b.PetalWidthCm) {
+			//     return 1;
+			//   }
+			//   if (+a.PetalWidthCm > +b.PetalWidthCm)  {
+			//     return -1;
+			//   }
+			//   // names must be equal
+			//   return 0;
+			// });
+			// console.log(data)
+		})
+	};
+</script>
+</body>
+</html>
