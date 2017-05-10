@@ -89,3 +89,10 @@ svg.selectAll('.dot')
 
 * after your hover, on mouse out, change the element back to the default value
 * that means, use the color function based on the data dimension
+
+## Links
+
+* [D3 Library - Scale Chromatic](https://github.com/d3/d3-scale-chromatic)
+* [Color Brewer](http://colorbrewer2.org/#type=diverging&scheme=Spectral&n=7)
+* [Color Hex](http://www.color-hex.com/)
+* [Introducing d3 scale](https://medium.com/@mbostock/introducing-d3-scale-61980c51545f)
