@@ -57,23 +57,22 @@ JS
 ```
 d3.select('#somebutton', function(){
 	// do something after button was clicked
-	})
-
+})
 ```
 
 #### Mouseover for circle SVG element
 
 ```
 svg.selectAll('.dot')
-				.data(data)
-				.enter().append('circle')
-				.attr('class', 'dot')
-				.attr('r', 3)
-				.attr('cy', function (d) {	return y(d.SepalWidthCm); })
-				.attr('cx', function (d) {	return x(d.SepalLengthCm);	})
-				.on('mouseover', function(d){
-					// do something on hover
-				})
+	.data(data)
+	.enter().append('circle')
+	.attr('class', 'dot')
+	.attr('r', 3)
+	.attr('cy', function (d) {	return y(d.SepalWidthCm); })
+	.attr('cx', function (d) {	return x(d.SepalLengthCm);	})
+	.on('mouseover', function(d){
+		// do something on hover
+})
 ```
 
 ## Changing elements styles
