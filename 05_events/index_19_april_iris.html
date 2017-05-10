@@ -14,7 +14,7 @@
 	window.onload = function () {
 
 		// inspiration for color from https://bl.ocks.org/mbostock/3887118
-	    // and colorPetal from https://bl.ocks.org/mbostock/4060606
+		// and colorPetal from https://bl.ocks.org/mbostock/4060606
 
 		var margin = {top: 10, left: 25, bottom: 20, right: 10};
 		var width = 400 - margin.left - margin.right;
@@ -24,7 +24,11 @@
 		var color = d3.scaleOrdinal(d3.schemeCategory10);
 		// color for PetalLengthCm as a threshold
 		var colorPetal = d3.scaleThreshold()
-			.range(d3.schemeBlues[9]);
+			.domain([2.5, 4])
+			.range(['#e86666', '#66E8E8', "#beab29"])
+		// .range(d3.schemeBlues[9]);
+
+
 //			.range([ "#b8fdb6", "#f69696", "#beab29", "#8e668c", "#390000", "#30b2cd", "#30b2cd", "#08519c", "#08306b" ]);
 
 		var svg = d3.select('body')
@@ -43,28 +47,30 @@
 				d.PetalWidthCm = +d.PetalWidthCm;
 			});
 
-			colorPetal.domain(d3.range(d3.min(data, function (d) {
-				return d.PetalLengthCm;
-			}), d3.max(data, function (d) {
-				return d.PetalLengthCm;
-			})));
+			// colorPetal.domain(d3.range(d3.min(data, function (d) {
+			// 	return d.PetalLengthCm;
+			// }), d3.max(data, function (d) {
+			// 	return d.PetalLengthCm;
+			// })));
 
-			console.log(d3.range(1,100, 20));
-			console.log(d3.range(2, 10));
+
+			// console.log(d3.range(1,100, 20));
+			// console.log(d3.range(2, 10));
 
 			// show range of the two dimension
-//			console.log('----petal height------');
-			console.log(d3.range(d3.min(data, function (d) {
-				return d.PetalLengthCm;
-			}), d3.max(data, function (d) {
-				return d.PetalLengthCm;
-			}), 0.5));
-//			console.log(d3.min(data, function (d) {
-//				return d.PetalLengthCm;
-//			}));
-//			console.log(d3.max(data, function (d) {
-//				return d.PetalLengthCm;
-//			}));
+			// console.log('----petal height------');
+
+			// console.log(d3.min(data, function (d) {
+			// 	return d.PetalLengthCm;
+			// }));
+			// console.log(d3.max(data, function (d) {
+			// 	return d.PetalLengthCm;
+			// }));
+			// console.log(d3.range(d3.min(data, function (d) {
+			// 	return d.PetalLengthCm;
+			// }), d3.max(data, function (d) {
+			// 	return d.PetalLengthCm;
+			// })));
 //			console.log('----petal width------');
 //			console.log(d3.range(d3.min(data, function (d) {
 //				return d.PetalWidthCm;
@@ -101,7 +107,7 @@
 				.data(data)
 				.enter().append('circle')
 				.attr('class', 'dot')
-				.attr('r', 3)
+				.attr('r', 5)
 				.attr('cy', function (d) {
 					return y(d.SepalWidthCm);
 				})
@@ -109,32 +115,89 @@
 					return x(d.SepalLengthCm);
 				})
 				.style('fill', function (d) {
-					return color(d.Species);
-//					return colorPetal(d.PetalLengthCm);
+					// return color(d.Species);
+					return colorPetal(d.PetalLengthCm);
+				})
+				.on('mouseover', function (d) {
+					// svg.selectAll('.dot')
+					// .style('opacity', 0.2);
+
+					// d3.select(this)
+					// .style('opacity', 1);
+
+					svg.selectAll('.dot')
+						.style('fill', 'black');
+
+					d3.select(this)
+						.style('fill', function (d) {
+							return colorPetal(d.PetalLengthCm)
+						});
+
+				})
+				.on('mouseout', function (d) {
+					svg.selectAll('.dot')
+						.style('fill', function (d) {
+							return colorPetal(d.PetalLengthCm)
+						});
+
+					svg.select('#text-info').remove();
+				})
+				.on('click', function (d, i) {
+					svg.selectAll('.dot')
+						.style('opacity', 0.2);
+
+					d3.select(this)
+						.style('opacity', 1);
+
+					svg.append('text')
+						.attr('id', 'text-info')
+						.attr('y', function () {
+							return y(d.SepalWidthCm);
+						})
+						.attr('x', function () {
+							return x(d.SepalLengthCm);
+						})
+						.text(d.Species);
+
 				});
+
 
 			var legend = svg.append('g')
 				.attr('transform', 'translate(' + (height) + ',0)')
 				.attr('class', 'legend')
 				.selectAll('.info')
-				.data(color.domain())
+				.data(colorPetal.domain())
 				.enter().append('g')
 				.attr('class', 'info')
 				.attr('transform', function (d, i) {
 					return 'translate(0,' + (i * 20) + ')';
 				});
-			legend.append('rect')
-				.attr('width', 10)
-				.attr('height', 10)
+			legend.append('circle')
+				.attr('r', 5)
+				.attr('cy', 5)
+				.attr('cx', 5)
 				.style('fill', function (d) {
-					return color(d);
+					return colorPetal(d);
 				});
 			legend.append('text')
 				.attr("x", 14)
 				.attr("y", 10)
-				.text(function (d) {
+				.text(function (d, i) {
 					return d;
 				});
+			// self defined legend based on items
+//			.text(function (d, i) {
+//					var s = '';
+//					if (i === 0) {
+//						s = 'bis ' + d
+//					} else if (i === colorPetal.domain().length - 1) {
+//						s = 'ab ' + d;
+//					} else {
+//						s = d + ' - ' + colorPetal.domain()[i + 1];
+//					}
+//
+//					return s;
+//				});
 		})
 	};
 </script>
