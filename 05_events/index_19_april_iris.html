@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Example 19 April 2017</title>
+
+	<script type="text/javascript" src="../library/d3.min.js"></script>
+	<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+
+</head>
+<body>
+
+<script type="text/javascript">
+	window.onload = function () {
+
+		// inspiration for color from https://bl.ocks.org/mbostock/3887118
+	    // and colorPetal from https://bl.ocks.org/mbostock/4060606
+
+		var margin = {top: 10, left: 25, bottom: 20, right: 10};
+		var width = 400 - margin.left - margin.right;
+		var height = 300 - margin.top - margin.bottom;
+
+		//mapping an ordinal scale to 10 colors
+		var color = d3.scaleOrdinal(d3.schemeCategory10);
+		// color for PetalLengthCm as a threshold
+		var colorPetal = d3.scaleThreshold()
+			.range(d3.schemeBlues[9]);
+//			.range([ "#b8fdb6", "#f69696", "#beab29", "#8e668c", "#390000", "#30b2cd", "#30b2cd", "#08519c", "#08306b" ]);
+
+		var svg = d3.select('body')
+			.append('svg')
+			.attr('width', width + margin.left + margin.right)
+			.attr('height', height + margin.top + margin.bottom)
+			.append('g')
+			.attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+		d3.csv('iris.csv', function (error, data) {
+
+			data.forEach(function (d) {
+				d.SepalLengthCm = +d.SepalLengthCm;
+				d.SepalWidthCm = +d.SepalWidthCm;
+				d.PetalLengthCm = +d.PetalLengthCm;
+				d.PetalWidthCm = +d.PetalWidthCm;
+			});
+
+			colorPetal.domain(d3.range(d3.min(data, function (d) {
+				return d.PetalLengthCm;
+			}), d3.max(data, function (d) {
+				return d.PetalLengthCm;
+			})));
+
+			console.log(d3.range(1,100, 20));
+			console.log(d3.range(2, 10));
+
+			// show range of the two dimension
+//			console.log('----petal height------');
+			console.log(d3.range(d3.min(data, function (d) {
+				return d.PetalLengthCm;
+			}), d3.max(data, function (d) {
+				return d.PetalLengthCm;
+			}), 0.5));
+//			console.log(d3.min(data, function (d) {
+//				return d.PetalLengthCm;
+//			}));
+//			console.log(d3.max(data, function (d) {
+//				return d.PetalLengthCm;
+//			}));
+//			console.log('----petal width------');
+//			console.log(d3.range(d3.min(data, function (d) {
+//				return d.PetalWidthCm;
+//			}), d3.max(data, function (d) {
+//				return d.PetalWidthCm;
+//			})));
+//			console.log(d3.min(data, function (d) {
+//				return d.PetalWidthCm;
+//			}));
+//			console.log(d3.max(data, function (d) {
+//				return d.PetalWidthCm;
+//			}));
+
+			var x = d3.scaleLinear()
+				.range([0, width])
+				.domain(d3.extent(data, function (d) {
+					return d.SepalLengthCm;
+				}));
+
+			var y = d3.scaleLinear()
+				.range([height, 0])
+				.domain(d3.extent(data, function (d) {
+					return d.SepalWidthCm;
+				}));
+
+			svg.append('g')
+				.call(d3.axisLeft(y));
+
+			svg.append('g')
+				.attr('transform', 'translate(0,' + height + ')')
+				.call(d3.axisBottom(x));
+
+			svg.selectAll('.dot')
+				.data(data)
+				.enter().append('circle')
+				.attr('class', 'dot')
+				.attr('r', 3)
+				.attr('cy', function (d) {
+					return y(d.SepalWidthCm);
+				})
+				.attr('cx', function (d) {
+					return x(d.SepalLengthCm);
+				})
+				.style('fill', function (d) {
+					return color(d.Species);
+//					return colorPetal(d.PetalLengthCm);
+				});
+
+			var legend = svg.append('g')
+				.attr('transform', 'translate(' + (height) + ',0)')
+				.attr('class', 'legend')
+				.selectAll('.info')
+				.data(color.domain())
+				.enter().append('g')
+				.attr('class', 'info')
+				.attr('transform', function (d, i) {
+					return 'translate(0,' + (i * 20) + ')';
+				});
+			legend.append('rect')
+				.attr('width', 10)
+				.attr('height', 10)
+				.style('fill', function (d) {
+					return color(d);
+				});
+			legend.append('text')
+				.attr("x", 14)
+				.attr("y", 10)
+				.text(function (d) {
+					return d;
+				});
+		})
+	};
+</script>
+</body>
+</html>
