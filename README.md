@@ -34,7 +34,7 @@ For every session is a numbered folder. The material inside is:
 	- [Examples](https://github.com/d3/d3/wiki/Gallery)
 * [SVG by W3C](https://www.w3.org/TR/SVG/) 
 * [Khan Academy](https://www.khanacademy.org/computing/computer-programming)
-* [Stackeoverflow](http://stackoverflow.com/)
+* [Stackoverflow](http://stackoverflow.com/)
 * [CSSClasses](http://cssclass.es/materials/)
 * otherwise ask the [duck](https://duckduckgo.com/)
 * WebDev try and error in the browser [JSFiddle](http://jsfiddle.net/)
