@@ -15,6 +15,6 @@ For this assignment, their is just one dataset with lots of data records and man
 
 ## Dates
 
-* Deadline to upload the assignemt in income: 21st May 2017
+* Deadline to upload the assignemt in income: 20 May 2017
 * Presentation: 24th May 2017
 
