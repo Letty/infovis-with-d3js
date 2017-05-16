@@ -28,7 +28,13 @@ data.forEach(function (d) {
 ````
 
 * with this helper function, counting all elements inside a class, save the minimum and maximum, calculate the median ... is also possible 
+* the array can be used for scaling functions (color, bar chart, ordinal scales)
 
 ## Use primitives as style elements 
 
-*  
+*  the array with values can also be used for styling the background of the visualization
+*  f.e. by adding a bar chart in the background
+    -  instead of showing bars with a height based on a value, the height of the bars is the height of the svg
+    -  the y attribute is 0 (can be left out)
+    -  fill the bars based on their index in two colors
+* mouse events on the rectangles can be used for additional information about the classes/groups/clusters or draw a detailed visualization somewhere else
