@@ -16,13 +16,13 @@ For every session is a numbered folder. The material inside is:
 * 26.04 - API Reading
 * 03.05 - PRESENTATION
 * 10.05 - Event handling
-* 17.05 - Changing data inside visualizations
+* 17.05 - Helper functions or swiss army knife of visualization
 * 24.05 - PRESENTATION
 * 31.05 - Maps
-* 07.06 - Multiple datasets in one chart / Graphs and treemaps; Layouts for visualizations
+* 07.06 - Changing data inside visualizations
 * 14.06 - PRESENTATION
-* 21.06 - How to start with visualization projects
-* 05.07 - git..?
+* 21.06 - Advanced Layouts in d3
+* 05.07 - How to start with visualization projects
 * 12.07 - PRESENTATION
 
 ## Useful Links
