@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pokemon Example</title>
+
+	<script type="text/javascript" src="../library/d3.min.js"></script>
+
+	<style>
+		body {
+			font-family: "Open Sans";
+		}
+
+		svg text {
+			font-family: "Open Sans";
+		}
+
+		#tooltip {
+			position: absolute;
+			visibility: hidden;
+			background: white;
+			font-size: 12px;
+			padding: 5px 15px
+		}
+	</style>
+
+</head>
+<body>
+
+<div id="tooltip"></div>
+
+<script type="text/javascript">
+	window.onload = function () {
+
+		var margin = {top: 50, left: 100, bottom: 50, right: 100};
+		var width = window.innerWidth * 0.9 - margin.left - margin.right;
+		var height = window.innerHeight * 0.9 - margin.top - margin.bottom;
+
+		var svg = d3.select('body')
+			.append('svg')
+			.attr('width', width + margin.left + margin.right)
+			.attr('height', height + margin.top + margin.bottom)
+			.append('g')
+			.attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+		var tooltip = d3.select('#tooltip');
+
+		d3.csv('Pokemon.csv'
+			, function (d) {
+				return {
+					id: d['#'],
+					name: d['Name'],
+					generation: d['Generation'],
+					type_1: d['Type 1'],
+					type_2: d['Type 2'],
+					attack: +d['Attack'],
+					defense: +d['Defense']
+				}
+			}
+			, function (error, data) {
+
+				var helperType1 = {};
+				var type1 = [];
+				var helperType2 = {};
+				var type2 = [];
+
+				data.forEach(function (d) {
+					if (helperType1[d.type_1] === undefined) {
+						type1.push(d.type_1);
+						helperType1[d.type_1] = 0;
+					}
+					if (helperType2[d.type_2] === undefined && d.type_2 !== '') {
+						type2.push(d.type_2);
+						helperType2[d.type_2] = 0;
+					}
+					helperType1[d.type_1] = helperType1[d.type_1] + 1;
+					if (d.type_2 !== '') {
+						helperType2[d.type_2] = helperType2[d.type_2] + 1;
+					}
+				});
+
+				var x = d3.scaleBand()
+					.rangeRound([0, width])
+					.domain(type1.map(function (d) {
+						return d;
+					}));
+
+				var y = d3.scaleLinear()
+					.range([height, 0])
+					.domain([0, d3.max(data, function (d) {
+						return d.attack;
+					})]);
+
+				var y2 = d3.scaleLinear()
+					.range([height, 0])
+					.domain([0, d3.max(data, function (d) {
+						return d.defense;
+					})]);
+
+				svg.append('g')
+					.call(d3.axisLeft(y))
+					.select(".tick:last-of-type text")
+					.select(function () {
+						return this.parentNode.appendChild(this.cloneNode());
+					})
+					.attr("y", -15)
+					.attr("dy", null)
+					.attr("font-weight", "bold")
+					.attr('font-size', 12)
+					.style('fill', '#dc8787')
+					.text("Attack");
+
+				svg.append('g')
+					.attr('transform', 'translate(' + width + ',0)')
+					.call(d3.axisRight(y2))
+					.select(".tick:last-of-type text")
+					.select(function () {
+						return this.parentNode.appendChild(this.cloneNode());
+					})
+					.attr("y", -12)
+					.attr("dy", null)
+					.attr("font-weight", "bold")
+					.attr('font-size', 12)
+					.style('fill', '#359696')
+					.text("Defense");
+
+				svg.append('g')
+					.attr('transform', 'translate(0,' + height + ')')
+					.call(d3.axisBottom(x))
+					.select(".tick:first-of-type text")
+					.select(function () {
+						return this.parentNode.appendChild(this.cloneNode());
+					})
+					.attr("x", -25)
+					.attr("dy", 20)
+					.attr("font-weight", "bold")
+					.attr('font-size', 12)
+					.text("Type");
+
+				svg.selectAll('.background-bar')
+					.data(type1)
+					.enter().append('rect')
+					.attr('class', 'background-bar')
+					.attr('x', function (d) {
+						return x(d);
+					})
+					.attr('width', x.bandwidth())
+					.attr('height', height)
+					.style('fill', function (d, i) {
+						if (i % 2 === 0) {
+							return '#e9e9e9';
+						} else {
+							return '#f5f5f5';
+						}
+					});
+
+				svg.selectAll('.attack')
+					.data(data)
+					.enter().append('circle')
+					.attr('class', 'attack')
+					.attr('r', 5)
+					.attr('cy', function (d) {
+						return y(d.attack);
+					})
+					.attr('cx', function (d) {
+						return (x(d.type_1) + x.bandwidth() * 0.25);
+					})
+					.style('fill', '#dc8787')
+					.on('mouseenter', function (d) {
+						tooltip
+							.html('Name: ' + d.name + '<br>' + 'Generation: ' + d.generation + '<br>' + 'Type 1: ' + d.type_1 + '<br>'
+								+ 'Type 2: ' + d.type_2 + '<br>' + 'Attack: ' + d.attack + '<br>' + 'Defense: ' + d.defense + '<br>')
+							.style('visibility', 'visible')
+							.style("top", (d3.event.pageY - 10) + "px")
+							.style("left", (d3.event.pageX + 10) + "px");
+					})
+					.on('mouseout', function (d) {
+						tooltip.style('visibility', 'hidden');
+					});
+
+				svg.selectAll('.defense')
+					.data(data)
+					.enter().append('circle')
+					.attr('class', 'defense')
+					.attr('r', 5)
+					.attr('cy', function (d) {
+						return y2(d.defense);
+					})
+					.attr('cx', function (d) {
+						return (x(d.type_1) + x.bandwidth() * 0.75);
+					})
+					.style('fill', '#359696')
+					.on('mouseenter', function (d) {
+						tooltip
+							.html('Name: ' + d.name + '<br>' + 'Generation: ' + d.generation + '<br>' + 'Type 1: ' + d.type_1 + '<br>'
+								+ 'Type 2: ' + d.type_2 + '<br>' + 'Attack: ' + d.attack + '<br>' + 'Defense: ' + d.defense + '<br>')
+							.style('visibility', 'visible')
+							.style("top", (d3.event.pageY - 10) + "px")
+							.style("left", (d3.event.pageX + 10) + "px");
+					})
+					.on('mouseout', function (d) {
+						tooltip.style('visibility', 'hidden');
+					});
+			})
+	};
+</script>
+</body>
+</html>
