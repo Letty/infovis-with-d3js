@@ -39,6 +39,43 @@ data.forEach(function (d) {
     -  fill the bars based on their index in two colors
 * mouse events on the rectangles can be used for additional information about the classes/groups/clusters or draw a detailed visualization somewhere else
 
+## Tooltip with div-Element
+
+* append a div-Element inside the body `<div id="tooltip"></div>`
+* set the style for the element for background color, font size ..
+* set the visibility and positions attributes in the style
+* visibility has to be hidden in the default mode
+* use the position absolute property to position the element depending on your mouse
+
+``` 
+#tooltip {
+			position: absolute;
+			visibility: hidden;
+			background: white;
+			font-size: 12px;
+			padding: 5px 15px
+		}
+```
+
+* select the tooltip element inside the code `var tooltip = d3.select('#tooltip');`
+
+* change the visibility and position in the mouse event
+
+```
+tooltip
+	.html('tooltip text)
+	.style('visibility', 'visible')
+	.style("top", (d3.event.pageY - 10) + "px")
+	.style("left", (d3.event.pageX + 10) + "px");
+```
+
+* change the visibility back to hidden on mouseout
+
+``` 
+tooltip.style('visibility', 'hidden');
+```
+
+
 # Links
  
 * [Pokemon Dataset on Kaggle](https://www.kaggle.com/abcsds/pokemon)
