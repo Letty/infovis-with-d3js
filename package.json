@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Letty/infovis-with-d3js#readme",
   "dependencies": {
     "async": "^2.3.0",
+    "d3": "^4.9.1",
     "fs": "0.0.1-security",
     "request": "^2.81.0"
   }
