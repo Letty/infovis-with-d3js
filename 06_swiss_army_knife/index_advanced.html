@@ -89,9 +89,11 @@
 					}
 				});
 
+				console.log(helperType1)
 				for (var key in helperType1) {
 					newDataStructure.push(helperType1[key]);
 				}
+				console.log(newDataStructure)
 
 				var x = d3.scaleBand()
 					.rangeRound([0, width])
@@ -102,13 +104,13 @@
 
 				var y = d3.scaleLinear()
 					.range([height, 0])
-					.domain([0, d3.max(data, function (d) {
+					.domain([0, d3.max(newDataStructure, function (d) {
 						return d.attack;
 					})]);
 
 				var y2 = d3.scaleLinear()
 					.range([height, 0])
-					.domain([0, d3.max(data, function (d) {
+					.domain([0, d3.max(newDataStructure, function (d) {
 						return d.defense;
 					})]);
 

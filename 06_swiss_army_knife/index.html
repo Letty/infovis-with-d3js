@@ -9,10 +9,12 @@
 	<style>
 		body {
 			font-family: "Open Sans";
+			font-size: 14px;
 		}
 
 		svg text {
 			font-family: "Open Sans";
+			font-size: 14px;
 		}
 
 		#tooltip {
@@ -47,37 +49,48 @@
 
 		d3.csv('Pokemon.csv'
 			, function (d) {
+				var type2 = d['Type 2'];
+
+				if(type2 === ""){
+					type2 = 'unkown';
+				}
+
 				return {
 					id: d['#'],
 					name: d['Name'],
 					generation: d['Generation'],
 					type_1: d['Type 1'],
-					type_2: d['Type 2'],
+					type_2: type2,
 					attack: +d['Attack'],
-					defense: +d['Defense']
+					defense: +d['Defense'],
+					dim1 : NaN
 				}
 			}
 			, function (error, data) {
 
 				var helperType1 = {};
 				var type1 = [];
-				var helperType2 = {};
-				var type2 = [];
+				// var helperType2 = {};
+				// var type2 = [];
+				
 
 				data.forEach(function (d) {
+
+					if(isNaN(d.dim1)){
+						d.dim1 = -999
+					}
+
 					if (helperType1[d.type_1] === undefined) {
 						type1.push(d.type_1);
 						helperType1[d.type_1] = 0;
 					}
-					if (helperType2[d.type_2] === undefined && d.type_2 !== '') {
-						type2.push(d.type_2);
-						helperType2[d.type_2] = 0;
-					}
 					helperType1[d.type_1] = helperType1[d.type_1] + 1;
-					if (d.type_2 !== '') {
-						helperType2[d.type_2] = helperType2[d.type_2] + 1;
-					}
 				});
+
+				console.log(data)
+
+				// console.log(helperType1)
+				type1.sort();
 
 				var x = d3.scaleBand()
 					.rangeRound([0, width])
@@ -106,7 +119,7 @@
 					.attr("y", -15)
 					.attr("dy", null)
 					.attr("font-weight", "bold")
-					.attr('font-size', 12)
+					.attr('font-size', 16)
 					.style('fill', '#dc8787')
 					.text("Attack");
 
@@ -120,7 +133,7 @@
 					.attr("y", -12)
 					.attr("dy", null)
 					.attr("font-weight", "bold")
-					.attr('font-size', 12)
+					.attr('font-size', 16)
 					.style('fill', '#359696')
 					.text("Defense");
 
@@ -134,7 +147,7 @@
 					.attr("x", -25)
 					.attr("dy", 20)
 					.attr("font-weight", "bold")
-					.attr('font-size', 12)
+					.attr('font-size', 16)
 					.text("Type");
 
 				svg.selectAll('.background-bar')
@@ -152,6 +165,9 @@
 						} else {
 							return '#f5f5f5';
 						}
+					})
+					.on('click', function(d){
+						console.log(d)
 					});
 
 				svg.selectAll('.attack')
@@ -168,8 +184,9 @@
 					.style('fill', '#dc8787')
 					.on('mouseenter', function (d) {
 						tooltip
-							.html('Name: ' + d.name + '<br>' + 'Generation: ' + d.generation + '<br>' + 'Type 1: ' + d.type_1 + '<br>'
-								+ 'Type 2: ' + d.type_2 + '<br>' + 'Attack: ' + d.attack + '<br>' + 'Defense: ' + d.defense + '<br>')
+							.html('<p>Name: ' + d.name + '</p>' + 'Generation: ' + d.generation + '<br>' + 'Type 1: ' + d.type_1 + '<br>'
+								+ 'Type 2: ' + d.type_2 + '<br>' + 'Attack: ' + d.attack + '<br>' + 'Defense: ' + d.defense + '<br>'
+								+ '<p><img src="http://2.bp.blogspot.com/-A-8Wj7AHTQ0/UPPaDIl8aOI/AAAAAAAAAO0/kOT2KRNCDZM/s1600/pikachu.png" height="42" width="42"></p>')
 							.style('visibility', 'visible')
 							.style("top", (d3.event.pageY - 10) + "px")
 							.style("left", (d3.event.pageX + 10) + "px");
