@@ -73,10 +73,7 @@
 
 		var g = svg.append("g");
 
-		svg.call(d3.zoom()
-			.scaleExtent([1, 8])
-			.on("zoom", zoomed));
-
+		svg.call(zoom);
 
 		d3.queue()
 			.defer(d3.json, 'world50m.json')
@@ -102,6 +99,20 @@
 					}))
 					.attr("class", "boundary")
 					.attr("d", path);
+//
+//				g.append('circle')
+//					.datum([13.40, 52.52]) // [longitude, latitude]
+//					.attr('cx', function (d) {
+//						// long
+//						return projection([d[0], d[1]])[0];
+//					})
+//					.attr('cy', function (d) {
+//						// lat
+//						return projection([d[0], d[1]])[1];
+//					})
+//					.attr('r', 4)
+//					.style('fill', '#ff00ff');
+
 
 				data.forEach(function (d) {
 					if (d.iso_n3 != '-99') {
@@ -115,6 +126,10 @@
 			});
 
 		function zoomed() {
+			g.selectAll('circle')
+				.attr('r', function () {
+					return 4 / d3.event.transform.k;
+				});
 			g.attr("transform", d3.event.transform);
 		}
 	};
