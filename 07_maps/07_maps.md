@@ -22,7 +22,7 @@
 
 * Projection 
     * mapping the 3d model of the earth into 2d 
-    * like finding the best representation where distortion bothers you not too much
+    * like finding the best representation where distortion [is good enough](https://upload.wikimedia.org/wikipedia/commons/f/f8/Netzentwuerfe.png) for the topic
     * define: translate, center point of the projection, and the scale of the map
 
 ``` 
@@ -114,4 +114,7 @@ d3.queue()
     });
 ```
 
-## Mapping country polygons with datasets
+## Mapping country polygons with datasets 
+
+* requires one identifier in the map data and the dataset for the visualization
+* best identifier when working with countries is the [numeric ISO 3166 1 code](https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes)

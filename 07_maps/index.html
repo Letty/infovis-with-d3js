@@ -116,7 +116,7 @@
 
 				data.forEach(function (d) {
 					if (d.iso_n3 != '-99') {
-						svg.selectAll('.l_' + d.iso_n3 + '')
+						svg.selectAll('.l_' + d.iso_n3)
 							.style('fill', function () {
 								return color(d.continent);
 							})
