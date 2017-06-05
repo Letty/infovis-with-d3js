@@ -145,6 +145,9 @@
 				.attr('class', 'dot')
 				.attr('r', 3)
 				.merge(dots)
+				.style('fill', function (d) {
+					return color(d.Species)
+				})
 				.transition()
 				.duration(500)
 				.attr('cy', function (d) {
@@ -153,9 +156,7 @@
 				.attr('cx', function (d) {
 					return x(d[xName]);
 				})
-				.style('fill', function (d) {
-					return color(d.Species)
-				})
+
 		}
 	};
 </script>
