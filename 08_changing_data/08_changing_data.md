@@ -54,8 +54,6 @@ dots.enter().append('circle')
     .attr('class', 'dot')
     .attr('r', 3)
     .merge(dots)
-    .transition()
-    .duration(500)
     .attr('cy', function (d) {
         return y(d[yDimension]);
     })
@@ -69,11 +67,25 @@ dots.enter().append('circle')
 
 ## Transitions
 
+* updates and changes inside visualizations needs to be visible for user
+* otherwise user will loose the meaning of the visualization and loose their mental model
+* transitions will calculate and draw a smooth movement between the old and the new position
+* the mental model of the user will be maintained
+* transition will be placed before the attributes or styles to change
+
+```
+...
+    .merge(dots)
+    .transition()
+    .duration(500)
+...
+```
 
 # References
 
 * [What Makes Software Good?](https://medium.com/@mbostock/what-makes-software-good-943557f8a488)
-
+* [Transition Documentation ](https://github.com/d3/d3-transition)
+* [Join Data](https://github.com/d3/d3-selection#joining-data)
 
 
 
