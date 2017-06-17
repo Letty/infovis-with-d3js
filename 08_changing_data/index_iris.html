@@ -20,8 +20,8 @@
 		}
 
 		#viz {
-			background: #ccd0de;
-			padding: 15px;
+		<!-- background: #ccd0de;
+		--> padding: 15px;
 		}
 
 		#control {
@@ -92,18 +92,31 @@
 			.append('svg')
 			.attr('width', width + margin.left + margin.right)
 			.attr('height', height + margin.top + margin.bottom)
-			.append('g')
+		// .append('g')
+		// .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+		var g = svg.append('g')
 			.attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
 
-		var gy = svg.append('g')
+		// svg.call(d3.zoom()
+		// 	.scaleExtent([1 / 2, 8])
+		// 	.on("zoom", zoomed));
+
+
+		var gy = g.append('g')
 			.attr('class', 'y-axis')
 			.call(yAxis);
 
-		var gx = svg.append('g')
+		var gx = g.append('g')
 			.attr('class', 'x-axis')
 			.attr('transform', 'translate(0,' + height + ')')
 			.call(xAxis);
+
+// var ease = d3.easeElasticIn.amplitude(1).period(0.2);
+//         var t = d3.transition()
+//                 .duration(500)
+//                 .delay(1000)
+//                 .ease(ease)
 
 		d3.csv('iris.csv', function (error, dat) {
 
@@ -121,6 +134,7 @@
 		});
 
 		function redraw() {
+			console.log(xName, yName)
 			x.domain(d3.extent(data, function (d) {
 				return d[xName];
 			}));
@@ -130,13 +144,13 @@
 			}));
 
 			gy.transition()
-				.duration(500)
+				.duration(1500)
 				.call(yAxis);
 			gx.transition()
-				.duration(500)
+				.duration(1500)
 				.call(xAxis);
 
-			var dots = svg.selectAll('.dot')
+			var dots = g.selectAll('.dot')
 				.data(data);
 
 			dots.exit().remove();
@@ -144,12 +158,12 @@
 			dots.enter().append('circle')
 				.attr('class', 'dot')
 				.attr('r', 3)
-				.merge(dots)
 				.style('fill', function (d) {
 					return color(d.Species)
 				})
+				.merge(dots)
 				.transition()
-				.duration(500)
+				.duration(1500)
 				.attr('cy', function (d) {
 					return y(d[yName]);
 				})
@@ -157,6 +171,12 @@
 					return x(d[xName]);
 				})
 
+		}
+
+		function zoomed() {
+			g.attr("transform", d3.event.transform);
+			gX.call(xAxis.scale(d3.event.transform.rescaleX(x)));
+			gY.call(yAxis.scale(d3.event.transform.rescaleY(y)));
 		}
 	};
 </script>
