@@ -21,9 +21,9 @@ For every session is a numbered folder. The material inside is:
 * 31.05 - Maps
 * 07.06 - Changing data inside visualizations
 * 14.06 - PRESENTATION
-* 21.06 - Advanced Layouts in d3
-* 05.07 - How to start with visualization projects
-* 12.07 - PRESENTATION
+* 21.06 - Connected Views
+* 28.06 - 
+* 05.07 - PRESENTATION
 
 ## Useful Links
 * [SVG Crowbar](https://nytimes.github.io/svg-crowbar/) extracting SVG's from websites
