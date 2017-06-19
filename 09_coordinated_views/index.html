@@ -5,7 +5,7 @@
 	<title>Pokemon Example</title>
 
 	<script type="text/javascript" src="../library/d3.min.js"></script>
-	<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+	<script type="text/javascript" src="../library/d3-scale-chromatic.min.js"></script>
 
 	<style>
 		body {
@@ -28,17 +28,22 @@
 
 		.container {
 			display: flex;
-			/*width: 100%;*/
-			/*height: 450px;*/
 		}
 
-		/*.type-container {*/
-		/*width: 50%;*/
-		/*}*/
+		.headline-container {
+			display: flex;
+		}
 
-		/*.poke-container {*/
-		/*width: 50%;*/
-		/*}*/
+		#selection {
+			padding-left: 5px;
+		}
+
+		#remove-selection {
+			padding-left: 5px;
+			visibility: hidden;
+			cursor: pointer;
+		}
+
 
 	</style>
 
@@ -47,18 +52,41 @@
 
 <div id="tooltip"></div>
 <div class="container">
-	<div class="type-container" id="type-viz"></div>
-	<div class="poke-container" id="poke-viz"></div>
+	<div>
+		<div>Pokemon Type Matrix</div>
+		<div class="type-container" id="type-viz"></div>
+	</div>
+	<div>
+		<div class="headline-container">
+			<div>Pokemon Scatterplot -</div>
+			<div id="selection">all types visible</div>
+			<div id="remove-selection">x</div>
+		</div>
+		<div class="poke-container" id="poke-viz"></div>
+	</div>
 </div>
 
 <script type="text/javascript">
 	window.onload = function () {
 
-		var margin = {top: 20, left: 100, bottom: 50, right: 10};
+		var pokemon_data;
+
+		var margin = {top: 20, left: 100, bottom: 60, right: 10};
+		var marginSp = {top: 20, left: 50, bottom: 50, right: 10};
 		var width = 650 * 0.9 - margin.left - margin.right;
+		var widthSp = 650 * 0.9 - marginSp.left - marginSp.right;
 		var height = 450 * 0.9 - margin.top - margin.bottom;
 
 		var tooltip = d3.select('#tooltip');
+		var selectionName = d3.select('#selection');
+
+		var removeSelection = d3.select('#remove-selection')
+			.on('click', function () {
+				selectionName.html('all types visible');
+				d3.select(this).style('visibility', 'hidden');
+				updatePokemonViz(pokemon_data);
+			});
+
 
 		var svgType = d3.select('#type-viz')
 			.append('svg')
@@ -81,13 +109,11 @@
 
 		var svgPoke = d3.select('#poke-viz')
 			.append('svg')
-			.attr('width', width + margin.left + margin.right)
-			.attr('height', height + margin.top + margin.bottom)
-			.append('g')
-			.attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+			.attr('width', widthSp + marginSp.left + marginSp.right)
+			.attr('height', height + marginSp.top + marginSp.bottom);
 
 		var g = svgPoke.append('g')
-			.attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+			.attr('transform', 'translate(' + marginSp.left + ',' + marginSp.top + ')');
 
 		var gy = g.append('g')
 			.attr('class', 'y-axis')
@@ -117,13 +143,13 @@
 					defense: +d['Defense']
 				}
 			}
-			, function (error, data) {
+			, function (error, da) {
 
 				var helperType = {};
 				var type1 = [], type2 = [];
 
-
-				data.forEach(function (d) {
+				pokemon_data = da;
+				pokemon_data.forEach(function (d) {
 
 					if (helperType[d.type_1] === undefined) {
 						type1.push(d.type_1);
@@ -156,7 +182,7 @@
 				}
 
 				drawTypeMatrix(typematrix, type1, type2, svgType);
-				updatePokemonViz(data);
+				updatePokemonViz(pokemon_data);
 
 			});
 
@@ -180,34 +206,33 @@
 				.range(d3.schemePurples[9]);
 
 			svg.append('g')
-				.call(d3.axisLeft(y))
-				.select(".tick:last-of-type text")
-				.select(function () {
-					return this.parentNode.appendChild(this.cloneNode());
-				})
-				.attr("y", -15)
-				.attr("dy", null)
+				.call(d3.axisLeft(y));
+
+			svg.append('text')
+				.attr('x', -margin.left)
+				.attr('y', 0)
 				.attr("font-weight", "bold")
 				.attr('font-size', 16)
 				.text("Type 1");
-
-			svg.append('g')
-				.attr('transform', 'translate(0,' + height + ')')
-				.call(d3.axisBottom(x))
-				.select(".tick:first-of-type text")
-				.select(function () {
-					return this.parentNode.appendChild(this.cloneNode());
-				})
-				.attr("x", width - 25)
-				.attr("dy", 20)
+			svg.append('text')
+				.attr('x', -margin.left * 0.5)
+				.attr('y', height + margin.bottom * 0.5)
 				.attr("font-weight", "bold")
 				.attr('font-size', 16)
 				.text("Type 2");
 
-			svg.selectAll('.attack')
+			svg.append('g')
+				.attr('class', 'x-matrix')
+				.attr('transform', 'translate(0,' + height + ')')
+				.call(d3.axisBottom(x))
+				.selectAll('text')
+				.attr('transform', 'rotate(-45)')
+				.style('text-anchor', 'end');
+
+			svg.selectAll('.histo')
 				.data(data)
 				.enter().append('rect')
-				.attr('class', 'attack')
+				.attr('class', 'histo')
 				.attr('y', function (d) {
 					return y(d.type_1);
 				})
@@ -220,10 +245,57 @@
 					return color(d.count);
 				})
 				.on('mouseenter', function (d) {
-					console.log(d.count);
+					svg.select('.' + d.type_1 + '_' + d.type_2)
+						.style('visibility', 'visible');
 				})
 				.on('mouseout', function (d) {
+					svg.select('.' + d.type_1 + '_' + d.type_2)
+						.style('visibility', 'hidden');
+				})
+				.on('click', function (d) {
+					var ar = reduceData(pokemon_data, d.type_1, d.type_2);
+					selectionName.html('Type ' + d.type_1 + ' & ' + d.type_2 + ' selected');
+					removeSelection.style('visibility', 'visible');
+					updatePokemonViz(ar);
+				});
 
+			svg.selectAll('.histo-count')
+				.data(data)
+				.enter().append('text')
+				.attr('class', function (d) {
+					return 'histo-count ' + d.type_1 + '_' + d.type_2;
+				})
+				.attr('y', function (d) {
+					return y(d.type_1) + y.bandwidth() * 0.9;
+				})
+				.attr('x', function (d) {
+					return x(d.type_2) + x.bandwidth() * 0.5;
+				})
+				.style('text-anchor', 'middle')
+				.style('fill', function (d) {
+					if (d.count > 30) {
+						return '#fff'
+					} else {
+						return '#000'
+					}
+				})
+				.style('visibility', 'hidden')
+				.text(function (d) {
+					return d.count;
+				})
+				.on('mouseenter', function () {
+					d3.select(this)
+						.style('visibility', 'visible');
+				})
+				.on('mouseout', function () {
+					d3.select(this)
+						.style('visibility', 'hidden');
+				})
+				.on('click', function (d) {
+					var ar = reduceData(pokemon_data, d.type_1, d.type_2);
+					selectionName.html('Type ' + d.type_1 + ' & ' + d.type_2 + ' selected');
+					removeSelection.style('visibility', 'visible');
+					updatePokemonViz(ar);
 				});
 		}
 
@@ -274,6 +346,18 @@
 				.attr('cx', function (d) {
 					return x(d.attack);
 				})
+		}
+
+		function reduceData(data, type1, type2) {
+			var array = [];
+
+			data.forEach(function (d) {
+				if (d.type_1 === type1 && d.type_2 === type2) {
+					array.push(d);
+				}
+			});
+
+			return array;
 		}
 	};
 </script>
