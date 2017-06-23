@@ -32,7 +32,7 @@
 ```
 
 * use css property `display` to arrange the div elements
-* a good start for placing elements is the flexbox layout 
+* a good start for placing elements is the `flexbox` layout 
 
 ```
 .container {
@@ -48,9 +48,13 @@
 * when redraw a viz, the variables will be used
 * this is similar to the update procedure in visualization (see lecture 08)
 
-## Uniquie Identifier
+## Unique Identifier
 
-* 
+* find one dimension or a combination of dimensions, which describe one data record uniquely
+* this could be an id, a name or a combination of date and name
+* use this identifier for a unique `id` and/or in the `class` of the element
+* this is similar to the example: show meteor who landed in the same year or show journalists who worked for the same medium and where killed
+* with this method it is possible to select on record in all visualizations
 
 ## Connect visualizations
 
