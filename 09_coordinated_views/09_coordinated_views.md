@@ -46,7 +46,7 @@
 * maybe the dimensions of the visualizations are not the same. width, height and margins has to be stored also
 * as usual save the scaling and axis in variables 
 * when redraw a viz, the variables will be used
-* this is similar to the update procedure in visualization (see lecture 08)
+* this is similar to the update procedure in visualization ([see lecture 08](https://github.com/Letty/infovis-with-d3js/blob/master/08_changing_data/08_changing_data.md))
 
 ## Unique Identifier
 
