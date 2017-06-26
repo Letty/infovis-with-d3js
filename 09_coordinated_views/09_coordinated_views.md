@@ -58,4 +58,24 @@
 
 ## Connect visualizations
 
-*  
+##### Select all elements over all visualizations
+
+* Easiest connection by selecting all elements with the same identifier 
+* modify style or attributes to highlight these elements
+* `svg.selectAll('.'+d.identifier).attr(...).style(...)`
+
+##### Redraw visualization
+
+* based on the selection in one visualization, filter the datset by one or many dimension (f.e. records with a specific type or time range)
+* use the reduced dataset to redraw the visualization 
+
+```
+svg.selectAll('.histo-count')
+    .data(data)
+    .enter().append('text')
+    ...
+    .on('click', function (d) {
+        var newArrayData = reduceData(data, d.dimension_1, d.dimension_2);
+        updateViz(newArrayData);
+    });
+```
