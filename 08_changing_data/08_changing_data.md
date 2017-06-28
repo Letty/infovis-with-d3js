@@ -51,9 +51,11 @@ dots.exit().remove();
 
 ```
 dots.enter().append('circle')
+    // everything here is fix. it never changes
     .attr('class', 'dot')
     .attr('r', 3)
     .merge(dots)
+    // everything here changes
     .attr('cy', function (d) {
         return y(d[yDimension]);
     })
@@ -63,6 +65,9 @@ dots.enter().append('circle')
     .style('fill', function (d) {
         return color(d.Species)
     })
+    // if there is a transition,
+    // everything after the transition 
+    // command is changing with a transition
 ```
 
 ## Transitions

@@ -61,7 +61,7 @@
 		<div class="headline-container">
 			<div>Pokemon Scatterplot -</div>
 			<div id="selection">all types visible</div>
-			<div id="remove-selection">x</div>
+			<div id="remove-selection">remove all</div>
 		</div>
 		<div class="poke-container" id="poke-viz"></div>
 	</div>
@@ -173,6 +173,7 @@
 				var typematrix = [];
 				var max = -1e10;
 
+// console.log(helperType)
 				for (var key in helperType) {
 					for (var k in helperType[key]) {
 						if (k !== 'count') {
@@ -285,13 +286,22 @@
 				.text(function (d) {
 					return d.count;
 				})
-				.on('mouseenter', function () {
+				.on('mouseenter', function (d) {
 					d3.select(this)
 						.style('visibility', 'visible');
+
+					// d3.selectAll('.dot')
+					// 	.style('opacity', 0.1)
+
+					// d3.selectAll('.types_'+d.type_1+'_'+d.type_2)
+					// 	.style('opacity', 1)
 				})
 				.on('mouseout', function () {
 					d3.select(this)
 						.style('visibility', 'hidden');
+
+					// d3.selectAll('.dot')
+					// 	.style('opacity', 0.5)
 				})
 				.on('click', function (d) {
 					var ar = reduceData(pokemon_data, d.type_1, d.type_2);
@@ -334,9 +344,11 @@
 			dots.exit().remove();
 
 			dots.enter().append('circle')
-				.attr('class', 'dot')
 				.style('fill', 'rgba(63, 0, 125, 0.5)')
 				.merge(dots)
+				.attr('class', function(d){
+					return 'dot types_'+d.type_1+'_'+d.type_2;
+				})
 				.transition()
 				.duration(1500)
 				.attr('r', function (d) {
