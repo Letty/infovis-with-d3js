@@ -1,0 +1,36 @@
+body {
+  font-family: "Roboto";
+  font-size: 14px;
+}
+
+svg text {
+  font-family: "Roboto";
+  font-size: 8px;
+}
+
+#tooltip {
+  position: absolute;
+  visibility: hidden;
+  background: #e3e3e3;
+  font-size: 12px;
+  padding: 5px 15px
+}
+
+/*.container {
+  display: flex;
+}*/
+
+.headline-container {
+  display: flex;
+}
+
+#selection {
+  padding: 0px 5px;
+}
+
+#remove-selection {
+  padding: 0px 3px;
+  visibility: hidden;
+  cursor: pointer;
+  background: #b46d6d;
+}
