@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Exoplanets: ESI and Flux</title>
+	<script type="text/javascript" src="d3.min.js"></script>
+
+
+	<style>
+		.dot {
+			fill: green;
+		}
+	</style>
+
+</head>
+<body>
+
+<script type="text/javascript">
+	window.onload = function () {
+
+		var margin = {top: 50, left: 100, bottom: 50, right: 50};
+		 var width = window.innerWidth - margin.left - margin.right;
+		 var height = window.innerHeight - margin.top - margin.bottom;
+
+		var svg = d3.select('body')
+			.append('svg')
+			.attr('width', width + margin.left + margin.right)
+			.attr('height', height + margin.top + margin.bottom)
+			.append('g')
+			.attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+		d3.csv('esi3.csv', function (error, data) {
+
+			data.forEach(function (d) {
+				d.flux = +d.flux;
+				d.esi = +d.esi;
+			})
+
+			var x = d3.scaleLinear()
+				.range([0, width])
+				.domain(d3.extent(data, function (d) {
+					return d.flux;
+				}));
+
+			var y = d3.scaleLinear()
+				.range([height, 0])
+				.domain(d3.extent(data, function (d) {
+					return d.esi;
+				}));
+
+			svg.append('g')
+				.call(d3.axisLeft(y))
+
+			svg.append("text")      // text label for the y axis
+				.attr("x", -20)
+				.attr("y", -20)
+				.text("ESI");
+
+			svg.append("text")      // text label for the x axis
+				.attr("x", 1040)
+				.attr("y", 460)
+				.text("Flux");
+
+			svg.append('g')
+				.attr('transform', 'translate(0, ' + height + ')')
+				.call(d3.axisBottom(x))
+
+			svg.selectAll('.dot')
+				.data(data)
+				.enter().append('circle')
+				.attr('class', 'dot')
+				.attr('r', 4)
+				.attr('cy', function (d) {
+					return y(d.esi);
+				})
+				.attr('cx', function (d) {
+					return x(d.flux);
+				})
+		})
+	};
+</script>
+
+</body>
+</html>

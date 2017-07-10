@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Loading Datasets</title>
+	<script src="d3.min.js"></script>
+
+	<style>
+		h1 {
+			font-size: 24px;
+			font-style: normal;
+			font-family: sans-serif;
+			color: #e2ecff;
+			margin-left: 60px;
+			margin-top: 20px;
+		}
+
+		p {
+			font-size: 14px;
+			font-family: sans-serif;
+			color: #e2ecff;
+		}
+
+		body {
+			background-color: #050a14;
+		}
+
+		.dot {
+			stroke-width: 1px;
+		}
+
+		.legend {
+			font-size: 12px;
+			font-style: normal;
+			font-family: sans-serif;
+			fill: #e2ecff;
+		}
+
+		.axisX line {
+			stroke: #e2ecff;
+		}
+
+		.axisX path {
+			stroke: #e2ecff;
+		}
+
+		.axisX text {
+			stroke: #e2ecff;
+		}
+
+		.axisY line {
+			stroke: #e2ecff;
+		}
+
+		.axisY path {
+			stroke: #e2ecff;
+		}
+
+		.axisY text {
+			stroke: #e2ecff;
+		}
+
+		circle {
+			cursor: pointer;
+		}
+
+		.tooltip {
+			position: absolute;
+			visibility: hidden;
+			padding: 1.5em;
+			background: #3e424d;
+			border-radius: 8px;
+			pointer-events: none;
+			color: white;
+			font-family: sans-serif;
+		}
+	</style>
+
+</head>
+<body>
+<h1>Exoplanets in the conservative and optimistic habitable zone</h1>
+<div class="tooltip"></div>
+<script>
+
+	var margin = {top: 35, bottom: 100, left: 60, right: 17};
+	var height = window.innerHeight - margin.top - margin.bottom,
+		width =  window.innerWidth - margin.left - margin.right;
+
+	var tooltip = d3.select(".tooltip");
+
+	var svg = d3.select('body').append('svg')
+		.attr('height', height + margin.top + margin.bottom)
+		.attr('width', width + margin.left + margin.right)
+		.append('g')
+		.attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+	var color = d3.scaleOrdinal(d3.schemeCategory10);
+
+	var legendRectSize = 18;
+
+	var legendSpacing = 4;
+
+	window.onload = function () {
+		d3.csv(
+			'esi.csv',
+			function (err, data) {
+				if (err) {
+					console.log(err);
+				}
+
+				data.forEach(function (d) {
+					d.esi = +d.esi;
+					d.mass = +d.mass;
+					d.radius = +d.radius;
+					d.flux = +d.flux;
+					d.teq = +d.teq;
+					d.period = +d.period;
+					d.distance = +d.distance;
+				});
+
+				var x = d3.scaleLinear()
+					.range([0, width]);
+
+				var y = d3.scaleLinear()
+					.range([height, 0]);
+
+				x.domain(d3.extent(data, function (d) {
+					return d.distance;
+				}));
+				y.domain(d3.extent(data, function (d) {
+					return d.esi;
+				}));
+
+				var rScale = d3.scaleSqrt()
+					.domain([0.8, d3.max(data, function (d) {
+						return d.radius;
+					})])
+					.range([5, 15]);
+
+				color.domain(d3.extent(data, function (d) {
+					return d.planettype;
+				}));
+
+				svg.append('g')
+					.attr('class', 'axisX')
+					.attr('transform', 'translate(0,' + height + ')')
+					.call(d3.axisBottom(x));
+
+				svg.append('text')
+					.attr('transform',
+						'translate(' + (width - 90) + ' ,' +
+						(height + 40) + ')')
+					.style('text-anchor', 'middle')
+					.style('fill', '#e2ecff')
+					.style('font-family', 'sans-serif')
+					.style('font-size', 12)
+					.text('Distance from host star to Earth');
+
+				svg.append('g')
+					.attr('class', 'axisY')
+					.call(d3.axisLeft(y));
+
+				svg.append("text")
+					.attr("transform", "rotate(-90)")
+					.attr("y", 0 - margin.left)
+					.attr("x", 0 - 60)
+					.attr("dy", "1em")
+					.style("text-anchor", "middle")
+					.style('fill', '#e2ecff')
+					.style('font-family', 'sans-serif')
+					.style('font-size', 12)
+					.text("Earth similarity index");
+
+				svg.selectAll('.dot')
+					.data(data)
+					.enter()
+					.append('circle')
+					.attr('r', function (d) {
+						return rScale(d.radius);
+					})
+					.attr('class', 'dot')
+					.attr('cx', function (d) {
+						return x(d.distance);
+					})
+					.attr('cy', function (d) {
+						return y(d.esi);
+					})
+					.style('fill-opacity', 0.75)
+					.style('fill', function (d) {
+						return color(d.planettype);
+					})
+					.on("mouseover", mouseover)
+					.on("mousemove", mousemove)
+					.on("mouseout", mouseout);
+
+				function mouseover(d) {
+					tooltip.html("Name: " + d.name);
+					tooltip.style("visibility", "visible");
+				}
+
+				function mousemove() {
+					return tooltip
+						.style("top", (d3.event.pageY - 10) + "px")
+						.style("left", (d3.event.pageX + 10) + "px");
+				}
+
+				function mouseout(d) {
+					tooltip.style("visibility", "hidden");
+				}
+
+				var legend = svg.selectAll('.legend')
+					.data(color.domain())
+					.enter()
+					.append('g')
+					.attr('class', 'legend')
+					.attr('transform', function (d, i) {
+						var height = legendRectSize + legendSpacing;
+						var offset = height * color.domain().length + 10;
+						var horz = width - offset;
+						var vert = i * height;
+						return 'translate(' + horz + ',' + vert + ')';
+					});
+
+				legend.append('rect')
+					.attr('width', legendRectSize)
+					.attr('height', legendRectSize)
+					.style('fill', color)
+					.style('stroke', color);
+
+				legend.append('text')
+					.attr('x', legendRectSize + legendSpacing)
+					.attr('y', legendRectSize - legendSpacing)
+					.text(function (d) {
+						return d;
+					});
+			})
+	};
+</script>
+</body>
+</html>

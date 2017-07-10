@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Exoplanets-Assignment01</title>
+
+	<script type="text/javascript" src="d3.min.js">
+	</script>
+
+	<link href="https://fonts.googleapis.com/css?family=BioRhyme:bold" rel="stylesheet">
+
+	<style>
+
+		.d3-tip {
+			line-height: 1;
+			font-weight: bold;
+			padding: 12px;
+			background: white;
+			color: #aaa;
+			border-radius: 2px;
+		}
+
+		.dot {
+			fill: #aabbcc;
+			stroke: steelblue;
+			stroke-width: 1.5px;
+		}
+
+		.line {
+			stroke: darkred;
+			stroke-width: 2;
+			stroke-dasharray: 3%, 3%;
+			fill: none;
+		}
+
+		text {
+			font-family: 'BioRhyme', serif;
+		}
+
+	</style>
+
+</head>
+<body>
+
+<script type="text/javascript">
+	window.onload = function () {
+
+		var margin = {top: 50, left: 50, bottom: 70, right: 100};
+		var width = window.innerWidth - margin.left - margin.right;
+		var height = window.innerHeight - margin.top - margin.bottom;
+
+		var svg = d3.select('body')
+			.append('svg')
+			.attr('width', width + margin.left + margin.right)
+			.attr('height', height + margin.top + margin.bottom)
+			.append('g')
+			.attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+		d3.select("#vis").selectAll("svg").remove();
+
+		d3.csv('esi.csv', function (error, data) {
+
+			data.forEach(function (d) {
+				d.esi = +d.esi;
+				d.radius = +d.radius;
+				d.name = d.name;
+			})
+
+			var x = d3.scaleLinear()
+				.range([0, width])
+				.domain([0, d3.max(data, function (d) {
+					return d.radius;
+				})])
+
+			var y = d3.scaleLinear()
+				.range([height, 0])
+				.domain([0.45, d3.max(data, function (d) {
+					return d.esi;
+				})])
+
+
+			var yAxis = d3.axisRight()
+				.scale(y)
+				.tickSize(width)
+
+			var line = d3.line()
+				.y(function (d) {
+					return y(d.esi);
+				});
+
+
+			// y-Axis
+			svg.append('g')
+				.style('stroke-dasharray', ('3, 3'))
+				.call(yAxis)
+
+
+			svg.append('text')
+				.attr('x', width)
+				.attr('y', height + margin.top - 10)
+				.style('text-anchor', 'middle')
+				.text('Radius')
+
+			// x-Axis
+			svg.append('g')
+				.attr('transform', 'translate(0,' + height + ')')
+				.call(d3.axisBottom(x))
+
+
+			svg.append('text')
+				.attr('y', margin.top - margin.bottom)
+				.attr('x', 0)
+				.style('text-anchor', 'end')
+				.text('ESI')
+
+
+			// drawing circles
+			svg.selectAll('.dot')
+				.data(data)
+				.enter().append('circle')
+				.attr('class', 'dot')
+				.attr('r', function (d) {
+					return x(d.radius) / 50;
+				})
+				.attr('cy', function (d) {
+					return y(d.esi);
+				})
+				.attr('cx', function (d) {
+					return x(d.radius);
+				})
+				.style('fill', function (d) {
+					if (d.name === 'Erde') {
+						return 'red'
+					}
+				})
+
+				.on('mouseover', function (d) {
+					d3.select(this)
+						.transition()
+						.duration(500)
+						.attr('r', 20)
+						.attr('stroke-width', 3)
+				})
+
+				.on('mouseout', function (d) {
+					d3.select(this)
+						.transition()
+						.duration(500)
+						.attr('r', 10)
+						.attr('stroke-width', 1)
+				})
+
+
+			svg.selectAll('.titel')
+				.data(data)
+				.enter().append('text')
+				.attr('class', 'titel')
+				.attr('y', function (d) {
+					return y(d.esi);
+				})
+				.attr('x', function (d) {
+					return x(d.radius);
+				})
+				.style('text-anchor', 'start')
+				.style('fill', 'grey')
+				.text(function (d) {
+					return d.name;
+				})
+
+
+		})
+
+
+	};
+</script>
+
+
+</body>
+</html>

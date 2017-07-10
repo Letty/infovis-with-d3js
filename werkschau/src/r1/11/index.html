@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Comparison USD MXN</title>
+
+	<!-- //library -->
+	<script src="d3.min.js"></script>
+
+	<style>
+		.axis--x path {
+			display: none;
+		}
+
+		.line {
+			fill: none;
+		}
+
+	</style>
+</head>
+<body>
+
+<script type="text/javascript">
+	window.onload = function () {
+
+		var margin = {top: 10, left: 50, bottom: 50, right: 15};
+		 var width = window.innerWidth - margin.left - margin.right;
+		 var height = window.innerHeight - margin.top - margin.bottom;
+
+		var svg = d3.select('body')
+			.append('svg')
+			.attr('width', width + margin.left + margin.right)
+			.attr('height', height + margin.top + margin.bottom)
+			.append('g')
+			.attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+		d3.csv('comparison-MXN-USD.csv', function (error, data) {
+
+			data.forEach(function (d) {
+				d.date = new Date(d.date);
+				d.ratesMXN = +d.ratesMXN;
+				d.ratesUSD = +d.ratesUSD;
+
+			})
+
+			var x = d3.scaleTime()
+				.range([0, width])
+				.domain(d3.extent(data, function (d) {
+					return d.date;
+				}))
+
+			var y = d3.scaleLinear()
+				.range([height, 0])
+				.domain([d3.min(data, function (d) {
+					return d.ratesUSD;
+				}), d3.max(data, function (d) {
+					return d.ratesMXN;
+				})]);
+
+
+			svg.append('g')
+				.call(d3.axisLeft(y))
+				.append('text')
+				.attr('transform', 'rotate(-90)')
+				.attr('y', 20)
+				.attr('fill', '#000')
+				.attr('font-size', '12px')
+				.text('Exchange Rate');
+
+			svg.append('g')
+				.attr('class', 'axis axis--x')
+				.attr('transform', 'translate (0, ' + height + ')')
+				.call(d3.axisBottom(x));
+
+
+			var mxn = d3.line()
+				.x(function (d) {
+					return x(d.date);
+				})
+				.y(function (d) {
+					return y(d.ratesMXN);
+				})
+
+			svg.append('path')
+				.datum(data)
+				.attr('d', mxn)
+				.style('stroke', '#006847')
+				.style('stroke-width', 2)
+				.style('fill', 'none');
+
+			var usd = d3.line()
+				.x(function (d) {
+					return x(d.date);
+				})
+				.y(function (d) {
+					return y(d.ratesUSD);
+				})
+
+			svg.append('path')
+				.datum(data)
+				.attr('d', usd)
+				.style('stroke', '#003EA8')
+				.style('stroke-width', 2)
+				.style('fill', 'none');
+
+		})
+	};
+</script>
+
+</body>
+</html>

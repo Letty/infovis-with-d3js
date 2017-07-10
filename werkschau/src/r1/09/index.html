@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>exchange rates | CAD, GBP & USD</title>
+
+	<script type="text/javascript" src="d3.min.js"></script>
+
+</head>
+<body style="background-color:#FCF5D2;">  <!-- LIGHT GOLDENROD YELLOW -->
+
+<script type="text/javascript">
+
+	// Variablen für Canvas-Größe und Größe der Circles
+	var cWidth = window.innerWidth
+		|| document.documentElement.clientWidth
+		|| document.body.clientWidth
+
+	var cHeight = window.innerHeight
+		|| document.documentElement.clientHeight
+		|| document.body.clientHeight
+
+	window.onload = function () {
+
+		var margin = {top: 10, left: 30, bottom: 20, right: 10};
+
+		var height = (cHeight - margin.top - margin.bottom) - 20,
+			width = (cWidth - margin.left - margin.right) - 18;
+		var svg = d3.select('body')
+			.append('svg')
+			.attr('width', width + margin.left + margin.right)
+			.attr('height', height + margin.top + margin.bottom)
+			.append('g')
+			.attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+		d3.csv('exchange-CAD-GBP-USD.csv', function (error, data) {											// load dataset
+
+			data.forEach(function (d) {
+				d.date = new Date(d.date);			// string to date
+				d.ratesCAD = +d.ratesCAD;				// string to number
+				d.ratesGBP = +d.ratesGBP;
+				d.ratesUSD = +d.ratesUSD;
+			});
+
+			var x = d3.scaleTime()
+				.range([0, width])
+				.domain(d3.extent(data, function (d) {
+					return d.date;
+				}));
+
+			var y = d3.scaleLinear()
+				.range([height, 0])
+				.domain([d3.min(data, function (d) {
+					return d.ratesGBP
+				}), d3.max(data, function (d) {
+					return d.ratesCAD
+				})]);
+
+			svg.append('g')
+				.call(d3.axisLeft(y))
+
+			svg.append('g')
+				.attr('transform', 'translate(0,' + height + ')')
+				.call(d3.axisBottom(x))
+
+			var cad = d3.line()
+				.x(function (d) {
+					return x(d.date);
+				})
+				.y(function (d) {
+					return y(d.ratesCAD);
+				})
+
+			svg.append('path')
+				.datum(data)
+				.attr('d', cad)
+				.style('stroke', '#931621') // RUBY RED
+				.style('stroke-width', '2')
+				.style('fill', 'none')
+
+			var gbp = d3.line()
+				.x(function (d) {
+					return x(d.date);
+				})
+				.y(function (d) {
+					return y(d.ratesGBP);
+				})
+
+			svg.append('path')
+				.datum(data)
+				.attr('d', gbp)
+				.style('stroke', '#00A6A6') // PERSIAN GREEN
+				.style('stroke-width', '2')
+				.style('fill', 'none')
+
+
+			var usd = d3.line()
+				.x(function (d) {
+					return x(d.date);
+				})
+				.y(function (d) {
+					return y(d.ratesUSD);
+				})
+
+			svg.append('path')
+				.datum(data)
+				.attr('d', usd)
+				.style('stroke', '#28464B') // JAPANESE INDIGO
+				.style('stroke-width', '2')
+				.style('fill', 'none')
+
+
+		});
+	};
+</script>
+
+</body>
+</html>

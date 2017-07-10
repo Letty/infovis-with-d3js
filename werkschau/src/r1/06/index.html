@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ESI</title>
+
+	<script src="d3.min.js"></script>
+
+	<style>
+		.bar {
+			fill: #7a9160;
+		}
+
+		text {
+			font-family: "Open Sans";
+		}
+	</style>
+
+</head>
+<body>
+
+<script type="text/javascript">
+
+
+	var margin = {top: 20, bottom: 40, left: 40, right: 7};
+
+	var width = window.innerWidth - margin.left - margin.right;
+	var height = window.innerHeight - margin.top - margin.bottom;
+
+	var svg = d3.select('body').append('svg')
+		.attr('height', height + margin.top + margin.bottom)
+		.attr('width', width + margin.left + margin.right)
+		.append('g')
+		.attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+	window.onload = function () {
+
+		d3.csv('esi2.csv'
+			, function (err, data) {
+				if (err) console.log(err);
+
+				data.forEach(function (d) {
+					d.esi = +d.esi;
+					d.distance = +d.distance;
+				});
+				var x = d3.scaleLinear()
+					.rangeRound([0, width])
+					.domain([0, d3.max(data, function (d) {
+						return d.distance;
+					})]);
+
+				var y = d3.scaleLinear()
+					.rangeRound([height, 0])
+					.domain([0, d3.max(data, function (d) {
+						return d.esi;
+					})]);
+
+				var axis_x = svg.append('g')
+					.attr('class', 'axis axis--x')
+					.attr('transform', 'translate(0,' + height + ')')
+					.call(d3.axisBottom(x));
+
+				var axis_y = svg.append('g')
+					.attr('class', 'axis axis--y')
+					.call(d3.axisLeft(y));
+
+				axis_x.append("g")
+					.attr("transform", "translate(705,-10)")
+					.append("text")
+					.text("Distance in Lightyears")
+					.attr("fill", "black")
+
+				axis_y.append("g")
+					.attr("transform", "translate(0,-10)")
+					.append("text")
+					.text("ESI")
+					.attr("fill", "black")
+
+
+				svg.append('g').selectAll('.circle')
+					.data(data)
+					.enter().append('circle')
+					.attr('class', 'circle')
+					.attr('cx', function (d) {
+						return x(d.distance)
+					})
+					.attr('cy', function (d) {
+						return y(d.esi)
+					})
+					.attr('r', function (d) {
+						if (d.status === "confirmed") {
+							return "2";
+						} else if (d.status === "no Exoplanet") {
+							return "2";
+						} else {
+							return "2";
+						}
+					})
+					.style("fill", function (d) {
+						if (d.status === "confirmed") {
+							return "green";
+						} else if (d.status === "no Exoplanet") {
+							return "blue";
+						} else {
+							return "red";
+						}
+					});
+			})
+	};
+</script>
+
+</body>
+</html>

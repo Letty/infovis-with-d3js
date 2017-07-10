@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>line chart</title>
+
+	<script src="d3.min.js"></script>
+
+	<style>
+		.dot {
+			fill: #7FFF00;
+			stroke: #556B2F;
+			stroke-width: 2px;
+		}
+
+		text {
+			font-family: "Open Sans";
+		}
+
+	</style>
+
+</head>
+<body>
+
+<script type="text/javascript">
+	window.onload = function () {
+		d3.csv('PIK_Data.csv', function (error, data) {
+			data.forEach(function (d) {
+				d.Jahr = new Date(+d.Jahr, 0, 1);
+				d.WasserbilanzWert = +d.WasserbilanzWert;
+				d.TagohneNiederschlag = +d.TagohneNiederschlag;
+			})
+
+			var margin = {top: 5, bottom: 30, left: 40, right: 50};
+			  var width = window.innerWidth - margin.left - margin.right;
+			  var height = window.innerHeight - margin.top - margin.bottom;
+			var svg = d3.select('body').append('svg')
+				.attr('height', height + margin.top + margin.bottom)
+				.attr('width', width + margin.left + margin.right)
+				.append('g')
+				.attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+			var x = d3.scaleTime()
+				.range([0, width])
+				.domain(d3.extent(data, (function (d) {
+					return d.Jahr;
+				})));
+			var y0 = d3.scaleLinear()
+				.range([height, 0])
+				.domain([0, d3.max(data, function (d) {
+					return d.WasserbilanzWert;
+				})]);
+			var y1 = d3.scaleLinear()
+				.range([height, 0])
+				.domain(d3.extent(data, function (d) {
+					return d.TagohneNiederschlag;
+				}));
+			var area = d3.area()
+				.x(function (d) {
+					return x(d.Jahr);
+				})
+				.y0(height)
+				.y1(function (d) {
+					return y0(d.WasserbilanzWert);
+				});
+			var line = d3.line()
+				.x(function (d) {
+					return x(d.Jahr);
+				})
+				.y(function (d) {
+					return y0(d.WasserbilanzWert);
+				});
+			var line2 = d3.line()
+				.x(function (d) {
+					return x(d.Jahr);
+				})
+				.y(function (d) {
+					return y1(d.TagohneNiederschlag);
+				});
+			svg.append('g')
+				.attr('class', 'axis axis--x')
+				.attr('transform', 'translate(0,' + height + ')')
+				.call(d3.axisBottom(x));
+			svg.append('g')
+				.attr('class', 'axis axis--y')
+				.call(d3.axisLeft(y0));
+			svg.append('g')
+				.attr('class', 'axis axis--y')
+				.attr("transform", "translate(" + width + " ,0)")
+				.call(d3.axisRight(y1));
+			svg.append("path")
+				.data([data])
+				.attr("class", "area")
+				.attr("d", area)
+				.style('fill', '#b3b3ff')
+			;
+			svg.append('path')
+				.datum(data)
+				.attr('class', 'line')
+				.attr('d', line)
+				.style('stroke', '#b3b3ff')
+				.style('fill', 'none')
+				.style('stroke-width', '2px');
+			svg.append('path')
+				.datum(data)
+				.attr('class', 'line')
+				.attr('d', line2(data))
+				.style('stroke', '#596673')
+				.style('fill', 'none')
+				.style('stroke-width', '2px');
+			svg.append("line")
+				.attr("x1", x(new Date(2010, 0, 1)))
+				.attr("x2", x(new Date(2010, 0, 1)))
+				.attr("y1", 0)
+				.attr("y2", height)
+				.style("stroke", "#cc6600")
+				.style("stroke-dasharray", "5")
+				.style('stroke-width', '2px');
+			svg.append("text")
+				.attr("class", "x label")
+				.attr("text-anchor", "end")
+				.attr("x", width)
+				.attr("y", height - -16)
+				.style('font-size', "12px")
+				.text("Jahr");
+			svg.append("text")
+				.attr("class", "y label")
+				.attr("text-anchor", "end")
+				.attr("y", 6)
+				.attr("dy", ".75em")
+				.attr("transform", "rotate(-90)")
+				.style('font-size', "12px")
+				.text("Wasserbilanz (mm)");
+			svg.append("text")
+				.attr("class", "y2 label")
+				.attr("text-anchor", "end")
+				.attr("y", width - 10)
+				.attr("dy", "0.71em")
+				.attr("transform", "rotate(-90)")
+				.style('font-size', "12px")
+				.text("Tag ohne Niederschlag");
+		});
+	}
+</script>
+
+</body>
+</html>

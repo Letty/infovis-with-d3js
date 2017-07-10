@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Exchange Rates - US-D</title>
+
+<script src="d3.min.js"></script>
+
+</head>
+<body  style="background-color:#0083B9;"> 
+
+<script type="text/javascript">
+
+var margin = { top: 20, left: 40, bottom:30, right: 20};
+var width = window.innerWidth - margin.left - margin.right;
+var height = window.innerHeight - margin.top - margin.bottom;
+
+
+function init (){
+
+  var gbp = "ex-gbp.csv", chf = "ex-usd.csv";
+
+
+  d3.csv(gbp, main); 
+}
+
+function main (d){
+  
+    d.forEach(function(d) { 
+    d.date = new Date(d.date);  
+    d.rates = +(d.rates);       
+  });
+
+  var date = d3.extent(d, function(d){return d.date; });
+  var rates = d3.extent(d, function(d){ return d.rates;});
+
+//x&y achsis
+  var x = d3.scaleTime()                        
+    .range([ 0, width ] )
+    .domain (date);
+  var y = d3.scaleLinear()
+    .range([ height, 0])  
+    .domain (rates);
+
+
+
+var svg = d3.select('body').append('svg')
+  .attr('width', width + margin.left + margin.right)
+  .attr('height', height + margin.top + margin.bottom);
+var s = svg.append('g')
+  .attr('transform', 'translate(' + margin.left + "," + margin.top + ")");
+
+//Transform x&y achsis
+var axis_x = s.append('g')
+  .style('fill', '#EBBAC4')
+  .attr("class","axis_x")
+  .attr('transform', 'translate (0, ' + height + ")")
+  .call(d3.axisBottom(x));
+var axis_y = s.append('g')
+  .style('fill', '#EBBAC4')
+  .attr("class","axis_y")
+  .call(d3.axisLeft(y));
+
+
+s.selectAll('dot')
+  .data(d)
+  .enter().append('circle')
+  .attr('class', 'dot')
+  .style('fill', '#EBBAC4')
+  .attr('r', 5)
+  .attr('cy', function (d) { return y(d.rates);})   
+  .attr('cx', function (d) { return x(d.date);});
+
+}
+
+window.addEventListener('load', init );
+
+</script>
+
+</body>
+</html>

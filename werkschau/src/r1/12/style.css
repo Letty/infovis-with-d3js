@@ -1,0 +1,11 @@
+body { font: 12px Arial;
+}
+
+.dot {
+	fill: red;
+}
+
+.axis_x > g > text {
+	/* transform: rotate(45deg) translate(50px, -10px);*/
+	font-size: 1.7em;
+}
