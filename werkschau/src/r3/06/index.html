@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Maps</title>
+
+	<script src="libraries/d3.min.js"></script>
+	<script src="libraries/d3-queue.v3.min.js"></script>
+	<script src="libraries/d3-interpolate.v1.min.js"></script>
+	<script src="libraries/d3-scale-chromatic.v1.min.js"></script>
+	<script src="libraries/d3-geo.v1.min.js"></script>
+	<script src="libraries/topojson.v1.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans" rel="stylesheet">
+
+	<style>
+
+		body {
+			background: #f5f5f5;
+		}
+
+		svg {
+			background: #fff;
+		}
+
+		.land {
+			fill: #000;
+		}
+
+		.boundary {
+			fill: none;
+			stroke: #fff;
+			stroke-linejoin: round;
+			stroke-linecap: round;
+			vector-effect: non-scaling-stroke;
+		}
+
+		.overlay {
+			fill: none;
+			pointer-events: all;
+		}
+
+		h1 {
+			font-family: 'Abril Fatface', cursive;
+			font-size: 36px;
+		}
+
+		#control {
+			font-family: 'Open Sans', sans-serif;
+			font-size: 16px;
+		}
+
+		#tooltip {
+			font-family: 'Open Sans', sans-serif;
+			position: absolute;
+			visibility: hidden;
+			background: #ffdede;
+			font-size: 16px;
+			padding: 5px 15px;
+		}
+
+		.red {
+			color: #FF5B5B;
+		}
+
+	</style>
+
+</head>
+<body>
+<div id="tooltip"></div>
+<div class="container">
+	<div id="viz"></div>
+	<div id="control">
+		<form>
+			<input type="radio" class="century" name="c" value="cAll" checked> All impacts<br>
+			<input type="radio" class="century" name="c" value="c21st"> 21st century<br>
+			<input type="radio" class="century" name="c" value="c20th"> 20th century<br>
+			<input type="radio" class="century" name="c" value="c19th"> 19th century
+		</form>
+	</div>
+</div>
+<br>
+<script>
+	window.onload = function () {
+
+		 var width = window.innerWidth;
+		 var height = window.innerHeight;
+
+		var projection = d3.geoMercator()
+			.translate([width / 2, height / 1.5])
+			.scale((width - 1) / 2 / Math.PI);
+
+		var zoom = d3.zoom()
+			.scaleExtent([1, 8])
+			.on("zoom", zoomed);
+
+		var path = d3.geoPath()
+			.projection(projection);
+
+		var svg = d3.select("body").append("svg")
+			.attr("width", width)
+			.attr("height", height)
+			.append("g");
+
+		svg.append("rect")
+			.attr("class", "overlay")
+			.attr("width", width)
+			.attr("height", height);
+
+		var g = svg.append("g");
+
+		svg.call(zoom);
+
+		d3.queue()
+			.defer(d3.json, 'world50m.json')
+			.defer(d3.tsv, '50m_original.tsv')
+			.defer(d3.json, 'landings_reduced.json')
+			.await(function (error, world, data, data2) {
+				if (error) throw error;
+
+
+				var cAll = [];
+				var c19th = [];
+				var c20th = [];
+				var c21st = [];
+				data2.forEach(function (d) {
+					cAll.push(d);
+				});
+				data2.forEach(function (d) {
+					if (d.year[1] === '8') {
+						c19th.push(d);
+					} else if (d.year[1] === '9') {
+						c20th.push(d);
+					} else if (d.year[1] === '0') {
+						c21st.push(d);
+					}
+				});
+
+				d3.selectAll('input[type=radio][name=c]').on('change', function () {
+					if (this.value === 'cAll') {
+						redraw(cAll);
+					} else if (this.value === 'c19th') {
+						redraw(c19th);
+					} else if (this.value === 'c20th') {
+						redraw(c20th);
+					} else {
+						redraw(c21st);
+					}
+				});
+
+				g.append("g")
+					.selectAll("path")
+					.data(topojson.feature(world, world.objects.countries).features)
+					.enter().append("path")
+					.attr("class", function (d) {
+						return 'l_' + d.id + ' land'
+					})
+					.attr("d", path);
+
+				g.append("path")
+					.datum(topojson.mesh(world, world.objects.countries, function (a, b) {
+						return a !== b;
+					}))
+					.attr("class", "boundary")
+					.attr("d", path);
+
+
+				data.forEach(function (d) {
+					if (d.iso_n3 != '-99') {
+						svg.selectAll('.l_' + d.iso_n3)
+							.style('fill', '#000000')
+					}
+				})
+				redraw(cAll)
+
+
+			});
+		function redraw(data) {
+			var century = g.selectAll('.stars')
+				.data(data);
+
+			century.exit().remove();
+
+
+			century.enter().append('circle')
+				.attr('class', 'stars')
+				.attr('r', 0.7)
+				.style('fill', '#FF5B5B')
+				.style('opacity', 0)
+				.merge(century)
+				.attr('cx', function (d) {
+					return projection([+d.reclong, +d.reclat])[0];
+				})
+				.attr('cy', function (d) {
+					return projection([+d.reclong, +d.reclat])[1];
+				})
+				.transition()
+				.duration(1500)
+			   .style('opacity', 1)
+
+			//DIESER PART FUNKTIONIERT LEIDER NICHT
+
+			// .on('click', function (d) {
+			// 	tooltip
+			// 		.html('Name: '+ d.name <br>'Year: ' + d.year <br> 'Id: ' + d.id <br> 'Mass: ' + d.mass)
+			// 		.style('visibility', 'visible')
+			// 		.style("top", (d3.event.pageY - 10) + "px")
+			// 		.style("left", (d3.event.pageX + 10) + "px");
+			// })
+			// .on('mouseout', function (d) {
+			// 	tooltip.style('visibility', 'hidden');
+			// })
+
+		};
+		function zoomed() {
+			g.selectAll('stars')
+				.attr('r', function () {
+					return 1 / d3.event.transform.k;
+				});
+			g.attr("transform", d3.event.transform);
+		}
+	};
+</script>
+
+</body>
+</html>

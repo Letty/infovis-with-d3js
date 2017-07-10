@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Maps</title>
+
+	<script src="libraries/d3.min.js"></script>
+	<script src="libraries/d3-queue.v3.min.js"></script>
+	<script src="libraries/d3-interpolate.v1.min.js"></script>
+	<script src="libraries/d3-scale-chromatic.v1.min.js"></script>
+	<script src="libraries/d3-geo.v1.min.js"></script>
+	<script src="libraries/topojson.v1.min.js"></script>
+
+	<style>
+		body {
+			background: #f5f5f5;
+		}
+
+		svg {
+			background: #e6e6ff;
+		}
+
+		.land {
+			fill: #2F4F4F;
+		}
+
+		.boundary {
+			fill: none;
+			stroke: #595959;
+			stroke-width: 0.5px;
+			stroke-linejoin: round;
+			stroke-linecap: round;
+			vector-effect: non-scaling-stroke;
+		}
+
+		.overlay {
+			fill: none;
+			pointer-events: all;
+		}
+
+		h1 {
+			font-size: 18px;
+			font-style: normal;
+			font-family: "Open Sans";
+			color: #2F4F4F;
+			margin-left: 150px;
+			margin-top: 20px;
+		}
+
+		.tooltip {
+			position: absolute;
+			visibility: hidden;
+			z-index: 99;
+			padding: 1.5em;
+			background: #3e424d;
+			border-radius: 9px;
+			pointer-events: none;
+			color: white;
+			font-family: "Open Sans";
+		}
+
+		.tooltip_year {
+			font-size: 30px;
+			font-style: normal;
+			font-family: "Open Sans";
+			color: #2F4F4F;
+			margin-left: 20px;
+			margin-top: 10px;
+		}
+
+		.headline {
+
+			display: flex;
+
+		}
+	</style>
+
+</head>
+<body>
+
+<div class="headline">
+	<div class="tooltip_year"></div>
+	<h1>meteorite landings on earth</h1></div>
+<div class="tooltip"></div>
+
+<script>
+	window.onload = function () {
+		 var width = window.innerWidth;
+		 var height = window.innerHeight,
+			active;
+
+		var tooltip = d3.select(".tooltip");
+		var tooltip_year = d3.select(".tooltip_year")
+		var projection = d3.geoMercator()
+			.translate([width / 2, height / 1.5])
+			.scale((width - 1) / 2 / Math.PI);
+		var zoom = d3.zoom()
+			.scaleExtent([1, 8])
+			.on("zoom", zoomed);
+		var color_domain = [10, 40, 80, 130, 200, 300, 500, 800, 1000, 19000]
+		var ext_color_domain = [0, 40, 80, 130, 200, 300, 500, 800, 1000, 19000]
+		var legend_labels = ["< 50", "50+", "150+", "350+", "750+", "> 1500"]
+		var color = d3.scaleThreshold()
+			.domain(color_domain)
+			.range(["#0a1010", "#1d3030", "#2f4f4f", "#437070", "#568f8f", "#70a9a9", "#8fbcbc", "#afcfcf", "#dfecec"]);
+
+		var rScale = d3.scaleSqrt()
+			.domain([0, 38000000])
+			.range([0.8, 4]);
+		var path = d3.geoPath()
+			.projection(projection);
+		var svg = d3.select("body").append("svg")
+			.attr("width", width)
+			.attr("height", height)
+			.append("g");
+		svg.append("rect")
+			.attr("class", "overlay")
+			.attr("width", width)
+			.attr("height", height);
+		var g = svg.append("g");
+		svg.call(zoom);
+
+		d3.queue()
+			.defer(d3.json, 'world50m.json')
+			.defer(d3.tsv, '50m_original.tsv')
+			.defer(d3.json, 'landings_reduced.json')
+			.defer(d3.json, 'country-by-population-density.json')
+			.await(function (error, world, data, meteorite, jdata) {
+				if (error) throw error;
+
+
+				meteorite.forEach(function (d) {
+					d.id = +d.id;
+					d.mass = +d.mass;
+					d.year = +d.year;
+					d.reclat = +d.reclat;
+					d.reclong = +d.reclong;
+					d.iso_n3 = +d.iso_n3;
+					d.density = +d.density;
+				});
+
+
+				jdata.forEach(function (d) {
+					for (var i = 0; i < data.length; i++) {
+						if (d.country === data[i].name) {
+							d.iso = data[i].iso_n3;
+							i = data.length;
+						}
+					}
+				})
+
+
+				g.append("g")
+					.selectAll("path")
+					.data(topojson.feature(world, world.objects.countries).features)
+					.enter().append("path")
+					.attr("class", function (d) {
+						return 'l_' + d.id + ' land'
+					})
+					.attr("d", path)
+			/*.on('click', clicked)*/;
+				g.append("path")
+					.datum(topojson.mesh(world, world.objects.countries, function (a, b) {
+						return a !== b;
+					}))
+					.attr("class", "boundary")
+					.attr("d", path);
+
+				g.selectAll('.dot')
+					.data(meteorite)
+					.enter()
+					.append('circle')
+					.attr('class', 'dot')
+					.attr('cx', function (d) {
+						// long
+						return projection([d.reclong, d.reclat])[0];
+					})
+					.attr('cy', function (d) {
+						// lat
+						return projection([d.reclong, d.reclat])[1];
+					})
+					.attr('r', function (d) {
+						return rScale(d.mass);
+					})
+					.style('fill', '#ff00ff')
+					.on("mouseover", mouseover)
+					.on("mousemove", mousemove)
+			   /*.on("click", clicked)*/
+					.on("mouseout", mouseout);
+				jdata.forEach(function (d) {
+					if (d.iso != 'undefined') {
+						g.selectAll('.l_' + d.iso)
+							.style('fill', function () {
+								return color(d.density);
+							})
+					}
+				})
+
+			})
+
+
+		function mouseover(d) {
+			tooltip.html(d.name);
+			tooltip.style("visibility", "visible");
+			tooltip_year.html(d.year);
+			tooltip_year.style("visibility", "visible");
+			g.selectAll('.dot')
+				.style()
+		}
+
+		function mousemove() {
+			return tooltip
+				.style("top", (d3.event.pageY - 10) + "px")
+				.style("left", (d3.event.pageX + 10) + "px");
+		}
+
+		function mouseout(d) {
+			tooltip.style("visibility", "hidden");
+			tooltip_year.style("visibility", "hidden")
+		}
+
+		function zoomed() {
+			g.selectAll('circle')
+				.attr('r', function (d) {
+					return rScale(d.mass) / d3.event.transform.k;
+				})
+			g.attr("transform", d3.event.transform);
+		}
+
+		g.selectAll(".mark")
+			.transition()
+			.duration(750)
+			.attr("transform", function (d) {
+				var t = d3.transform(d3.select(this).attr("transform")).translate;//maintain aold marker translate
+				return "translate(" + t[0] + "," + t[1] + ")scale(" + 1 / scale + ")";//inverse the scale of parent
+			});
+
+
+	};
+</script>
+
+</body>
+</html>

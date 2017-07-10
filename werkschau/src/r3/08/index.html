@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Assignment3_Maps of Meteorite landings</title>
+
+	<script src="libraries/d3.min.js"></script>
+	<script src="libraries/d3-queue.v3.min.js"></script>
+	<script src="libraries/d3-interpolate.v1.min.js"></script>
+	<script src="libraries/d3-scale-chromatic.v1.min.js"></script>
+	<script src="libraries/d3-geo.v1.min.js"></script>
+	<script src="libraries/topojson.v1.min.js"></script>
+
+
+	<style>
+		body {
+			background: #f5f5f5;
+		}
+
+		svg {
+			background: #fff;
+		}
+
+		.land {
+			fill: #000;
+		}
+
+		.boundary {
+			fill: none;
+			stroke: #fff;
+			stroke-linejoin: round;
+			stroke-linecap: round;
+		}
+
+		.overlay {
+			fill: none;
+			pointer-events: all;
+		}
+
+		hl {
+			font-family: sans-serif;
+			font-size: 40px;
+		}
+
+		div.tooltip {
+			position: absolute;
+			margin-left: 20px;
+			visibility: hidden;
+			padding: 5px 15px;
+			font: 10px sans-serif;
+			color: #a50f15;
+		}
+	</style>
+
+</head>
+
+<body>
+<script>
+	window.onload = function () {
+
+		var width = window.innerWidth;
+		var height = window.innerHeight;
+
+		var div = d3.select("body").append("div")
+			.attr("class", "tooltip")
+		//.style("opacity", 0); 你的屬性用了visiblity了，別用opacity 會衝突
+
+		var color = d3.scaleOrdinal(d3.schemePastel2);
+
+		var projection = d3.geoMercator()
+			.translate([width / 2, height / 1.5])
+			.scale((width - 1) / 2 / Math.PI);
+
+		var zoom = d3.zoom() //可以zoom in 的功能，定義最大和最小的範圍
+			.scaleExtent([1, 8]) //可以自訂範圍
+			.on("zoom", zoomed);
+
+		var path = d3.geoPath()
+			.projection(projection);
+
+		var svg = d3.select("body")
+			.append("svg")
+			.attr("width", width)
+			.attr("height", height)
+			.append("g");
+
+		svg.append("rect") //zoom in 功能的定義--一個方塊範圍，並且可以用滑鼠左右滑
+			.attr("class", "overlay")
+			.attr("width", width)
+			.attr("height", height);
+
+
+		var g = svg.append("g"); //整個svg element會跟著一起變大變小
+		var d3mass = [];
+
+
+		svg.call(zoom);
+
+		d3.queue() //新功能!!! defer=a task / another task
+			.defer(d3.json, 'world50m.json') //可以換另一個地圖大小，依需求不同切換 main based data
+			.defer(d3.tsv, '50m_original.tsv') //國家的名字和編號代碼，和csv檔相似，但會將資料區分開來，比較好辨識 data for visualize
+			.defer(d3.json, 'landings_reduced.json')
+			.await(function (error, world, data, landings_reduced) { //this function start when these files are ready, will load together
+				if (error) throw error;
+
+				landings_reduced.forEach(function (d) {
+
+					d.id = +d.id
+					d.reclat = +d.reclat;
+					d.reclong = +d.reclong;
+					d.mass = +d.mass;
+					d.year = +d.year;
+					d3mass.push(d.mass);
+				});
+
+
+				g.append("g")
+					.selectAll("path")
+					.data(topojson.feature(world, world.objects.countries).features)
+					.enter().append("path")
+					.attr("class", function (d) {
+						return 'l_' + d.id + ' land' //use id of the map data, to identify later the countries
+					})
+
+					.attr("d", path);
+
+
+				g.append("path") //畫出國家界線
+					.datum(topojson.mesh(world, world.objects.countries, function (a, b) {
+						return a !== b;
+					}))
+					.attr("class", "boundary")
+					.attr("d", path);
+
+
+				g.selectAll('.dot')
+					.data(landings_reduced)
+					.enter()
+					.append('circle')
+
+					.attr('class', 'dot')
+					.attr('cy', function (d) {
+						return projection([d.reclong, d.reclat])[1];
+					})
+					.attr('cx', function (d) {
+						return projection([d.reclong, d.reclat])[0];
+					})
+					.attr('r', 2)
+					.attr("fill", '#636363')
+					.style('fill-opacity', 0.7)
+
+					.on('mouseover', function (d) {
+						svg.selectAll('.dot')
+							.style('opacity', 0.2);
+						d3.select(this)
+							.style('opacity', 1)
+							.attr('r', 2.5);
+						div.html(d.name + '<br>' + d.mass + 'kg' + '<br>' + d.year)
+							.style('visibility', 'visible')
+							.style("left", (d3.event.pageX) + 10 + "px")
+							.style("top", (d3.event.pageY - 10) + "px");
+					})
+
+					.on('mouseout', function (d) {
+						svg.selectAll('.dot')
+							.style('opacity', 0.7);
+						div.html(d)
+							.style('visibility', 'hidden')
+							.style('fill-opacity', 0.7)
+							.attr('r', 2);
+					})
+
+				data.forEach(function (d) { //remove the country that is without iso code //black parts countries
+					if (d.iso_n3 != '-99') {
+						svg.selectAll('.l_' + d.iso_n3)
+							.style('fill', function () {
+								return color(d.continent); //用洲別來區分顏色
+							})
+					}
+				})
+
+			});
+
+		function zoomed() { //確保在zoom in 的時候，點點不會一直跟著變大，會一直維持相同大小
+			g.selectAll('circle')
+				.attr('r', 2) / d3.event.transform.k; //k as scaling parameter
+
+			g.attr("transform", d3.event.transform);
+		}
+
+
+	};
+</script>
+
+</body>
+
+</html>

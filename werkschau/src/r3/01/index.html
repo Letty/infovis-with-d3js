@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>meteorites</title>
+
+	<script src="library/d3.min.js"></script>
+	<script src="library/d3-geo.min.js"></script>
+	<script src="library/topojson.min.js"></script>
+
+
+	<style>
+
+		h1 {
+			font-size: 24px;
+			font-style: normal;
+			font-family: sans-serif;
+			color: #242836;
+			margin-left: 20px;
+		}
+
+		body {
+			background: #EBF1F2;
+		}
+
+		svg {
+			background: #EBF1F2;
+		}
+
+		.land {
+			fill: #000;
+		}
+
+		.boundary {
+			fill: none;
+			stroke: #fff;
+			stroke-linejoin: round;
+			stroke-linecap: round;
+			vector-effect: non-scaling-stroke;
+		}
+
+		.overlay {
+			fill: none;
+			pointer-events: all;
+		}
+
+		.container {
+			font-size: 14px;
+			font-style: normal;
+			font-family: sans-serif;
+			color: #242836;
+		}
+
+		.tooltip {
+			position: absolute;
+			visibility: hidden;
+			padding: 1em;
+			background: #EBF1F2;
+			border-radius: 4px;
+			pointer-events: none;
+			font-family: sans-serif;
+			color: #242836;
+		}
+
+		#viz {
+			background: #EBF1F2;
+			padding: 15px;
+		}
+
+		#control {
+			background: #EBF1F2;
+			padding: 15px;
+		}
+
+	</style>
+
+</head>
+<body>
+<div class="container">
+	<div id="viz"></div>
+	<div class="tooltip"></div>
+	<div id="control">
+		<form>
+			<input type="radio" name="projection" value="Fell" checked> The meteorite was seen falling<br>
+			<input type="radio" name="projection" value="Found"> The meteorite was discovered after its impact
+		</form>
+	</div>
+	<script>
+		 window.onload = function () {
+
+			 var margin = {top: 10, left: 10, bottom: 10, right: 10};
+			 var width = window.innerWidth - margin.left - margin.right;
+			 var height = window.innerHeight * 0.7 - margin.top - margin.bottom;
+
+			 var projection = d3.geoMercator()
+				 .translate([width / 2, height / 1.5])
+				 .scale((width - 1) / 2 / Math.PI);
+
+			 var zoom = d3.zoom()
+				 .scaleExtent([1, 8])
+				 .on("zoom", zoomed);
+
+			 var Fall = 'Fell';
+
+			 var path = d3.geoPath()
+				 .projection(projection);
+
+			 var svg = d3.selectAll('#viz')
+				 .append('svg')
+				 .attr('width', width + margin.left + margin.right)
+				 .attr('height', height + margin.top + margin.bottom)
+				 .attr("class", "overlay")
+				 .append('g')
+
+			 d3.selectAll('input[type=radio][name=projection]')
+				 .on('change', function () { //changing of a buttons by 'change'
+					 Fall = this.value;
+					 redraw();
+				 });
+
+			 var g = svg.append('g');
+
+			 var gpath = svg.append('g')
+				 .call(projection);
+
+			 gpath.transition()
+				 .duration(100)
+				 .call(projection);
+
+			 svg.call(zoom);
+
+			 var tooltip = d3.select(".tooltip");
+
+			 d3.queue()
+				 .defer(d3.json, 'world50m.json')
+				 .defer(d3.json, 'landings_reduced.json')
+				 .defer(d3.tsv, '50m_original.tsv')
+				 .await(function (error, world, l_r, data) {
+					 if (error) throw error;
+
+					 g.append("g")
+						 .selectAll("path")
+						 .data(topojson.feature(world, world.objects.countries).features)
+						 .enter().append("path")
+						 .attr("class", function (d) {
+							 return 'l_' + d.id + ' land'
+						 })
+						 .attr("d", path)
+						 .on('click', function (d) {
+						 });
+
+					 g.append("path")
+						 .datum(topojson.mesh(world, world.objects.countries, function (a, b) {
+							 return a !== b;
+						 }))
+						 .attr("class", "boundary")
+						 .attr("d", path);
+
+					 landings_reduced = l_r;
+
+					 landings_reduced.forEach(function (d) {
+						 d.reclat = +d.reclat;
+						 d.reclong = +d.reclong;
+						 d.mass = +d.mass;
+						 d.year = +d.year;
+					 });
+
+					 data.forEach(function (d) {
+						 if (d.iso_n3 != '-99') {
+							 svg.selectAll('.l_' + d.iso_n3)
+								 .style('fill', '#3C4359')
+						 }
+					 })
+
+					 redraw()
+
+				 });
+
+			 function redraw() {
+				 var circle = g.selectAll('.circle')
+					 .data(landings_reduced.filter(function (d) {
+						 return d.fall === Fall;
+					 }))
+
+				 circle.exit().remove();
+
+				 circle.enter().append('circle')
+					 .attr('class', 'circle')
+					 .attr('r', 3)
+					 .merge(circle)
+					 .style('fill-opacity', 0.8)
+					 .style('fill', '#A69580')
+					 .on('mouseover', mouseover)
+					 .on('mousemove', mousemove)
+					 .on('mouseout', mouseout)
+					 .transition()
+					 .duration(500)
+					 .attr('cy', function (d) {
+						 return projection([d.reclong, d.reclat])[1];
+					 })
+					 .attr('cx', function (d) {
+						 return projection([d.reclong, d.reclat])[0];
+					 })
+					 .attr('r', 2);
+
+				 function mouseover(d) {
+					 tooltip.html('Name: ' + d.name + '<br>' +
+						 'The class of the meteorite: ' + d.recclass + '<br>' +
+						 'GeoLocation: ' + d.GeoLocation + '<br>' +
+						 'Year: ' + d.year);
+					 tooltip.style('visibility', 'visible');
+				 }
+
+				 function mousemove() {
+					 return tooltip
+						 .style('top', (d3.event.pageY - 10) + 'px')
+						 .style('left', (d3.event.pageX + 10) + 'px');
+				 }
+
+				 function mouseout(d) {
+					 tooltip.style('visibility', 'hidden');
+				 }
+
+			 };
+
+
+			 function zoomed() {
+				 svg.selectAll('circle')
+					 .attr('r', 2 / d3.event.transform.k);
+				 svg.attr("transform", d3.event.transform);
+			 };
+
+		 };
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+	<meta charset="UTF-8">
+	<title>1,000 biggest Meteorites between 1900 and 2013</title>
+
+	<script type="text/javascript" src="libraries/d3.min.js"></script>
+	<script type="text/javascript" src="libraries/d3-queue.v3.min.js"></script>
+	<script type="text/javascript" src="libraries/d3-geo.v1.min.js"></script>
+	<script type="text/javascript" src="libraries/topojson.v1.min.js"></script>
+
+	<style>
+		body {
+			font-family: "Roboto";
+			font-size: 10px;
+		}
+
+		svg text {
+			font-family: "Roboto";
+			font-size: 10px;
+		}
+
+		svg {
+			background: #fff;
+		}
+
+		.land {
+			fill: #000;
+		}
+
+		.boundary {
+			fill: none;
+			stroke: #fff;
+			stroke-linejoin: round;
+			stroke-linecap: round;
+			vector-effect: non-scaling-stroke;
+		}
+
+		.overlay {
+			fill: none;
+			pointer-events: all;
+		}
+
+		#tooltip {
+			position: absolute;
+			visibility: hidden;
+			background: #e3e3e3;
+			font-size: 10px;
+			padding: 5px 15px
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<div id="tooltip"></div>
+
+	<script type="text/javascript">
+		window.onload = function() {
+
+			var width = window.innerWidth ||
+				document.documentElement.clientWidth ||
+				document.body.clientWidth
+
+			var height = window.innerHeight ||
+				document.documentElement.clientHeight ||
+				document.body.clientHeight
+
+			var size = d3.scaleLinear() // size of the meteorites
+				.range([5, 8, 20])
+
+			var limit = 999 + 294; // load the first 1000 (+294 beacause of the filter in line 159)
+
+			var tooltip = d3.select('#tooltip'); // infobox hover
+
+			var projection = d3.geoMercator()
+				.translate([width / 2, height / 1.5])
+				.scale((width - 1) / 2 / Math.PI);
+
+			var zoom = d3.zoom()
+				.scaleExtent([1, 10]) // zoom-scale, so you can't zoom too close
+				.on("zoom", zoomed);
+
+			var path = d3.geoPath()
+				.projection(projection);
+
+			var svg = d3.select("body").append("svg")
+				.attr("width", width)
+				.attr("height", height)
+				.append("g");
+
+			svg.append("rect")
+				.attr("class", "overlay")
+				.attr("width", width)
+				.attr("height", height);
+
+			var g = svg.append("g");
+
+			svg.call(zoom);
+
+// load datasets ///////////////////////////////////////////////////////////////
+
+			d3.queue()
+				.defer(d3.json, 'data/world50m.json')
+				.defer(d3.tsv, 'data/50m_original.tsv')
+				.defer(d3.json, 'data/landings_reduced.json')
+				.await(function(error, world, data, meteorite) {
+					if (error) throw error;
+
+					meteorite.forEach(function(d) {
+						d.id = +d.id; // string to number
+						d.mass = +d.mass;
+						d.reclat = +d.reclat;
+						d.reclong = +d.reclong;
+						d.year = +d.year;
+
+					});
+
+					meteorite.sort((a, b) => b.mass - a.mass); // sort meteorite mass from big to small
+
+					console.log(meteorite);
+
+// color year //////////////////////////////////////////////////////////////////
+
+					var colorYear = d3.scaleLinear()
+						.range(['#ffffd9', '#c7e9b4', '#1d91c0', '#081d58'])
+						.domain([1900, 1950, 2000, 2013])
+						.interpolate(d3.interpolate);
+
+					size.domain([11200, 100000, d3.max(meteorite, (d) => d.mass)]); // max = 60000000
+
+					g.append("g")
+						.selectAll("path")
+						.data(topojson.feature(world, world.objects.countries).features)
+						.enter().append("path")
+						.attr("class", (d) => 'l_' + d.id + ' land')
+						.attr("d", path);
+
+					g.append("path")
+						.datum(topojson.mesh(world, world.objects.countries, (a, b) => a !== b))
+						.attr("class", "boundary")
+						.attr("d", path);
+
+// meteorites //////////////////////////////////////////////////////////////////
+
+					meteorite.forEach(function(d, i) {
+						if (d.year >= 1900 && d.year <= 2013 && d.mass !== 0 && i <= limit) {
+							if (d.fall === 'Fell') {
+								draw('circle', 'fell', 'cx', 'cy', d);
+							} else if (d.fall === 'Found') {
+								draw('rect', 'found', 'x', 'y', d);
+							}
+
+							function draw(type, fall, x, y, d) {
+								g.append(type)
+									.datum(d)
+									.attr('class', fall)
+
+									.attr('r', (d) => size(d.mass) / 1.8)
+									.attr('width', (d) => size(d.mass))
+									.attr('height', (d) => size(d.mass))
+
+									.attr(x, (d) => projection([d.reclong, d.reclat])[0])
+									.attr(y, (d) => projection([d.reclong, d.reclat])[1])
+
+									.style('fill', (d) => colorYear(d.year))
+
+									.on('mouseover', function(d) {
+										tooltip
+											.html('Name: ' + d.name + '<br>' +
+												'Mass: ' + d.mass / 1000 + ' kg <br>' +
+												'Year: ' + d.year + '<br>'
+											)
+											.style('visibility', 'visible')
+											.style("top", (d3.event.pageY - 10) + "px")
+											.style("left", (d3.event.pageX + 10) + "px");
+									})
+									.on('mouseout', (d) => tooltip.style('visibility', 'hidden'));
+							}
+						}
+					})
+
+// colorContinent //////////////////////////////////////////////////////////////
+
+					data.forEach(function(d) {
+						svg.selectAll('.l_' + d.iso_n3)
+							.style('fill', '#dddddd');
+					})
+				});
+
+// zoomed //////////////////////////////////////////////////////////////////////
+
+			function zoomed() {
+				g.selectAll('circle')
+					.attr('r', (d) => (size(d.mass) / d3.event.transform.k) / 1.8);
+
+				g.selectAll('rect')
+					.attr('width', (d) => size(d.mass) / d3.event.transform.k)
+					.attr('height', (d) => size(d.mass) / d3.event.transform.k);
+
+				g.attr("transform", d3.event.transform);
+			}
+		}
+	</script>
+
+</body>
+
+</html>

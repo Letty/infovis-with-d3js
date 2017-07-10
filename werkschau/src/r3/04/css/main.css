@@ -1,0 +1,96 @@
+.bar
+{
+	fill: steelblue;
+}
+
+.bar:hover
+{
+	fill: red;
+}
+
+.circle
+{
+	fill: darkred;
+}
+
+.dot
+{
+	fill: steelblue;
+	stroke: none;
+	stroke-width: 2px;
+}
+
+.dot-kill{
+	fill: red;
+	stroke: none;
+	stroke-width: 2px;
+}
+
+.line{
+	fill:none;
+	stroke: yellowgreen;
+	stroke-width: 2px;
+}
+
+text{
+	font-family:"Roboto";
+	font-size: 14px;
+}
+
+body{
+	background-color: #eeeeee;
+}
+
+#tooltip {
+			position: absolute;
+			visibility: hidden;
+			background: white;
+			font-size: 12px;
+			padding: 5px 15px
+		}
+
+.nav
+{
+	display: block;
+	height:auto;
+	width: auto;
+	margin:0px auto 40px auto;
+	font-size: 18px;
+	font-weight: 300;
+	font-family:"Roboto", "Open Sans", Arial ;
+	background-color: #eeeeee;
+	text-align: center;
+}
+
+.nav a, h1 {
+			color: steelblue;
+			text-decoration: none;
+			margin: 10px 20px;
+			display: inline-flex;
+		}
+
+		.nav a:hover{
+			text-decoration: underline;
+			color: black;
+		}
+
+		a.LinkActiv {
+			color: black;
+			text-decoration: underline;
+		}
+
+.axis--x{
+fill:none;
+}
+
+.axis--y{
+fill:none;
+}
+
+.axis--country{
+	font-size: 10px;
+}
+
+.axis-people{
+	font-size: 10px;
+}

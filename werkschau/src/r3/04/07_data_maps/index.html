@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Map of Meteorite landings - from 1900 to 2017</title>
+
+	<!-- <link href="../css/main.css" rel="stylesheet" type="text/css" > -->
+	<link href="../css/normalize.min.css" rel="stylesheet" type="text/css" >
+	<script src="../libraries/d3.min.js"></script>
+
+	<script src="../libraries/d3-queue.v3.min.js"></script>
+	<script src="../libraries/d3-interpolate.v1.min.js"></script>
+	<script src="../libraries/d3-scale-chromatic.v1.min.js"></script>
+	<script src="../libraries/d3-geo.v1.min.js"></script>
+	<script type="text/javascript" src="../libraries/topojson.v1.min.js"></script>
+
+	<style>
+
+		body {
+			background: #f5f5f5;
+		}
+
+		svg {
+			background: #fff;
+		}
+
+		.land {
+			fill: #000;
+		}
+
+		.boundary {
+			fill: none;
+			stroke: #fff;
+			stroke-linejoin: round;
+			stroke-linecap: round;
+			vector-effect: non-scaling-stroke;
+		}
+
+		.overlay {
+			fill: none;
+			pointer-events: all;
+		}
+
+		#tooltip {
+			position: absolute;
+			visibility: hidden;
+			background: white;
+			font-family:"Arial";
+			font-size: 12px;
+			padding: 5px 15px;
+		}
+
+	</style>
+
+</head>
+<body>
+
+<div id="tooltip"></div>
+
+<script>
+	window.onload = function () {
+
+
+		 var width = window.innerWidth;
+		 var height = window.innerHeight;
+		
+		var color = d3.scaleOrdinal(d3.schemeCategory10);
+		var color4 = 
+		[ 'none', '#2c7bb6', '#00a6ca', '#00ccbc', '#90eb9d', '#ffff8c', '#f9d057', '#f29e2e', '#e76818', '#d7191c'];
+
+		var stoneSize = 2;
+
+		var projection = d3.geoMercator()
+			
+			//showes global
+			 .translate([width / 2, height / 1.8]) 
+			 .scale((width -1) / 2.0 / Math.PI);
+			
+
+		var zoom = d3.zoom()
+			.scaleExtent([1, 10])
+			.on("zoom", zoomed);
+
+		var path = d3.geoPath()
+			.projection(projection);
+
+		var svg = d3.select("body").append("svg")
+			.attr("width", width)
+			.attr("height", height)
+			.append("g");
+
+		svg.append("rect")
+			.attr("class", "overlay")
+			.attr("width", width)
+			.attr("height", height);
+
+		var g = svg.append("g");
+
+		var data;
+		var meteor;
+
+		svg.call(zoom);
+
+		var tooltip = d3.select('#tooltip');
+
+		//loading maps data		
+
+		d3.queue() 
+			.defer(d3.json, 'world50m.json')
+			.defer(d3.tsv, '50m_original.tsv')
+			.defer(d3.json, 'landings_reduced.json')
+
+			.await(function (error, world, data, meteor) {
+				if (error) throw error;
+
+			meteor.forEach(function(d) {
+					d.GeoLocation= d.GeoLocation;
+					d.fall= d.fall;
+					d.id = +d.id;
+					d.mass = +d.mass;
+					d.name = d.name;
+					d.nametype = d.nametype;
+					d.recclass = d.recclass;
+					d.reclat = +d.reclat;
+					d.reclong = +d.reclong;
+					d.year = +d.year;
+			});
+
+
+
+		g.append("g")
+			.selectAll("path")
+			.data(topojson.feature(world, world.objects.countries).features) //what is this?
+			.enter().append("path")
+			.attr("class", function (d) {
+				return 'l_' + d.id + ' land';
+				})
+			.attr("d", path)
+			.on('click', function (d) {
+			});
+
+		g.append("path")
+			.datum(topojson.mesh(world, world.objects.countries, function (a, b) {
+				return a !== b;
+				}))
+			.attr("class", "boundary")
+			.attr("d", path);
+
+
+
+		//draw the skystones
+		
+			g.selectAll(".skystone")
+			.data(meteor)
+			.enter().append('circle')
+			.attr('cx', function (d){
+				return projection([d.reclong, d.reclat])[0]; //select the index=0 for x-axis.
+			})
+			.attr('cy', function (d){
+				return projection([d.reclong, d.reclat])[1]; //select the index=1 for y-axis.
+			})
+			.attr("class", "skystone")
+			.attr('r', stoneSize)
+			.style('fill', function (d){
+				return color(d.year);
+			})
+
+			// mouse on effect
+			.on('mouseover', function (d) 
+			{
+				svg.selectAll('.skystone')
+				.style('fill-opacity', 0.2);
+			
+				d3.select(this)
+				.style('fill-opacity', 1)
+				.attr('r', 4);
+
+				tooltip
+		       		.html(	"Mass: " + d.mass + " kg" +"<br>" +
+		       				"Name: " + d.name + "<br>" +
+		       				"year: " + d.year + "<br>")
+		       		.style("visibility", "visible")
+		            .style("left", (d3.event.pageX + 5) + "px")
+		            .style("top", (d3.event.pageY - 28) + "px");
+			})
+
+			
+			// mouse out effect
+			.on('mouseout', function (d) {
+				d3.select(this)
+				  .style("stroke-width", 0);
+		   tooltip.style("visibility", "hidden");
+
+		 	   svg.selectAll('.skystone')
+				  .style('fill-opacity', 1)
+				  .attr('r', stoneSize);			
+			 })
+
+			//colors
+			.style("fill", function(d) {
+				if (d.year <= 1899) {
+					return color4[0];
+
+				 } else if (d.year <= 1900) {
+				 	return color4[3];
+
+				 } else if (d.year <= 1950) {
+				 	return color4[4];
+
+				 } else if (d.year <= 2000) {
+				 	return color4[6];
+
+				 } else if (d.year <= 2017) {
+				 	return color4[7];
+
+				} else {
+					return color4[0];
+				}
+			});
+
+
+//			FHP Position
+				g.append('circle')
+					.datum([13.0504799, 52.4137704]) // [longitude, latitude]
+					.attr('cx', function (d) {
+						// long
+						return projection([d[0], d[1]])[0];
+					})
+					.attr('cy', function (d) {
+						// lat
+						return projection([d[0], d[1]])[1];
+					})
+					.attr('r', 3)
+					.style('stroke-width', '2')
+					.style('stroke', 'black')
+					.style('fill', 'none');
+
+//			Berlin Position
+				g.append('circle')
+					.datum([13.40, 52.52]) // [longitude, latitude]
+					.attr('cx', function (d) {
+						// long
+						return projection([d[0], d[1]])[0];
+					})
+					.attr('cy', function (d) {
+						// lat
+						return projection([d[0], d[1]])[1];
+					})
+					.attr('r', 3)
+					.style('stroke-width', '2')
+					.style('stroke', 'black')
+					.style('fill', 'none');
+
+//			Paris Position
+				g.append('circle')
+					.datum([2.35, 48.85])
+					.attr('cx', function (d) {
+						return projection([d[0], d[1]])[0];
+					})
+					.attr('cy', function (d) {
+						return projection([d[0], d[1]])[1];
+					})
+					.attr('r', 3)
+					.style('stroke-width', '2')
+					.style('stroke', 'black')
+					.style('fill', 'none');
+
+//			London Position
+				g.append('circle')
+					.datum([-0.127673, 51.507457])
+					.attr('cx', function (d) {
+						return projection([d[0], d[1]])[0];
+					})
+					.attr('cy', function (d) {
+						return projection([d[0], d[1]])[1];
+					})
+					.attr('r', 3)
+					.style('stroke-width', '2')
+					.style('stroke', 'black')
+					.style('fill', 'none');
+
+			// color all countries grey
+				data.forEach(function (d){
+				 svg.selectAll('.l_' + d.iso_n3 )
+					.style('fill', '#bbbbbb');
+				});
+
+			});
+
+		function zoomed() { //alle kreise schrumpfen beim zoomen.
+			g.selectAll('circle')
+				.attr('r', function () {
+					return stoneSize / d3.event.transform.k;
+				});
+			g.attr("transform", d3.event.transform);
+		}
+	};
+</script>
+
+</body>
+</html>

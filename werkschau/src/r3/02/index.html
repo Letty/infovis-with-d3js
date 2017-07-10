@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Maps</title>
+
+	<script src="library/d3.min.js"></script>
+	<script src="library/d3-geo.min.js"></script>
+	<script src="library/topojson.min.js"></script>
+
+	<style>
+
+		body {
+			background: #f5f5f5;
+		}
+
+		svg {
+			background: #C5E0DC;
+		}
+
+		.land {
+			fill: #000;
+		}
+
+		.boundary {
+			fill: none;
+			stroke: #fff;
+			stroke-linejoin: round;
+			stroke-linecap: round;
+			vector-effect: non-scaling-stroke;
+		}
+
+		.overlay {
+			fill: none;
+			pointer-events: all;
+		}
+
+		.tooltip {
+			position: absolute;
+			width: 200px;
+			height: 28px;
+			pointer-events: none;
+			font-family: "Arial";
+			font-size: 12px;
+		}
+
+	</style>
+
+</head>
+<body>
+<script>
+	window.onload = function () {
+
+		var width = 1060,
+			height = 600;
+
+		var tooltip = d3.select("body").append("div")
+			.attr("class", "tooltip")
+			.style("opacity", 0);
+
+		var color = d3.scaleOrdinal()
+			.domain(['Asia', 'Europe', 'Africa', 'Oceania', 'North America', 'South America', 'Antarctica', 'Seven seas (open ocean)'])
+			.range(['#394457', '#5D6A7E', '#70979E', '#5D6A7E', '#394457', '#5D6A7E', '#70979E', '#5D6A7E']);
+
+		var projection = d3.geoMercator()
+			.translate([width / 2, height / 1.5])
+			.scale((width - 1) / 2 / Math.PI);
+
+		var zoom = d3.zoom()
+			.scaleExtent([1, 8])
+			.on("zoom", zoomed);
+
+		var path = d3.geoPath()
+			.projection(projection);
+
+		var svg = d3.select("body").append("svg")
+			.attr("width", width)
+			.attr("height", height)
+			.append("g");
+
+		var star = d3.symbol()
+			.type(d3.symbolStar)
+			.size(100);
+
+		svg.append("rect")
+			.attr("class", "overlay")
+			.attr("width", width)
+			.attr("height", height);
+
+		var g = svg.append("g");
+
+		svg.call(zoom);
+
+		d3.queue()
+			.defer(d3.json, 'world50m.json')
+			.defer(d3.tsv, '50m_original.tsv')
+			.defer(d3.json, 'landings_reduced.json')
+			.await(function (error, world, data, meteor) {
+				if (error) throw error;
+
+				meteor.forEach(function (d) {
+					d.id = d.id;
+					d.mass = +d.mass;
+					d.reclat = +d.reclat;
+					d.reclong = +d.reclong;
+					d.year = +d.year;
+
+				})
+
+				g.append("g")
+					.selectAll("path")
+					.data(topojson.feature(world, world.objects.countries).features)
+					.enter().append("path")
+					.attr("class", function (d) {
+						return 'l_' + d.id + ' land'
+					})
+					.attr("d", path)
+					.on('click', function (d) {
+					})
+
+					.on("mouseover", function (d) {
+						tooltip.transition()
+							.duration(200)
+							.style("opacity", .9);
+						tooltip.html(d["Name"])
+							.style("left", (d3.event.pageX + 5) + "px")
+							.style("top", (d3.event.pageY - 28) + "px");
+					})
+					.on("mouseout", function (d) {
+						tooltip.transition()
+							.duration(500)
+							.style("opacity", 0);
+
+					});
+
+				g.append("path")
+					.datum(topojson.mesh(world, world.objects.countries, function (a, b) {
+						return a !== b;
+					}))
+					.attr("class", "boundary")
+					.attr("d", path);
+
+//				meteor.forEach(function (d) {
+				for (var i = 15000; i < 22000; i++) {
+					var d = meteor[i];
+					var meteorit = projection([d.reclong, d.reclat])
+					g.append('g')
+						.attr('transform', function () {
+							return 'translate(' + meteorit[0] + ', ' + meteorit[1] + ')'
+						})
+						.append('path')
+						.data([d.reclong, d.reclat])
+						.attr('class', 'star')
+						.attr('d', star)
+						.style('fill', '#E04952')
+						.style('fill-opacity', '0.6');
+				}
+//				})
+
+				data.forEach(function (d) {
+					if (d.iso_n3 != '-99') {
+						svg.selectAll('.l_' + d.iso_n3)
+							.style('fill', function () {
+								return color(d.continent);
+							})
+					}
+				})
+
+			});
+
+		function zoomed() {
+			star.size(100 / d3.event.transform.k)
+			g.selectAll('.star')
+				.attr('d', star)
+			g.attr("transform", d3.event.transform);
+		}
+
+
+	};
+</script>
+
+</body>
+</html>

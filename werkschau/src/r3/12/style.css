@@ -1,0 +1,37 @@
+
+		body {
+			background: #f5f5f5;
+		}
+		svg {
+			background: #fff;
+		}
+		.land {
+			fill: #000;
+		}
+		.boundary {
+			fill: none;
+			stroke: #fff;
+			stroke-linejoin: round;
+			stroke-linecap: round;
+			vector-effect: non-scaling-stroke;
+		}
+		.overlay {
+			fill: none;
+			pointer-events: all;
+		}
+		div.tooltip {
+  position: absolute;
+  text-align: center;
+  width: 60px;
+  height: 28px;
+  padding: 2px;
+  font: 12px sans-serif;
+ 
+  border: 0px;
+  border-radius: 8px;
+  pointer-events: none;
+}
+		h1 {  
+        
+        font-family: futura;
+		 }
