@@ -1,22 +1,25 @@
-body {
+$height : 350px;
+
+html, body {
   font-family: "Open Sans";
   background: #e8e8e8;
-  height: 100%;
-  overflow: hidden;
+  height: 98%;
 }
 
 .container {
-  display: flex;
-  height: 99%;
+  width: 100%;
+  height: 100%;
 }
 
 .assignment-container{
-  width: 33%;
-  //height:100%;
-  //overflow-y: scroll;
-  //overflow-x: hidden;
-  //scroll
+  height: $height;
+  display: flex;
+}
 
+.assignment-task{
+  width: 25%;
+
+  overflow-y: scroll;
 }
 
 .assignment-list {
@@ -25,22 +28,28 @@ body {
 
   .assignment-preview {
 
-	width: 100px;
-	height: 100px;
+	width: 80px;
+	height: 80px;
 
 	padding: 5px;
 
 	img {
 	  width: 100%;
 	  height: 100%;
+	  cursor: pointer;
 	}
-	//&:hover {
-	//  width: 75%;
-	//  height: 75%;
-	//}
   }
 }
 
+#hint{
+  padding: 50px;
+}
+
 .result-container {
-  width: 60%;
+  height: calc(100% - 350px);
+
+  iframe{
+	width: 99%;
+	height: 99%;
+  }
 }
