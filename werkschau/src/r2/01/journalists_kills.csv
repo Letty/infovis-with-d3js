@@ -1,0 +1,775 @@
+Number,Type,Date_original,Date_number,Date,Name,Sex,Sex2,Country_killed,Organization,Nationality,Medium,Job,Coverage,Freelance,Local_Foreign,Source_fire,Type_death,Impunity_for_murder,Taken_captive,Threatened,Tortured,
+1,Motive Confirmed,"October 22, 2016",2016,"October 22, 2016",Ali Risan,Male,Male,Iraq,Al-Sumaria TV,Iraqi,"Television, Internet",Camera Operator,War,No,Local,Political Group,Crossfire/Combat-Related,,,,"
+",
+2,Motive Confirmed,"October 21, 2016",2016,"October 21, 2016",Ahmet Haceroğlu,Male,Male,Iraq,Türkmeneli TV,Iraqi,Television,Producer,"Politics, War",No,Local,Political Group,Crossfire/Combat-Related,,,,"
+",
+3,Motive Confirmed,"October  2, 2016",2016,"October  2, 2016",Jeroen Oerlemans ,Male,Male,Libya,Freelance,Netherlands,"Print, Internet",Photographer,"Politics, War",Yes,Foreign,Political Group,Crossfire/Combat-Related,,,,"
+",
+4,Motive Confirmed,"August 14, 2016",2016,"August 14, 2016",Mustafa Said,Male,Male,Iraq,Kurdistan TV,Iraqi,Television,Camera Operator,War,No,Local,Unknown Fire,Crossfire/Combat-Related,,No,No,"No
+",
+5,Motive Confirmed,"August  8, 2016",2016,"August  8, 2016",Mehmood Khan,Male,Male,Pakistan,DawnNews,Pakistani,"Television, Internet",Camera Operator,"Business, Corruption, Crime, Culture, Human Rights, Politics, Sports",No,Local,Political Group,Dangerous Assignment,,No,No,"No
+",
+6,Motive Confirmed,"August  8, 2016",2016,"August  5, 2016",Mubarak al-Abadi,Male,Male,Yemen,Nabaa Media Foundation,Yemeni,Television,"Broadcast, Camera Operator, Photographer, Producer","Politics, War",No,Local,Political Group,Crossfire/Combat-Related,,,,"
+",
+7,Motive Confirmed,"August  5, 2016",2016,"August  1, 2016",Mohammed Sayyed Hassan,Male,Male,Syria,"All4Syria, Al-Nabaa Media Center",Syrian,Internet,"Photographer, Editor, Internet Reporter",War,No,Local,Military Officials,Crossfire/Combat-Related,,,,"
+",
+8,Motive Confirmed,"August  1, 2016",2016,"July 24, 2016",João Miranda do Carmo,Male,Male,Brazil,SAD Sem Censura,Brazilian,Internet,"Editor, Internet Reporter","Corruption, Crime, Politics",No,Local,Criminal Group,Murder,Yes,No,Yes,"No
+",
+9,Motive Confirmed,"July 24, 2016",2016,"July 21, 2016",Abdelqadir Fassouk,Male,Male,Libya,Arraed Satellite TV,Libyan,"Print, Television","Camera Operator, Photographer",War,No,Local,Political Group,Crossfire/Combat-Related,,,,"
+",
+10,Motive Confirmed,"July 21, 2016",2016,"July 20, 2016",Pavel Sheremet,Male,Male,Ukraine,"Ukrainska Pravda, Radio Vesti",Russian,"Radio, Internet","Broadcast, Internet Reporter","Corruption, Crime, Politics",No,Foreign,Unknown Fire,Murder,Yes,No,Yes,"No
+",
+11,Motive Confirmed,"July 20, 2016",2016,,Sami Jawdat Rabah,Male,Male,Syria,Syrian Observatory for Human Rights,Syrian,Internet,"Photographer, Internet Reporter",War,No,Local,Political Group,Murder,Yes,Yes,Yes,"
+",
+16,Motive Confirmed,"July 14, 2016",2016,"July 11, 2016",Ibrahim Omar,Male,Male,Syria,Al Jazeera,Syrian,Television,Camera Operator,War,No,Local,Military Officials,Crossfire/Combat-Related,,,,"
+",
+17,Motive Confirmed,"July 11, 2016",2016,"June 25, 2016",Khaled Eissa ,Male,Male,Syria,Freelance,Syrian,"Television, Internet","Camera Operator, Photographer","Human Rights, War",Yes,Local,Unknown Fire,Murder,Yes,No,No,"No
+",
+18,Motive Confirmed,"June 25, 2016",2016,"June 24, 2016",Khaled al-Zintani ,Male,Male,Libya,Freelance ,Libyan ,"Television, Internet",Photographer,War,Yes,Local,Political Group,Crossfire/Combat-Related,,,,"
+",
+19,Motive Confirmed,"June 24, 2016",2016,"June 19, 2016",Elidio Ramos Zárate,Male,Male,Mexico,El Sur,Mexican,Print,Print Reporter,Crime,No,Local,Unknown Fire,Murder,Yes,No,Yes,"No
+",
+20,Motive Confirmed,"June 19, 2016",2016,,Rohat Aktaş,Male,Male,Turkey,Azadiya Welat,Turkish,Print,"Editor, Print Reporter","Politics, War",No,Local,Military Officials,Unknown,,,,"
+",
+22,Motive Confirmed,"June  5, 2016",2016,"June  5, 2016",Zabihullah Tamanna,Male,Male,Afghanistan,National Public Radio,Afghan,"Print, Radio, Internet",Producer,"Culture, Human Rights, Politics, War",Yes,Local,Political Group,Crossfire/Combat-Related,,No,No,"No
+",
+23,Motive Confirmed,"June  5, 2016",2016,"June  5, 2016",Osama Jumaa,Male,Male,Syria,Images Live,Syrian,"Television, Internet","Camera Operator, Photographer",War,No,Local,Government Officials,Crossfire/Combat-Related,,,,"
+",
+24,Motive Confirmed,"June  5, 2016",2016,"May 13, 2016",Rajdev Ranjan,Male,Male,India,Hindustan,Indian,Print,Print Reporter,"Corruption, Crime, Politics",No,Local,Criminal Group,Murder,Yes,No,Yes,"No
+",
+25,Motive Confirmed,"May 13, 2016",2016,"April 12, 2016",Zaher al-Shurqat,Male,Male,Turkey,Aleppo Today,Syrian,Internet,Broadcast,War,No,Foreign,Political Group,Murder,Yes,No,Yes,"No
+",
+26,Motive Confirmed,"April 12, 2016",2016,"March 21, 2016",Mohammed Ghalib al-Majidi,Male,Male,Yemen,Freelance,Yemeni,Internet,"Camera Operator, Photographer, Internet Reporter","Human Rights, Politics, War",Yes,Local,Political Group,Crossfire/Combat-Related,,,,"
+",
+27,Motive Confirmed,"March 21, 2016",2016,"February 19, 2016",Majid Dirani,Male,Male,Syria,Freelance,Syrian,Internet,"Camera Operator, Internet Reporter",War,Yes,Local,Government Officials,Crossfire/Combat-Related,,,,"
+",
+28,Motive Confirmed,"February 19, 2016",2016,"February 16, 2016",Ahmed al-Shaibani,Male,Male,Yemen,"Yaman News, Yemen TV",Yemeni,"Television, Internet","Camera Operator, Photographer, Internet Reporter",War,Yes,Local,Political Group,Crossfire/Combat-Related,,,,"
+",
+29,Motive Confirmed,"February 16, 2016",2016,"February 13, 2016",Karun Misra,Male,Male,India,Jansandesh Times,Indian,Print,Print Reporter,"Corruption, Crime, Politics",No,Local,"Criminal Group, Local Residents",Murder,Yes,No,No,"No
+",
+30,Motive Confirmed,"February 13, 2016",2016,"February  5, 2016",El-Hadj Mohamed Diallo ,Male,Male,Guinea,"Guinée7, Afrik",Guinea,Internet,Internet Reporter,Politics,No,Local,Unknown Fire,Dangerous Assignment,,No,No,"No
+",
+31,Motive Confirmed,"February  5, 2016",2016,"January 22, 2016",Hashim al-Hamran,Male,Male,Yemen,Al-Masirah TV,Yemeni,Television,Camera Operator,War,No,Local,Military Officials,Crossfire/Combat-Related,,,,"
+",
+32,Motive Confirmed,"January 22, 2016",2016,"January 21, 2016",Marcos Hernández Bautista ,Male,Male,Mexico,"Noticias, Voz e Imagen de Oaxaca",Mexico,"Print, Radio","Broadcast, Print Reporter","Corruption, Politics",No,Local,Unknown Fire,Murder,Yes,No,Yes,"No
+",
+33,Motive Confirmed,"January 21, 2016",2016,"January 17, 2016",Almigdad Mojalli,Male,Male,Yemen,Freelance,Yemeni,"Print, Internet","Broadcast, Print Reporter","Culture, Human Rights, Politics, War",Yes,Local,Military Officials,Crossfire/Combat-Related,,No,,"No
+",
+34,Motive Confirmed,"January 17, 2016",2016,"January 12, 2016",Hassan al-Anbaki,Male,Male,Iraq,Al-Sharqiya,Iraq ,Television,Camera Operator,War,No,Local,Unknown Fire,Murder,Yes,No,No,"No
+",
+35,Motive Confirmed,"January 12, 2016",2016,"January 12, 2016",Saif Talal,Male,Male,Iraq,Al-Sharqiya ,Iraq,Television,Broadcast,War,No,Local,Unknown Fire,Murder,Yes,No,Yes,"No
+",
+36,Motive Confirmed,"January 12, 2016",2016,"December 27, 2015",Naji Jerf,Male,Male,Turkey,"Hentah, Raqqa is Being Slaughtered Silently",Syria,Internet,"Editor, Producer","Human Rights, Politics",No,Foreign,Political Group,Murder,Yes,No,Yes,"No
+",
+37,Motive Confirmed,"December 27, 2015",2015,"December 16, 2015",Ahmed Mohamed al-Mousa,Male,Male,Syria,Raqqa is Being Slaughtered Silently ,Syria,Internet,Editor,"Human Rights, Politics, War",No,Local,Political Group,Murder,Yes,No,Yes,"No
+",
+38,Motive Confirmed,"December 16, 2015",2015,"December  7, 2015",Zakaria Ibrahim,Male,Male,Syria,Al-Jazeera,Syrian,Television,Camera Operator,War,No,Local,Military Officials,Crossfire/Combat-Related,,No,No,"No
+",
+39,Motive Confirmed,"December  7, 2015",2015,"December  3, 2015",Hindia Haji Mohamed,Female,Female,Somalia,"Radio Mogadishu, Somali National TV",Somalia,"Radio, Television","Broadcast, Producer","Politics, War",No,Local,Political Group,Murder,No,No,No,"No
+",
+40,Motive Confirmed,"December  3, 2015",2015,"November 13, 2015",Guillaume Barreau-Decherf,Male,Male,France,Freelance ,France,Print,Print Reporter,Culture,Yes,Local,Political Group,Dangerous Assignment,,,,"
+",
+41,Motive Confirmed,"November 13, 2015",2015,"November 13, 2015",Ítalo Eduardo Diniz Barros,Male,Male,Brazil,Blog Ítalo Diniz,Brazil,Internet,Internet Reporter,Politics,No,Local,"Government Officials, Local Residents",Murder,Yes,No,Yes,"No
+",
+42,Motive Confirmed,"November 13, 2015",2015,"November 10, 2015",Israel Gonçalves Silva,Male,Male,Brazil,Rádio Itaenga FM,Brazil,Radio,Broadcast,Corruption,No,Local,Criminal Group,Murder,Yes,No,Yes,"No
+",
+43,Motive Confirmed,"November 10, 2015",2015,"November  6, 2015",Ahmed Abu al-Hamza,Male,Male,Syria,"SMART News Agency, Hama Media Center",Syria,Internet,"Camera Operator, Photographer",War,No,Local,Military Officials,Crossfire/Combat-Related,,No,No,"No
+",
+44,Motive Confirmed,"November  6, 2015",2015,"November  3, 2015",Batoul Mokhles al-Warrar,Female,Female,Syria,Noor al-Sham,Syria,"Radio, Television",Broadcast,"Politics, War",No,Local,Political Group,Crossfire/Combat-Related,,,,,"
+"
+45,Motive Confirmed,"November  3, 2015",2015,"November  3, 2015",Zaman Mehsud,Male,Male,Pakistan,"Daily Ummat, Daily Nai Baat",Pakistan,Print,Print Reporter,"Human Rights, Politics",Yes,Local,Political Group,Murder,Yes,No,No,"No
+",
+46,Motive Confirmed,"November  3, 2015",2015,"November  1, 2015",Mustaf Abdi Noor ,Male,Male,Somalia,Freelance ,Somalia,"Television, Internet","Camera Operator, Photographer","Politics, War",Yes,Local,Political Group,Dangerous Assignment,,,,"
+",
+47,Motive Confirmed,"November  1, 2015",2015,"October 31, 2015",Faisal Arefin Dipan,Male,Male,Bangladesh,Jagriti Prokashoni ,Bangladesh,Print,Publisher,,No,Local,Political Group,Murder,Yes,No,Yes,"No
+",
+48,Motive Confirmed,"October 31, 2015",2015,"October 30, 2015",Fares Hamadi,Male,Male,Turkey,Eye on the Homeland,Syrian,"Print, Internet",Producer,"Corruption, Human Rights, Politics, War",No,Foreign,Political Group,Murder,Yes,No,Yes,"No
+",
+49,Motive Confirmed,"October 30, 2015",2015,"October 30, 2015",Ibrahim Abd al-Qader,Male,Male,Turkey,"Eye on the Homeland, Raqqa is Being Slaughtered Silently",Syrian,"Print, Internet",Editor,"Corruption, Human Rights, Politics, War",No,Foreign,Political Group,Murder,Yes,No,Yes,"No
+",
+50,Motive Confirmed,"October 30, 2015",2015,"October 27, 2015",Jomaa Al-Ahmad (Abu al-Nour al-Halabi),Male,Male,Syria,Shahba Press Agency,Syrian,Internet,"Broadcast, Camera Operator, Internet Reporter",War,No,Local,Military Officials,Crossfire/Combat-Related,,,,"
+",
+51,Motive Confirmed,"October 27, 2015",2015,"October 23, 2015",Wasem Aledel,Male,Male,Syria,Maarat Media Center,Syrian,"Television, Internet","Camera Operator, Photographer, Internet Reporter","Human Rights, Politics, War",No,Local,Military Officials,Crossfire/Combat-Related,,No,No,"No
+",
+52,Motive Confirmed,"October 23, 2015",2015,"September 26, 2015",Obada Ghazal,Male,Male,Syria,SMART News Agency,Syria ,Television,"Camera Operator, Photographer, Internet Reporter",War,No,Local,Military Officials,Crossfire/Combat-Related,,,,"
+",
+53,Motive Confirmed,"September 26, 2015",2015,"September 17, 2015",Bilal Sharaf al-Deen,Male,Male,Yemen,Al-Masirah TV,Yemen,Television,Camera Operator,"Politics, War",No,Local,Military Officials,Crossfire/Combat-Related,,,,"
+",
+54,Motive Confirmed,"September 17, 2015",2015,"September 12, 2015",Yahya Abdul Hamid,Male,Male,Iraq,Radio Rasheed,Iraqi,Radio,Editor,"Corruption, Crime, Human Rights, Politics",No,Local,Political Group,Murder,Yes,Yes,No,"No
+",
+55,Motive Confirmed,"September 12, 2015",2015,"September 10, 2015",George Abanga,Male,Male,Ghana,"Success FM, Peace FM",Ghana,Radio,Broadcast,Politics,No,Local,Unknown Fire,Murder,Yes,No,No,"No
+",
+56,Motive Confirmed,"September 10, 2015",2015,"September 10, 2015",Flor Alba Núñez Vargas,Female,Female,Colombia,Red Noticias and La Preferida Estereo,Colombia,Radio,Broadcast,Crime,No,Local,Criminal Group,Murder,Yes,No,Yes,"No
+",
+57,Motive Confirmed,"September 10, 2015",2015,"August 26, 2015",Adam Ward,Male,Male,USA,WDBJ7,USA,Television,Camera Operator,"Business, Corruption, Crime, Culture, Human Rights, Politics, Sports",No,Local,Local Residents,Dangerous Assignment,,,,"
+",
+58,Motive Confirmed,"August 26, 2015",2015,"August 26, 2015",Alison Parker,Female,Female,USA,WDBJ7,USA,Television,Broadcast,"Business, Corruption, Crime, Culture, Human Rights, Politics, Sports",No,Local,Local Residents,Dangerous Assignment,,,,"
+",
+59,Motive Confirmed,"August 26, 2015",2015,August 2015,Adel Sayegh ,Male,Male,Iraq,Salaheddin TV,Iraqi,Television,"Camera Operator, Photographer","Politics, War",No,Local,Political Group,Murder,Yes,Yes,,"
+",
+61,Motive Confirmed,"August  7, 2015",2015,"August  6, 2015",Gleydson Carvalho,Male,Male,Brazil,Radio Liberdade FM 90.3,Brazil,Radio,Broadcast,"Corruption, Crime",No,Local,Government Officials,Murder,Yes,No,Yes,"No
+",
+62,Motive Confirmed,"August  6, 2015",2015,"July 31, 2015",Rubén Espinosa Becerril,Male,Male,Mexico,"Proceso, AVC Noticias, Cuartoscuro",Mexico,Print,Photographer,"Culture, Human Rights, Politics",No,Local,Unknown Fire,Murder,Yes,No,Yes,"Yes
+",
+63,Motive Confirmed,"July 31, 2015",2015,"July 27, 2015",Thaer al-Ajlani,Male,Male,Syria,Sham FM  al-Watan,Syria,"Print, Radio, Television","Broadcast, Camera Operator, Print Reporter",War,Yes,Local,Political Group,Crossfire/Combat-Related,,,,,"
+"
+64,Motive Confirmed,"July 27, 2015",2015,"July 15, 2015",Jalaa al-Abadi,Male,Male,Iraq,Nineveh Reporters Network,Iraq,Internet,"Camera Operator, Photographer","Human Rights, Politics, War",No,Local,Political Group,Murder,Yes,Yes,Yes,"No
+",
+65,Motive Confirmed,"July 15, 2015",2015,"July  2, 2015",Filadelfo Sánchez Sarmiento,Male,Male,Mexico,La Favorita 103.3FM La Voz de la Sierra Sur,Mexico,"Print, Radio","Broadcast, Print Reporter",Politics,No,Local,Unknown Fire,Murder,Yes,No,Yes,"No
+",
+66,Motive Confirmed,"July  2, 2015",2015,"June 26, 2015",Mohammed al-Asfar,Male,Male,Syria,Al-Jazeera,Syria,Television,Camera Operator,War,No,Local,Military Officials,Crossfire/Combat-Related,,,,"
+",
+67,Motive Confirmed,"June 26, 2015",2015,"June  8, 2015",Jagendra Singh,Male,Male,India,Freelance,India,"Print, Internet",Internet Reporter,"Corruption, Crime, Politics",Yes,Local,Government Officials,Murder,Yes,No,No,"Yes
+",
+68,Motive Confirmed,"June 14, 2015",2015,"May 31, 2015",Ammar al-Shami,Male,Male,Syria,Qasioun News ,Syria,Internet,Photographer,"Human Rights, Politics, War",No,Local,Military Officials,Crossfire/Combat-Related,,,,"
+",
+69,Motive Confirmed,"June  8, 2015",2015,,Djalma Santos da Conceição,Male,Male,Brazil,RCA FM,Brazil,Radio,Broadcast,"Corruption, Crime",No,Local,"Criminal Group, Government Officials",Murder,Yes,Yes,Yes,"Yes
+",
+70,Motive Confirmed,"May 31, 2015",2015,"May 21, 2015",Abdullah Qabil,Male,Male,Yemen,"Yemen Youth TV, Belqees TV",Yemen,Television,Broadcast,"Politics, War",No,Local,Military Officials,Crossfire/Combat-Related,,Yes,No,"No
+",
+72,Motive Confirmed,"May 21, 2015",2015,,Evany José Metzker,Male,Male,Brazil,Coruja do Vale,Brazil,Internet,Internet Reporter,"Corruption, Crime",No,Local,Criminal Group,Murder,Yes,Yes,No,"Yes
+",
+73,Motive Confirmed,"May 21, 2015",2015,"May 12, 2015",Ananta Bijoy Das,Male,Male,Bangladesh,Freelance,Bangladesh,"Print, Internet","Internet Reporter, Print Reporter","Culture, Human Rights, Politics",Yes,Local,Political Group,Murder,Yes,No,Yes,"No
+",
+75,Motive Confirmed,"May 12, 2015",2015,"May  1, 2015",Firas al-Baher,Male,Male,Iraq,Nineveh al-Ghad,Iraqi,Television,"Producer, Technician",Politics,No,Local,Political Group,Murder,Yes,Yes,No,"No
+",
+77,Motive Confirmed,"May  1, 2015",2015,"April 29, 2015",Daud Ali Omar,Male,Male,Somalia,Radio Baidoa,Somalia,Television,"Broadcast, Producer","Culture, Politics",No,Local,Political Group,Murder,Yes,No,No,"No
+",
+78,Motive Confirmed,"April 30, 2015",2015,"April 26, 2015",Thaer Al-Ali,Male,Male,Iraq,Rai al-Nas,Iraq,Print,Editor,"Corruption, Crime, Culture, Human Rights, Politics, War",No,Local,Political Group,Murder,Yes,Yes,No,"No
+",
+79,Motive Confirmed,"April 29, 2015",2015,"April 22, 2015",Muftah al-Qatrani,Male,Male,Libya,Al-Anwar,Libya,Television,"Broadcast, Editor, Producer",War,No,Local,Unknown Fire,Murder,Yes,No,Yes,"No
+",
+80,Motive Confirmed,"April 26, 2015",2015,"April 20, 2015",Mohamed Shamsan,Male,Male,Yemen,Yemen Today,Yemen,Television,Broadcast,"Culture, Human Rights, Politics, War",No,Local,Military Officials,Crossfire/Combat-Related,,No,No,"No
+",
+81,Motive Confirmed,"April 22, 2015",2015,"April 16, 2015",Humam Najjar (Abu Yazan al-Halabi),Male,Male,Syria,Aleppo Today,Syria,"Television, Internet","Broadcast, Internet Reporter","Human Rights, War",No,Local,Political Group,Crossfire/Combat-Related,,,,"
+",
+82,Motive Confirmed,"April 20, 2015",2015,"April 16, 2015",Soleil Balanga,Male,Male,Democratic Republic of the Congo,Radio Monkoto Soso Aleli,Democratic Republic of the Congo,Radio,Broadcast,"Culture, Politics",No,Local,Local Residents,Murder,No,No,No,"No
+",
+83,Motive Confirmed,"April 16, 2015",2015,"April  1, 2015",Jamal Khalifeh,Male,Male,Syria,Freelance,Syria,Internet,"Camera Operator, Photographer, Internet Reporter, Producer",War,Yes,Local,"Local Residents, Political Group",Crossfire/Combat-Related,,,,"
+",
+84,Motive Confirmed,"April 16, 2015",2015,"March 30, 2015",Washiqur Rahman Babu,Male,Male,Bangladesh,Freelance,Bangladesh,Internet,Internet Reporter,"Culture, Human Rights, Politics",Yes,Local,Political Group,Murder,Yes,No,Yes,"No
+",
+85,Motive Confirmed,"April  1, 2015",2015,,Fadel al-Hadidi,Male,Male,Iraq,Mosul al-Youm  Sada al-Iraq,Iraq,Print,"Columnist, Editor, Print Reporter","Corruption, Human Rights, Politics, War",No,Local,Political Group,Murder,Yes,Yes,No,"No
+",
+86,Motive Confirmed,"March 30, 2015",2015,"March 10, 2015",Danilo López,Male,Male,Guatemala,Prensa Libre,Guatemala,Print,Print Reporter,"Corruption, Crime, Politics",No,Local,"Criminal Group, Government Officials",Murder,Yes,No,Yes,"No
+",
+88,Motive Confirmed,"March 10, 2015",2015,"March  5, 2015",Gerardo Ceferino Servían,Male,Male,Brazil,Ciudad Nueva FM ,Paraguay,Radio,Broadcast,Politics,No,Foreign,Government Officials,Murder,Yes,No,No,"No
+",
+89,Motive Confirmed,"March  8, 2015",2015,"February 28, 2015",Serhiy Nikolayev,Male,Male,Ukraine,Segodnya,Ukraine,Print,Photographer,"Human Rights, War",No,Local,Unknown Fire,Crossfire/Combat-Related,,No,No,"No
+",
+90,Motive Confirmed,"March  5, 2015",2015,"February 26, 2015",Avijit Roy,Male,Male,Bangladesh,Freelance,United States,"Print, Internet","Internet Reporter, Print Reporter","Culture, Human Rights, Politics",Yes,Foreign,Political Group,Murder,Yes,No,Yes,"No
+",
+91,Motive Confirmed,"February 28, 2015",2015,January 2015,Kenji Goto,Male,Male,Syria,Freelance,Japanese,"Television, Internet","Camera Operator, Photographer, Internet Reporter","Culture, Human Rights, Politics, War",Yes,Foreign,Political Group,Murder,Yes,Yes,No,"Yes
+",
+92,Motive Confirmed,"February 26, 2015",2015,"January 25, 2015",Randa George,Female,Female,South Sudan,Raja FM,South Sudan,Radio,Broadcast,"Politics, War",No,Local,Political Group,Murder,Yes,No,No,"No
+",
+93,Motive Confirmed,January 2015,2015,"January 25, 2015",Dalia Marko,Female,Female,South Sudan,Raja FM,South Sudan,Radio,Broadcast,"Politics, War",No,Local,Political Group,Murder,Yes,No,No,"No
+",
+94,Motive Confirmed,"January 25, 2015",2015,"January 25, 2015",Musa Mohamed,Male,Male,South Sudan,Raja FM,South Sudan,Radio,Editor,"Politics, War",No,Local,Political Group,Murder,Yes,No,No,"No
+",
+95,Motive Confirmed,"January 25, 2015",2015,"January 25, 2015",Boutros Martin,Male,Male,South Sudan,South Sudan Television,South Sudan,Television,Camera Operator,"Politics, War",No,Local,Political Group,Murder,Yes,No,No,"No
+",
+96,Motive Confirmed,"January 25, 2015",2015,"January 25, 2015",Adam Juma,Male,Male,South Sudan,Raja FM,South Sudan,Radio,Broadcast,"Politics, War",No,Local,Political Group,Murder,Yes,No,No,"No
+",
+97,Motive Confirmed,"January 25, 2015",2015,"January  7, 2015",Bernard Maris,Male,Male,France,Freelance,France,"Print, Internet",Columnist,Business,Yes,Local,Political Group,Murder,Partial,No,Yes,"No
+",
+98,Motive Confirmed,"January 25, 2015",2015,"January  7, 2015",Georges Wolinski,Male,Male,France,Charlie Hebdo,France,"Print, Internet",Columnist,"Culture, Human Rights, Politics",No,Local,Political Group,Murder,Partial,No,Yes,"No
+",
+99,Motive Confirmed,"January  7, 2015",2015,"January  7, 2015",Jean Cabut (Cabu),Male,Male,France,Charlie Hebdo,France,"Print, Internet",Columnist,"Culture, Human Rights, Politics",No,Local,Political Group,Murder,Partial,No,Yes,"No
+",
+100,Motive Confirmed,"January  7, 2015",2015,"January  7, 2015",Stephane Charbonnier (Charb),Male,Male,France,Charlie Hebdo,France,"Print, Internet",Editor,"Culture, Human Rights, Politics",No,Local,Political Group,Murder,Partial,No,Yes,"No
+",
+101,Motive Confirmed,"January  7, 2015",2015,"January  7, 2015",Bernard Verlhac (Tignous),Male,Male,France,Freelance,France,"Print, Internet",Columnist,"Culture, Human Rights, Politics",Yes,Local,Political Group,Murder,Partial,No,Yes,"No
+",
+102,Motive Confirmed,"January  7, 2015",2015,"January  7, 2015",Elsa Cayat,Female,Female,France,Freelance,France,"Print, Internet",Columnist,Culture,Yes,Local,Political Group,Murder,Partial,No,Yes,"No
+",
+103,Motive Confirmed,"January  7, 2015",2015,"January  7, 2015",Moustapha Ourrad,Male,Male,France,Charlie Hebdo,France,"Print, Internet",Editor,"Culture, Human Rights, Politics",No,Local,Political Group,Murder,Partial,No,Yes,"No
+",
+104,Motive Confirmed,"January  7, 2015",2015,"January  7, 2015",Philippe Honoré,Male,Male,France,Freelance,France,"Print, Internet",Columnist,"Culture, Human Rights, Politics",Yes,Local,Political Group,Murder,Partial,No,Yes,"No
+",
+105,Motive Confirmed,"January  7, 2015",2015,"January  4, 2015",Khaled al-Washli,Male,Male,Yemen,Al-Masirah TV,Yemen,Television,Broadcast,"Human Rights, Politics, War",No,Local,Political Group,Dangerous Assignment,,,,"
+",
+106,Motive Confirmed,"January  7, 2015",2015,"January  2, 2015",José Moisés Sánchez Cerezo ,Male,Male,Mexico,La Unión,Mexico,"Print, Internet","Internet Reporter, Print Reporter, Publisher","Corruption, Crime, Politics",No,Local,Government Officials,Murder,Yes,Yes,Yes,"Yes
+",
+107,Motive Confirmed,"January  4, 2015",2015,"December 23, 2014",Marcos de Barros Leopoldo Guerra,Male,Male,Brazil,Ubatuba Cobra,Brazil,Internet,Internet Reporter,"Corruption, Politics",No,Local,Political Group,Murder,Yes,No,Yes,"No
+",
+108,Motive Confirmed,"January  2, 2015",2015,"December 21, 2014",Zubair Hatami,Male,Male,Afghanistan,Mitra TV,Afghanistan,Television,Camera Operator,"Human Rights, Politics, War",No,Local,Political Group,Dangerous Assignment,,No,No,"No
+",
+109,Motive Confirmed,"December 23, 2014",2014,"December 10, 2014",Mahran al-Deeri,Male,Male,Syria,Al-Jazeera,Syria,Internet,Internet Reporter,"Human Rights, Politics, War",No,Local,"Military Officials, Political Group",Crossfire/Combat-Related,,No,No,"No
+",
+110,Motive Confirmed,"December 21, 2014",2014,"December  8, 2014",Salem Khalil,Male,Male,Syria,Orient News,Syria,"Television, Internet",Broadcast,"Human Rights, Politics, War",No,Local,Military Officials,Crossfire/Combat-Related,,No,No,"No
+",
+111,Motive Confirmed,"December 10, 2014",2014,"December  8, 2014",Rami Asmi,Male,Male,Syria,Orient News,Syria,"Television, Internet",Broadcast,"Human Rights, Politics, War",No,Local,Military Officials,Crossfire/Combat-Related,,No,No,"No
+",
+112,Motive Confirmed,"December  8, 2014",2014,"December  8, 2014",Yousef el-Dous,Male,Male,Syria,Orient News,Syria,"Television, Internet",Broadcast,"Human Rights, Politics, War",No,Local,Military Officials,Crossfire/Combat-Related,,No,No,"No
+",
+113,Motive Confirmed,"December  8, 2014",2014,"December  6, 2014",Luke Somers,Male,Male,Yemen,Freelance,American,"Print, Internet","Photographer, Editor","Culture, Human Rights, Politics",Yes,Foreign,Political Group,Murder,Partial,Yes,No,"No
+",
+114,Motive Confirmed,"December  8, 2014",2014,"December  5, 2014",Mohamed Isaq,Male,Male,Somalia,Kalsan TV,Somalia,Television,Camera Operator,"Culture, Politics",No,Local,Political Group,Murder,Yes,No,No,"No
+",
+115,Motive Confirmed,"December  6, 2014",2014,"December  5, 2014",Abdulkadir Ahmed,Male,Male,Somalia,Freelance,Somalia,"Radio, Television",Broadcast,Politics,Yes,Local,Political Group,Murder,Yes,No,No,"No
+",
+116,Motive Confirmed,"December  5, 2014",2014,"November 26, 2014",MVN Shankar,Male,Male,India,Andhra Prabha,India,Print,Print Reporter,Corruption,No,Local,Criminal Group,Murder,Yes,No,No,"No
+",
+117,Motive Confirmed,"December  5, 2014",2014,"November 22, 2014",Zaher Mtawe'e,Male,Male,Syria,Zebdine Coordination Committee,Syria,Internet,"Camera Operator, Internet Reporter","Human Rights, Politics, War",No,Local,Unknown Fire,Crossfire/Combat-Related,,No,No,"No
+",
+118,Motive Confirmed,"November 26, 2014",2014,"November 16, 2014",Abdirizak Ali Abdi,Male,Male,Somalia,Freelance,Somalia,"Radio, Television",Broadcast,Politics,Yes,Local,Unknown Fire,Murder,Yes,No,Yes,"No
+",
+119,Motive Confirmed,"November 22, 2014",2014,"October 16, 2014",Pablo Medina Velázquez,Male,Male,Paraguay,ABC Color,Paraguay,Print,Print Reporter,Crime,No,Local,"Criminal Group, Government Officials",Murder,Yes,No,Yes,"No
+",
+120,Motive Confirmed,"November 16, 2014",2014,"October 15, 2014",Atallah Bajbouj,Male,Male,Syria,Nabaa Media Foundation,Syria,Internet,"Camera Operator, Internet Reporter","Human Rights, Politics, War",No,Local,Unknown Fire,Crossfire/Combat-Related,,No,No,"No
+",
+121,Motive Confirmed,"October 16, 2014",2014,"October  4, 2014","Aung Kyaw Naing, \""Par Gyi\",Male,Male,Myanmar,Freelance,Burmese,Print,"Photographer, Print Reporter","Human Rights, War",Yes,Local,Military Officials,Murder,Yes,Yes,No,"Yes
+",
+122,Motive Confirmed,"October 15, 2014",2014,"September 16, 2014",Facely Camara,Male,Male,Guinea,Liberté FM,Guinea,Radio,Broadcast,Human Rights,No,Local,Mob Violence,Murder,Yes,No,No,"No
+",
+123,Motive Confirmed,"October  4, 2014",2014,"September 10, 2014",Mohammed al-Qasim,Male,Male,Syria,Rozana Radio,Syria,"Radio, Television, Internet",Broadcast,"Human Rights, Politics, War",No,Local,Unknown Fire,Crossfire/Combat-Related,,No,No,"No
+",
+124,Motive Confirmed,"September 16, 2014",2014,,Steven Sotloff,Male,Male,Syria,Freelance,"American, Israeli","Print, Internet","Internet Reporter, Print Reporter","Human Rights, Politics, War",Yes,Foreign,Political Group,Murder,Yes,Yes,No,"Yes
+",
+125,Motive Confirmed,"September 10, 2014",2014,"August 28, 2014",Irshad Mastoi,Male,Male,Pakistan,"Online International News Network, ARY News",Pakistan,"Print, Television","Editor, Print Reporter","Human Rights, Politics, War",No,Local,Unknown Fire,Murder,Yes,No,Yes,"No
+",
+127,Motive Confirmed,"August 28, 2014",2014,,James Foley,Male,Male,Syria,Freelance,United States,Internet,"Photographer, Internet Reporter","Human Rights, War",Yes,Foreign,Political Group,Murder,Yes,Yes,No,"Yes
+",
+128,Motive Confirmed,"August 28, 2014",2014,"August 13, 2014",Simone Camilli,Male,Male,Israel and the Occupied Palestinian Territory,The Associated Press,Italy,"Television, Internet","Camera Operator, Photographer","Politics, War",No,Foreign,Military Officials,Crossfire/Combat-Related,,No,No,"No
+",
+130,Motive Confirmed,"August 13, 2014",2014,"August  8, 2014",Leyla Yildizhan (Deniz Firat),Female,Female,Iraq,Firat News Agency,Turkey,"Television, Internet",Broadcast,"Human Rights, Politics, War",Yes,Foreign,"Military Officials, Political Group",Crossfire/Combat-Related,,No,No,"No
+",
+131,Motive Confirmed,"August 11, 2014",2014,"August  6, 2014",Andrei Stenin,Male,Male,Ukraine,Rossiya Segodnya,Russia,"Print, Internet",Photographer,"Human Rights, War",No,Foreign,Unknown Fire,Crossfire/Combat-Related,,No,No,"No
+",
+132,Motive Confirmed,"August  8, 2014",2014,"July 30, 2014",Sameh al-Aryan,Male,Male,Israel and the Occupied Palestinian Territory,Al-Aqsa TV,Israel and the Occupied Palestinian Territory,Television,"Camera Operator, Photographer","Human Rights, Politics, War",No,Local,Military Officials,Crossfire/Combat-Related,,No,No,"No
+",
+133,Motive Confirmed,"August  6, 2014",2014,"July 30, 2014",Rami Rayan,Male,Male,Israel and the Occupied Palestinian Territory,Palestine Network for Press and Media,Israel and the Occupied Palestinian Territory,"Print, Television, Internet",Photographer,"Human Rights, Politics, War",No,Local,Military Officials,Crossfire/Combat-Related,,No,No,"No
+",
+134,Motive Confirmed,"July 30, 2014",2014,"July 20, 2014",Khaled Reyadh Hamad,Male,Male,Israel and the Occupied Palestinian Territory,Continue Production Films,Israel and the Occupied Palestinian Territory,Television,"Camera Operator, Photographer","Human Rights, Politics, War",No,Local,Military Officials,Crossfire/Combat-Related,,No,No,"No
+",
+135,Motive Confirmed,"July 30, 2014",2014,"June 30, 2014",Anatoly Klyan,Male,Male,Ukraine,Pervy Kanal,Russia,Television,Camera Operator,"Politics, War",No,Foreign,Unknown Fire,Dangerous Assignment,,No,No,"No
+",
+136,Motive Confirmed,"July 20, 2014",2014,"June 27, 2014",Mohamed Taani,Male,Male,Syria,SMART News Agency,Syria,Internet,Camera Operator,"Human Rights, Politics, War",No,Local,Military Officials,Crossfire/Combat-Related,,No,No,"No
+",
+137,Motive Confirmed,"June 30, 2014",2014,"June 21, 2014",Yusuf Ahmed Abukar,Male,Male,Somalia,"Radio Ergo, Mustaqbal Radio",Somalia,Radio,"Broadcast, Editor","Human Rights, Politics",No,Local,Unknown Fire,Murder,Yes,No,Yes,"No
+",
+138,Motive Confirmed,"June 27, 2014",2014,"June 20, 2014",Ahmed Hasan Ahmed,Male,Male,Syria,Xinhua News Agency,Egypt,Internet,"Camera Operator, Photographer","Human Rights, Politics, War",No,Foreign,Unknown Fire,Dangerous Assignment,,No,No,"No
+",
+139,Motive Confirmed,"June 21, 2014",2014,"June 19, 2014",Edgar Pantaleón Fernández Fleitas,Male,Male,Paraguay,Belén Comunicaciones,Paraguayan,Radio,"Broadcast, Columnist","Corruption, Crime, Politics",No,Local,"Criminal Group, Political Group",Murder,Yes,No,No,"No
+",
+140,Motive Confirmed,"June 20, 2014",2014,"June 17, 2014",Igor Kornelyuk,Male,Male,Ukraine,VGTRK,Russia,Television,Broadcast,War,No,Foreign,Unknown Fire,Crossfire/Combat-Related,,No,No,"No
+",
+141,Motive Confirmed,"June 19, 2014",2014,"June 15, 2014",Khalid Ali Hamada,Male,Male,Iraq,Al-Ahad TV,Iraq,Television,Camera Operator,War,No,Local,Political Group,Crossfire/Combat-Related,,No,No,"No
+",
+142,Motive Confirmed,"June 17, 2014",2014,"May 27, 2014",Tarun Kumar Acharya,Male,Male,India,"Kanak TV, Sambad",India,"Print, Television","Broadcast, Print Reporter","Corruption, Crime, Human Rights",No,Local,Local Residents,Murder,Yes,No,Yes,"No
+",
+143,Motive Confirmed,"June 15, 2014",2014,"May 26, 2014",Muftah Bu Zeid,Male,Male,Libya,Brnieq,Libya,"Print, Internet",Editor,"Politics, War",No,Local,Unknown Fire,Murder,Yes,,,"
+",
+144,Motive Confirmed,"May 27, 2014",2014,"May 24, 2014",Andrea Rocchelli,Male,Male,Ukraine,Cesura photo agency,Italy,"Print, Internet",Photographer,"Human Rights, War",No,Foreign,Unknown Fire,Crossfire/Combat-Related,,No,No,"No
+",
+145,Motive Confirmed,"May 26, 2014",2014,"May 21, 2014",Sadrul Alam Nipul,Male,Male,Bangladesh,Dainik Mathabhanga,Bangladesh,Print,Print Reporter,Crime,No,Local,Criminal Group,Murder,Yes,No,No,"No
+",
+146,Motive Confirmed,"May 24, 2014",2014,,Camille Lepage,Female,Female,Central African Republic,Freelance,France,"Print, Internet",Photographer,"Human Rights, War",Yes,Foreign,Paramilitary Group,Dangerous Assignment,,No,No,"No
+",
+147,Motive Confirmed,"May 21, 2014",2014,"May 16, 2014",Fausto Gabriel Alcaraz Garay,Male,Male,Paraguay,Radio Amambay,Paraguay,Radio,Broadcast,Crime,No,Local,Criminal Group,Murder,Yes,No,No,"No
+",
+149,Motive Confirmed,"May 16, 2014",2014,"April 25, 2014",Mouaz Alomar (Abu Mehdi Al Hamwi),Male,Male,Syria,Freelance,Syria,"Television, Internet","Broadcast, Photographer, Internet Reporter","Human Rights, Politics, War",Yes,Local,Military Officials,Crossfire/Combat-Related,,No,No,"No
+",
+150,Motive Confirmed,"May  4, 2014",2014,"April  6, 2014",Rubylita Garcia,Female,Female,Philippines,"Remate, dwAD",Philippines,"Print, Radio","Broadcast, Print Reporter","Corruption, Crime",No,Local,Unknown Fire,Murder,Yes,No,Yes,"No
+",
+151,Motive Confirmed,"April 25, 2014",2014,,Bilal Ahmed Bilal,Male,Male,Syria,Palestine Today TV,Syria,Television,"Broadcast, Producer","Human Rights, Politics, War",No,Local,Government Officials,Dangerous Assignment,,No,No,"Yes
+",
+152,Motive Confirmed,"April  6, 2014",2014,"April  4, 2014",Anja Niedringhaus,Female,Female,Afghanistan,The Associated Press,Germany,"Print, Internet",Photographer,"Human Rights, War",No,Foreign,Government Officials,Dangerous Assignment,,No,No,"No
+",
+154,Motive Confirmed,"April  4, 2014",2014,"March 11, 2014",Nils Horner,Male,Male,Afghanistan,Sveriges Radio,Sweden,Radio,Broadcast,"Politics, War",No,Foreign,Unknown Fire,Dangerous Assignment,,No,No,"No
+",
+155,Motive Confirmed,"March 28, 2014",2014,"March 10, 2014",Muthanna Abdel Hussein,Male,Male,Iraq,Al-Iraqiya,Iraq,Television,Camera Operator,Politics,No,Local,Political Group,Dangerous Assignment,,No,No,"No
+",
+156,Motive Confirmed,"March 11, 2014",2014,"March 10, 2014",Khaled Abdel Thamer,Male,Male,Iraq,Al-Iraqiya,Iraq,Television,Camera Operator,Politics,No,Local,Political Group,Dangerous Assignment,,No,No,"No
+",
+157,Motive Confirmed,"March 10, 2014",2014,"March  9, 2014",Ali Mustafa,Male,Male,Syria,Freelance,Canada,"Print, Internet",Photographer,"Human Rights, Politics, War",Yes,Foreign,Military Officials,Crossfire/Combat-Related,,No,No,"No
+",
+158,Motive Confirmed,"March 10, 2014",2014,"March  8, 2014",Omar Abdul Qader,Male,Male,Syria,Al-Mayadeen,Syria,Television,Camera Operator,War,No,Local,Political Group,Crossfire/Combat-Related,,No,No,"No
+",
+159,Motive Confirmed,"March  9, 2014",2014,,Gregorio Jiménez de la Cruz,Male,Male,Mexico,Notisur and Liberal del Sur,Mexico,Print,Print Reporter,Crime,No,Local,Criminal Group,Murder,Yes,Yes,Yes,"Yes
+",
+160,Motive Confirmed,"March  8, 2014",2014,"February 20, 2014",Turad Mohamed al-Zahouri,Male,Male,Syria,Freelance,Syria,Internet,"Camera Operator, Photographer, Publisher","Human Rights, Politics, War",Yes,Local,Military Officials,Crossfire/Combat-Related,,No,No,"No
+",
+162,Motive Confirmed,"February 20, 2014",2014,"February 16, 2014",Germain Kennedy Mumbere Muliwavyo,Male,Male,Democratic Republic of the Congo,Radio Télévision Muungano ,Democratic Republic of the Congo,"Radio, Television",Broadcast,"Politics, War",No,Local,Political Group,Crossfire/Combat-Related,,No,No,"No
+",
+163,Motive Confirmed,"February 19, 2014",2014,"February 13, 2014",Pedro Palma,Male,Male,Brazil,Panorama Regional,Brazil,Print,Publisher,"Corruption, Politics",No,Local,Government Officials,Murder,Yes,No,Yes,"No
+",
+164,Motive Confirmed,"February 16, 2014",2014,"February 10, 2014",Santiago Ilídio Andrade,Male,Male,Brazil,Bandeirantes,Brazil,Television,Camera Operator,Politics,No,Local,Local Residents,Dangerous Assignment,,No,No,"No
+",
+165,Motive Confirmed,"February 13, 2014",2014,"January 20, 2014",Firas Mohammed Attiyah,Male,Male,Iraq,Fallujah TV,Iraq,Television,Broadcast,"Politics, War",No,Local,Political Group,Dangerous Assignment,,No,No,"No
+",
+166,Motive Confirmed,"February 10, 2014",2014,"January 13, 2014",Michael Tshele,Male,Male,South Africa,Freelance,South Africa,"Print, Internet",Photographer,"Corruption, Human Rights",Yes,Local,Government Officials,Murder,Yes,No,No,"No
+",
+167,Motive Confirmed,"January 20, 2014",2014,"January  1, 2014",Shan Dahar,Male,Male,Pakistan,Abb Takk Television,Pakistan,Television,Broadcast,"Corruption, Crime, Politics",No,Local,Criminal Group,Murder,Yes,No,No,"No
+",
+168,Motive Confirmed,"January 13, 2014",2014,"December 23, 2013",Jamal Abdul-Nasser Sami,Male,Male,Iraq,Salaheddin TV ,Iraqi,Television,Editor,"Culture, Politics",No,Local,Political Group,Murder,Yes,Yes,,"
+",
+169,Motive Confirmed,"January  1, 2014",2014,"December 23, 2013",Raad Yassin Al-Baddi,Male,Male,Iraq,Salaheddin TV ,Iraqi,Television,Editor,"Culture, Politics",No,Local,Political Group,Murder,Yes,Yes,No,"No
+",
+170,Motive Confirmed,"December 23, 2013",2013,"December 23, 2013",Wassan Al-Azzawi,Female,Female,Iraq,Salaheddin TV,Iraqi,Television,Broadcast,"Culture, Politics",No,Local,Political Group,Murder,Yes,Yes,,"
+",
+171,Motive Confirmed,"December 23, 2013",2013,"December 20, 2013",Molhem Barakat,Male,Male,Syria,Freelance,Syrian,"Print, Internet",Photographer,"Human Rights, Politics, War",Yes,Local,"Military Officials, Political Group",Crossfire/Combat-Related,,,,"
+",
+172,Motive Confirmed,"December 23, 2013",2013,"December 15, 2013",Nawras al-Nuaimi,Female,Female,Iraq,Al-Mosuliya TV,Iraq,Television,Broadcast,"Corruption, Culture, Politics, War",No,Local,Unknown Fire,Murder,Yes,No,No,"No
+",
+173,Motive Confirmed,"December 20, 2013",2013,"December  6, 2013",Sai Reddy,Male,Male,India,Deshbandhu,India,Print,Print Reporter,"Corruption, Culture, Politics",No,Local,Political Group,Murder,Yes,No,Yes,"No
+",
+174,Motive Confirmed,"December 15, 2013",2013,"December  5, 2013",Kawa Garmyane,Male,Male,Iraq,"Rayel, Awene",Iraq,"Print, Internet","Editor, Print Reporter","Corruption, Crime, Politics",No,Local,Unknown Fire,Murder,Partial,No,Yes,"No
+",
+175,Motive Confirmed,"December  6, 2013",2013,"December  4, 2013",Yasser Faisal al-Jumaili,Male,Male,Syria,Freelance,Iraqi,Television,Camera Operator,"Politics, War",Yes,Foreign,Political Group,Murder,Yes,Yes,No,"
+",
+176,Motive Confirmed,"December  5, 2013",2013,"November 29, 2013",Joas Dignos,Male,Male,Philippines,DXGT Radio,Philippines,Radio,"Broadcast, Columnist","Corruption, Politics",No,Local,Unknown Fire,Murder,Yes,No,Yes,"No
+",
+177,Motive Confirmed,"December  4, 2013",2013,"November 27, 2013",Wadih Sa'ad al-Hamdani,Male,Male,Iraq,Baghdad TV,Iraq,Television,Broadcast,"Corruption, Crime, Culture, Politics, War",No,Local,Local Residents,Dangerous Assignment,,No,No,"No
+",
+178,Motive Confirmed,"November 29, 2013",2013,"November 24, 2013",Mohamed Yamen Naddaf,Male,Male,Syria,Shahba Press,Syrian,Internet,Camera Operator,"Politics, War",No,Local,Military Officials,Crossfire/Combat-Related,,,,"
+",
+179,Motive Confirmed,"November 27, 2013",2013,"November 24, 2013",Alaa Edward Butros,Male,Male,Iraq,Freelance,Iraq,Television,"Camera Operator, Photographer","Crime, Human Rights, Politics, War",Yes,Local,Unknown Fire,Murder,Yes,No,Yes,"No
+",
+180,Motive Confirmed,"November 24, 2013",2013,"November 19, 2013",Mohamed Ahmed Taysir Bellou,Male,Male,Syria,Shahba Press,Syrian,Internet,Camera Operator,"Politics, War",No,Local,Military Officials,Crossfire/Combat-Related,,,,"
+",
+181,Motive Confirmed,"November 24, 2013",2013,"November 18, 2013",Saleh Ayyad Hafyana,Male,Male,Libya,Fassato News Agency,Libya,Internet,Photographer,"Culture, Politics",No,Local,Paramilitary Group,Dangerous Assignment,,No,No,"No
+",
+182,Motive Confirmed,"November 19, 2013",2013,"November  2, 2013",Claude Verlon,Male,Male,Mali,Radio France Internationale,France,Radio,Technician,"Human Rights, Politics, War",No,Foreign,Political Group,Murder,Yes,Yes,No,"No
+",
+183,Motive Confirmed,"November 18, 2013",2013,"November  2, 2013",Ghislaine Dupont,Female,Female,Mali,Radio France Internationale,France,Radio,Broadcast,"Human Rights, Politics, War",No,Foreign,Political Group,Murder,Yes,Yes,No,"No
+",
+184,Motive Confirmed,"November  2, 2013",2013,"October 29, 2013",Mohammad Saeed,Male,Male,Syria,Al-Arabiya,Syria,Television,Broadcast,"Politics, War",No,Local,Political Group,Murder,Yes,No,Yes,"No
+",
+185,Motive Confirmed,"November  2, 2013",2013,"October 26, 2013",Mohamed Mohamud,Male,Male,Somalia,Universal TV,Somali,Television,Broadcast,"Politics, War",No,Local,Unknown Fire,Murder,Yes,No,Yes,"No
+",
+186,Motive Confirmed,"October 29, 2013",2013,"October 24, 2013",Bashar al-Nuaimi,Male,Male,Iraq,Al-Mosuliya TV,Iraq,Television,"Camera Operator, Photographer","Corruption, Culture, Politics, War",No,Local,Unknown Fire,Murder,Yes,No,No,"No
+",
+187,Motive Confirmed,"October 26, 2013",2013,"October 11, 2013",Ayub Khattak,Male,Male,Pakistan,Karak Times,Pakistan,Print,Print Reporter,Crime,No,Local,Criminal Group,Murder,Partial,No,Yes,"No
+",
+188,Motive Confirmed,"October 24, 2013",2013,"October  5, 2013",Mohammed Ghanem,Male,Male,Iraq,Al-Sharqiyah,Iraq,Television,Camera Operator,Culture,No,Local,Unknown Fire,Murder,Yes,No,Yes,"No
+",
+189,Motive Confirmed,"October 11, 2013",2013,"October  5, 2013",Mohammed Karim al-Badrani,Male,Male,Iraq,Al-Sharqiyah,Iraq,Television,Broadcast,Culture,No,Local,Unknown Fire,Murder,Yes,No,Yes,"No
+",
+190,Motive Confirmed,"October  5, 2013",2013,"September 29, 2013",Nour al-Din Al-Hafiri,Male,Male,Syria,Freelance,Syria,"Television, Internet","Camera Operator, Producer, Technician",War,Yes,Local,Government Officials,Crossfire/Combat-Related,,,,"
+",
+191,Motive Confirmed,"October  5, 2013",2013,"September 11, 2013",Édison Alberto Molina,Male,Male,Colombia,Puerto Berrío Stereo,Colombia,Radio,"Broadcast, Columnist","Corruption, Politics",No,Local,Unknown Fire,Murder,Yes,No,Yes,"No
+",
+192,Motive Confirmed,"September 29, 2013",2013,"September  7, 2013",Rajesh Verma,Male,Male,India,IBN 7,India,Television,"Broadcast, Camera Operator","Crime, Politics",No,Local,Unknown Fire,Dangerous Assignment,,No,No,"No
+",
+193,Motive Confirmed,"September 11, 2013",2013,"September  5, 2013",Abdel Aziz Mahmoud Hasoun,Male,Male,Syria,Masar Press,Syrian ,Internet,Internet Reporter,"Human Rights, Politics, War",No,Local,Military Officials,Crossfire/Combat-Related,,,,"
+",
+194,Motive Confirmed,"September  7, 2013",2013,"August 29, 2013",Fernando Solijon,Male,Male,Philippines,DxLS Love Radio,Philippines,Radio,Broadcast,"Corruption, Politics",No,Local,Government Officials,Murder,Partial,No,Yes,"No
+",
+195,Motive Confirmed,"September  5, 2013",2013,"August 23, 2013",Rakesh Sharma,Male,Male,India,Aaj,India,Print,Print Reporter,"Corruption, Crime, Politics",No,Local,Criminal Group,Murder,Yes,No,No,"No
+",
+196,Motive Confirmed,"August 29, 2013",2013,"August 20, 2013",Narendra Dabholkar,Male,Male,India,Sadhana,India,Print,Editor,"Culture, Politics",No,Local,Unknown Fire,Murder,Yes,No,Yes,"No
+",
+197,Motive Confirmed,"August 23, 2013",2013,"August 20, 2013",Muhammad Hassan Al-Musalama,Male,Male,Syria,Revolutionaries of Daraa Al-Muhata – Tariq Al-Sadd,Syria,Internet,"Camera Operator, Editor, Internet Reporter","Human Rights, War",Yes,Local,Unknown Fire,Crossfire/Combat-Related,,No,No,"No
+",
+198,Motive Confirmed,"August 20, 2013",2013,"August 19, 2013",Tamer Abdel Raouf,Male,Male,Egypt,Al-Ahram,Syria,Print,Print Reporter,"Business, Corruption, Crime, Human Rights, Politics",No,Local,Government Officials,Dangerous Assignment,,No,No,"No
+",
+199,Motive Confirmed,"August 20, 2013",2013,"August 16, 2013",Shahir al-Muaddamani,Male,Male,Syria,Local Council of Deraya City Media Office,Syrai,Internet,"Photographer, Internet Reporter",War,Yes,Local,Government Officials,Crossfire/Combat-Related,,No,No,"No
+",
+200,Motive Confirmed,"August 19, 2013",2013,"August 14, 2013",Mosaab al-Shami,Male,Male,Egypt,Rassd News Network,Egypt,Internet,Photographer,"Human Rights, Politics",No,Local,Government Officials,Dangerous Assignment,,No,No,"No
+",
+201,Motive Confirmed,"August 16, 2013",2013,"August 14, 2013",Ahmed Abdel Gawad,Male,Male,Egypt,"Al-Akhbar, Misr25",Egypt,"Print, Television","Editor, Print Reporter","Human Rights, Politics",No,Local,Unknown Fire,Dangerous Assignment,,No,No,"No
+",
+202,Motive Confirmed,"August 14, 2013",2013,"August 14, 2013",Mick Deane,Male,Male,Egypt,Sky News,United Kingdom,Television,Camera Operator,"Human Rights, Politics, War",No,Foreign,"Military Officials, Political Group",Dangerous Assignment,,,,"
+",
+203,Motive Confirmed,"August 14, 2013",2013,"August 14, 2013",Habiba Ahmed Abd Elaziz,Female,Female,Egypt,Al-Jazeera ,Egypt,Television,Broadcast,"Human Rights, Politics, War",Yes,Local,Military Officials,Crossfire/Combat-Related,,,,"
+",
+204,Motive Confirmed,"August 14, 2013",2013,"August  1, 2013",Mario Sy,Male,Male,Philippines,Freelance,Philippines,Print,Photographer,Crime,Yes,Local,Criminal Group,Murder,Yes,No,No,"No
+",
+205,Motive Confirmed,"August 14, 2013",2013,"July 27, 2013",Muhammed Tariq Jadua,Male,Male,Syria,Jisr Al-Shaghur Multimedia Network,Syria,"Television, Internet","Broadcast, Camera Operator, Photographer","Human Rights, War",Yes,Local,Government Officials,Crossfire/Combat-Related,,No,No,"No
+",
+206,Motive Confirmed,"August  1, 2013",2013,"July  9, 2013",Akhmednabi Akhmednabiyev,Male,Male,Russia,Novoye Delo,Russia,Internet,"Editor, Internet Reporter","Corruption, Human Rights, Politics",No,Local,Government Officials,Murder,Yes,No,Yes,"No
+",
+207,Motive Confirmed,"July 27, 2013",2013,"July  8, 2013",Ahmed Assem el-Senousy,Male,Male,Egypt,Freedom and Justice,Egypt,"Print, Internet",Photographer,"Human Rights, Politics",No,Local,Military Officials,Dangerous Assignment,,No,No,"No
+",
+208,Motive Confirmed,"July  9, 2013",2013,"July  7, 2013",Liban Abdullahi Farah,Male,Male,Somalia,Kalsan TV,Somalia,Television,Broadcast,Politics,No,Local,Unknown Fire,Murder,Yes,No,No,"No
+",
+209,Motive Confirmed,"July  8, 2013",2013,"July  5, 2013",Fidaa al-Baali,Male,Male,Syria,Orient News,Syria,Television,"Broadcast, Camera Operator","Human Rights, War",No,Local,Military Officials,Crossfire/Combat-Related,,,,"
+",
+210,Motive Confirmed,"July  7, 2013",2013,"June 29, 2013",Salah al-Din Hassan,Male,Male,Egypt,Shaab Masr,Egyptian,Internet,Internet Reporter,"Human Rights, Politics",No,Local,Political Group,Dangerous Assignment,,,,"
+",
+211,Motive Confirmed,"July  5, 2013",2013,"June 11, 2013",José Roberto Ornelas de Lemos,Male,Male,Brazil,Jornal Hora H,Brazil,Print,Publisher,"Corruption, Crime",No,Local,Criminal Group,Murder,Yes,No,Yes,"No
+",
+212,Motive Confirmed,"June 29, 2013",2013,"May 27, 2013",Yara Abbas,Female,Female,Syria,Al-Ikhbariya,Syria,Television,Broadcast,War,No,Local,Political Group,Crossfire/Combat-Related,,No,No,"No
+",
+213,Motive Confirmed,"June 11, 2013",2013,"April 24, 2013",Youssef Younis,Male,Male,Syria,Freelance,Syrian,Internet,"Broadcast, Camera Operator","Human Rights, Politics, War",Yes,Local,Military Officials,Crossfire/Combat-Related,,,,"
+",
+214,Motive Confirmed,"May 27, 2013",2013,"April 21, 2013",Mohamed Ibrahim Raage,Male,Male,Somalia,"Radio Mogadishu, Somali National Television",Somalia,"Radio, Television","Broadcast, Producer",Politics,No,Local,Unknown Fire,Murder,Yes,No,No,"No
+",
+215,Motive Confirmed,"April 24, 2013",2013,"April 16, 2013",Aslam Durrani,Male,Male,Pakistan,Daily Pakistan,Pakistan,Print,Editor,Politics,No,Local,Political Group,Dangerous Assignment,,,,"
+",
+216,Motive Confirmed,"April 21, 2013",2013,"April 14, 2013",Walgney Assis Carvalho,Male,Male,Brazil,Freelance,Brazil,Print,Photographer,Crime,Yes,Local,Government Officials,Murder,Partial,No,No,"No
+",
+217,Motive Confirmed,"April 16, 2013",2013,"April  8, 2013",Mikhail Beketov,Male,Male,Russia,Khimkinskaya Pravda,Russia,Print,"Editor, Print Reporter",Politics,No,Local,Government Officials,Murder,Yes,No,Yes,"No
+",
+218,Motive Confirmed,"April 14, 2013",2013,,Abdul Raheem Kour Hassan,Male,Male,Syria,Watan FM,Syria,"Radio, Internet","Broadcast, Photographer, Publisher","Human Rights, Politics, War",No,Local,Government Officials,Dangerous Assignment,,Yes,No,"Yes
+",
+219,Motive Confirmed,"April  8, 2013",2013,"March 29, 2013",Amer Diab,Male,Male,Syria,Freelance,Syria,Internet,"Broadcast, Camera Operator","Human Rights, War",Yes,Local,Military Officials,Crossfire/Combat-Related,,No,No,"No
+",
+221,Motive Confirmed,"March 29, 2013",2013,"March 10, 2013",Ghaith Abd al-Jawad,Male,Male,Syria,Qaboun Media Center,Syria,Internet,"Camera Operator, Photographer","Human Rights, Politics, War",Yes,Local,Military Officials,Crossfire/Combat-Related,,No,No,"No
+",
+222,Motive Confirmed,"March 14, 2013",2013,"March 10, 2013",Amr Badir al-Deen Junaid,Male,Male,Syria,Qaboun Media Center,Syria,Internet,"Camera Operator, Photographer","Human Rights, Politics, War",Yes,Local,Military Officials,Crossfire/Combat-Related,,No,No,"No
+",
+223,Motive Confirmed,"March 10, 2013",2013,"March  8, 2013",Rodrigo Neto,Male,Male,Brazil,Rádio Vanguarda and Vale do Aço,Brazil,"Print, Radio","Broadcast, Print Reporter",Crime,No,Local,Government Officials,Murder,Partial,No,Yes,"No
+",
+224,Motive Confirmed,"March 10, 2013",2013,"March  3, 2013",Walid Jamil Amira,Male,Male,Syria,Jobar Media Center,Syria,Internet,"Camera Operator, Photographer","Human Rights, Politics, War",Yes,Local,Military Officials,Crossfire/Combat-Related,,No,No,"No
+",
+225,Motive Confirmed,"March  8, 2013",2013,"February 24, 2013",Olivier Voisin,Male,Male,Syria,Freelance,France,"Print, Internet",Photographer,"Human Rights, Politics, War",Yes,Foreign,Unknown Fire,Crossfire/Combat-Related,,,,"
+",
+226,Motive Confirmed,"March  3, 2013",2013,"February 22, 2013",Mafaldo Bezerra Goes,Male,Male,Brazil,FM Rio Jaguaribe,Brazil,Radio,Broadcast,Crime,No,Local,Criminal Group,Murder,Yes,No,Yes,"No
+",
+227,Motive Confirmed,"February 24, 2013",2013,"February 17, 2013",Mohamed Saeed al-Hamwi,Male,Male,Syria,Qaboun Media Center,Syria,Internet,"Broadcast, Camera Operator","Human Rights, War",Yes,Local,Military Officials,Crossfire/Combat-Related,,No,No,"No
+",
+228,Motive Confirmed,"February 22, 2013",2013,"February 15, 2013",Youssef Adel Bakri (Youssef Abu Jad),Male,Male,Syria,Halab News Network ,Syria,Internet,"Broadcast, Camera Operator","Human Rights, War",No,Local,Military Officials,Crossfire/Combat-Related,,No,No,"No
+",
+229,Motive Confirmed,"February 17, 2013",2013,"February 15, 2013",Ahmed Rajib Haider,Male,Male,Bangladesh,Freelance,Bangladesh,Internet,Internet Reporter,"Corruption, Human Rights, Politics",Yes,Local,Political Group,Murder,No,No,Yes,"No
+",
+230,Motive Confirmed,"February 15, 2013",2013,"January 31, 2013",Loay al-Nimir,Male,Male,Syria,Freelance,Syria,Internet,Camera Operator,"Human Rights, War",Yes,Local,Unknown Fire,Crossfire/Combat-Related,,,,"
+",
+231,Motive Confirmed,"February 15, 2013",2013,"January 31, 2013",Issam Obeid,Male,Male,Syria,Freelance,Syria,Internet,Camera Operator,"Human Rights, War",Yes,Local,Unknown Fire,Crossfire/Combat-Related,,,,"
+",
+232,Motive Confirmed,"January 31, 2013",2013,"January 31, 2013",Abdel Karim Nazir Ismail,Male,Male,Syria,Freelance,Syria,Internet,Camera Operator,"Human Rights, War",Yes,Local,Unknown Fire,Crossfire/Combat-Related,,,,"
+",
+233,Motive Confirmed,"January 31, 2013",2013,"January 18, 2013",Mohamed al-Mesalma,Male,Male,Syria,Al-Jazeera,Syria,Television,Broadcast,War,No,Local,Unknown Fire,Crossfire/Combat-Related,,No,No,"No
+",
+234,Motive Confirmed,"January 31, 2013",2013,"January 18, 2013",Abdihared Osman Aden,Male,Male,Somalia,Shabelle Media Network,Somalia,"Radio, Television",Producer,"Culture, Politics",Yes,Local,Unknown Fire,Murder,Yes,No,No,"No
+",
+235,Motive Confirmed,"January 18, 2013",2013,"January 17, 2013",Yves Debay,Male,Male,Syria,Assault,France,Internet,Internet Reporter,War,No,Foreign,Unknown Fire,Crossfire/Combat-Related,,No,No,"No
+",
+236,Motive Confirmed,"January 18, 2013",2013,"January 13, 2013",Bassem Fawaz al-Zabi,Male,Male,Syria,Freelance,Syria,Internet,Camera Operator,"Human Rights, Politics",Yes,Local,Unknown Fire,Crossfire/Combat-Related,,,,"
+",
+237,Motive Confirmed,"January 17, 2013",2013,"January 10, 2013",Mirza Iqbal Hussain,Male,Male,Pakistan,News Network International,Pakistan,Internet,Photographer,"Crime, Human Rights, Politics",No,Local,Political Group,Dangerous Assignment,,No,No,"No
+",
+238,Motive Confirmed,"January 13, 2013",2013,"January 10, 2013",Saif ur Rehman,Male,Male,Pakistan,Samaa TV,Pakistan,Television,Broadcast,"Crime, Human Rights, Politics",No,Local,Political Group,Dangerous Assignment,,No,No,"No
+",
+239,Motive Confirmed,"January 10, 2013",2013,"January 10, 2013",Imran Shaikh,Male,Male,Pakistan,Samaa TV,Pakistan,Television,Camera Operator,"Crime, Human Rights, Politics",No,Local,Political Group,Dangerous Assignment,,No,No,"No
+",
+240,Motive Confirmed,"January 10, 2013",2013,"January  4, 2013",Suhail Mahmoud al-Ali,Male,Male,Syria,Dunya TV,Syria,Television,"Broadcast, Editor",War,No,Local,Political Group,Murder,Yes,,,"
+",
+241,Motive Confirmed,"January 10, 2013",2013,"December 23, 2012",Dwijamani Singh,Male,Male,India,Prime News,India,Television,"Broadcast, Camera Operator",Politics,No,Local,Government Officials,Dangerous Assignment,,No,No,"No
+",
+242,Motive Confirmed,"January  4, 2013",2013,"December 21, 2012",Abd al-Karim al-Ezzo,Male,Male,Syria,Freelance,Syria,Internet,Camera Operator,War,Yes,Local,Military Officials,Crossfire/Combat-Related,,,,"
+",
+243,Motive Confirmed,"December 23, 2012",2012,"December 12, 2012",Al-Hosseiny Abou Deif,Male,Male,Egypt,El-Fagr,Egypt,"Print, Internet","Internet Reporter, Print Reporter","Human Rights, Politics",No,Local,Political Group,Murder,Yes,No,Yes,"No
+",
+244,Motive Confirmed,"December 21, 2012",2012,"December  5, 2012",Kazbek Gekkiyev,Male,Male,Russia,VGTRK,Russia,Television,Broadcast,Culture,No,Local,Political Group,Murder,Yes,No,Yes,"No
+",
+245,Motive Confirmed,"December 12, 2012",2012,"December  4, 2012",Naji Asaad,Male,Male,Syria,Tishreen,Syria,Print,Editor,War,No,Local,Political Group,Crossfire/Combat-Related,,No,No,"No
+",
+246,Motive Confirmed,"December  5, 2012",2012,"November 28, 2012",Mohamed Quratem,Male,Male,Syria,Enab Baladi,Syria,Print,Print Reporter,War,No,Local,Military Officials,Crossfire/Combat-Related,,,,"
+",
+247,Motive Confirmed,"December  4, 2012",2012,"November 27, 2012",Guillermo Quiroz Delgado,Male,Male,Colombia,Freelance,Colombia,"Print, Television","Broadcast, Print Reporter",Politics,Yes,Local,Government Officials,Dangerous Assignment,,,,"
+",
+248,Motive Confirmed,"November 28, 2012",2012,"November 25, 2012",Mohamed al-Khal,Male,Male,Syria,Freelance,Syria,"Television, Internet",Camera Operator,"Human Rights, Politics, War",Yes,Local,Government Officials,Crossfire/Combat-Related,,No,No,"No
+",
+249,Motive Confirmed,"November 27, 2012",2012,"November 22, 2012",Saqib Khan,Male,Male,Pakistan,Ummat,Pakistan,"Print, Internet",Photographer,"Business, Corruption",No,Local,Political Group,Dangerous Assignment,,No,No,"No
+",
+250,Motive Confirmed,"November 25, 2012",2012,"November 21, 2012",Basel Tawfiq Youssef,Male,Male,Syria,Syrian State TV,Syria,Television,Broadcast,"Politics, War",No,Local,Political Group,Crossfire/Combat-Related,,No,Yes,"No
+",
+251,Motive Confirmed,"November 22, 2012",2012,"November 21, 2012",Eduardo Carvalho,Male,Male,Brazil,Última Hora News,Brazil,Internet,Publisher,"Corruption, Crime",No,Local,Government Officials,Murder,Yes,No,Yes,"No
+",
+252,Motive Confirmed,"November 21, 2012",2012,"November 20, 2012",Hussam Salama,Male,Male,Israel and the Occupied Palestinian Territory,Al-Aqsa,Palestinian,Television,Camera Operator,War,No,Local,Military Officials,Crossfire/Combat-Related,,,,"
+",
+253,Motive Confirmed,"November 21, 2012",2012,"November 20, 2012",Mahmoud al-Kumi,Male,Male,Israel and the Occupied Palestinian Territory,Al-Aqsa,Palestinian,Television,Camera Operator,War,No,Local,Military Officials,Crossfire/Combat-Related,,,,"
+",
+254,Motive Confirmed,"November 20, 2012",2012,"November 19, 2012",Hozan Abdel Halim Mahmoud,Male,Male,Syria,Freelance,Syria,Internet,"Camera Operator, Internet Reporter",War,Yes,Local,Paramilitary Group,Crossfire/Combat-Related,,,,"
+",
+255,Motive Confirmed,"November 20, 2012",2012,"November 18, 2012",Rehmatullah Abid,Male,Male,Pakistan,"Dunya News TV, Intikhaab",Pakistan,"Print, Television","Broadcast, Camera Operator, Print Reporter","Business, Corruption, Crime, Human Rights, Politics, War",No,Local,Unknown Fire,Murder,Yes,No,No,"No
+",
+256,Motive Confirmed,"November 19, 2012",2012,"November 14, 2012",Adrián Silva Moreno,Male,Male,Mexico,Freelance,Mexico,Print,Print Reporter,Crime,Yes,Local,Criminal Group,Dangerous Assignment,,No,No,"No
+",
+257,Motive Confirmed,"November 18, 2012",2012,"November  9, 2012",Ayham Mostafa Ghazzoul,Male,Male,Syria,Syrian Center for Media and Freedom of Expression,Syria,Internet,Broadcast,"Human Rights, War",No,Local,Political Group,Dangerous Assignment,,,,"
+",
+258,Motive Confirmed,"November 14, 2012",2012,"November  3, 2012",Sattar Beheshti,Male,Male,Iran,Freelance,Iran,Internet,Internet Reporter,"Corruption, Human Rights, Politics",Yes,Local,Government Officials,Dangerous Assignment,,Yes,Yes,"Yes
+",
+259,Motive Confirmed,"November  9, 2012",2012,"October 28, 2012",Mohamed Mohamud Turyare,Male,Male,Somalia,Shabelle Media Network,Somali,"Radio, Internet","Broadcast, Editor","Culture, Politics",No,Local,Unknown Fire,Murder,Yes,No,No,"No
+",
+260,Motive Confirmed,"November  3, 2012",2012,"October 23, 2012",Ahmed Farah Ilyas,Male,Male,Somalia,Universal TV,Somali,Television,Broadcast,"Culture, Politics",No,Local,Unknown Fire,Murder,Yes,No,Yes,"No
+",
+261,Motive Confirmed,"October 28, 2012",2012,"October 10, 2012",Mohammed al-Ashram,Male,Male,Syria,Al-Ikhbariya,Syria,Television,Camera Operator,"Politics, War",No,Local,Unknown Fire,Crossfire/Combat-Related,,No,No,"No
+",
+262,Motive Confirmed,"October 23, 2012",2012,"October  7, 2012",Mushtaq Khand,Male,Male,Pakistan,Dharti Television Network and Mehran,Pakistan,"Print, Television","Broadcast, Print Reporter","Crime, Politics, War",No,Local,Unknown Fire,Dangerous Assignment,,No,No,"No
+",
+263,Motive Confirmed,"October 10, 2012",2012,"October  3, 2012",Mona al-Bakkour,Female,Female,Syria,Al-Thawra and Syria al-Qalaa,Syria,"Print, Internet","Editor, Print Reporter","Politics, War",No,Local,Unknown Fire,Dangerous Assignment,,No,No,"No
+",
+264,Motive Confirmed,"October  7, 2012",2012,"September 29, 2012",Abdul Haq Baloch,Male,Male,Pakistan,ARY Television,Pakistan,Television,Broadcast,"Crime, Politics, War",No,Local,Political Group,Murder,Yes,No,Yes,"No
+",
+265,Motive Confirmed,"October  3, 2012",2012,"September 26, 2012",Maya Naser,Male,Male,Syria,Press TV,Syria,Television,Broadcast,"Politics, War",No,Local,Unknown Fire,Crossfire/Combat-Related,,No,No,"No
+",
+266,Motive Confirmed,"September 29, 2012",2012,"September 21, 2012",Hassan Yusuf Absuge,Male,Male,Somalia,Radio Maanta,Somalia,Radio,"Broadcast, Producer","Crime, Culture, Politics",No,Local,Political Group,Murder,Partial,No,No,"No
+",
+267,Motive Confirmed,"September 26, 2012",2012,"September 20, 2012",Liban Ali Nur,Male,Male,Somalia,Somali National TV,Somalia,Television,Editor,"Culture, Human Rights, Politics",No,Local,Political Group,Murder,Yes,No,No,"No
+",
+268,Motive Confirmed,"September 21, 2012",2012,"September 20, 2012",Abdisatar Daher Sabriye,Male,Male,Somalia,Radio Mogadishu,Somalia,Radio,Editor,"Culture, Human Rights, Politics",No,Local,Political Group,Murder,Yes,No,No,"No
+",
+269,Motive Confirmed,"September 20, 2012",2012,"September 20, 2012",Abdirahman Yasin Ali,Male,Male,Somalia,Radio Hamar,Somalia,Radio,Editor,"Culture, Human Rights, Politics",No,Local,Political Group,Murder,Yes,No,No,"No
+",
+270,Motive Confirmed,"September 20, 2012",2012,"September 19, 2012",Abdel Karim al-Oqda,Male,Male,Syria,Shaam News Network,Syria,Internet,Camera Operator,"Human Rights, War",No,Local,Military Officials,Murder,Yes,No,No,"No
+",
+271,Motive Confirmed,"September 20, 2012",2012,"September 16, 2012",Yusuf Ahmed Deeb,Male,Male,Syria,Liwaa Al-Fatih,Syria,Print,Editor,"Human Rights, Politics, War",No,Local,Military Officials,Crossfire/Combat-Related,,No,No,"No
+",
+272,Motive Confirmed,"September 19, 2012",2012,"September 11, 2012",Hang Serei Odom,Male,Male,Cambodia,Virakchun Khmer Daily,Cambodia,Print,Print Reporter,"Business, Corruption, Crime, Politics",No,Local,"Criminal Group, Military Officials",Murder,Yes,Yes,No,"No
+",
+273,Motive Confirmed,"September 16, 2012",2012,"September  9, 2012",Tamer al-Awam,Male,Male,Syria,Freelance,Syrian,Television,Camera Operator,"Human Rights, Politics, War",Yes,Local,Unknown Fire,Crossfire/Combat-Related,,No,No,"No
+",
+274,Motive Confirmed,"September 11, 2012",2012,"September  2, 2012",Daudi Mwangosi,Male,Male,Tanzania,Channel Ten,Tanzania,Television,Broadcast,Politics,No,Local,Military Officials,Dangerous Assignment,,No,No,"No
+",
+275,Motive Confirmed,"September  9, 2012",2012,"August 22, 2012",Mosaab al-Obdaallah,Male,Male,Syria,Tishreen,Syria,"Print, Internet","Internet Reporter, Print Reporter","Culture, Politics, Sports, War",Yes,Local,Government Officials,Murder,Yes,No,No,"No
+",
+276,Motive Confirmed,"September  2, 2012",2012,"August 20, 2012",Mika Yamamoto,Female,Female,Syria,Japan Press,Japan,"Television, Internet","Camera Operator, Photographer",War,No,Foreign,Military Officials,Crossfire/Combat-Related,,,,"
+",
+277,Motive Confirmed,"August 22, 2012",2012,"August 11, 2012",Ali Abbas,Male,Male,Syria,SANA,Syria,"Television, Internet",Editor,"Politics, War",No,Local,Political Group,Murder,Yes,No,No,"No
+",
+278,Motive Confirmed,"August 20, 2012",2012,"August 10, 2012",Hatem Abu Yehia,Male,Male,Syria,Al-Ikhbariya,Syria,Television,Camera Operator,"Politics, War",No,Local,Unknown Fire,Unknown,,Yes,No,"No
+",
+279,Motive Confirmed,"August 11, 2012",2012,"July 12, 2012",Ihsan al-Buni,Male,Male,Syria,Al-Thawra,Syria,"Print, Internet",Photographer,"Politics, War",No,Local,Political Group,Murder,Yes,No,No,"No
+",
+280,Motive Confirmed,"August 10, 2012",2012,"July  5, 2012",Valério Luiz de Oliveira,Male,Male,Brazil,Radio Jornal,Brazil,Radio,Columnist,Sports,No,Local,Unknown Fire,Murder,Yes,No,Yes,"No
+",
+281,Motive Confirmed,"July 12, 2012",2012,"July  1, 2012",Byron Baldeón,Male,Male,Ecuador,Freelance,Ecuador,Print,Photographer,Crime,Yes,Local,Unknown Fire,Murder,Yes,No,,"No
+",
+282,Motive Confirmed,"July  5, 2012",2012,"June 27, 2012",Mohammad Shamma,Male,Male,Syria,Al-Ikhbariya,Syria,Television,Technician,Politics,No,Local,Unknown Fire,Crossfire/Combat-Related,,No,No,"No
+",
+283,Motive Confirmed,"July  1, 2012",2012,"June 27, 2012",Sami Abu Amin,Male,Male,Syria,Al-Ikhbariya,Syria,Television,Broadcast,Politics,No,Local,Unknown Fire,Crossfire/Combat-Related,,No,No,"No
+",
+284,Motive Confirmed,"June 27, 2012",2012,"June 15, 2012",Jamal Uddin,Male,Male,Bangladesh,Gramer Kagoj,Bangladesh,Print,Print Reporter,Crime,No,Local,Criminal Group,Murder,Yes,No,Yes,"No
+",
+285,Motive Confirmed,"June 27, 2012",2012,"May 28, 2012",Abdul Qadir Hajizai,Male,Male,Pakistan,WASH TV,Pakistan,Television,Broadcast,"Politics, War",Yes,Local,Political Group,Murder,Yes,No,No,"No
+",
+286,Motive Confirmed,"June 15, 2012",2012,"May 28, 2012",Ahmed al-Assam,Male,Male,Syria,Freelance,Syria,Internet,Camera Operator,"Human Rights, War",Yes,Local,Military Officials,Crossfire/Combat-Related,,No,No,"No
+",
+287,Motive Confirmed,"May 28, 2012",2012,"May 28, 2012",Bassel al-Shahade,Male,Male,Syria,Freelance,Syria,Internet,Camera Operator,"Human Rights, War",Yes,Local,Military Officials,Crossfire/Combat-Related,,No,No,"No
+",
+288,Motive Confirmed,"May 28, 2012",2012,"May 27, 2012",Ahmed Adnan al-Ashlaq,Male,Male,Syria,Shaam News Network,Syria,Internet,Camera Operator,"Human Rights, War",No,Local,Military Officials,Crossfire/Combat-Related,,No,No,"No
+",
+289,Motive Confirmed,"May 28, 2012",2012,"May 27, 2012",Lawrence Fahmy al-Naimi,Male,Male,Syria,Shaam News Network,Syria,Internet,Camera Operator,"Human Rights, War",No,Local,Military Officials,Crossfire/Combat-Related,,No,No,"No
+",
+290,Motive Confirmed,"May 27, 2012",2012,"May 27, 2012",Ammar Mohamed Suhail Zado,Male,Male,Syria,Shaam News Network,Syria,Internet,Camera Operator,"Human Rights, War",No,Local,Military Officials,Crossfire/Combat-Related,,No,No,"No
+",
+291,Motive Confirmed,"May 27, 2012",2012,"May 24, 2012",Ahmed Addow Anshur,Male,Male,Somalia,Shabelle Media Network,Somalia,Radio,"Broadcast, Columnist, Producer",Politics,No,Local,Political Group,Murder,Yes,No,No,"No
+",
+292,Motive Confirmed,"May 27, 2012",2012,"May 19, 2012",Razzaq Gul,Male,Male,Pakistan,Express News TV,Pakistan,Television,Broadcast,"Politics, War",No,Local,Unknown Fire,Murder,Yes,Yes,No,"Yes
+",
+293,Motive Confirmed,"May 24, 2012",2012,"May  2, 2012",Farhan Jeemis Abdulle,Male,Male,Somalia,Radio Daljir and Simba Radio,Somalia,Radio,"Broadcast, Columnist, Producer","Culture, Politics, War",No,Local,Political Group,Murder,Yes,No,Yes,"No
+",
+294,Motive Confirmed,"May 19, 2012",2012,"April 28, 2012",Regina Martínez Pérez,Male,Male,Mexico,Proceso,Mexico,Print,Print Reporter,"Crime, Politics",No,Local,Unknown Fire,Murder,Yes,No,No,"No
+",
+295,Motive Confirmed,"May  2, 2012",2012,"April 23, 2012",Décio Sá,Male,Male,Brazil,O Estado do Maranhão and Blog do Décio,Brazil,"Print, Internet","Internet Reporter, Print Reporter","Corruption, Politics",No,Local,Criminal Group,Murder,Partial,No,Yes,"No
+",
+296,Motive Confirmed,"April 28, 2012",2012,"April  9, 2012",Ali Shaaban,Male,Male,Lebanon,Al-Jadeed,Lebanon,Television,Camera Operator,War,No,Local,Military Officials,Crossfire/Combat-Related,,No,No,"No
+",
+297,Motive Confirmed,"April 23, 2012",2012,"April  8, 2012",Leiron Kogoya,Male,Male,Indonesia,Papua Pos Nabire and Pasifik Pos Dail,Indonesia,"Print, Internet",Print Reporter,"Culture, Human Rights, Politics",No,Local,Unknown Fire,Dangerous Assignment,,No,No,"No
+",
+298,Motive Confirmed,"April  9, 2012",2012,"April  5, 2012",Mahad Salad Adan,Male,Male,Somalia,Shabelle Media Network,Somalia,"Radio, Internet",Broadcast,Politics,Yes,Local,Political Group,Murder,Yes,,,"
+",
+299,Motive Confirmed,"April  8, 2012",2012,"March 31, 2012",Ahmed Ismail Hassan,Male,Male,Bahrain,Freelance,Bahrain,Internet,Camera Operator,"Human Rights, Politics",Yes,Local,Paramilitary Group,Dangerous Assignment,,,No,"
+",
+300,Motive Confirmed,"April  5, 2012",2012,"March  4, 2012",Ali Ahmed Abdi,Male,Male,Somalia,Freelance,Somali,"Radio, Internet","Broadcast, Columnist, Internet Reporter","Human Rights, Politics, War",Yes,Local,Political Group,Murder,Yes,No,Yes,"No
+",
+301,Motive Confirmed,"March 31, 2012",2012,"March  1, 2012",Rajesh Mishra,Male,Male,India,Media Raj,Indian,Print,Print Reporter,Corruption,No,Local,Criminal Group,Murder,Yes,No,Yes,"No
+",
+302,Motive Confirmed,"March  4, 2012",2012,"February 28, 2012",Abukar Hassan Mohamoud,Male,Male,Somalia,Somaliweyn Radio,Somali,Radio,Editor,"Human Rights, Politics",No,Local,Political Group,Murder,Yes,No,No,"No
+",
+303,Motive Confirmed,"March  1, 2012",2012,"February 24, 2012",Anas al-Tarsha,Male,Male,Syria,Freelance,Syria,Internet,Camera Operator,"Human Rights, War",Yes,Local,Military Officials,Crossfire/Combat-Related,,,,"
+",
+304,Motive Confirmed,"February 28, 2012",2012,"February 22, 2012",Rémi Ochlik,Male,Male,Syria,Freelance,France,Print,Photographer,"Human Rights, War",Yes,Foreign,Military Officials,Crossfire/Combat-Related,,,,"
+",
+305,Motive Confirmed,"February 24, 2012",2012,"February 22, 2012",Marie Colvin,Female,Female,Syria,The Sunday Times,American,Print,Print Reporter,"Human Rights, War",No,Foreign,Military Officials,Crossfire/Combat-Related,,,,"
+",
+306,Motive Confirmed,"February 22, 2012",2012,"February 21, 2012",Rami al-Sayed,Male,Male,Syria,Freelance,Syria,Internet,Camera Operator,"Human Rights, War",Yes,Local,Military Officials,Crossfire/Combat-Related,,,,"
+",
+307,Motive Confirmed,"February 22, 2012",2012,"February  9, 2012",Mario Randolfo Marques Lopes,Male,Male,Brazil,Vassouras na Net,Brazil,Internet,Internet Reporter,"Corruption, Crime, Politics",No,Local,Government Officials,Murder,Yes,Yes,Yes,"No
+",
+308,Motive Confirmed,"February 21, 2012",2012,"February  4, 2012",Mazhar Tayyara,Male,Male,Syria,Freelance,Syria,"Television, Internet",Camera Operator,"Human Rights, Politics",Yes,Local,Military Officials,Crossfire/Combat-Related,,,,"
+",
+309,Motive Confirmed,"February  9, 2012",2012,"January 28, 2012",Hassan Osman Abdi,Male,Male,Somalia,Shabelle Media Network,Somali,"Radio, Television","Broadcast, Editor, Producer","Business, Corruption, Human Rights, Politics, War",No,Local,Political Group,Murder,Yes,No,Yes,"No
+",
+310,Motive Confirmed,"February  4, 2012",2012,"January 20, 2012",Enenche Akogwu,Male,Male,Nigeria,Channels TV,Nigeria,Television,"Broadcast, Camera Operator","Human Rights, Politics, War",No,Local,Political Group,Murder,Yes,No,No,"No
+",
+311,Motive Confirmed,"January 28, 2012",2012,"January 17, 2012",Mukarram Khan Aatif,Male,Male,Pakistan,Freelance,Pakistan,"Radio, Television",Broadcast,"Politics, War",Yes,Local,"Military Officials, Political Group",Murder,Yes,No,Yes,"No
+",
+312,Motive Confirmed,"January 20, 2012",2012,"January 12, 2012","Wisut \""Ae\"" Tangwittayaporn",Male,Male,Thailand,Inside Phuket,Thailand,Print,Publisher,Business,No,Local,Local Residents,Murder,Yes,No,No,"No
+",
+313,Motive Confirmed,"January 17, 2012",2012,"January 11, 2012",Gilles Jacquier,Male,Male,Syria,France 2,France,Television,Broadcast,"Human Rights, Politics",No,Foreign,Unknown Fire,Dangerous Assignment,,,,"
+",
+314,Motive Confirmed,"January 12, 2012",2012,"January  5, 2012",Christopher Guarin,Male,Male,Philippines,Radyo Mo Nationwide and Tatak News,Philippines,"Print, Radio","Internet Reporter, Publisher","Business, Politics",No,Local,Local Residents,Murder,Yes,No,Yes,"No
+",
+315,Motive Confirmed,"January 11, 2012",2012,"December 27, 2011",Basil al-Sayed,Male,Male,Syria,Freelance,Syria,Internet,Camera Operator,"Human Rights, Politics",Yes,Local,Military Officials,Dangerous Assignment,,,,"
+",
+316,Motive Confirmed,"January  5, 2012",2012,"December 18, 2011",Abdisalan Sheikh Hassan,Male,Male,Somalia,Freelance,Somalia,"Radio, Television",Broadcast,"Human Rights, Politics",Yes,Local,"Government Officials, Military Officials",Murder,Yes,No,Yes,"No
+",
+317,Motive Confirmed,"December 27, 2011",2011,"December 15, 2011",Gadzhimurad Kamalov,Male,Male,Russia,Chernovik,Russia,Print,"Editor, Publisher","Corruption, Human Rights, Politics",No,Local,Government Officials,Murder,Yes,No,Yes,"No
+",
+318,Motive Confirmed,"December 18, 2011",2011,"November 23, 2011",Rafiq Tagi,Male,Male,Azerbaijan,Freelance,Azerbaijan,Internet,Internet Reporter,"Culture, Politics",Yes,Local,Political Group,Murder,Yes,No,Yes,"No
+",
+319,Motive Confirmed,"December 15, 2011",2011,,Ferzat Jarban,Male,Male,Syria,Freelance,Syria,Television,Camera Operator,Politics,Yes,Local,Government Officials,Dangerous Assignment,,,,"
+",
+320,Motive Confirmed,"November 23, 2011",2011,"November  6, 2011",Gelson Domingos da Silva,Male,Male,Brazil,Bandeirantes TV,Brazil,Television,Camera Operator,Crime,No,Local,Unknown Fire,Dangerous Assignment,Yes,No,No,"No
+",
+322,Motive Confirmed,"November  6, 2011",2011,November 2011,Javed Naseer Rind,Male,Male,Pakistan,Daily Tawar,Pakistan,Print,"Columnist, Editor, Print Reporter","Crime, Human Rights, Politics",No,Local,Unknown Fire,Murder,Yes,Yes,Yes,"Yes
+",
+323,Motive Confirmed,"November  6, 2011",2011,"October 22, 2011",Zakariya Isa,Male,Male,Nigeria,Nigeria Television Authority,Nigeria,Television,Camera Operator,,No,Local,Political Group,Murder,Yes,No,No,"No
+",
+324,Motive Confirmed,November 2011,2011,"October  9, 2011",Wael Mikhael,Male,Male,Egypt,Al-Tareeq,Egypt,Television,Camera Operator,"Culture, Politics",Yes,Local,Military Officials,Dangerous Assignment,,,,"
+",
+325,Motive Confirmed,"October 22, 2011",2011,"October  7, 2011",Faisal Qureshi,Male,Male,Pakistan,The London Post,Pakistan,Internet,"Editor, Internet Reporter",Politics,No,Local,Political Group,Murder,Yes,No,Yes,"Yes
+",
+326,Motive Confirmed,"October  9, 2011",2011,"September 24, 2011",Maria Elizabeth Macías Castro,Female,Female,Mexico,Freelance,Mexico,Internet,Internet Reporter,Crime,Yes,Local,Criminal Group,Murder,Yes,No,No,"Yes
+",
+327,Motive Confirmed,"October  7, 2011",2011,"September 24, 2011",Phamon Phonphanit,Male,Male,Thailand,Sue Samut Atyakam,Thailand,Print,Print Reporter,Crime,No,Local,Political Group,Dangerous Assignment,,,,"
+",
+328,Motive Confirmed,"September 24, 2011",2011,"September 24, 2011",Hassan al-Wadhaf,Male,Male,Yemen,Arabic Media Agency,Yemen,Television,Camera Operator,Politics,Yes,Local,Paramilitary Group,Dangerous Assignment,,,No,"
+",
+329,Motive Confirmed,"September 24, 2011",2011,"September 20, 2011",Farhad Taqaddosi,Male,Male,Afghanistan,Press TV,Iran,Television,Camera Operator,"Politics, War",No,Foreign,Political Group,Crossfire/Combat-Related,,,,"
+",
+330,Motive Confirmed,"September 24, 2011",2011,"September  8, 2011",Hadi al-Mahdi,Male,Male,Iraq,Freelance,Iraq,Radio,Broadcast,"Corruption, Politics",Yes,Local,Unknown Fire,Murder,Yes,,Yes,"
+",
+331,Motive Confirmed,"September 20, 2011",2011,"September  8, 2011",Pedro Alfonso Flores Silva,Male,Male,Peru,Channel 6,Peru,Television,Columnist,"Corruption, Politics",Yes,Local,Government Officials,Murder,Yes,No,Yes,"No
+",
+332,Motive Confirmed,"September  8, 2011",2011,"September  2, 2011",Noramfaizul Mohd,Male,Male,Somalia,Bernama TV,Malaysia,Television,Camera Operator,"Human Rights, War",No,Foreign,Military Officials,Dangerous Assignment,,,,"
+",
+333,Motive Confirmed,"September  8, 2011",2011,"August  2, 2011",José Agustín Silvestre de los Santos,Male,Male,Dominican Republic,"La Voz de la Verdad, Caña TV",Dominican,"Print, Television","Broadcast, Print Reporter, Publisher","Corruption, Crime",No,Local,Criminal Group,Murder,Yes,Yes,Yes,"No
+",
+334,Motive Confirmed,"September  2, 2011",2011,"July 28, 2011",Ahmad Omaid Khpalwak,Male,Male,Afghanistan,"Pajhwok Afghan News, BBC",Afghanistan,"Print, Television","Broadcast, Photographer",War,No,Local,Military Officials,Crossfire/Combat-Related,,No,No,"No
+",
+335,Motive Confirmed,"August  2, 2011",2011,"June 21, 2011",Alwan al-Ghorabi,Male,Male,Iraq,Afaq,Iraq,Television,Camera Operator,Politics,No,Local,Political Group,Dangerous Assignment,,,,"
+",
+336,Motive Confirmed,"July 28, 2011",2011,"June 17, 2011",Shafiullah Khan,Male,Male,Pakistan,The News,Pakistan,Print,Print Reporter,"Crime, Politics",No,Local,Political Group,Dangerous Assignment,,No,No,"No
+",
+337,Motive Confirmed,"June 21, 2011",2011,"June 15, 2011",Edinaldo Filgueira,Male,Male,Brazil,Jornal o Serrano,Brazil,Print,"Editor, Publisher",Politics,No,Local,Unknown Fire,Murder,Partial,No,Yes,"No
+",
+338,Motive Confirmed,"June 17, 2011",2011,"June 13, 2011",Romeo Olea,Male,Male,Philippines,DWEB,Philippines,Radio,"Broadcast, Columnist","Corruption, Politics",No,Local,Unknown Fire,Murder,Yes,No,Yes,"No
+",
+339,Motive Confirmed,"June 15, 2011",2011,"June 11, 2011",Asfandyar Khan,Male,Male,Pakistan,Akhbar-e-Khyber,Pakistan,Print,Print Reporter,"Crime, Politics",No,Local,Political Group,Dangerous Assignment,,No,No,"No
+",
+340,Motive Confirmed,"June 13, 2011",2011,,Saleem Shahzad,Male,Male,Pakistan,Asia Times Online,Pakistan,Internet,"Columnist, Internet Reporter","Business, Corruption, Politics, War",No,Local,Military Officials,Murder,Yes,Yes,Yes,"Yes
+",
+341,Motive Confirmed,"June 11, 2011",2011,"May 10, 2011",Nasrullah Khan Afridi,Male,Male,Pakistan,Pakistan Television and Mashriq,Pakistan,"Print, Television","Broadcast, Print Reporter",,Yes,Local,Political Group,Murder,Yes,No,Yes,"No
+",
+343,Motive Confirmed,"May 10, 2011",2011,"April 25, 2011",Alfredo Antonio Hurtado Núñez,Male,Male,El Salvador,Canal 33,El Salvador,Television,"Camera Operator, Editor",Crime,No,Local,Criminal Group,Murder,Partial,No,,"No
+",
+344,Motive Confirmed,"May  8, 2011",2011,"April 20, 2011",Chris Hondros,Male,Male,Libya,Getty Images,USA,"Print, Internet",Photographer,War,No,Foreign,Military Officials,Crossfire/Combat-Related,,,,"
+",
+345,Motive Confirmed,"April 25, 2011",2011,"April 20, 2011",Tim Hetherington,Male,Male,Libya,Freelance,UK,"Print, Television",Photographer,War,Yes,Foreign,Military Officials,Crossfire/Combat-Related,,,,"
+",
+346,Motive Confirmed,"April 20, 2011",2011,"April 12, 2011",Karim Fakhrawi,Male,Male,Bahrain,Al-Wasat,Bahrain,Print,Publisher,"Human Rights, Politics",Yes,Local,Government Officials,Dangerous Assignment,,,,"
+",
+347,Motive Confirmed,"April 20, 2011",2011,"April  9, 2011",Zakariya Rashid Hassan al-Ashiri,Male,Male,Bahrain,Freelance,Egypt,Internet,"Editor, Internet Reporter","Business, Culture, Human Rights, Politics",Yes,Local,Government Officials,Dangerous Assignment,,,,"
+",
+348,Motive Confirmed,"April 12, 2011",2011,"April  9, 2011",Luciano Leitão Pedrosa,Male,Male,Brazil,TV Vitória and Radio Metropolitana FM,Brazil,"Radio, Television",Columnist,Crime,No,Local,Criminal Group,Murder,Yes,No,Yes,"No
+",
+349,Motive Confirmed,"April  9, 2011",2011,"April  5, 2011",Anton Hammerl,Male,Male,Libya,Freelance,South Africa,Print,Photographer,War,Yes,Foreign,Military Officials,Crossfire/Combat-Related,,Yes,No,"No
+",
+350,Motive Confirmed,"April  9, 2011",2011,"March 29, 2011",Sabah al-Bazi,Male,Male,Iraq,Al-Arabiya,Iraq,Television,Broadcast,Politics,No,Local,Political Group,Dangerous Assignment,,,,"
+",
+351,Motive Confirmed,"April  5, 2011",2011,"March 29, 2011",Muammar Khadir Abdelwahad,Male,Male,Iraq,Al-Ayn,Iraq,Print,Print Reporter,Politics,No,Local,Political Group,Dangerous Assignment,,,,"
+",
+352,Motive Confirmed,"March 29, 2011",2011,"March 25, 2011",Luis Emanuel Ruiz Carrillo,Male,Male,Mexico,La Prensa,Mexico,Print,Photographer,Culture,No,Local,Criminal Group,Murder,Yes,Yes,No,"No
+",
+353,Motive Confirmed,"March 29, 2011",2011,"March 19, 2011",Mohammed al-Nabbous,Male,Male,Libya,Libya Al-Hurra TV,Libya,Internet,"Camera Operator, Internet Reporter, Publisher",War,Yes,Local,Paramilitary Group,Crossfire/Combat-Related,,,,"
+",
+354,Motive Confirmed,"March 25, 2011",2011,"March 18, 2011",Jamal al-Sharaabi,Male,Male,Yemen,Al-Masdar,Yemen,Print,Photographer,Politics,No,Local,Military Officials,Dangerous Assignment,,No,No,"No
+",
+355,Motive Confirmed,"March 19, 2011",2011,"March 13, 2011",Ali Hassan al-Jaber,Male,Male,Libya,Al-Jazeera,Qatar,Television,Camera Operator,War,No,Foreign,Military Officials,Crossfire/Combat-Related,,,,"
+",
+356,Motive Confirmed,"March 18, 2011",2011,,Noel López Olguín,Male,Male,Mexico,Freelance,Mexico,Print,"Columnist, Photographer",Crime,Yes,Local,Criminal Group,Murder,Yes,Yes,No,"No
+",
+357,Motive Confirmed,"March 13, 2011",2011,"February 24, 2011",Mohamed al-Hamdani,Male,Male,Iraq,Al-Itijah ,Iraq,Television,Broadcast,Culture,No,Local,Unknown Fire,Dangerous Assignment,,No,No,"No
+",
+358,Motive Confirmed,March 2011,2011,"February  4, 2011",Ahmad Mohamed Mahmoud,Male,Male,Egypt,Al-Ta'awun,Egypt,Print,Print Reporter,Politics,No,Local,Unknown Fire,Dangerous Assignment,,No,No,"No
+",
+359,Motive Confirmed,"February 24, 2011",2011,"January 24, 2011",Gerardo Ortega,Male,Male,Philippines,DWAR,Philippines,Radio,Columnist,"Business, Corruption, Politics",No,Local,Government Officials,Murder,Partial,No,Yes,"No
+",
+360,Motive Confirmed,"February  4, 2011",2011,"January 23, 2011",Umesh Rajput,Male,Male,India,Nai Dunia ,India,Print,Print Reporter,"Corruption, Human Rights, Politics",No,Local,Local Residents,Murder,Yes,No,Yes,"No
+",
+361,Motive Confirmed,"January 24, 2011",2011,"January 17, 2011",Lucas Mebrouk Dolega,Male,Male,Tunisia,European Pressphoto Agency,France,"Print, Internet",Photographer,Politics,No,Foreign,Military Officials,Dangerous Assignment,,No,No,"No
+",
+362,Motive Confirmed,"January 23, 2011",2011,"January 13, 2011",Wali Khan Babar,Male,Male,Pakistan,Geo TV,Pakistan,Television,Broadcast,"Corruption, Crime, Human Rights, Politics",No,Local,Political Group,Murder,Partial,No,Yes,"No
+",
+363,Motive Confirmed,"January 17, 2011",2011,"December 17, 2010",Alfrets Mirulewan,Male,Male,Indonesia,Pelangi Weekly,Indonesia,Print,Editor,Crime,No,Local,Criminal Group,Murder,Yes,Yes,No,"Yes
+",
+364,Motive Confirmed,"January 13, 2011",2011,"December 12, 2010",Omar Rasim al-Qaysi,Male,Male,Iraq,Al-Anbar TV,Iraq,Television,Broadcast,"Culture, Sports",No,Local,Political Group,Crossfire/Combat-Related,,,,"
+",
+365,Motive Confirmed,"December 17, 2010",2010,"December  6, 2010",Pervez Khan,Male,Male,Pakistan,Waqt TV,Pakistan,Television,"Broadcast, Camera Operator","Politics, War",No,Local,Political Group,Dangerous Assignment,,No,No,"No
+",
+366,Motive Confirmed,"December 12, 2010",2010,"December  6, 2010",Abdul Wahab,Male,Male,Pakistan,Express News,Pakistan,Television,"Broadcast, Camera Operator","Politics, War",No,Local,Political Group,Dangerous Assignment,,No,No,"No
+",
+367,Motive Confirmed,"December  6, 2010",2010,"November  5, 2010",Carlos Alberto Guajardo Romero,Male,Male,Mexico,Expreso Matamoros,Mexico,Print,Print Reporter,Crime,No,Local,Military Officials,Dangerous Assignment,,No,No,"No
+",
+368,Motive Confirmed,"December  6, 2010",2010,"October 18, 2010",Francisco Gomes de Medeiros,Male,Male,Brazil,Radio Caicó,Brazil,"Radio, Internet","Broadcast, Editor, Internet Reporter","Corruption, Crime, Politics",No,Local,Criminal Group,Murder,Partial,No,Yes,"No
+",
+369,Motive Confirmed,"November  5, 2010",2010,"October  4, 2010",Tahrir Kadhim Jawad,Male,Male,Iraq,freelance,Iraq,Television,Camera Operator,"Culture, Politics, War",Yes,Local,Unknown Fire,Murder,Yes,No,No,"No
+",
+370,Motive Confirmed,"October 18, 2010",2010,"September 16, 2010",Luis Carlos Santiago,Male,Male,Mexico,El Diario,Mexico,Print,Photographer,"Crime, Culture, Human Rights, Politics",No,Local,Criminal Group,Murder,Yes,No,Yes,"No
+",
+371,Motive Confirmed,"October  4, 2010",2010,"September 14, 2010",Misri Khan,Male,Male,Pakistan,Ausaf and Mashriq,Pakistan,Print,Print Reporter,"Culture, Politics, War",Yes,Local,Political Group,Murder,Yes,No,Yes,"No
+",
+372,Motive Confirmed,"September 16, 2010",2010,"September 11, 2010",Paul Kiggundu,Male,Male,Uganda,TOP Radio and TV,Uganda,"Radio, Television",Broadcast,Crime,Yes,Local,Mob Violence,Murder,Yes,No,No,"No
+",
+373,Motive Confirmed,"September 14, 2010",2010,"September  8, 2010",Safa al-Din Abdel Hamid,Male,Male,Iraq,Al-Mosuliya,Iraq,Television,Broadcast,Culture,No,Local,Unknown Fire,Murder,Yes,No,No,"No
+",
+374,Motive Confirmed,"September 11, 2010",2010,"September  7, 2010",Riad al-Saray,Male,Male,Iraq,Al-Iraqiya,Iraq,Television,Broadcast,Culture,No,Local,Political Group,Murder,Yes,No,No,"No
+",
+375,Motive Confirmed,"September  8, 2010",2010,"September  6, 2010",Ejaz Raisani,Male,Male,Pakistan,Samaa TV,Pakistan,Television,Camera Operator,Politics,No,Local,"Criminal Group, Mob Violence",Dangerous Assignment,,No,No,"No
+",
+376,Motive Confirmed,"September  7, 2010",2010,"September  5, 2010",Alberto Graves Chakussanga,Male,Male,Angola,Radio Despertar,Angolan,Radio,Broadcast,Politics,No,Local,Unknown Fire,Murder,Yes,No,Yes,"No
+",
+377,Motive Confirmed,"September  6, 2010",2010,"September  3, 2010",Aleh Byabenin,Male,Male,Belarus,Charter 97,Belarus,Internet,"Editor, Publisher","Corruption, Politics",No,Local,Unknown Fire,Murder,Yes,No,Yes,"No
+",
+378,Motive Confirmed,"September  5, 2010",2010,"August 24, 2010",Barkhat Awale,Male,Male,Somalia,Hurma Radio,Somalia,Radio,Editor,"Culture, War",No,Local,Unknown Fire,Crossfire/Combat-Related,,,,"
+",
+379,Motive Confirmed,"September  3, 2010",2010,"August 21, 2010",Ridwan Salamun,Male,Male,Indonesia,Sun TV,Indonesia,Television,Broadcast,Culture,Yes,Local,Mob Violence,Murder,Yes,No,No,"No
+",
+380,Motive Confirmed,"August 24, 2010",2010,"August  3, 2010",Assaf Abu Rahal,Male,Male,Lebanon,Al-Akhbar,Lebanon,Print,Print Reporter,War,No,Local,Military Officials,Crossfire/Combat-Related,,,,"
+",
+381,Motive Confirmed,"August 21, 2010",2010,"July 30, 2010",Ardiansyah Matra'is,Male,Male,Indonesia,Merauke TV,Indonesia,Television,Broadcast,"Business, Corruption, Politics",No,Local,Unknown Fire,Murder,Yes,Yes,Yes,"Yes
+",
+382,Motive Confirmed,"August  3, 2010",2010,"July 20, 2010",Vijay Pratap Singh,Male,Male,India,Indian Express,India,Print,Print Reporter,"Business, Politics",No,Local,Political Group,Dangerous Assignment,,,,"
+",
+383,Motive Confirmed,"July 30, 2010",2010,"July 19, 2010",Sokratis Giolias,Male,Male,Greece,"Thema 98.9, Troktiko",Greece,"Radio, Internet","Broadcast, Internet Reporter",Corruption,No,Local,Political Group,Murder,Yes,No,No,"No
+",
+384,Motive Confirmed,"July 20, 2010",2010,"June 26, 2010",Jean-Léonard Rugambage,Male,Male,Rwanda,Umuvugizi,Rwanda,"Print, Internet","Editor, Internet Reporter, Print Reporter",Politics,No,Local,"Government Officials, Military Officials",Murder,Yes,No,Yes,"No
+",
+385,Motive Confirmed,"July 19, 2010",2010,"June 24, 2010",James P. Hunter,Male,Male,Afghanistan,"Fort Campbell Courier, U.S. military publications",American,Print,"Photographer, Print Reporter",War,No,Foreign,Political Group,Crossfire/Combat-Related,,No,No,"No
+",
+386,Motive Confirmed,"June 26, 2010",2010,"June 16, 2010",Joselito Agustin,Male,Male,Philippines,DZJC,Philippine,Radio,Columnist,"Corruption, Politics",No,Local,Government Officials,Murder,Yes,No,Yes,"No
+",
+387,Motive Confirmed,"June 24, 2010",2010,"June 14, 2010",Desidario Camangyan,Male,Male,Philippines,Sunrise FM,Philippine,Radio,Columnist,Corruption,Yes,Local,Government Officials,Murder,Yes,No,Yes,"No
+",
+388,Motive Confirmed,"June 16, 2010",2010,"May 28, 2010",Ejazul Haq,Male,Male,Pakistan,City-42 TV,Pakistan,Television,"Broadcast, Technician",War,No,Local,Unknown Fire,Dangerous Assignment,,,,"
+",
+389,Motive Confirmed,"June 14, 2010",2010,"May 19, 2010",Fabio Polenghi,Male,Male,Thailand,freelance,Italy,Print,Photographer,"Culture, War",Yes,Foreign,Unknown Fire,Dangerous Assignment,,,,"
+",
+390,Motive Confirmed,"May 28, 2010",2010,,Ghulam Rasool Birhamani,Male,Male,Pakistan,Daily Sindhu Hyderabad ,Pakistani,Print,Print Reporter,Culture,No,Local,Mob Violence,Murder,Yes,Yes,Yes,"Yes
+",
+391,Motive Confirmed,"May 19, 2010",2010,"May  5, 2010",Sardasht Osman,Male,Male,Iraq,freelance,Iraq,"Print, Internet","Internet Reporter, Print Reporter",Corruption,Yes,Local,Government Officials,Murder,Yes,Yes,Yes,"No
+",
+393,Motive Confirmed,"May  5, 2010",2010,"April 24, 2010",Sunday Gyang Bwede,Male,Male,Nigeria,The Light Bearer,Nigeria,Print,Print Reporter,"Culture, Politics",No,Local,Mob Violence,Murder,Yes,,,"
+",
+394,Motive Confirmed,"May  4, 2010",2010,"April 24, 2010",Nathan S. Dabak,Male,Male,Nigeria,The Light Bearer,Nigeria,Print,Editor,"Culture, Politics",No,Local,Mob Violence,Murder,Yes,,,"
+",
+395,Motive Confirmed,"April 24, 2010",2010,"April 22, 2010",Germain Cyrille Ngota Ngota,Male,Male,Cameroon,Cameroon Express,Cameroon,Print,Editor,"Corruption, Politics",No,Local,Government Officials,Dangerous Assignment,,,,"
+",
+396,Motive Confirmed,"April 24, 2010",2010,"April 17, 2010",Azamat Ali Bangash,Male,Male,Pakistan,Samaa TV,Pakistani,Television,"Broadcast, Internet Reporter",,No,Local,Political Group,Dangerous Assignment,,No,No,"No
+",
+397,Motive Confirmed,"April 22, 2010",2010,"April 16, 2010",Malik Arif,Male,Male,Pakistan,Samaa TV,Pakistani,Television,Camera Operator,,No,Local,Unknown Fire,Crossfire/Combat-Related,,No,No,"No
+",
+398,Motive Confirmed,"April 17, 2010",2010,"April 10, 2010",Hiro Muramoto,Male,Male,Thailand,Reuters,Japan,"Television, Internet",Camera Operator,Politics,No,Foreign,Unknown Fire,Dangerous Assignment,,,,"
+",
+399,Motive Confirmed,"April 16, 2010",2010,"March 19, 2010",Clodomiro Castilla Ospino,Male,Male,Colombia,El Pulso del Tiempo,Colombian,Print,"Editor, Publisher","Corruption, Crime, Human Rights, Politics",No,Local,Unknown Fire,Murder,Yes,No,Yes,"No
+",
+400,Motive Confirmed,"April 10, 2010",2010,"March 14, 2010",Nahúm Palacios Arteaga,Male,Male,Honduras,TV Channel 5,Honduras,Television,Broadcast,"Corruption, Crime, Politics",No,Local,Political Group,Murder,Yes,No,Yes,"No
+",
+401,Motive Confirmed,"March 19, 2010",2010,"March 11, 2010",David Meza Montesinos,Male,Male,Honduras,"Radio El Patio, Radio America, Channel 45",Honduras,"Radio, Television",Broadcast,"Corruption, Crime, Politics",No,Local,Government Officials,Murder,Yes,No,Yes,"No
+",
+402,Motive Confirmed,"March 14, 2010",2010,"March  1, 2010",Joseph Hernández Ochoa,Male,Male,Honduras,TV Channel 51,Honduras,Television,Broadcast,Culture,Yes,Local,Political Group,Murder,Yes,No,No,"No
+",
+403,Motive Confirmed,"March 11, 2010",2010,"February 13, 2010",Muhammad al-Rabou'e,Male,Male,Yemen,Al-Qahira,Yemeni,Print,Print Reporter,Corruption,No,Local,Criminal Group,Murder,Yes,No,Yes,"No
+",
+404,Motive Confirmed,"March  1, 2010",2010,"January 10, 2010",Rupert Hamer,Male,Male,Afghanistan,Sunday Mirror,British,Print,Print Reporter,War,No,Foreign,Political Group,Crossfire/Combat-Related,,,,"
+",
+405,Motive Confirmed,"February 13, 2010",2010,"January  9, 2010",Stanislas Ocloo,Male,Male,Angola,Télévision Togolaise,Togo,Television,"Broadcast, Columnist",Sports,Yes,Foreign,Political Group,Dangerous Assignment,,,,"
+",
+406,Motive Confirmed,"January 10, 2010",2010,"January  8, 2010",Valentín Valdés Espinosa,Male,Male,Mexico,Zócalo de Saltillo,Mexico,Print,Print Reporter,"Corruption, Crime, Politics",No,Local,Criminal Group,Murder,Yes,Yes,No,"Yes
+",

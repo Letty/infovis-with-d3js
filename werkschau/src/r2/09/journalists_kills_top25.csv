@@ -1,0 +1,955 @@
+date,name,sex,country_killed,medium,freelance,local_foreign
+October 22 2016,Ali Risan,male,Iraq,Television Internet,No,local
+October 21 2016,Ahmet HaceroÄlu,male,Iraq,Television,No,local
+August 14 2016,Mustafa Said,male,Iraq,Television,No,local
+January 12 2016,Hassan al-Anbaki,male,Iraq,Television,No,local
+January 12 2016,Saif Talal,male,Iraq,Television,No,local
+September 12 2015,Yahya Abdul Hamid,male,Iraq,Radio,No,local
+July 15 2015,Jalaa al-Abadi,male,Iraq,Internet,No,local
+May 1 2015,Firas al-Baher,male,Iraq,Television,No,local
+April 26 2015,Thaer Al-Ali,male,Iraq,Print,No,local
+August 8 2014,Leyla Yildizhan (Deniz Firat),female,Iraq,Television Internet,Yes,foreign
+June 15 2014,Khalid Ali Hamada,male,Iraq,Television,No,local
+March 10 2014,Muthanna Abdel Hussein,male,Iraq,Television,No,local
+March 10 2014,Khaled Abdel Thamer,male,Iraq,Television,No,local
+January 20 2014,Firas Mohammed Attiyah,male,Iraq,Television,No,local
+December 23 2013,Jamal Abdul-Nasser Sami,male,Iraq,Television,No,local
+December 23 2013,Raad Yassin Al-Baddi,male,Iraq,Television,No,local
+December 23 2013,Wassan Al-Azzawi,female,Iraq,Television,No,local
+December 15 2013,Nawras al-Nuaimi,female,Iraq,Television,No,local
+December 5 2013,Kawa Garmyane,male,Iraq,Print Internet,No,local
+November 27 2013,Wadih Sa'ad al-Hamdani,male,Iraq,Television,No,local
+November 24 2013,Alaa Edward Butros,male,Iraq,Television,Yes,local
+October 24 2013,Bashar al-Nuaimi,male,Iraq,Television,No,local
+October 5 2013,Mohammed Ghanem,male,Iraq,Television,No,local
+October 5 2013,Mohammed Karim al-Badrani,male,Iraq,Television,No,local
+September 8 2011,Hadi al-Mahdi,male,Iraq,Radio,Yes,local
+June 21 2011,Alwan al-Ghorabi,male,Iraq,Television,No,local
+March 29 2011,Sabah al-Bazi,male,Iraq,Television,No,local
+March 29 2011,Muammar Khadir Abdelwahad,male,Iraq,Print,No,local
+February 24 2011,Mohamed al-Hamdani,male,Iraq,Television,No,local
+December 12 2010,Omar Rasim al-Qaysi,male,Iraq,Television,No,local
+October 4 2010,Tahrir Kadhim Jawad,male,Iraq,Television,Yes,local
+September 8 2010,Safa al-Din Abdel Hamid,male,Iraq,Television,No,local
+September 7 2010,Riad al-Saray,male,Iraq,Television,No,local
+May 5 2010,Sardasht Osman,male,Iraq,Print Internet,Yes,local
+October 21 2009,Orhan Hijran,male,Iraq,Television,No,local
+May 31 2009,Alaa Abdel-Wahab,male,Iraq,Television,No,local
+March 10 2009,Suhaib Adnan,male,Iraq,Television,No,local
+March 10 2009,Haidar Hashim Suhail,male,Iraq,Television,No,local
+September 13 2008,Musab Mahmood al-Ezawi,male,Iraq,Television,No,local
+September 13 2008,Ahmed Salim,male,Iraq,Television,No,local
+September 13 2008,Ihab Mu'd,male,Iraq,Television,No,local
+July 21 2008,Soran Mama Hama,male,Iraq,Print,No,local
+June 17 2008,Mohieldin Al Naqeeb,male,Iraq,Television,No,local
+May 22 2008,Haidar al-Hussein,male,Iraq,Print,No,local
+May 21 2008,Wissam Ali Ouda,male,Iraq,Television,No,local
+May 4 2008,Sarwa Abdul-Wahab,female,Iraq,Internet,Yes,local
+April 25 2008,Jassim al-Batat,male,Iraq,Radio Television,No,local
+February 27 2008,Shihab al-Tamimi,male,Iraq,Print Radio Television,No,local
+January 29 2008,Alaa Abdul-Karim al-Fartoosi,male,Iraq,Television,No,local
+October 28 2007,Shehab Mohammad al-Hiti,male,Iraq,Print,No,local
+October 14 2007,Salih Saif Aldin,male,Iraq,Print,No,foreign
+September 20 2007,Muhannad Ghanem Ahmad al-Obaidi,male,Iraq,Radio,No,local
+September 3 2007,Amer Malallah al-Rashidi,male,Iraq,Television,No,local
+July 27 2007,Adnan al-Safi,male,Iraq,Television,No,local
+July 16 2007,Majeed Mohammed,male,Iraq,Print,No,local
+July 16 2007,Mustafa Gaimayani,male,Iraq,Print,No,local
+July 13 2007,Khalid W. Hassan,male,Iraq,Print,No,foreign
+July 12 2007,Namir Noor-Eldeen,male,Iraq,Print,No,foreign
+June 27 2007,Sarmad Hamdi Shaker,male,Iraq,Television,No,local
+June 26 2007,Hamid Abed Sarhan,male,Iraq,Print,Yes,local
+June 17 2007,Filaih Wuday Mijthab,male,Iraq,Print,No,local
+June 11 2007,Aref Ali Filaih,male,Iraq,Print,Yes,local
+June 7 2007,Sahar Hussein Ali al-Haydari,female,Iraq,Print,Yes,local
+June 6 2007,Mohammad Hilal Karji,male,Iraq,Television,No,local
+May 30 2007,Nazar Abdulwahid al-Radhi,male,Iraq,Print Radio,Yes,local
+May 17 2007,Saif Laith Yousuf,male,Iraq,Television,No,local
+May 17 2007,Alaa Uldeen Aziz,male,Iraq,Television,No,local
+May 9 2007,Raad Mutashar,male,Iraq,Print,No,local
+May 6 2007,Dmitry Chebotayev,male,Iraq,Print,Yes,foreign
+April 12 2007,Khaled Fayyad Obaid al-Hamdani,male,Iraq,Television,No,local
+April 6 2007,Othman al-Mashhadani,male,Iraq,Print,Yes,local
+April 5 2007,Khamail Khalaf ,female,Iraq,Radio,No,local
+April 5 2007,Thaer Ahmad Jaber ,male,Iraq,Television,No,local
+March 17 2007,Hamid al-Duleimi,male,Iraq,Television,No,local
+March 7 2007,Yussef Sabri,male,Iraq,Television,No,local
+March 4 2007,Mohan Hussein al-Dhahir,male,Iraq,Print,No,local
+February 24 2007,Jamal al-Zubaidi,male,Iraq,Print,No,local
+February 5 2007,Abdulrazak Hashim Ayal al-Khakani,male,Iraq,Radio,No,local
+January 28 2007,Hussein al-Zubaidi,male,Iraq,Print,No,local
+January 15 2007,Falah Khalaf al-Diyali,male,Iraq,Print,No,local
+January 5 2007,Ahmed Hadi Naji,male,Iraq,Television,Yes,local
+December 12 2006,Aswan Ahmed Lutfallah,male,Iraq,Television,No,local
+December 4 2006,Nabil Ibrahim al-Dulaimi,male,Iraq,Radio,No,local
+November 15 2006,Luma al-Karkhi,female,Iraq,Print,No,local
+November 13 2006,Muhammad al-Ban,male,Iraq,Television,No,local
+October 29 2006,Naqshin Hamma Rashid,female,Iraq,Television,No,local
+October 26 2006,Saed Mahdi Shlash,male,Iraq,Print,No,local
+October 12 2006,Hussein Ali,male,Iraq,Television,No,local
+October 12 2006,Ahmad Sha'ban,male,Iraq,Television,No,local
+October 12 2006,Thaker al-Shouwili,male,Iraq,Television,No,local
+October 12 2006,Noufel al-Shimari,male,Iraq,Television,No,local
+October 12 2006,Abdul-Rahim Nasrallah al-Shimari,male,Iraq,Television,No,local
+September 18 2006,Ahmed Riyadh al-Karbouli,male,Iraq,Television,No,local
+September 13 2006,Safa Isma'il Enad,male,Iraq,Print,Yes,local
+September 9 2006,Abdel Karim al-Rubai,male,Iraq,Print,No,local
+August 7 2006,Mohammad Abbas Mohammad,male,Iraq,Print,No,local
+August 7 2006,Ismail Amin Ali,male,Iraq,Print,Yes,local
+July 30 2006,Riyad Muhammad Ali,male,Iraq,Print,No,local
+July 29 2006,Adel Naji al-Mansouri ,male,Iraq,Television,No,local
+June 13 2006,Ibrahim Seneid,male,Iraq,Print,No,local
+May 31 2006,Ali Jaafar,male,Iraq,Television,No,local
+May 29 2006,Paul Douglas,male,Iraq,Television,No,foreign
+May 29 2006,James Brolan,male,Iraq,Television,No,foreign
+May 8 2006,Laith al-Dulaimi,male,Iraq,Television,No,local
+April 4 2006,So'oud Muzahim al-Shoumari,male,Iraq,Television,No,local
+March 26 2006,Kamal Manahi Anbar,male,Iraq,Print,No,local
+March 13 2006,Muhsin Khudhair,male,Iraq,Print,No,local
+March 11 2006,Amjad Hameed,male,Iraq,Television,No,local
+March 7 2006,Munsuf Abdallah al-Khaldi,male,Iraq,Television,No,local
+February 23 2006,Atwar Bahjat,female,Iraq,Television,No,local
+February 23 2006,Adnan Khairallah,male,Iraq,Television,Yes,local
+February 23 2006,Khaled Mahmoud al-Falahi,male,Iraq,Television,Yes,local
+January 25 2006,Mahmoud Za'al,male,Iraq,Television,No,local
+November 7 2005,Ahmed Hussein Al-Maliki,male,Iraq,Print,No,local
+October 19 2005,Mohammed Haroon,male,Iraq,Print,No,local
+September 20 2005,Firas Maadidi,male,Iraq,Print,No,local
+September 19 2005,Fakher Haider,male,Iraq,Print,Yes,local
+September 17 2005,Hind Ismail,female,Iraq,Print,No,local
+August 28 2005,Waleed Khaled,male,Iraq,Television,No,local
+August 27 2005,Rafed Mahmoud Said al-Anbagy,male,Iraq,Television,No,local
+August 3 2005,Steven Vincent,male,Iraq,Print,Yes,foreign
+July 23 2005,Adnan al-Bayati,male,Iraq,Television,Yes,local
+July 1 2005,Khaled al-Attar,male,Iraq,Television,No,local
+June 28 2005,Ahmed Wael Bakri,male,Iraq,Television,No,local
+June 25 2005,Maha Ibrahim,female,Iraq,Television,No,local
+May 31 2005,Jerges Mahmood Mohamad Suleiman,male,Iraq,Television,No,local
+May 15 2005,Ahmed Adam,male,Iraq,Print,No,local
+May 15 2005,Najem Abed Khudair,male,Iraq,Print,No,local
+April 23 2005,Saleh Ibrahim,male,Iraq,Television,No,local
+April 15 2005,Saman Abdullah Izzedine,male,Iraq,Television,No,local
+April 14 2005,Fadhil Hazem Fadhil,male,Iraq,Television,No,local
+April 14 2005,Ali Ibrahim Issa,male,Iraq,Television,No,local
+April 1 2005,Ahmed Jabbar Hashim,male,Iraq,Print,No,local
+March 14 2005,Hussam Sarsam,male,Iraq,Television,No,local
+February 25 2005,Raeda Wazzan,female,Iraq,Television,No,local
+November 1 2004,Dhia Najim,male,Iraq,Television,Yes,local
+October 14 2004,Dina Mohammed Hassan,male,Iraq,Television,No,local
+October 14 2004,Karam Hussein,male,Iraq,Print,No,local
+September 12 2004,Mazen al-Tumeizi,male,Iraq,Television,No,local
+August 26 2004,Enzo Baldoni,male,Iraq,Print,Yes,foreign
+August 15 2004,Mahmoud Hamid Abbas,male,Iraq,Television,No,local
+May 27 2004,Shinsuke Hashida,male,Iraq,Print,Yes,foreign
+May 27 2004,Kotaro Ogawa,male,Iraq,Print,Yes,foreign
+May 21 2004,Rashid Hamid Wali,male,Iraq,Television,No,local
+May 7 2004,Waldemar Milewicz,male,Iraq,Television,No,foreign
+May 7 2004,Mounir Bouamrane,male,Iraq,Television,No,local
+April 19 2004,Asaad Kadhim,male,Iraq,Television,No,local
+March 26 2004,Burhan Mohamed Mazhour,male,Iraq,Television,Yes,local
+March 19 2004,Ali al-Khatib,male,Iraq,Television,No,foreign
+March 18 2004,Ali Abdel Aziz,male,Iraq,Television,No,local
+March 18 2004,Nadia Nasrat,female,Iraq,Television,No,local
+February 1 2004,Abdel Sattar Abdel Karim,male,Iraq,Print,Yes,local
+February 1 2004,Semko Karim Mohyideen,male,Iraq,Television,Yes,local
+February 1 2004,Gharib Mohamed Salih,male,Iraq,Television,Yes,local
+February 1 2004,Ayoub Mohamed,male,Iraq,Television,Yes,local
+February 1 2004,Haymin Mohamed Salih,male,Iraq,Television,No,local
+February 1 2004,Safir Nader,male,Iraq,Television,No,local
+January 27 2004,Duraid Isa Mohammed,male,Iraq,Television,No,local
+October 28 2003,Ahmed Shawkat,male,Iraq,Print,No,local
+August 25 2003,Ahmad Kareem,male,Iraq,Television,No,local
+August 17 2003,Mazen Dana,male,Iraq,Television,No,foreign
+July 6 2003,Jeremy Little,male,Iraq,Television,Yes,foreign
+July 5 2003,Richard Wild,male,Iraq,Television,Yes,foreign
+April 8 2003,Taras Protsyuk,male,Iraq,Television,No,local
+April 8 2003,JosÃ© Couso,male,Iraq,Television,No,foreign
+April 8 2003,Tareq Ayyoub,male,Iraq,Television,No,foreign
+April 7 2003,Christian Liebig,male,Iraq,Print,No,foreign
+April 7 2003,Julio Anguita Parrado,male,Iraq,Print,No,foreign
+April 3 2003,Michael Kelly,male,Iraq,Print,No,foreign
+April 2 2003,Kaveh Golestan,male,Iraq,Television,Yes,foreign
+March 22 2003,Paul Moran,male,Iraq,Television,Yes,foreign
+March 22 2003,Terry Lloyd,male,Iraq,Television,No,foreign
+April 3 1994,Lissy Schmidt,female,Iraq,Print,Yes,foreign
+August 20 2016,Ali Ghani,male,Iraq,Television,No,local
+August 1 2016,Mohammed Sayyed Hassan,male,Syria,Internet,No,local
+July 14 2016,Abdullah Mohammad Ghannam,male,Syria,Internet,No,local
+July 11 2016,Ibrahim Omar,male,Syria,Television,No,local
+June 25 2016,Khaled Eissa ,male,Syria,Television Internet,Yes,local
+June 5 2016,Osama Jumaa,male,Syria,Television Internet,No,local
+February 19 2016,Majid Dirani,male,Syria,Internet,Yes,local
+December 16 2015,Ahmed Mohamed al-Mousa,male,Syria,Internet,No,local
+December 7 2015,Zakaria Ibrahim,male,Syria,Television,No,local
+November 6 2015,Ahmed Abu al-Hamza,male,Syria,Internet,No,local
+November 3 2015,Batoul Mokhles al-Warrar,female,Syria,Radio Television,No,local
+October 27 2015,Jomaa Al-Ahmad (Abu al-Nour al-Halabi),male,Syria,Internet,No,local
+October 23 2015,Wasem Aledel,male,Syria,Television Internet,No,local
+September 26 2015,Obada Ghazal,male,Syria,Television,No,local
+July 27 2015,Thaer al-Ajlani,male,Syria,Print Radio Television,Yes,local
+June 26 2015,Mohammed al-Asfar,male,Syria,Television,No,local
+May 31 2015,Ammar al-Shami,male,Syria,Internet,No,local
+April 16 2015,Humam Najjar (Abu Yazan al-Halabi),male,Syria,Television Internet,No,local
+April 1 2015,Jamal Khalifeh,male,Syria,Internet,Yes,local
+March 8 2015,Noureddine Hashim,male,Syria,Television Internet,No,local
+December 10 2014,Mahran al-Deeri,male,Syria,Internet,No,local
+December 8 2014,Salem Khalil,male,Syria,Television Internet,No,local
+December 8 2014,Rami Asmi,male,Syria,Television Internet,No,local
+December 8 2014,Yousef el-Dous,male,Syria,Television Internet,No,local
+November 22 2014,Zaher Mtawe'e,male,Syria,Internet,No,local
+October 15 2014,Atallah Bajbouj,male,Syria,Internet,No,local
+September 10 2014,Mohammed al-Qasim,male,Syria,Radio Television Internet,No,local
+June 27 2014,Mohamed Taani,male,Syria,Internet,No,local
+June 20 2014,Ahmed Hasan Ahmed,male,Syria,Internet,No,foreign
+May 4 2014,Al-Moutaz Bellah Ibrahim,male,Syria,Radio Television,Yes,local
+April 25 2014,Mouaz Alomar (Abu Mehdi Al Hamwi),male,Syria,Television Internet,Yes,local
+March 9 2014,Ali Mustafa,male,Syria,Print Internet,Yes,foreign
+March 8 2014,Omar Abdul Qader,male,Syria,Television,No,local
+February 20 2014,Turad Mohamed al-Zahouri,male,Syria,Internet,Yes,local
+December 20 2013,Molhem Barakat,male,Syria,Print Internet,Yes,local
+December 4 2013,Yasser Faisal al-Jumaili,male,Syria,Television,Yes,foreign
+November 24 2013,Mohamed Yamen Naddaf,male,Syria,Internet,No,local
+November 19 2013,Mohamed Ahmed Taysir Bellou,male,Syria,Internet,No,local
+October 29 2013,Mohammad Saeed,male,Syria,Television,No,local
+September 29 2013,Nour al-Din Al-Hafiri,male,Syria,Television Internet,Yes,local
+September 5 2013,Abdel Aziz Mahmoud Hasoun,male,Syria,Internet,No,local
+August 20 2013,Muhammad Hassan Al-Musalama,male,Syria,Internet,Yes,local
+August 16 2013,Shahir al-Muaddamani,male,Syria,Internet,Yes,local
+July 27 2013,Muhammed Tariq Jadua,male,Syria,Television Internet,Yes,local
+July 5 2013,Fidaa al-Baali,male,Syria,Television,No,local
+May 27 2013,Yara Abbas,female,Syria,Television,No,local
+April 24 2013,Youssef Younis,male,Syria,Internet,Yes,local
+March 29 2013,Amer Diab,male,Syria,Internet,Yes,local
+March 14 2013,Mahmoud Natouf,male,Syria,Internet,No,local
+March 10 2013,Ghaith Abd al-Jawad,male,Syria,Internet,Yes,local
+March 10 2013,Amr Badir al-Deen Junaid,male,Syria,Internet,Yes,local
+March 3 2013,Walid Jamil Amira,male,Syria,Internet,Yes,local
+February 24 2013,Olivier Voisin,male,Syria,Print Internet,Yes,foreign
+February 17 2013,Mohamed Saeed al-Hamwi,male,Syria,Internet,Yes,local
+February 15 2013,Youssef Adel Bakri (Youssef Abu Jad),male,Syria,Internet,No,local
+January 31 2013,Loay al-Nimir,male,Syria,Internet,Yes,local
+January 31 2013,Issam Obeid,male,Syria,Internet,Yes,local
+January 31 2013,Abdel Karim Nazir Ismail,male,Syria,Internet,Yes,local
+January 18 2013,Mohamed al-Mesalma,male,Syria,Television,No,local
+January 17 2013,Yves Debay,male,Syria,Internet,No,foreign
+January 13 2013,Bassem Fawaz al-Zabi,male,Syria,Internet,Yes,local
+January 4 2013,Suhail Mahmoud al-Ali,male,Syria,Television,No,local
+December 21 2012,Abd al-Karim al-Ezzo,male,Syria,Internet,Yes,local
+December 4 2012,Naji Asaad,male,Syria,Print,No,local
+November 28 2012,Mohamed Quratem,male,Syria,Print,No,local
+November 25 2012,Mohamed al-Khal,male,Syria,Television Internet,Yes,local
+November 21 2012,Basel Tawfiq Youssef,male,Syria,Television,No,local
+November 19 2012,Hozan Abdel Halim Mahmoud,male,Syria,Internet,Yes,local
+November 9 2012,Ayham Mostafa Ghazzoul,male,Syria,Internet,No,local
+October 10 2012,Mohammed al-Ashram,male,Syria,Television,No,local
+October 3 2012,Mona al-Bakkour,female,Syria,Print Internet,No,local
+September 26 2012,Maya Naser,male,Syria,Television,No,local
+September 19 2012,Abdel Karim al-Oqda,male,Syria,Internet,No,local
+September 16 2012,Yusuf Ahmed Deeb,male,Syria,Print,No,local
+September 9 2012,Tamer al-Awam,male,Syria,Television,Yes,local
+August 22 2012,Mosaab al-Obdaallah,male,Syria,Print Internet,Yes,local
+August 20 2012,Mika Yamamoto,female,Syria,Television Internet,No,foreign
+August 11 2012,Ali Abbas,male,Syria,Television Internet,No,local
+August 10 2012,Hatem Abu Yehia,male,Syria,Television,No,local
+July 12 2012,Ihsan al-Buni,male,Syria,Print Internet,No,local
+June 27 2012,Mohammad Shamma,male,Syria,Television,No,local
+June 27 2012,Sami Abu Amin,male,Syria,Television,No,local
+May 28 2012,Ahmed al-Assam,male,Syria,Internet,Yes,local
+May 28 2012,Bassel al-Shahade,male,Syria,Internet,Yes,local
+May 27 2012,Ahmed Adnan al-Ashlaq,male,Syria,Internet,No,local
+May 27 2012,Lawrence Fahmy al-Naimi,male,Syria,Internet,No,local
+May 27 2012,Ammar Mohamed Suhail Zado,male,Syria,Internet,No,local
+February 24 2012,Anas al-Tarsha,male,Syria,Internet,Yes,local
+February 22 2012,RÃ©mi Ochlik,male,Syria,Print,Yes,foreign
+February 22 2012,Marie Colvin,female,Syria,Print,No,foreign
+February 21 2012,Rami al-Sayed,male,Syria,Internet,Yes,local
+February 4 2012,Mazhar Tayyara,male,Syria,Television Internet,Yes,local
+January 11 2012,Gilles Jacquier,male,Syria,Television,No,foreign
+December 27 2011,Basil al-Sayed,male,Syria,Internet,Yes,local
+April 6 2014,Rubylita Garcia,female,Philippines,Print Radio,No,local
+November 29 2013,Joas Dignos,male,Philippines,Radio,No,local
+August 29 2013,Fernando Solijon,male,Philippines,Radio,No,local
+August 1 2013,Mario Sy,male,Philippines,Print,Yes,local
+January 5 2012,Christopher Guarin,male,Philippines,Print Radio,No,local
+June 13 2011,Romeo Olea,male,Philippines,Radio,No,local
+January 24 2011,Gerardo Ortega,male,Philippines,Radio,No,local
+June 16 2010,Joselito Agustin,male,Philippines,Radio,No,local
+June 14 2010,Desidario Camangyan,male,Philippines,Radio,Yes,local
+November 23 2009,Henry Araneta,male,Philippines,Radio,No,local
+November 23 2009,Mark Gilbert Arriola,male,Philippines,Television,No,local
+November 23 2009,Rubello Bataluna,male,Philippines,Print,No,local
+November 23 2009,Arturo Betia,male,Philippines,Print,No,local
+November 23 2009,Romeo Jimmy Cabillo,male,Philippines,Print,No,local
+November 23 2009,Marites Cablitas,female,Philippines,Print Radio,No,local
+November 23 2009,Hannibal Cachuela,male,Philippines,Print,No,local
+November 23 2009,Jepon Cadagdagon,male,Philippines,Print,No,local
+November 23 2009,John Caniban,male,Philippines,Print,No,local
+November 23 2009,Lea Dalmacio,female,Philippines,Print,No,local
+November 23 2009,Noel Decina,male,Philippines,Print,No,local
+November 23 2009,Gina Dela Cruz,female,Philippines,Print,Yes,local
+November 23 2009,Jhoy Duhay,male,Philippines,Print,No,local
+November 23 2009,Jolito Evardo,male,Philippines,Television,No,local
+November 23 2009,Santos Gatchalian,male,Philippines,Radio,No,local
+November 23 2009,Bienvenido Legarte Jr.,male,Philippines,Print,No,local
+November 23 2009,Lindo Lupogan,male,Philippines,Print,No,local
+November 23 2009,Ernesto Maravilla,male,Philippines,Radio,No,local
+November 23 2009,Rey Merisco,male,Philippines,Print,No,local
+November 23 2009,Reynaldo Momay,male,Philippines,Print,No,local
+November 23 2009,Marife âNenengâ MontaÃ±o,female,Philippines,Radio,No,local
+November 23 2009,Rosell Morales,male,Philippines,Print,No,local
+November 23 2009,Victor NuÃ±ez,male,Philippines,Television,No,local
+November 23 2009,Ronnie Perante,male,Philippines,Print,No,local
+November 23 2009,Joel Parcon,male,Philippines,Print,No,local
+November 23 2009,Fernando Razon,male,Philippines,Print,No,local
+November 23 2009,Alejandro Reblando,male,Philippines,Print,No,local
+November 23 2009,Napoleon Salaysay,male,Philippines,Print,No,local
+November 23 2009,Ian Subang,male,Philippines,Print,No,local
+November 23 2009,Andres Teodoro,male,Philippines,Print,No,local
+June 9 2009,Crispin Perez,male,Philippines,Radio,No,local
+June 3 2009,Jojo Trajano,male,Philippines,Print,No,local
+February 23 2009,Ernie Rollin,male,Philippines,Radio,No,local
+August 9 2008,Dennis Cuesta,male,Philippines,Radio,No,local
+August 7 2008,Martin Roxas,male,Philippines,Radio,No,local
+July 18 2006,Armando Pace,male,Philippines,Radio,Yes,local
+June 19 2006,Maricel Vigo,female,Philippines,Radio,Yes,local
+June 19 2006,George Vigo,male,Philippines,Radio,Yes,local
+May 22 2006,Fernando Batul,male,Philippines,Radio,Yes,local
+July 3 2005,"Rolando \""Dodong\"" Morales",male,Philippines,Radio,No,local
+May 10 2005,Philip Agustin,male,Philippines,Print,No,local
+May 4 2005,Klein Cantoneros,male,Philippines,Radio,Yes,local
+March 24 2005,Marlene Garcia-Esperat,female,Philippines,Print,No,local
+November 13 2004,Herson Hinolan,male,Philippines,Radio,No,local
+November 12 2004,Gene Boyd Lumawag,male,Philippines,Print,No,local
+October 19 2004,Eldy Sablas (aka Eldy Gabinales),male,Philippines,Radio,No,local
+September 29 2004,Romeo (or Romy) Binungcal,male,Philippines,Print,No,local
+August 5 2004,Arnnel Manalo,male,Philippines,Print Radio,No,local
+July 31 2004,"Rogelio \""Roger\"" Mariano",male,Philippines,Radio,No,local
+June 17 2004,Elpidio Binoya,male,Philippines,Radio,No,local
+February 11 2004,Rowell Endrinal,male,Philippines,Radio,No,local
+September 6 2003,"Juan \""Jun\"" Pala",male,Philippines,Radio,No,local
+August 20 2003,Rico Ramirez,male,Philippines,Radio,No,local
+August 19 2003,Noel Villarante,male,Philippines,Print Radio,No,local
+July 8 2003,Bonifacio Gregorio,male,Philippines,Print,No,local
+May 17 2003,"Apolinario \""Polly\"" Pobeda",male,Philippines,Radio,No,local
+August 22 2002,Sonny Alcantara,male,Philippines,Print Television,No,local
+May 13 2002,Edgar Damalerio,male,Philippines,Print Radio,No,local
+May 30 2001,Candelario Cayona,male,Philippines,Radio,No,local
+January 3 2001,Roland Ureta,male,Philippines,Radio,No,local
+November 17 2000,Olimpio Jalapit Jr.,male,Philippines,Radio,No,local
+May 23 2000,Vincent Rodriguez,male,Philippines,Radio,No,local
+March 30 1998,Rey Bancayrin,male,Philippines,Radio,No,local
+June 3 1997,Danny Hernandez,male,Philippines,Print,No,local
+February 13 1996,Ferdinand Reyes,male,Philippines,Print,No,local
+January 11 1993,Romeo Lagaspi,male,Philippines,Print,No,local
+September 21 1992,Greg Hapalla,male,Philippines,Radio,No,local
+July 1 1992,Danilo Vergara,male,Philippines,Print,No,local
+June 14 2001,Fadila Nejma,male,Algeria,Print,No,local
+June 14 2001,Adel Zerrouk,male,Algeria,Print,No,local
+August 12 1996,Mohamed Guessab,male,Algeria,Radio,No,local
+March 12 1996,Djilali Arabidou,male,Algeria,Print,No,local
+February 11 1996,Allaoua Ait M'barak,male,Algeria,Print,No,local
+February 11 1996,Mohamed Dorbane,male,Algeria,Print,No,local
+February 11 1996,Djamel Derraz,male,Algeria,Print,No,local
+February 10 1996,Abdallah Bouhachek,male,Algeria,Print,No,local
+January 10 1996,Mohamed Mekati,male,Algeria,Print,No,local
+December 5 1995,Khadija Dahmani,female,Algeria,Print,No,local
+December 2 1995,Hamid Mahiout,male,Algeria,Print,No,local
+October 17 1995,SaÃ¯da Djebaili,female,Algeria,Print,No,local
+October 3 1995,Omar Ouartilan,male,Algeria,Print,No,local
+September 9 1995,SaÃ¯d Brahimi,male,Algeria,Television,No,local
+September 4 1995,Brahim Guaraoui,male,Algeria,Print,No,local
+September 4 1995,Yasmina Brikh,female,Algeria,Radio,No,local
+September 3 1995,SaÃ¯d Tazrout,male,Algeria,Print,No,local
+August 20 1995,Ameur Ouagueni,male,Algeria,Print,No,local
+August 2 1995,NaÃ¯ma Hammouda,female,Algeria,Print,No,local
+June 18 1995,Ahmed (aka Hakim) Takouchet,male,Algeria,Radio,No,local
+May 27 1995,Mourad Hmaizi,male,Algeria,Television,No,local
+May 22 1995,Bakhti Benaouda,male,Algeria,Print,No,local
+May 21 1995,Malika Sabour,female,Algeria,Print,No,local
+May 15 1995,Azzedine Saidj,male,Algeria,Print,No,local
+April 4 1995,Mekhlouf Boukzer,male,Algeria,Television,No,local
+March 31 1995,Rachida Hammadi,female,Algeria,Television,No,local
+March 27 1995,Mohamed Abderrahmani,male,Algeria,Print,No,local
+March 21 1995,Ali Boukerbache,male,Algeria,Television,No,local
+February 17 1995,Djamel Ziater,male,Algeria,Print,No,local
+February 1 1995,Nacer Ouari,male,Algeria,Television,No,local
+January 12 1995,Abdelhamid Yahiaoui,male,Algeria,Print,No,local
+January 7 1995,Ali Abboud,male,Algeria,Radio,No,local
+January 6 1995,Zineddine Aliou Salah,male,Algeria,Print,No,local
+December 4 1994,Said Mekbel,male,Algeria,Print,No,local
+November 30 1994,Nasseredine Lekhal,male,Algeria,Print,No,local
+November 30 1994,Ahmed Issaad,male,Algeria,Television,No,local
+October 20 1994,Mohamed Salah Benachour,male,Algeria,Print,No,local
+October 20 1994,Farah Ziane,male,Algeria,Print,No,local
+October 16 1994,Tayeb Bouterfif,male,Algeria,Radio,No,local
+October 12 1994,Lahcene Bensaadallah,male,Algeria,Print,No,local
+September 25 1994,Smail Sbaghdi,male,Algeria,Print,No,local
+September 25 1994,Mouloud Barroudi,male,Algeria,Television,No,local
+July 21 1994,Mohamed Lamine Legoui,male,Algeria,Print,No,local
+July 10 1994,Yasmina Drici,female,Algeria,Print,No,local
+June 7 1994,Ferhat Cherkit,male,Algeria,Print,No,local
+April 13 1994,Mohamed Meceffeuk,male,Algeria,Print,No,local
+March 20 1994,Madjid Yacef,male,Algeria,Print,No,local
+March 19 1994,Yahia Djamel Benzaghou,male,Algeria,Print,No,local
+March 12 1994,Hassan Benaouda,male,Algeria,Television,No,local
+February 28 1994,Abdelkader Hireche,male,Algeria,Television,No,foreign
+February 1 1994,Olivier Quemener,male,Algeria,Television,Yes,foreign
+October 18 1993,Smail Yefsah,male,Algeria,Television,No,local
+October 14 1993,Mustafa Abada,male,Algeria,Television,No,local
+October 5 1993,Djamel Bouhidel,male,Algeria,Print,No,local
+September 28 1993,Abderrahmane Chergou,male,Algeria,Print,Yes,local
+September 10 1993,Saad Bakhtaoui,male,Algeria,Print,No,local
+August 9 1993,Abdelhamid Benmeni,male,Algeria,Print,No,local
+August 3 1993,Rabah Zenati,male,Algeria,Television,No,local
+June 2 1993,Tahar Djaout,male,Algeria,Print,No,local
+December 27 1992,Youcef Sebti,male,Algeria,Print,Yes,local
+December 3 2015,Hindia Haji Mohamed,female,Somalia,Radio Television,No,local
+November 1 2015,Mustaf Abdi Noor ,male,Somalia,Television Internet,Yes,local
+April 29 2015,Daud Ali Omar,male,Somalia,Television,No,local
+December 5 2014,Mohamed Isaq,male,Somalia,Television,No,local
+December 5 2014,Abdulkadir Ahmed,male,Somalia,Radio Television,Yes,local
+November 16 2014,Abdirizak Ali Abdi,male,Somalia,Radio Television,Yes,local
+June 21 2014,Yusuf Ahmed Abukar,male,Somalia,Radio,No,local
+October 26 2013,Mohamed Mohamud,male,Somalia,Television,No,local
+July 7 2013,Liban Abdullahi Farah,male,Somalia,Television,No,local
+April 21 2013,Mohamed Ibrahim Raage,male,Somalia,Radio Television,No,local
+January 18 2013,Abdihared Osman Aden,male,Somalia,Radio Television,Yes,local
+October 28 2012,Mohamed Mohamud Turyare,male,Somalia,Radio Internet,No,local
+October 23 2012,Ahmed Farah Ilyas,male,Somalia,Television,No,local
+September 21 2012,Hassan Yusuf Absuge,male,Somalia,Radio,No,local
+September 20 2012,Liban Ali Nur,male,Somalia,Television,No,local
+September 20 2012,Abdisatar Daher Sabriye,male,Somalia,Radio,No,local
+September 20 2012,Abdirahman Yasin Ali,male,Somalia,Radio,No,local
+May 24 2012,Ahmed Addow Anshur,male,Somalia,Radio,No,local
+May 2 2012,Farhan Jeemis Abdulle,male,Somalia,Radio,No,local
+April 5 2012,Mahad Salad Adan,male,Somalia,Radio Internet,Yes,local
+March 4 2012,Ali Ahmed Abdi,male,Somalia,Radio Internet,Yes,local
+February 28 2012,Abukar Hassan Mohamoud,male,Somalia,Radio,No,local
+January 28 2012,Hassan Osman Abdi,male,Somalia,Radio Television,No,local
+December 18 2011,Abdisalan Sheikh Hassan,male,Somalia,Radio Television,Yes,local
+September 2 2011,Noramfaizul Mohd,male,Somalia,Television,No,foreign
+August 24 2010,Barkhat Awale,male,Somalia,Radio,No,local
+May 4 2010,Sheikh Nur Mohamed Abkey,male,Somalia,Radio,No,local
+December 3 2009,Abdulkhafar Abdulkadir,male,Somalia,Print,Yes,local
+December 3 2009,Mohamed Amin,male,Somalia,Radio,No,local
+December 3 2009,Hassan Zubeyr,male,Somalia,Television,No,local
+July 4 2009,Mohamud Mohamed Yusuf,male,Somalia,Radio,No,local
+June 8 2009,Mukhtar Mohamed Hirabe,male,Somalia,Radio,No,local
+May 26 2009,Nur Muse Hussein,male,Somalia,Radio,No,local
+May 22 2009,Abdirisak Mohamed Warsame,male,Somalia,Radio,No,local
+February 2 2009,Said Tahlil Ahmed,male,Somalia,Radio,No,local
+January 1 2009,Hassan Mayow Hassan,male,Somalia,Radio,No,local
+June 7 2008,Nasteh Dahir Farah,male,Somalia,Print Radio,No,local
+January 28 2008,Hassan Kafi Hared,male,Somalia,Print Internet,No,local
+October 19 2007,Bashiir Noor Gedi,male,Somalia,Radio,No,local
+August 24 2007,Abdulkadir Mahad Moallim Kaskey,male,Somalia,Radio,Yes,local
+August 11 2007,Mahad Ahmed Elmi,male,Somalia,Radio,No,local
+August 11 2007,Ali Sharmarke,male,Somalia,Radio,No,local
+May 16 2007,Ahmed Hassan Mahad,male,Somalia,Radio,No,local
+May 16 2007,Abshir Ali Gabre,male,Somalia,Radio,No,local
+May 5 2007,Mohammed Abdullahi Khalif,male,Somalia,Radio,Yes,local
+June 23 2006,Martin Adler,male,Somalia,Print,Yes,foreign
+June 5 2005,Duniya Muhyadin Nur,female,Somalia,Radio,No,local
+February 9 2005,Kate Peyton,female,Somalia,Television,No,foreign
+January 24 2003,Abdullahi Madkeer,male,Somalia,Radio,No,local
+January 26 2000,Ahmed Kafi Awale,male,Somalia,Radio,No,local
+February 9 1995,Marcello Palmisano,male,Somalia,Television,No,foreign
+August 31 1994,Pierre Anceaux,male,Somalia,Television,Yes,foreign
+March 20 1994,Ilaria Alpi,male,Somalia,Television,No,foreign
+March 20 1994,Miran Krovatin,male,Somalia,Television,No,foreign
+July 12 1993,Anthony Macharia,male,Somalia,Television,No,foreign
+July 12 1993,Hansi Krauss,male,Somalia,Print,No,foreign
+July 12 1993,Dan Eldon,male,Somalia,Print,No,foreign
+July 12 1993,Hosea Maina,male,Somalia,Print,No,foreign
+June 18 1993,Jean-Claude Jumel,male,Somalia,Television,No,foreign
+July 9 2013,Akhmednabi Akhmednabiyev,male,Russia,Internet,No,local
+April 8 2013,Mikhail Beketov,male,Russia,Print,No,local
+December 5 2012,Kazbek Gekkiyev,male,Russia,Television,No,local
+December 15 2011,Gadzhimurad Kamalov,male,Russia,Print,No,local
+August 11 2009,Abdulmalik Akhmedilov,male,Russia,Print,No,local
+July 15 2009,Natalya Estemirova,female,Russia,Print,Yes,local
+January 19 2009,Anastasiya Baburova,female,Russia,Print,Yes,local
+September 2 2008,Telman (Abdulla) Alishayev,male,Russia,Television,No,local
+August 31 2008,Magomed Yevloyev,male,Russia,Internet,No,local
+March 2 2007,Ivan Safronov,male,Russia,Print,No,local
+November 30 2006,Maksim Maksimov,male,Russia,Print,No,local
+October 7 2006,Anna Politkovskaya,female,Russia,Print,No,local
+January 8 2006,Vagif Kochetkov,male,Russia,Print,No,local
+June 28 2005,Magomedzagid Varisov,male,Russia,Print,No,local
+May 21 2005,Pavel Makeev,male,Russia,Television,No,local
+July 9 2004,Paul Klebnikov,male,Russia,Print,No,foreign
+May 9 2004,Adlan Khasanov,male,Russia,Television,No,local
+October 9 2003,Aleksei Sidorov,male,Russia,Print,No,local
+July 3 2003,Yuri Shchekochikhin,male,Russia,Print,No,local
+September 26 2002,Roddy Scott,male,Russia,Television,Yes,foreign
+April 29 2002,Valery Ivanov,male,Russia,Print,No,local
+March 9 2002,Natalya Skryl,female,Russia,Print,No,local
+September 18 2001,Eduard Markevich,male,Russia,Print,No,local
+July 16 2000,Igor Domnikov,male,Russia,Print,No,local
+May 12 2000,Aleksandr Yefremov,male,Russia,Print,No,local
+February 20 2000,Vladimir Yatsina,male,Russia,Print,No,local
+October 29 1999,Shamil Gigayev,male,Russia,Television,No,local
+October 29 1999,Ramzan Mezhidov,male,Russia,Television,Yes,local
+October 27 1999,Supian Ependiyev,male,Russia,Print,No,local
+August 24 1998,Anatoly Levin-Utkin,male,Russia,Print,No,local
+June 8 1998,Larisa Yudina,female,Russia,Print,No,local
+August 11 1996,Ramzan Khadzhiev,male,Russia,Television,No,local
+May 12 1996,Viktor Mikhailov,male,Russia,Print,No,local
+May 9 1996,Nina Yefimova,female,Russia,Print,No,local
+March 30 1996,Nadezhda Chaikova,female,Russia,Print,No,local
+March 11 1996,Viktor Pimenov,male,Russia,Television,No,local
+February 26 1996,Felix Solovyov,male,Russia,Print,Yes,local
+December 27 1995,Vadim Alferyev,male,Russia,Print,No,local
+December 13 1995,Shamkhan Kagirov,male,Russia,Print,No,local
+June 17 1995,Natalya Alyakina,female,Russia,Print Radio,No,foreign
+May 29 1995,Farkhad Kerimov,male,Russia,Television,No,local
+March 1 1995,Vladislav Listyev,male,Russia,Television,No,local
+February 17 1995,Viatcheslav Rudnev,male,Russia,Print,Yes,local
+January 10 1995,Jochen Piest,male,Russia,Print,No,foreign
+January 1 1995,Vladimir Zhitarenko,male,Russia,Print,No,local
+December 22 1994,Cynthia Elbaum,female,Russia,Print,Yes,foreign
+October 17 1994,Dmitry Kholodov,male,Russia,Print,No,local
+June 12 1994,Yuri Soltis,male,Russia,Print,No,local
+October 4 1993,Aleksandr Smirnov,male,Russia,Print,No,local
+October 4 1993,Aleksandr Sidelnikov,male,Russia,Television,No,local
+October 3 1993,Sergei Krasilnikov,male,Russia,Television,No,local
+October 3 1993,Yvan Scopan,male,Russia,Television,No,local
+October 3 1993,Vladimir Drobyshev,male,Russia,Print,No,local
+October 3 1993,Igor Belozyorov,male,Russia,Television,No,local
+October 3 1993,Rory Peck,male,Russia,Television,No,foreign
+April 14 1993,Dmitry Krikoryants,male,Russia,Print,No,local
+August 8 2016,Mehmood Khan,male,Pakistan,Television Internet,No,local
+November 3 2015,Zaman Mehsud,male,Pakistan,Print,Yes,local
+August 28 2014,Irshad Mastoi,male,Pakistan,Print Television,No,local
+August 28 2014,Ghulam Rasool,male,Pakistan,Print,No,local
+January 1 2014,Shan Dahar,male,Pakistan,Television,No,local
+October 11 2013,Ayub Khattak,male,Pakistan,Print,No,local
+April 16 2013,Aslam Durrani,male,Pakistan,Print,No,local
+January 10 2013,Mirza Iqbal Hussain,male,Pakistan,Internet,No,local
+January 10 2013,Saif ur Rehman,male,Pakistan,Television,No,local
+January 10 2013,Imran Shaikh,male,Pakistan,Television,No,local
+November 22 2012,Saqib Khan,male,Pakistan,Print Internet,No,local
+November 18 2012,Rehmatullah Abid,male,Pakistan,Print Television,No,local
+October 7 2012,Mushtaq Khand,male,Pakistan,Print Television,No,local
+September 29 2012,Abdul Haq Baloch,male,Pakistan,Television,No,local
+May 28 2012,Abdul Qadir Hajizai,male,Pakistan,Television,Yes,local
+May 19 2012,Razzaq Gul,male,Pakistan,Television,No,local
+January 17 2012,Mukarram Khan Aatif,male,Pakistan,Radio Television,Yes,local
+October 7 2011,Faisal Qureshi,male,Pakistan,Internet,No,local
+June 17 2011,Shafiullah Khan,male,Pakistan,Print,No,local
+June 11 2011,Asfandyar Khan,male,Pakistan,Print,No,local
+May 10 2011,Nasrullah Khan Afridi,male,Pakistan,Print Television,Yes,local
+January 13 2011,Wali Khan Babar,male,Pakistan,Television,No,local
+December 6 2010,Pervez Khan,male,Pakistan,Television,No,local
+December 6 2010,Abdul Wahab,male,Pakistan,Television,No,local
+September 14 2010,Misri Khan,male,Pakistan,Print,Yes,local
+September 6 2010,Ejaz Raisani,male,Pakistan,Television,No,local
+May 28 2010,Ejazul Haq,male,Pakistan,Television,No,local
+April 17 2010,Azamat Ali Bangash,male,Pakistan,Television,No,local
+April 16 2010,Malik Arif,male,Pakistan,Television,No,local
+August 24 2009,Janullah Hashimzada,male,Pakistan,Television,Yes,foreign
+February 18 2009,Musa Khankhel,male,Pakistan,Print Television,No,local
+January 4 2009,Tahir Awan,male,Pakistan,Print,Yes,local
+January 4 2009,Mohammad Imran,male,Pakistan,Television,No,local
+November 3 2008,Abdul Razzak Johra,male,Pakistan,Television,No,local
+August 29 2008,Abdul Aziz Shaheen,male,Pakistan,Print,No,local
+May 22 2008,Mohammed Ibrahim,male,Pakistan,Television,No,local
+February 29 2008,Siraj Uddin,male,Pakistan,Print,No,local
+February 9 2008,Chishti Mujahid,male,Pakistan,Print,No,local
+November 23 2007,Zubair Ahmed Mujahid,male,Pakistan,Print,No,local
+October 19 2007,Muhammad Arif,male,Pakistan,Television,No,local
+July 3 2007,Javed Khan,male,Pakistan,Print Television Internet,No,local
+June 2 2007,Noor Hakim Khan,male,Pakistan,Print,No,local
+April 28 2007,Mehboob Khan,male,Pakistan,Print,Yes,local
+June 16 2006,Hayatullah Khan,male,Pakistan,Print,Yes,local
+May 29 2006,Munir Ahmed Sangi,male,Pakistan,Television,No,local
+February 7 2005,Allah Noor,male,Pakistan,Print,Yes,local
+February 7 2005,Amir Nowab,male,Pakistan,Television,Yes,local
+January 29 2004,Sajid Tanoli,male,Pakistan,Print,No,local
+January 21 2003,Fazal Wahab,male,Pakistan,Print,Yes,local
+October 20 2002,Shahid Soomro,male,Pakistan,Print,No,local
+May 2 2000,Sufi Mohammad Khan,male,Pakistan,Print,No,local
+January 18 1997,Z.A. Shahid,male,Pakistan,Print,No,local
+December 6 1994,Mohammad Samdani Warsi,male,Pakistan,Print,No,local
+December 4 1994,Mohammed Salahuddin,male,Pakistan,Print,No,local
+September 10 2015,Flor Alba NÃºÃ±ez Vargas,female,Colombia,Radio,No,local
+September 11 2013,Ãdison Alberto Molina,male,Colombia,Radio,No,local
+November 27 2012,Guillermo Quiroz Delgado,male,Colombia,Print Television,Yes,local
+March 19 2010,Clodomiro Castilla Ospino,male,Colombia,Print,No,local
+April 29 2009,JosÃ© Everardo Aguilar,male,Colombia,Radio,No,local
+August 22 2006,Atilano Segundo PÃ©rez Barrios,male,Colombia,Radio,No,local
+March 20 2006,Gustavo Rojas Gabalo,male,Colombia,Radio,No,local
+February 19 2005,Rafael Enrique Prins VelÃ¡squez,male,Colombia,Print,No,local
+January 11 2005,Julio Hernando Palacios SÃ¡nchez,male,Colombia,Radio,No,local
+February 7 2004,MartÃ­n La Rotta,male,Colombia,Radio,No,local
+August 22 2003,Juan Carlos Benavides ArÃ©valo,male,Colombia,Radio,No,local
+April 29 2003,Jaime Rengifo Revero,male,Colombia,Radio,No,local
+April 28 2003,Guillermo Bravo Vega,male,Colombia,Radio,No,local
+April 6 2003,JosÃ© Emeterio Rivas,male,Colombia,Radio,No,local
+March 18 2003,Luis Eduardo Alfonso Parada,male,Colombia,Print Radio,No,local
+June 28 2002,EfraÃ­n Varela Noriega,male,Colombia,Radio,No,local
+April 12 2002,HÃ©ctor Sandoval,male,Colombia,Television,No,local
+February 1 2002,Orlando Sierra HernÃ¡ndez,male,Colombia,Print,No,local
+July 8 2001,Jorge Enrique Urbano SÃ¡nchez,male,Colombia,Radio,No,local
+July 6 2001,JosÃ© Duviel VÃ¡squez Arias,male,Colombia,Radio,No,local
+April 27 2001,Flavio Bedoya,male,Colombia,Print,No,local
+December 13 2000,Alfredo Abad LÃ³pez,male,Colombia,Radio,No,local
+November 15 2000,Gustavo Rafael Ruiz Cantillo,male,Colombia,Radio,No,local
+October 31 2000,Juan Camilo Restrepo Guerra,male,Colombia,Radio,No,local
+December 4 1999,Pablo Emilio Medina Motta,male,Colombia,Television,No,local
+October 21 1999,Rodolfo Julio Torres,male,Colombia,Radio,No,local
+September 16 1999,GuzmÃ¡n Quintero Torres,male,Colombia,Print,No,local
+August 13 1999,Jaime GarzÃ³n,male,Colombia,Radio Television,No,local
+April 11 1999,Hernando Rangel Moreno,male,Colombia,Print Radio,Yes,local
+May 19 1998,BernabÃ© CortÃ©s Valderrama,male,Colombia,Television,No,local
+April 16 1998,Nelson Carvajal Carvajal,male,Colombia,Radio,No,local
+February 22 1998,Oscar GarcÃ­a CalderÃ³n,male,Colombia,Print,No,local
+November 20 1997,Jairo ElÃ­as MÃ¡rquez Gallego,male,Colombia,Print,No,local
+November 8 1997,Francisco Castro Menco,male,Colombia,Radio,No,local
+March 20 1997,Gerardo Bedoya Borrero,male,Colombia,Print,No,local
+March 18 1997,Freddy Elles Ahumada,male,Colombia,Print,Yes,local
+October 18 1996,Norvey DÃ­az,male,Colombia,Radio,No,local
+December 12 1995,Ernesto Acero Cadena,male,Colombia,Print,No,local
+November 11 1995,Gabriel Cruz DÃ­az,male,Colombia,Print,No,local
+August 17 1995,Ivan DarÃ­o Pelayo,male,Colombia,Radio,No,local
+January 28 1994,JessÃ© Medina Parra,male,Colombia,Radio,No,local
+September 30 1993,Bienvenido Lemos,male,Colombia,Radio,No,local
+September 28 1993,Manuel MartÃ­nez Espinoza,male,Colombia,Radio,No,local
+April 19 1993,Carlos Lajud Catalan,male,Colombia,Radio,No,local
+March 12 1993,Eustorgio Colmenares,male,Colombia,Print,No,local
+May 6 1992,Ismael Jaimes,male,Colombia,Print,No,local
+May 13 2016,Rajdev Ranjan,male,India,Print,No,local
+February 13 2016,Karun Misra,male,India,Print,No,local
+June 8 2015,Jagendra Singh,male,India,Print Internet,Yes,local
+November 26 2014,MVN Shankar,male,India,Print,No,local
+May 27 2014,Tarun Kumar Acharya,male,India,Print Television,No,local
+December 6 2013,Sai Reddy,male,India,Print,No,local
+September 7 2013,Rajesh Verma,male,India,Television,No,local
+August 23 2013,Rakesh Sharma,male,India,Print,No,local
+August 20 2013,Narendra Dabholkar,male,India,Print,No,local
+December 23 2012,Dwijamani Singh,male,India,Television,No,local
+March 1 2012,Rajesh Mishra,male,India,Print,No,local
+January 23 2011,Umesh Rajput,male,India,Print,No,local
+July 20 2010,Vijay Pratap Singh,male,India,Print,No,local
+March 24 2009,Anil Mazumdar,male,India,Print,No,local
+November 25 2008,Vikas Ranjan,male,India,Print,No,local
+August 13 2008,Javed Ahmed Mir,male,India,Television,No,local
+May 11 2008,Ashok Sodhi,male,India,Print,No,local
+April 1 2008,Mohammed Muslimuddin,male,India,Print,No,local
+January 6 2006,Prahlad Goala,male,India,Print,No,local
+April 20 2004,Asiya Jeelani,female,India,Print,Yes,local
+February 21 2004,Veeraboina Yadagiri,male,India,Print,No,local
+January 31 2003,Parvaz Mohammed Sultan,male,India,Print,No,local
+November 21 2002,Ram Chander Chaterpatti,male,India,Print,No,local
+July 30 2001,Moolchand Yadav,male,India,Print,Yes,local
+August 10 2000,Pradeep Bhatia,male,India,Print,No,local
+November 19 1997,S. Gangadhara Raju,male,India,Television,No,local
+November 19 1997,S. Krishna,male,India,Television,No,local
+November 19 1997,G. Raja Sekhar,male,India,Television,No,local
+November 19 1997,Jagadish Babu,male,India,Television,No,local
+November 19 1997,P. Srinivas Rao,male,India,Television,No,local
+March 16 1997,Saidan Shafi,male,India,Television,No,local
+January 1 1997,Altaf Ahmed Faktoo,male,India,Television,No,local
+May 17 1996,Parag Kumar Das,male,India,Print,No,local
+April 10 1996,Ghulam Rasool Sheikh,male,India,Print,No,local
+September 10 1995,Mushtaq Ali,male,India,Print,No,local
+August 29 1994,Ghulam Muhammad Lone,male,India,Print,Yes,local
+May 22 1993,Dinesh Pathak,male,India,Print,No,local
+January 31 1993,Bhola Nath Masoom,male,India,Print,Yes,local
+May 18 1992,M. L. Manchanda,male,India,Radio,No,local
+January 3 1992,Ram Singh Biling,male,India,Print,Yes,local
+July 24 2016,JoÃ£o Miranda do Carmo,male,Brazil,Internet,No,local
+November 13 2015,Ãtalo Eduardo Diniz Barros,male,Brazil,Internet,No,local
+November 10 2015,Israel GonÃ§alves Silva,male,Brazil,Radio,No,local
+August 6 2015,Gleydson Carvalho,male,Brazil,Radio,No,local
+March 5 2015,Gerardo Ceferino ServÃ­an,male,Brazil,Radio,No,foreign
+December 23 2014,Marcos de Barros Leopoldo Guerra,male,Brazil,Internet,No,local
+February 13 2014,Pedro Palma,male,Brazil,Print,No,local
+February 10 2014,Santiago IlÃ­dio Andrade,male,Brazil,Television,No,local
+June 11 2013,JosÃ© Roberto Ornelas de Lemos,male,Brazil,Print,No,local
+April 14 2013,Walgney Assis Carvalho,male,Brazil,Print,Yes,local
+March 8 2013,Rodrigo Neto,male,Brazil,Print Radio,No,local
+February 22 2013,Mafaldo Bezerra Goes,male,Brazil,Radio,No,local
+November 21 2012,Eduardo Carvalho,male,Brazil,Internet,No,local
+July 5 2012,ValÃ©rio Luiz de Oliveira,male,Brazil,Radio,No,local
+April 23 2012,DÃ©cio SÃ¡,male,Brazil,Print Internet,No,local
+February 9 2012,Mario Randolfo Marques Lopes,male,Brazil,Internet,No,local
+November 6 2011,Gelson Domingos da Silva,male,Brazil,Television,No,local
+June 15 2011,Edinaldo Filgueira,male,Brazil,Print,No,local
+April 9 2011,Luciano LeitÃ£o Pedrosa,male,Brazil,Radio Television,No,local
+October 18 2010,Francisco Gomes de Medeiros,male,Brazil,Radio Internet,No,local
+May 5 2007,Luiz Carlos Barbon Filho,male,Brazil,Print Radio,No,local
+July 1 2005,JosÃ© CÃ¢ndido de Amorim Filho ,male,Brazil,Radio,No,local
+April 24 2004,JosÃ© Carlos AraÃºjo,male,Brazil,Radio,No,local
+April 20 2004,Samuel RomÃ£,male,Brazil,Radio,No,local
+July 23 2003,Luiz AntÃ´nio da Costa,male,Brazil,Print,No,local
+June 30 2003,Nicanor Linhares Batista,male,Brazil,Radio,No,local
+September 30 2002,Domingos SÃ¡vio BrandÃ£o Lima JÃºnior,male,Brazil,Print,No,local
+June 3 2002,Tim Lopes,male,Brazil,Television,No,local
+March 13 2000,Zezinho Cazuza,male,Brazil,Radio,No,local
+March 10 1998,JosÃ© Carlos Mesquita,male,Brazil,Television,No,local
+January 14 1998,Manoel Leal de Oliveira,male,Brazil,Print,No,local
+October 29 1997,Edgar Lopes de Faria,male,Brazil,Television,No,local
+August 29 1995,Reinaldo Coutinho da Silva,male,Brazil,Print,No,local
+May 12 1995,Aristeu Guida da Silva,male,Brazil,Print,No,local
+May 1 1995,Marcos Borges Ribeiro,male,Brazil,Print,No,local
+March 21 1995,Zaqueu de Oliveira,male,Brazil,Print,No,local
+February 19 1994,Joao Alberto Ferreira Souto,male,Brazil,Print,No,local
+June 19 2016,Elidio Ramos ZÃ¡rate,male,Mexico,Print,No,local
+January 21 2016,Marcos HernÃ¡ndez Bautista ,male,Mexico,Print Radio,No,local
+July 31 2015,RubÃ©n Espinosa Becerril,male,Mexico,Print,No,local
+July 2 2015,Filadelfo SÃ¡nchez Sarmiento,male,Mexico,Print Radio,No,local
+January 2 2015,JosÃ© MoisÃ©s SÃ¡nchez Cerezo ,male,Mexico,Print Internet,No,local
+August 11 2014,Octavio Rojas HernÃ¡ndez,male,Mexico,Print,No,local
+November 14 2012,AdriÃ¡n Silva Moreno,male,Mexico,Print,Yes,local
+April 28 2012,Regina MartÃ­nez PÃ©rez,male,Mexico,Print,No,local
+September 24 2011,Maria Elizabeth MacÃ­as Castro,female,Mexico,Internet,Yes,local
+March 25 2011,Luis Emanuel Ruiz Carrillo,male,Mexico,Print,No,local
+November 5 2010,Carlos Alberto Guajardo Romero,male,Mexico,Print,No,local
+September 16 2010,Luis Carlos Santiago,male,Mexico,Print,No,local
+January 8 2010,ValentÃ­n ValdÃ©s Espinosa,male,Mexico,Print,No,local
+November 2 2009,Bladimir Antuna GarcÃ­a,male,Mexico,Print,No,local
+September 23 2009,Norberto Miranda Madrid,male,Mexico,Internet,No,local
+May 25 2009,Eliseo BarrÃ³n HernÃ¡ndez,male,Mexico,Print,No,local
+November 13 2008,Armando RodrÃ­guez CarreÃ³n,male,Mexico,Print,No,local
+September 24 2008,Alejandro ZenÃ³n Fonseca Estrada,male,Mexico,Radio,No,local
+April 6 2007,Amado RamÃ­rez Dillanes,male,Mexico,Radio Television,No,local
+January 20 2007,Rodolfo RincÃ³n Taracena,male,Mexico,Print,No,local
+November 21 2006,Roberto Marcos GarcÃ­a,male,Mexico,Print,No,local
+October 27 2006,Bradley Will,male,Mexico,Internet,Yes,foreign
+April 16 2005,Dolores Guadalupe GarcÃ­a Escamilla,female,Mexico,Radio,No,local
+November 28 2004,Gregorio RodrÃ­guez HernÃ¡ndez,male,Mexico,Print,No,local
+August 31 2004,Francisco Arratia Saldierna,male,Mexico,Print Internet,No,local
+June 22 2004,Francisco Javier Ortiz Franco,male,Mexico,Print,No,local
+February 19 2001,JosÃ© Luis Ortega Mata,male,Mexico,Print,No,local
+December 15 1998,Philip True,male,Mexico,Print,No,foreign
+February 12 1998,Luis Mario GarcÃ­a RodrÃ­guez,male,Mexico,Print,No,local
+July 26 1997,VÃ­ctor HernÃ¡ndez MartÃ­nez,male,Mexico,Print,No,local
+July 15 1997,BenjamÃ­n Flores GonzÃ¡lez,male,Mexico,Print,No,local
+May 22 1997,JesÃºs Abel Bueno LeÃ³n,male,Mexico,Print,No,local
+February 5 1995,Ruperto Armenta Gerardo,male,Mexico,Print,No,local
+June 6 1994,Jorge MartÃ­n Dorantes,male,Mexico,Print,No,local
+June 5 2016,David Gilkey,male,Afghanistan,Radio Internet,No,foreign
+June 5 2016,Zabihullah Tamanna,male,Afghanistan,Print Radio Internet,Yes,local
+December 21 2014,Zubair Hatami,male,Afghanistan,Television,No,local
+April 4 2014,Anja Niedringhaus,female,Afghanistan,Print Internet,No,foreign
+March 11 2014,Nils Horner,male,Afghanistan,Radio,No,foreign
+September 20 2011,Farhad Taqaddosi,male,Afghanistan,Television,No,foreign
+July 28 2011,Ahmad Omaid Khpalwak,male,Afghanistan,Print Television,No,local
+June 24 2010,James P. Hunter,male,Afghanistan,Print,No,foreign
+January 10 2010,Rupert Hamer,male,Afghanistan,Print,No,foreign
+December 30 2009,Michelle Lang,female,Afghanistan,Print,No,foreign
+September 9 2009,Sultan Mohammed Munadi,male,Afghanistan,Print,Yes,local
+January 15 2008,Carsten Thomassen,male,Afghanistan,Print,No,foreign
+June 4 2007,Zakia Zaki,female,Afghanistan,Radio,No,local
+April 8 2007,Ajmal Naqshbandi,male,Afghanistan,Print,Yes,local
+October 7 2006,Christian Struwe,male,Afghanistan,Radio,No,foreign
+October 7 2006,Karen Fischer,female,Afghanistan,Radio,Yes,foreign
+July 22 2006,Abdul Qodus,male,Afghanistan,Television,No,local
+November 26 2001,Ulf StrÃ¶mberg,male,Afghanistan,Television,No,foreign
+November 19 2001,Harry Burton,male,Afghanistan,Television,No,foreign
+November 19 2001,Azizullah Haidari,male,Afghanistan,Print,No,local
+November 19 2001,Julio Fuentes,male,Afghanistan,Print,No,foreign
+November 19 2001,Maria Grazia Cutuli,female,Afghanistan,Print,No,foreign
+November 11 2001,Pierre Billaud,male,Afghanistan,Radio,No,foreign
+November 11 2001,Volker Handloik,male,Afghanistan,Print,Yes,foreign
+November 11 2001,Johanne Sutton,female,Afghanistan,Radio,No,foreign
+September 5 2001,Marc Brunereau,male,Afghanistan,Print,Yes,foreign
+August 8 1998,Mahmoud Saremi,male,Afghanistan,Print,No,foreign
+July 29 1994,Mirwais Jalil,male,Afghanistan,Radio,No,local
+April 12 2016,Zaher al-Shurqat,male,Turkey,Internet,No,foreign
+December 27 2015,Naji Jerf,male,Turkey,Internet,No,foreign
+October 30 2015,Fares Hamadi,male,Turkey,Print Internet,No,foreign
+October 30 2015,Ibrahim Abd al-Qader,male,Turkey,Print Internet,No,foreign
+December 19 2009,Cihan HayÄ±rsevener,male,Turkey,Print,No,local
+January 19 2007,Hrant Dink,male,Turkey,Print,No,local
+October 21 1999,Ahmet Taner Kislali,male,Turkey,Print,No,local
+January 8 1996,Metin GÃ¶ktepe,male,Turkey,Print,No,local
+August 29 1995,Sayfettin Tepe,male,Turkey,Print,No,local
+September 8 1994,Erol Akgun,male,Turkey,Print,No,local
+March 12 1994,Nazim Babaoglu,male,Turkey,Print,No,local
+August 7 1993,Aysel Malkac,female,Turkey,Print,No,local
+July 28 1993,Ferhat Tepe,male,Turkey,Print,No,local
+February 25 1993,Kemal Kilic,male,Turkey,Print,No,local
+January 27 1993,Ugur Mumcu,male,Turkey,Print,No,local
+November 20 1992,Namik Taranci,male,Turkey,Print,No,local
+September 20 1992,Musa Anter,male,Turkey,Print,Yes,local
+August 9 1992,Huseyin Deniz,male,Turkey,Print,No,local
+July 31 1992,Yahya Orhan,male,Turkey,Print,No,local
+July 29 1992,Cetin Abayay,male,Turkey,Print,No,local
+June 8 1992,Hafiz Akdemir,male,Turkey,Print,No,local
+March 23 1992,Izzet Kezer,male,Turkey,Print,No,local
+February 24 1992,Cengiz Altun,male,Turkey,Print,No,local
+February 9 1992,Halit Gungen,male,Turkey,Print,No,local
+October 31 2015,Faisal Arefin Dipan,male,Bangladesh,Print,No,local
+August 7 2015,Niloy Neel,male,Bangladesh,Internet,Yes,local
+May 12 2015,Ananta Bijoy Das,male,Bangladesh,Print Internet,Yes,local
+March 30 2015,Washiqur Rahman Babu,male,Bangladesh,Internet,Yes,local
+February 26 2015,Avijit Roy,male,Bangladesh,Print Internet,Yes,foreign
+May 21 2014,Sadrul Alam Nipul,male,Bangladesh,Print,No,local
+February 15 2013,Ahmed Rajib Haider,male,Bangladesh,Internet,Yes,local
+June 15 2012,Jamal Uddin,male,Bangladesh,Print,No,local
+November 17 2005,Gautam Das,male,Bangladesh,Print,No,local
+February 11 2005,Sheikh Belaluddin,male,Bangladesh,Print,No,local
+August 22 2004,Kamal Hossain,male,Bangladesh,Print,No,local
+June 27 2004,Humayun Kabir,male,Bangladesh,Print,No,local
+January 15 2004,Manik Saha,male,Bangladesh,Print,No,local
+July 5 2002,Shukur Hossain,male,Bangladesh,Print,No,local
+March 2 2002,Harunur Rashid,male,Bangladesh,Print,No,local
+April 21 2001,Nahar Ali,male,Bangladesh,Print,No,local
+July 16 2000,Shamsur Rahman,male,Bangladesh,Print Radio,Yes,local
+January 15 2000,Mir Illias Hossain,male,Bangladesh,Print,No,local
+August 30 1998,Saiful Alam Mukul,male,Bangladesh,Print,No,local
+February 19 1996,Mohammad Quamruzzaman,male,Bangladesh,Print,No,local
+August 30 1994,Mohammed Hussein Navab,male,Bosnia,Print,No,foreign
+May 1 1994,Francis Tomasic,male,Bosnia,Print,Yes,local
+May 1 1994,Brian Brinton,male,Bosnia,Print,Yes,local
+January 28 1994,Alessandro Otta,male,Bosnia,Television,No,foreign
+January 28 1994,Marco Luchetta,male,Bosnia,Television,No,foreign
+January 28 1994,Dario D'Angelo,male,Bosnia,Television,No,foreign
+July 10 1993,Ibrahim Goskel,male,Bosnia,Print,Yes,foreign
+June 27 1993,Tasar Omer,male,Bosnia,Print,Yes,foreign
+June 2 1993,Dominique Lonneux,male,Bosnia,Television,Yes,foreign
+May 29 1993,Guido Puletti,male,Bosnia,Print,Yes,foreign
+January 10 1993,Karmela Sojanovic,female,Bosnia,Print,No,local
+November 1 1992,Tihomir Tunukovic,male,Bosnia,Television,Yes,local
+September 19 1992,Georg Friderich Pfuhl,male,Bosnia,Print,No,foreign
+August 13 1992,David Kaplan,male,Bosnia,Television,No,foreign
+July 1 1992,Salko Hondo,male,Bosnia,Print,No,local
+June 17 1992,Ivo Standeker,male,Bosnia,Print,No,foreign
+May 17 1992,Jordi Pujol,male,Bosnia,Print,No,foreign
+April 14 1992,Kruno Marinovic,male,Bosnia,Radio,No,local
+April 9 1992,Kjasif Smajlovic,male,Bosnia,Print,No,local
+February 12 2009,Puniyamoorthy Sathiyamoorthy,male,Sri Lanka,Radio Television,Yes,local
+January 8 2009,Lasantha Wickramatunga,male,Sri Lanka,Print,No,local
+October 6 2008,Rashmi Mohamed,male,Sri Lanka,Television,No,local
+May 28 2008,Paranirupasingham Devakumar,male,Sri Lanka,Television,No,local
+November 27 2007,Suresh Linbiyo,male,Sri Lanka,Radio,No,local
+November 27 2007,T. Tharmalingam,male,Sri Lanka,Radio,No,local
+November 27 2007,Isaivizhi Chempiyan,female,Sri Lanka,Radio,No,local
+April 29 2007,Selvarajah Rajeewarnam,male,Sri Lanka,Print,No,local
+April 16 2007,Subash Chandraboas,male,Sri Lanka,Print,No,local
+January 24 2006,Subramaniyam Sugitharajah,male,Sri Lanka,Print,No,local
+August 12 2005,Relangi Selvarajah,female,Sri Lanka,Radio,No,local
+April 29 2005,Dharmeratnam Sivaram,male,Sri Lanka,Print Internet,No,local
+December 11 2004,Lanka Jayasundara,male,Sri Lanka,Print,No,local
+August 16 2004,Bala Nadarajah Iyer,male,Sri Lanka,Print,No,local
+May 31 2004,Aiyathurai Nadesan,male,Sri Lanka,Print,No,local
+October 19 2000,Mylvaganam Nimalarajan,male,Sri Lanka,Print Radio,No,local
+December 18 1999,Anura Priyantha,male,Sri Lanka,Television,No,local
+December 18 1999,Indika Pathinivasan,male,Sri Lanka,Television,No,local
+August 13 2014,Simone Camilli,male,Israel and the Occupied Palestinian Territory,Television Internet,No,foreign
+July 30 2014,Sameh al-Aryan,male,Israel and the Occupied Palestinian Territory,Television,No,local
+July 30 2014,Rami Rayan,male,Israel and the Occupied Palestinian Territory,Print Television Internet,No,local
+July 20 2014,Khaled Reyadh Hamad,male,Israel and the Occupied Palestinian Territory,Television,No,local
+November 20 2012,Hussam Salama,male,Israel and the Occupied Palestinian Territory,Television,No,local
+November 20 2012,Mahmoud al-Kumi,male,Israel and the Occupied Palestinian Territory,Television,No,local
+January 7 2009,Basil Ibrahim Faraj,male,Israel and the Occupied Palestinian Territory,Television,No,local
+April 16 2008,Fadel Shana,male,Israel and the Occupied Palestinian Territory,Television,No,local
+May 13 2007,Suleiman Abdul-Rahim al-Ashi,male,Israel and the Occupied Palestinian Territory,Print,No,local
+March 22 2004,Mohamed Abu Halima,male,Israel and the Occupied Palestinian Territory,Radio,No,local
+May 2 2003,James Miller,male,Israel and the Occupied Palestinian Territory,Television,Yes,foreign
+April 19 2003,Nazih Darwazeh,male,Israel and the Occupied Palestinian Territory,Television,No,local
+September 22 2002,Issam Tillawi,male,Israel and the Occupied Palestinian Territory,Radio,No,local
+July 12 2002,Imad Abu Zahra,male,Israel and the Occupied Palestinian Territory,Print,Yes,local
+March 13 2002,Raffaele Ciriello,male,Israel and the Occupied Palestinian Territory,Print,Yes,foreign
+July 31 2001,Muhammad al-Bishawi,male,Israel and the Occupied Palestinian Territory,Print Internet,No,local
+July 28 2005,Harry Yansaneh,male,Sierra Leone,Print,No,local
+May 24 2000,Kurt Schork,male,Sierra Leone,Print,No,foreign
+May 24 2000,Miguel Gil Moreno de Mora,male,Sierra Leone,Television,No,foreign
+May 8 2000,Saoman Conteh,male,Sierra Leone,Print,No,local
+April 30 1999,Conrad Roy,male,Sierra Leone,Print,No,local
+February 3 1999,Abdulai Jumah Jalloh,male,Sierra Leone,Print,No,local
+January 17 1999,Alpha Amadu Bah,male,Sierra Leone,Print,No,local
+January 10 1999,Myles Tierney,male,Sierra Leone,Television,No,foreign
+January 9 1999,"Jenner \""J.C.\"" Cole",male,Sierra Leone,Radio,No,local
+January 9 1999,Paul Mansaray,male,Sierra Leone,Print,No,local
+January 9 1999,Mabay Kamara,male,Sierra Leone,Print,Yes,local
+January 9 1999,Mohammed Kamara,male,Sierra Leone,Radio,No,local
+January 8 1999,James Ogogo,male,Sierra Leone,Print,No,local
+April 13 1998,Edward Smith,male,Sierra Leone,Radio,No,local
+June 3 1997,Ishmael Jalloh,male,Sierra Leone,Print,Yes,local
+June 26 2010,Jean-LÃ©onard Rugambage,male,Rwanda,Print Internet,No,local
+January 28 1998,Wilson Ndayambadje,male,Rwanda,Radio Television,No,local
+May 10 1994,VÃ©nant Ntawucikayenda,male,Rwanda,Television,No,local
+April 29 1994,Anastase Seruvumba,male,Rwanda,Print,No,local
+April 24 1994,Charles Karinganire,male,Rwanda,Print,No,local
+April 24 1994,Emmanuel-Damien Rukondo,male,Rwanda,Print,Yes,local
+April 22 1994,Marcellin Kayiranga,male,Rwanda,Print,No,local
+April 11 1994,Obed Bazimaziki,male,Rwanda,Print,No,local
+April 11 1994,Charles Bideri-Munyangabe,male,Rwanda,Print,No,local
+April 9 1994,Gratien Karambizi,male,Rwanda,Print,No,local
+April 8 1994,Gilbert Munana,male,Rwanda,Print,No,local
+April 7 1994,EudÃ©s Nshimiryo,male,Rwanda,Television,No,local
+April 7 1994,Aloys Nyimbuzi,male,Rwanda,Print,No,local
+April 7 1994,Winifrida Mukamana,female,Rwanda,Television,No,local
+August 5 2016,Mubarak al-Abadi,male,Yemen,Television,No,local
+March 21 2016,Mohammed Ghalib al-Majidi,male,Yemen,Internet,Yes,local
+February 16 2016,Ahmed al-Shaibani,male,Yemen,Television Internet,Yes,local
+January 22 2016,Medium,male,Yemen,Television,No,local
+January 17 2016,Almigdad Mojalli,male,Yemen,Print Internet,Yes,local
+September 17 2015,Bilal Sharaf al-Deen,male,Yemen,Television,No,local
+May 21 2015,Abdullah Qabil,male,Yemen,Television,No,local
+May 21 2015,Youssef al-Ayzari,male,Yemen,Television,No,local
+April 20 2015,Mohamed Shamsan,male,Yemen,Television,No,local
+January 4 2015,Khaled al-Washli,male,Yemen,Television,No,local
+December 6 2014,Luke Somers,male,Yemen,Print Internet,Yes,foreign
+September 24 2011,Hassan al-Wadhaf,male,Yemen,Television,Yes,local
+March 18 2011,Jamal al-Sharaabi,male,Yemen,Print,No,local
+February 13 2010,Muhammad al-Rabou'e,male,Yemen,Print,No,local
+March 28 2014,Mayada Ashraf,female,Egypt,Print Internet,No,local
+August 19 2013,Tamer Abdel Raouf,male,Egypt,Print,No,local
+August 14 2013,Mosaab al-Shami,male,Egypt,Internet,No,local
+August 14 2013,Ahmed Abdel Gawad,male,Egypt,Print Television,No,local
+August 14 2013,Mick Deane,male,Egypt,Television,No,foreign
+August 14 2013,Habiba Ahmed Abd Elaziz,female,Egypt,Television,Yes,local
+July 8 2013,Ahmed Assem el-Senousy,male,Egypt,Print Internet,No,local
+June 29 2013,Salah al-Din Hassan,male,Egypt,Internet,No,local
+December 12 2012,Al-Hosseiny Abou Deif,male,Egypt,Print Internet,No,local
+October 9 2011,Wael Mikhael,male,Egypt,Television,Yes,local
+February 4 2011,Ahmad Mohamed Mahmoud,male,Egypt,Print,No,local
+June 8 1992,Farag Fouda,male,Egypt,Print,No,local
+October 2 2016,Jeroen Oerlemans ,male,Libya,Print Internet,Yes,foreign
+July 21 2016,Abdelqadir Fassouk,male,Libya,Print Television,No,local
+June 24 2016,Khaled al-Zintani ,male,Libya,Television Internet,Yes,local
+April 22 2015,Muftah al-Qatrani,male,Libya,Television,No,local
+May 26 2014,Muftah Bu Zeid,male,Libya,Print Internet,No,local
+November 18 2013,Saleh Ayyad Hafyana,male,Libya,Internet,No,local
+April 20 2011,Chris Hondros,male,Libya,Print Internet,No,foreign
+April 20 2011,Tim Hetherington,male,Libya,Print Television,Yes,foreign
+April 5 2011,Anton Hammerl,male,Libya,Print,Yes,foreign
+March 19 2011,Mohammed al-Nabbous,male,Libya,Internet,Yes,local
+March 13 2011,Ali Hassan al-Jaber,male,Libya,Television,No,foreign
+June 2 2005,Daif al-Gahzal al-Shuhaibi,male,Libya,Internet,No,local
+July 20 2016,Pavel Sheremet,male,Ukraine,Radio Internet,No,foreign
+February 28 2015,Serhiy Nikolayev,male,Ukraine,Print,No,local
+August 6 2014,Andrei Stenin,male,Ukraine,Print Internet,No,foreign
+June 30 2014,Anatoly Klyan,male,Ukraine,Television,No,foreign
+June 17 2014,Igor Kornelyuk,male,Ukraine,Television,No,foreign
+May 24 2014,Andrea Rocchelli,male,Ukraine,Print Internet,No,foreign
+February 19 2014,Vyacheslav Veremiy,male,Ukraine,Print Internet,No,local
+July 7 2001,Igor Aleksandrov,male,Ukraine,Television,No,local
+September 16 2000,Georgy Gongadze,male,Ukraine,Internet,No,local
+August 11 1997,Borys Derevyanko,male,Ukraine,Print,No,local
+May 10 1996,Igor Hrushetsky,male,Ukraine,Print,Yes,local
+April 18 1995,Vladimir Ivanov,male,Ukraine,Print,No,local
+September 5 2010,Alberto Graves Chakussanga,male,Angola,Radio,No,local
+January 9 2010,Stanislas Ocloo,male,Angola,Television,Yes,foreign
+June 5 1998,Simao Roberto,male,Angola,Print,No,local
+October 30 1996,Antonio Casemero,male,Angola,Television,No,local
+January 18 1995,Ricardo de Mello,male,Angola,Print,No,local
+June 16 1994,Artur Gilela,male,Angola,Radio,No,local
+August 23 1993,Elpidio Inacio,male,Angola,Television,No,local
+May 1 1993,Jose Manuel,male,Angola,Radio,No,local
+May 1 1993,Jose Maria dos Santos,male,Angola,Radio,No,local
+October 20 1992,Fernando Marcelino,male,Angola,Print,Yes,local
+April 8 2012,Leiron Kogoya,male,Indonesia,Print Internet,No,local
+December 17 2010,Alfrets Mirulewan,male,Indonesia,Print,No,local
+August 21 2010,Ridwan Salamun,male,Indonesia,Television,Yes,local
+July 30 2010,Ardiansyah Matra'is,male,Indonesia,Television,No,local
+February 11 2009,Anak Agung Prabangsa,male,Indonesia,Print,No,local
+April 29 2006,Herliyanto,male,Indonesia,Print,No,local
+December 29 2003,Ersa Siregar,male,Indonesia,Television,No,local
+July 25 1997,Naimullah,male,Indonesia,Print,No,local
+June 11 1997,Muhammad Sayuti Bochari,male,Indonesia,Print,No,local
+August 16 1996,Fuad Muhammad Syafruddin,male,Indonesia,Print,No,local

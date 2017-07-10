@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Killed Journalists in Latin America</title>
+
+	<script src="d3.min.js"></script>
+
+	<style>
+
+		text {
+			font-family: "Arial";
+			font-size: 14px;
+		}
+
+		#tooltip {
+			position: absolute;
+			visibility: hidden;
+			background: white;
+			font-family: "Arial";
+			font-size: 12px;
+			padding: 5px 15px;
+		}
+
+		.grid {
+			stroke: lightgrey;
+			opacity: 0.2;
+		}
+
+	</style>
+
+</head>
+<body>
+
+<div id="tooltip"></div>
+
+<script type="text/javascript">
+	window.onload = function () {
+
+		var margin = {top: 50, bottom: 90, left: 140, right: 10};
+		 var width = window.innerWidth - margin.left - margin.right;
+		 var height = window.innerHeight - margin.top - margin.bottom;
+
+		var svg = d3.select('body')
+			.append('svg')
+			.attr('height', height + margin.top + margin.bottom)
+			.attr('width', width + margin.left + margin.right)
+			.append('g')
+			.attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+		var tooltip = d3.select("#tooltip")
+
+		var parseTime = d3.timeParse("%B %d, %Y");
+		var formatTime = d3.timeFormat("%b %d %Y");
+		formatTime(new Date);
+
+		var countries = ["Uruguay", "Panama", "Costa Rica", "Nicaragua", "Ecuador", "Bolivia", "Dominican Republic", "Argentina", "Paraguay", "El Salvador", "Venezuela", "Haiti", "Peru", "Honduras", "Guatemala", "Brazil", "Colombia", "Mexico"];
+
+		d3.csv('journalists_kills.csv'
+			, function (d) {
+
+				if ((d.Country_killed === "Argentina" ||
+					d.Country_killed === "Bolivia" ||
+					d.Country_killed === "Brazil" ||
+					d.Country_killed === "Colombia" ||
+					d.Country_killed === "Costa Rica" ||
+					d.Country_killed === "Ecuador" ||
+					d.Country_killed === "El Salvador" ||
+					d.Country_killed === "Guatemala" ||
+					d.Country_killed === "Haiti" ||
+					d.Country_killed === "Honduras" ||
+					d.Country_killed === "Mexico" ||
+					d.Country_killed === "Nicaragua" ||
+					d.Country_killed === "Panama" ||
+					d.Country_killed === "Paraguay" ||
+					d.Country_killed === "Peru" ||
+					d.Country_killed === "Uruguay" ||
+					d.Country_killed === "Venezuela" ||
+					d.Country_killed === "Dominican Republic") && !isNaN(new Date(d.Date))) {
+					return d;
+				}
+			}
+
+			, function (error, data) {
+
+				data.forEach(function (d) {
+					d.Date = parseTime(d.Date);
+
+				});
+
+				var x = d3.scaleTime()
+					.range([0, width])
+					.domain([new Date("Jan 01 1992"), new Date("Jan 01 2017")]);
+
+				var y = d3.scalePoint()
+					.range([0, height])
+					.domain(countries)
+					.padding(1);
+
+				svg.append('g')
+					.call(d3.axisBottom(x))
+					.attr("class", "x axis")
+					.attr('transform', 'translate(0,' + height + ')');
+
+				svg.append('g')
+					.attr("class", "y axis")
+					.call(d3.axisLeft(y))
+					.selectAll("text")
+					.style("text-anchor", "end")
+					.attr("transform", function (d) {
+						return "translate(" + this.getBBox().height * -0.2 + "," + this.getBBox().height + ")";
+					});
+
+				svg.append("g")
+					.attr("class", "grid")
+					.call(d3.axisLeft(y)
+						.tickSize(-width, 0, 0)
+						.tickFormat(""));
+
+				svg.selectAll('.line')
+					.data(data)
+					.enter().append('rect')
+					.attr('class', 'bar')
+					.attr('x', function (d) {
+						return x(d.Date);
+					})
+					.attr('y', function (d) {
+						return y(d.Country_killed);
+					})
+					.attr("width", 3)
+					.attr("height", height/countries.length)
+					.style('fill', "red")
+					.style('fill-opacity', 0.33)
+
+					.on("mouseover", function (d) {
+
+						d3.select(this)
+							.style("stroke-width", 1)
+							.style("stroke", "black");
+
+						tooltip
+							.html("Date: " + formatTime(d.Date) + "<br>" + "Name: " + d.Name + "<br>"
+							   + "Local or Foreign: " + d.Local_Foreign + "<br>" + "Organization: "
+							   + d.Organization + "<br>")
+							.style("visibility", "visible")
+							.style("left", (d3.event.pageX + 5) + "px")
+							.style("top", (d3.event.pageY - 28) + "px");
+
+					})
+
+					.on("mouseout", function (d) {
+						d3.select(this)
+							.style("stroke-width", 0);
+						tooltip.style("visibility", "hidden");
+
+					});
+
+				svg.append('g')
+					.append("rect")
+					.attr("x", 1020)
+					.attr("y", 10)
+					.attr("width", 180)
+					.attr("height", 90)
+					.style("fill", "white")
+					.style("stroke", "black")
+					.style("stroke-width", 0.5)
+					.style("opacity", 0.6);
+
+				svg.append('g')
+					.append("rect")
+					.attr("x", 1050)
+					.attr("y", 28)
+					.attr("width", 4)
+					.attr("height", 34)
+					.style('fill', "red")
+					.style('fill-opacity', 0.33);
+
+				svg.append("text")
+					.attr("x", 1060)
+					.attr("y", 60)
+					.style("font-family", "arial")
+					.style("font-size", 14)
+					.style("text-anchor", "start")
+					.text("1...");
+
+				svg.append('g')
+					.append("rect")
+					.attr("x", 1100)
+					.attr("y", 28)
+					.attr("width", 4)
+					.attr("height", 34)
+					.style('fill', "red")
+					.style('fill-opacity', 0.66);
+
+				svg.append("text")
+					.attr("x", 1110)
+					.attr("y", 60)
+					.style("font-family", "arial")
+					.style("font-size", 14)
+					.style("text-anchor", "start")
+					.text("2...");
+
+				svg.append('g')
+					.append("rect")
+					.attr("x", 1150)
+					.attr("y", 28)
+					.attr("width", 4)
+					.attr("height", 34)
+					.style('fill', "red")
+					.style('fill-opacity', 0.99);
+
+				svg.append("text")
+					.attr("x", 1160)
+					.attr("y", 60)
+					.style("font-family", "arial")
+					.style("font-size", 14)
+					.style("text-anchor", "start")
+					.text("3...");
+
+				svg.append("text")
+					.attr("x", 1045)
+					.attr("y", 85)
+					.style("font-family", "arial")
+					.style("font-size", 14)
+					.style("text-anchor", "start")
+					.text("Journalist(s) killed/day");
+
+				svg.append("text")
+					.attr("x", 1120)
+					.attr("y", 685)
+					.style("font-family", "arial")
+					.style("font-size", 14)
+					.style("text-anchor", "start")
+					.style("font-weight", "bold")
+					.text("Date in Years");
+
+				svg.append("text")
+					.attr("x", -80)
+					.attr("y", 10)
+					.style("font-family", "arial")
+					.style("font-size", 14)
+					.style("text-anchor", "start")
+					.style("font-weight", "bold")
+					.text("Country");
+
+				svg.append("text")
+					.attr("x", 480)
+					.attr("y", -20)
+					.style("font-family", "arial")
+					.style("font-size", 18)
+					.style("text-anchor", "start")
+					.style("font-style", "italic")
+					.text("Killed Journalists in Latin America");
+
+
+			})
+	};
+
+</script>
+
+</body>
+</html>

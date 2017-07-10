@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Death and Torture</title>
+
+
+	<script src="d3.min.js"></script>
+
+	<style>
+		h2 {
+			font-family: 'Special Elite', cursive;
+			padding-left: 50px;
+		}
+
+		#tooltip {
+			position: absolute;
+			visibility: hidden;
+			background: #ffdede;
+			font-size: 18px;
+			padding: 5px 15px;
+		}
+
+		#axis_x {
+			font-size: 12px;
+
+		}
+
+		#axis_y {
+			font-size: 12px;
+
+		}
+
+	</style>
+
+</head>
+<body>
+
+<div id="tooltip"></div>
+
+<script type="text/javascript">
+
+
+	window.onload = function () {
+
+		var margin = {top: 20, bottom: 30, left: 50, right: 100};
+
+		 var width = window.innerWidth - margin.left - margin.right;
+		 var height = window.innerHeight - margin.top - margin.bottom;
+
+		var svg = d3.select('body').append('svg')
+			.attr('height', height + margin.top + margin.bottom)
+			.attr('width', width + margin.left + margin.right)
+			.append('g')
+			.attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+		var tooltip = d3.select('#tooltip');
+
+
+		d3.csv('journalists_kills_final.csv'
+
+			, function (d) {
+				return {
+					Country_killed: d.Country_killed,
+					Date_original: new Date(d.Date_original),
+					Date: d.Date,
+					Name: d.Name,
+					Coverage: d.Coverage,
+					Job: d.Job
+				}
+			}
+			, function (err, data) {
+
+
+				if (err) console.log(err);
+
+				var helperCountrySorted = {};
+				var Country_sorted = [];
+				// var Country_final = [];
+
+				var helperDateSorted = {};
+				var Date_sorted = [];
+
+
+				data.forEach(function (d) {
+
+
+					if (helperCountrySorted[d.Country_killed] === undefined && d.Country_killed !== '') {
+						Country_sorted.push(d.Country_killed);
+						helperCountrySorted[d.Country_killed] = 1;
+						// Country_final[d][1] = 1; 
+
+					} else if (d.Country_killed !== '') {
+						helperCountrySorted[d.Country_killed] = helperCountrySorted[d.Country_killed] + 1;
+					}
+//					;
+					if (helperDateSorted[d.Date] === undefined && d.Date !== '') {
+						Date_sorted.push(d.Date.substring(d.Date.length - 4, d.Date.length));
+						helperDateSorted[d.Date] = 0;
+					}
+				});
+
+
+				var Date_sorted = Date_sorted.sort();
+				var Country_sorted = Country_sorted.sort();
+
+
+				var TopTenCountry = [];
+				for (i = 0; i < 10; i++) {
+					TopTenCountry.push(Country_sorted[i]);
+				}
+
+				var data2 = [];
+				data.forEach(function (d){
+					if(TopTenCountry.indexOf(d.Country_killed) != -1){
+							  data2.push(d);
+					}
+				})
+
+				var x = d3.scaleBand()
+					.rangeRound([0, width])
+					.domain(TopTenCountry.map(function (d) {
+						return d
+					}));
+				var y = d3.scaleBand()
+					.range([height, 0])
+					.domain(Date_sorted.map(function (d) {
+						return d
+					}));
+
+				var axis_x = svg.append('g')
+					.attr('id', 'axis_x')
+					.attr('transform', 'translate(0,' + height + ')')
+					.call(d3.axisBottom(x));
+
+				var axis_y = svg.append('g')
+					.attr('id', 'axis_y')
+					.call(d3.axisLeft(y));
+
+
+				svg.selectAll('.rects')
+					.data(data2)
+					.enter().append('rect')
+					.attr('class', 'kills')
+					.attr('width', 20)
+					.attr('height', 10)
+					.attr('y', function (d) {
+						return y(d.Date_original.getFullYear());
+					})
+					.attr('x', function (d) {
+						return x(d.Country_killed);
+					})
+					.style("fill", "#FF5B5B")
+					.style('opacity', 0.04)
+
+					.on('mouseenter', function (d) {
+						tooltip
+							.html(d.Name + ' got killed on ' + d.Date + ' in ' + d.Country_killed + '.<br>' + 'The ' + d.Job + ' was working on <u>' + d.Coverage + '</u> coverage.')
+							.style('visibility', 'visible')
+							.style("top", (d3.event.pageY - 10) + "px")
+							.style("left", (d3.event.pageX + 10) + "px");
+					})
+					.on('mouseout', function (d) {
+						tooltip.style('visibility', 'hidden');
+					});
+
+
+			});
+	};
+
+</script>
+</body>
+</html>

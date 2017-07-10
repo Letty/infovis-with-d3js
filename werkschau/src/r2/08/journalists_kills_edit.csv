@@ -1,0 +1,484 @@
+date,name,sex,country_killed,Local_Foreign,Type_death
+22-Oct-16,Ali Risan,Male,Iraq,Local,Crossfire/Combat-Related
+21-Oct-16,Ahmet Hacero?lu,Male,Iraq,Local,Crossfire/Combat-Related
+14-Aug-16,Mustafa Said,Male,Iraq,Local,Crossfire/Combat-Related
+5-Aug-16,Mubarak al-Abadi,Male,Yemen,Local,Crossfire/Combat-Related
+1-Aug-16,Mohammed Sayyed Hassan,Male,Syria,Local,Crossfire/Combat-Related
+30-Jun-16,Sami Jawdat Rabah,Male,Syria,Local,Murder
+30-Jun-16,Samer Mohammed Aboud,Male,Syria,Local,Murder
+30-Jun-16,Mustafa Abdul Hassa,Male,Syria,Local,Murder
+30-Jun-16,Mohammed Eissa,Male,Syria,Local,Murder
+14-Jul-16,Abdullah Mohammad Ghannam,Male,Syria,Local,Crossfire/Combat-Related
+11-Jul-16,Ibrahim Omar,Male,Syria,Local,Crossfire/Combat-Related
+25-Jun-16,Khaled Eissa ,Male,Syria,Local,Murder
+24-Feb-16,Rohat Akta?,Male,Turkey,Local,Unknown
+5-Jun-16,Osama Jumaa,Male,Syria,Local,Crossfire/Combat-Related
+12-Apr-16,Zaher al-Shurqat,Male,Turkey,Foreign,Murder
+21-Mar-16,Mohammed Ghalib al-Majidi,Male,Yemen,Local,Crossfire/Combat-Related
+19-Feb-16,Majid Dirani,Male,Syria,Local,Crossfire/Combat-Related
+16-Feb-16,Ahmed al-Shaibani,Male,Yemen,Local,Crossfire/Combat-Related
+22-Jan-16,Hashim al-Hamran,Male,Yemen,Local,Crossfire/Combat-Related
+17-Jan-16,Almigdad Mojalli,Male,Yemen,Local,Crossfire/Combat-Related
+12-Jan-16,Hassan al-Anbaki,Male,Iraq,Local,Murder
+12-Jan-16,Saif Talal,Male,Iraq,Local,Murder
+27-Dec-15,Naji Jerf,Male,Turkey,Foreign,Murder
+16-Dec-15,Ahmed Mohamed al-Mousa,Male,Syria,Local,Murder
+7-Dec-15,Zakaria Ibrahim,Male,Syria,Local,Crossfire/Combat-Related
+6-Nov-15,Ahmed Abu al-Hamza,Male,Syria,Local,Crossfire/Combat-Related
+3-Nov-15,Batoul Mokhles al-Warrar,Female,Syria,Local,Crossfire/Combat-Related
+30-Oct-15,Fares Hamadi,Male,Turkey,Foreign,Murder
+30-Oct-15,Ibrahim Abd al-Qader,Male,Turkey,Foreign,Murder
+27-Oct-15,Jomaa Al-Ahmad (Abu al-Nour al-Halabi),Male,Syria,Local,Crossfire/Combat-Related
+23-Oct-15,Wasem Aledel,Male,Syria,Local,Crossfire/Combat-Related
+26-Sep-15,Obada Ghazal,Male,Syria,Local,Crossfire/Combat-Related
+17-Sep-15,Bilal Sharaf al-Deen,Male,Yemen,Local,Crossfire/Combat-Related
+12-Sep-15,Yahya Abdul Hamid,Male,Iraq,Local,Murder
+1-Aug-15,Adel Sayegh ,Male,Iraq,Local,Murder
+27-Jul-15,Thaer al-Ajlani,Male,Syria,Local,Crossfire/Combat-Related
+15-Jul-15,Jalaa al-Abadi,Male,Iraq,Local,Murder
+26-Jun-15,Mohammed al-Asfar,Male,Syria,Local,Crossfire/Combat-Related
+31-May-15,Ammar al-Shami,Male,Syria,Local,Crossfire/Combat-Related
+21-May-15,Abdullah Qabil,Male,Yemen,Local,Crossfire/Combat-Related
+21-May-15,Youssef al-Ayzari,Male,Yemen,Local,Crossfire/Combat-Related
+1-May-15,Firas al-Baher,Male,Iraq,Local,Murder
+26-Apr-15,Thaer Al-Ali,Male,Iraq,Local,Murder
+20-Apr-15,Mohamed Shamsan,Male,Yemen,Local,Crossfire/Combat-Related
+16-Apr-15,Humam Najjar (Abu Yazan al-Halabi),Male,Syria,Local,Crossfire/Combat-Related
+1-Apr-15,Jamal Khalifeh,Male,Syria,Local,Crossfire/Combat-Related
+30-Apr-15,Fadel al-Hadidi,Male,Iraq,Local,Murder
+8-Mar-15,Noureddine Hashim,Male,Syria,Local,Crossfire/Combat-Related
+1-Jan-15,Kenji Goto,Male,Syria,Foreign,Murder
+4-Jan-15,Khaled al-Washli,Male,Yemen,Local,Dangerous Assignment
+10-Dec-14,Mahran al-Deeri,Male,Syria,Local,Crossfire/Combat-Related
+8-Dec-14,Salem Khalil,Male,Syria,Local,Crossfire/Combat-Related
+8-Dec-14,Rami Asmi,Male,Syria,Local,Crossfire/Combat-Related
+8-Dec-14,Yousef el-Dous,Male,Syria,Local,Crossfire/Combat-Related
+6-Dec-14,Luke Somers,Male,Yemen,Foreign,Murder
+22-Nov-14,Zaher Mtawe'e,Male,Syria,Local,Crossfire/Combat-Related
+15-Oct-14,Atallah Bajbouj,Male,Syria,Local,Crossfire/Combat-Related
+10-Sep-14,Mohammed al-Qasim,Male,Syria,Local,Crossfire/Combat-Related
+31-Aug-14,Steven Sotloff,Male,Syria,Foreign,Murder
+1-Aug-14,James Foley,Male,Syria,Foreign,Murder
+13-Aug-14,Simone Camilli,Male,Israel and the OPT,Foreign,Crossfire/Combat-Related
+8-Aug-14,Leyla Yildizhan (Deniz Firat),Female,Iraq,Foreign,Crossfire/Combat-Related
+30-Jul-14,Sameh al-Aryan,Male,Israel and the OPT,Local,Crossfire/Combat-Related
+30-Jul-14,Rami Rayan,Male,Israel and the OPT,Local,Crossfire/Combat-Related
+20-Jul-14,Khaled Reyadh Hamad,Male,Israel and the OPT,Local,Crossfire/Combat-Related
+27-Jun-14,Mohamed Taani,Male,Syria,Local,Crossfire/Combat-Related
+20-Jun-14,Ahmed Hasan Ahmed,Male,Syria,Foreign,Dangerous Assignment
+15-Jun-14,Khalid Ali Hamada,Male,Iraq,Local,Crossfire/Combat-Related
+4-May-14,Al-Moutaz Bellah Ibrahim,Male,Syria,Local,Murder
+25-Apr-14,Mouaz Alomar (Abu Mehdi Al Hamwi),Male,Syria,Local,Crossfire/Combat-Related
+31-Mar-14,Bilal Ahmed Bilal,Male,Syria,Local,Dangerous Assignment
+28-Mar-14,Mayada Ashraf,Female,Egypt,Local,Crossfire/Combat-Related
+10-Mar-14,Muthanna Abdel Hussein,Male,Iraq,Local,Dangerous Assignment
+10-Mar-14,Khaled Abdel Thamer,Male,Iraq,Local,Dangerous Assignment
+9-Mar-14,Ali Mustafa,Male,Syria,Foreign,Crossfire/Combat-Related
+8-Mar-14,Omar Abdul Qader,Male,Syria,Local,Crossfire/Combat-Related
+20-Feb-14,Turad Mohamed al-Zahouri,Male,Syria,Local,Crossfire/Combat-Related
+20-Jan-14,Firas Mohammed Attiyah,Male,Iraq,Local,Dangerous Assignment
+23-Dec-13,Jamal Abdul-Nasser Sami,Male,Iraq,Local,Murder
+23-Dec-13,Raad Yassin Al-Baddi,Male,Iraq,Local,Murder
+23-Dec-13,Wassan Al-Azzawi,Female,Iraq,Local,Murder
+20-Dec-13,Molhem Barakat,Male,Syria,Local,Crossfire/Combat-Related
+15-Dec-13,Nawras al-Nuaimi,Female,Iraq,Local,Murder
+5-Dec-13,Kawa Garmyane,Male,Iraq,Local,Murder
+4-Dec-13,Yasser Faisal al-Jumaili,Male,Syria,Foreign,Murder
+27-Nov-13,Wadih Sa'ad al-Hamdani,Male,Iraq,Local,Dangerous Assignment
+24-Nov-13,Mohamed Yamen Naddaf,Male,Syria,Local,Crossfire/Combat-Related
+24-Nov-13,Alaa Edward Butros,Male,Iraq,Local,Murder
+19-Nov-13,Mohamed Ahmed Taysir Bellou,Male,Syria,Local,Crossfire/Combat-Related
+29-Oct-13,Mohammad Saeed,Male,Syria,Local,Murder
+24-Oct-13,Bashar al-Nuaimi,Male,Iraq,Local,Murder
+5-Oct-13,Mohammed Ghanem,Male,Iraq,Local,Murder
+5-Oct-13,Mohammed Karim al-Badrani,Male,Iraq,Local,Murder
+29-Sep-13,Nour al-Din Al-Hafiri,Male,Syria,Local,Crossfire/Combat-Related
+5-Sep-13,Abdel Aziz Mahmoud Hasoun,Male,Syria,Local,Crossfire/Combat-Related
+20-Aug-13,Muhammad Hassan Al-Musalama,Male,Syria,Local,Crossfire/Combat-Related
+19-Aug-13,Tamer Abdel Raouf,Male,Egypt,Local,Dangerous Assignment
+16-Aug-13,Shahir al-Muaddamani,Male,Syria,Local,Crossfire/Combat-Related
+14-Aug-13,Mosaab al-Shami,Male,Egypt,Local,Dangerous Assignment
+14-Aug-13,Ahmed Abdel Gawad,Male,Egypt,Local,Dangerous Assignment
+14-Aug-13,Mick Deane,Male,Egypt,Foreign,Dangerous Assignment
+14-Aug-13,Habiba Ahmed Abd Elaziz,Female,Egypt,Local,Crossfire/Combat-Related
+27-Jul-13,Muhammed Tariq Jadua,Male,Syria,Local,Crossfire/Combat-Related
+8-Jul-13,Ahmed Assem el-Senousy,Male,Egypt,Local,Dangerous Assignment
+5-Jul-13,Fidaa al-Baali,Male,Syria,Local,Crossfire/Combat-Related
+29-Jun-13,Salah al-Din Hassan,Male,Egypt,Local,Dangerous Assignment
+27-May-13,Yara Abbas,Female,Syria,Local,Crossfire/Combat-Related
+24-Apr-13,Youssef Younis,Male,Syria,Local,Crossfire/Combat-Related
+31-Mar-13,Abdul Raheem Kour Hassan,Male,Syria,Local,Dangerous Assignment
+29-Mar-13,Amer Diab,Male,Syria,Local,Crossfire/Combat-Related
+14-Mar-13,Mahmoud Natouf,Male,Syria,Local,Crossfire/Combat-Related
+10-Mar-13,Ghaith Abd al-Jawad,Male,Syria,Local,Crossfire/Combat-Related
+10-Mar-13,Amr Badir al-Deen Junaid,Male,Syria,Local,Crossfire/Combat-Related
+3-Mar-13,Walid Jamil Amira,Male,Syria,Local,Crossfire/Combat-Related
+24-Feb-13,Olivier Voisin,Male,Syria,Foreign,Crossfire/Combat-Related
+17-Feb-13,Mohamed Saeed al-Hamwi,Male,Syria,Local,Crossfire/Combat-Related
+15-Feb-13,Youssef Adel Bakri (Youssef Abu Jad),Male,Syria,Local,Crossfire/Combat-Related
+31-Jan-13,Loay al-Nimir,Male,Syria,Local,Crossfire/Combat-Related
+31-Jan-13,Issam Obeid,Male,Syria,Local,Crossfire/Combat-Related
+31-Jan-13,Abdel Karim Nazir Ismail,Male,Syria,Local,Crossfire/Combat-Related
+18-Jan-13,Mohamed al-Mesalma,Male,Syria,Local,Crossfire/Combat-Related
+17-Jan-13,Yves Debay,Male,Syria,Foreign,Crossfire/Combat-Related
+13-Jan-13,Bassem Fawaz al-Zabi,Male,Syria,Local,Crossfire/Combat-Related
+4-Jan-13,Suhail Mahmoud al-Ali,Male,Syria,Local,Murder
+21-Dec-12,Abd al-Karim al-Ezzo,Male,Syria,Local,Crossfire/Combat-Related
+12-Dec-12,Al-Hosseiny Abou Deif,Male,Egypt,Local,Murder
+4-Dec-12,Naji Asaad,Male,Syria,Local,Crossfire/Combat-Related
+28-Nov-12,Mohamed Quratem,Male,Syria,Local,Crossfire/Combat-Related
+25-Nov-12,Mohamed al-Khal,Male,Syria,Local,Crossfire/Combat-Related
+21-Nov-12,Basel Tawfiq Youssef,Male,Syria,Local,Crossfire/Combat-Related
+20-Nov-12,Hussam Salama,Male,Israel and the OPT,Local,Crossfire/Combat-Related
+20-Nov-12,Mahmoud al-Kumi,Male,Israel and the OPT,Local,Crossfire/Combat-Related
+19-Nov-12,Hozan Abdel Halim Mahmoud,Male,Syria,Local,Crossfire/Combat-Related
+9-Nov-12,Ayham Mostafa Ghazzoul,Male,Syria,Local,Dangerous Assignment
+3-Nov-12,Sattar Beheshti,Male,Iran,Local,Dangerous Assignment
+10-Oct-12,Mohammed al-Ashram,Male,Syria,Local,Crossfire/Combat-Related
+3-Oct-12,Mona al-Bakkour,Female,Syria,Local,Dangerous Assignment
+26-Sep-12,Maya Naser,Male,Syria,Local,Crossfire/Combat-Related
+19-Sep-12,Abdel Karim al-Oqda,Male,Syria,Local,Murder
+16-Sep-12,Yusuf Ahmed Deeb,Male,Syria,Local,Crossfire/Combat-Related
+9-Sep-12,Tamer al-Awam,Male,Syria,Local,Crossfire/Combat-Related
+22-Aug-12,Mosaab al-Obdaallah,Male,Syria,Local,Murder
+20-Aug-12,Mika Yamamoto,Female,Syria,Foreign,Crossfire/Combat-Related
+11-Aug-12,Ali Abbas,Male,Syria,Local,Murder
+10-Aug-12,Hatem Abu Yehia,Male,Syria,Local,Unknown
+12-Jul-12,Ihsan al-Buni,Male,Syria,Local,Murder
+27-Jun-12,Mohammad Shamma,Male,Syria,Local,Crossfire/Combat-Related
+27-Jun-12,Sami Abu Amin,Male,Syria,Local,Crossfire/Combat-Related
+28-May-12,Ahmed al-Assam,Male,Syria,Local,Crossfire/Combat-Related
+28-May-12,Bassel al-Shahade,Male,Syria,Local,Crossfire/Combat-Related
+27-May-12,Ahmed Adnan al-Ashlaq,Male,Syria,Local,Crossfire/Combat-Related
+27-May-12,Lawrence Fahmy al-Naimi,Male,Syria,Local,Crossfire/Combat-Related
+27-May-12,Ammar Mohamed Suhail Zado,Male,Syria,Local,Crossfire/Combat-Related
+9-Apr-12,Ali Shaaban,Male,Lebanon,Local,Crossfire/Combat-Related
+31-Mar-12,Ahmed Ismail Hassan,Male,Bahrain,Local,Dangerous Assignment
+24-Feb-12,Anas al-Tarsha,Male,Syria,Local,Crossfire/Combat-Related
+22-Feb-12,Rémi Ochlik,Male,Syria,Foreign,Crossfire/Combat-Related
+22-Feb-12,Marie Colvin,Female,Syria,Foreign,Crossfire/Combat-Related
+21-Feb-12,Rami al-Sayed,Male,Syria,Local,Crossfire/Combat-Related
+4-Feb-12,Mazhar Tayyara,Male,Syria,Local,Crossfire/Combat-Related
+11-Jan-12,Gilles Jacquier,Male,Syria,Foreign,Dangerous Assignment
+27-Dec-11,Basil al-Sayed,Male,Syria,Local,Dangerous Assignment
+20-Nov-11,Ferzat Jarban,Male,Syria,Local,Dangerous Assignment
+9-Oct-11,Wael Mikhael,Male,Egypt,Local,Dangerous Assignment
+24-Sep-11,Hassan al-Wadhaf,Male,Yemen,Local,Dangerous Assignment
+8-Sep-11,Hadi al-Mahdi,Male,Iraq,Local,Murder
+21-Jun-11,Alwan al-Ghorabi,Male,Iraq,Local,Dangerous Assignment
+12-Apr-11,Karim Fakhrawi,Male,Bahrain,Local,Dangerous Assignment
+9-Apr-11,Zakariya Rashid Hassan al-Ashiri,Male,Bahrain,Local,Dangerous Assignment
+29-Mar-11,Sabah al-Bazi,Male,Iraq,Local,Dangerous Assignment
+29-Mar-11,Muammar Khadir Abdelwahad,Male,Iraq,Local,Dangerous Assignment
+18-Mar-11,Jamal al-Sharaabi,Male,Yemen,Local,Dangerous Assignment
+24-Feb-11,Mohamed al-Hamdani,Male,Iraq,Local,Dangerous Assignment
+4-Feb-11,Ahmad Mohamed Mahmoud,Male,Egypt,Local,Dangerous Assignment
+12-Dec-10,Omar Rasim al-Qaysi,Male,Iraq,Local,Crossfire/Combat-Related
+4-Oct-10,Tahrir Kadhim Jawad,Male,Iraq,Local,Murder
+8-Sep-10,Safa al-Din Abdel Hamid,Male,Iraq,Local,Murder
+7-Sep-10,Riad al-Saray,Male,Iraq,Local,Murder
+3-Aug-10,Assaf Abu Rahal,Male,Lebanon,Local,Crossfire/Combat-Related
+5-May-10,Sardasht Osman,Male,Iraq,Local,Murder
+13-Feb-10,Muhammad al-Rabou'e,Male,Yemen,Local,Murder
+19-Dec-09,Cihan Hayırsevener,Male,Turkey,Local,Murder
+21-Oct-09,Orhan Hijran,Male,Iraq,Local,Crossfire/Combat-Related
+31-May-09,Alaa Abdel-Wahab,Male,Iraq,Local,Crossfire/Combat-Related
+18-Mar-09,Omidreza Mirsayafi,Male,Iran,Local,Dangerous Assignment
+10-Mar-09,Suhaib Adnan,Male,Iraq,Local,Crossfire/Combat-Related
+10-Mar-09,Haidar Hashim Suhail,Male,Iraq,Local,Crossfire/Combat-Related
+7-Jan-09,Basil Ibrahim Faraj,Male,Israel and the OPT,Local,Crossfire/Combat-Related
+13-Sep-08,Musab Mahmood al-Ezawi,Male,Iraq,Local,Murder
+13-Sep-08,Ahmed Salim,Male,Iraq,Local,Murder
+13-Sep-08,Ihab Mu'd,Male,Iraq,Local,Murder
+21-Jul-08,Soran Mama Hama,Male,Iraq,Local,Murder
+17-Jun-08,Mohieldin Al Naqeeb,Male,Iraq,Local,Murder
+22-May-08,Haidar al-Hussein,Male,Iraq,Local,Murder
+21-May-08,Wissam Ali Ouda,Male,Iraq,Local,Crossfire/Combat-Related
+4-May-08,Sarwa Abdul-Wahab,Female,Iraq,Local,Murder
+25-Apr-08,Jassim al-Batat,Male,Iraq,Local,Murder
+16-Apr-08,Fadel Shana,Male,Israel and the OPT,Local,Crossfire/Combat-Related
+27-Feb-08,Shihab al-Tamimi,Male,Iraq,Local,Murder
+29-Jan-08,Alaa Abdul-Karim al-Fartoosi,Male,Iraq,Local,Crossfire/Combat-Related
+28-Oct-07,Shehab Mohammad al-Hiti,Male,Iraq,Local,Murder
+14-Oct-07,Salih Saif Aldin,Male,Iraq,Foreign,Murder
+20-Sep-07,Muhannad Ghanem Ahmad al-Obaidi,Male,Iraq,Local,Murder
+3-Sep-07,Amer Malallah al-Rashidi,Male,Iraq,Local,Murder
+27-Jul-07,Adnan al-Safi,Male,Iraq,Local,Murder
+16-Jul-07,Majeed Mohammed,Male,Iraq,Local,Murder
+16-Jul-07,Mustafa Gaimayani,Male,Iraq,Local,Murder
+13-Jul-07,Khalid W. Hassan,Male,Iraq,Foreign,Murder
+12-Jul-07,Namir Noor-Eldeen,Male,Iraq,Foreign,Crossfire/Combat-Related
+27-Jun-07,Sarmad Hamdi Shaker,Male,Iraq,Local,Murder
+26-Jun-07,Hamid Abed Sarhan,Male,Iraq,Local,Murder
+17-Jun-07,Filaih Wuday Mijthab,Male,Iraq,Local,Murder
+11-Jun-07,Aref Ali Filaih,Male,Iraq,Local,Crossfire/Combat-Related
+7-Jun-07,Sahar Hussein Ali al-Haydari,Female,Iraq,Local,Murder
+6-Jun-07,Mohammad Hilal Karji,Male,Iraq,Local,Murder
+30-May-07,Nazar Abdulwahid al-Radhi,Male,Iraq,Local,Murder
+17-May-07,Saif Laith Yousuf,Male,Iraq,Local,Murder
+17-May-07,Alaa Uldeen Aziz,Male,Iraq,Local,Murder
+13-May-07,Suleiman Abdul-Rahim al-Ashi,Male,Israel and the OPT,Local,Murder
+9-May-07,Raad Mutashar,Male,Iraq,Local,Murder
+6-May-07,Dmitry Chebotayev,Male,Iraq,Foreign,Crossfire/Combat-Related
+12-Apr-07,Khaled Fayyad Obaid al-Hamdani,Male,Iraq,Local,Crossfire/Combat-Related
+6-Apr-07,Othman al-Mashhadani,Male,Iraq,Local,Murder
+5-Apr-07,Khamail Khalaf ,Female,Iraq,Local,Murder
+5-Apr-07,Thaer Ahmad Jaber ,Male,Iraq,Local,Murder
+17-Mar-07,Hamid al-Duleimi,Male,Iraq,Local,Murder
+7-Mar-07,Yussef Sabri,Male,Iraq,Local,Crossfire/Combat-Related
+4-Mar-07,Mohan Hussein al-Dhahir,Male,Iraq,Local,Murder
+24-Feb-07,Jamal al-Zubaidi,Male,Iraq,Local,Murder
+5-Feb-07,Abdulrazak Hashim Ayal al-Khakani,Male,Iraq,Local,Murder
+28-Jan-07,Hussein al-Zubaidi,Male,Iraq,Local,Murder
+19-Jan-07,Hrant Dink,Male,Turkey,Local,Murder
+15-Jan-07,Falah Khalaf al-Diyali,Male,Iraq,Local,Murder
+5-Jan-07,Ahmed Hadi Naji,Male,Iraq,Local,Murder
+12-Dec-06,Aswan Ahmed Lutfallah,Male,Iraq,Local,Murder
+4-Dec-06,Nabil Ibrahim al-Dulaimi,Male,Iraq,Local,Murder
+15-Nov-06,Luma al-Karkhi,Female,Iraq,Local,Murder
+13-Nov-06,Muhammad al-Ban,Male,Iraq,Local,Murder
+29-Oct-06,Naqshin Hamma Rashid,Female,Iraq,Local,Murder
+26-Oct-06,Saed Mahdi Shlash,Male,Iraq,Local,Murder
+12-Oct-06,Hussein Ali,Male,Iraq,Local,Murder
+12-Oct-06,Ahmad Sha'ban,Male,Iraq,Local,Murder
+12-Oct-06,Thaker al-Shouwili,Male,Iraq,Local,Murder
+12-Oct-06,Noufel al-Shimari,Male,Iraq,Local,Murder
+12-Oct-06,Abdul-Rahim Nasrallah al-Shimari,Male,Iraq,Local,Murder
+18-Sep-06,Ahmed Riyadh al-Karbouli,Male,Iraq,Local,Murder
+13-Sep-06,Safa Isma'il Enad,Male,Iraq,Local,Murder
+9-Sep-06,Abdel Karim al-Rubai,Male,Iraq,Local,Murder
+7-Aug-06,Mohammad Abbas Mohammad,Male,Iraq,Local,Murder
+7-Aug-06,Ismail Amin Ali,Male,Iraq,Local,Murder
+30-Jul-06,Riyad Muhammad Ali,Male,Iraq,Local,Murder
+29-Jul-06,Adel Naji al-Mansouri ,Male,Iraq,Local,Murder
+23-Jul-06,Layal Najib,Female,Lebanon,Local,Crossfire/Combat-Related
+13-Jun-06,Ibrahim Seneid,Male,Iraq,Local,Murder
+31-May-06,Ali Jaafar,Male,Iraq,Local,Murder
+29-May-06,Paul Douglas,Male,Iraq,Foreign,Crossfire/Combat-Related
+29-May-06,James Brolan,Male,Iraq,Foreign,Crossfire/Combat-Related
+8-May-06,Laith al-Dulaimi,Male,Iraq,Local,Murder
+4-Apr-06,So'oud Muzahim al-Shoumari,Male,Iraq,Local,Murder
+26-Mar-06,Kamal Manahi Anbar,Male,Iraq,Local,Crossfire/Combat-Related
+13-Mar-06,Muhsin Khudhair,Male,Iraq,Local,Murder
+11-Mar-06,Amjad Hameed,Male,Iraq,Local,Murder
+7-Mar-06,Munsuf Abdallah al-Khaldi,Male,Iraq,Local,Murder
+23-Feb-06,Atwar Bahjat,Female,Iraq,Local,Murder
+23-Feb-06,Adnan Khairallah,Male,Iraq,Local,Murder
+23-Feb-06,Khaled Mahmoud al-Falahi,Male,Iraq,Local,Murder
+25-Jan-06,Mahmoud Za'al,Male,Iraq,Local,Crossfire/Combat-Related
+12-Dec-05,Gebran Tueni,Male,Lebanon,Local,Murder
+7-Nov-05,Ahmed Hussein Al-Maliki,Male,Iraq,Local,Murder
+19-Oct-05,Mohammed Haroon,Male,Iraq,Local,Murder
+20-Sep-05,Firas Maadidi,Male,Iraq,Local,Murder
+19-Sep-05,Fakher Haider,Male,Iraq,Local,Murder
+17-Sep-05,Hind Ismail,Female,Iraq,Local,Murder
+28-Aug-05,Waleed Khaled,Male,Iraq,Local,Crossfire/Combat-Related
+27-Aug-05,Rafed Mahmoud Said al-Anbagy,Male,Iraq,Local,Murder
+3-Aug-05,Steven Vincent,Male,Iraq,Foreign,Murder
+23-Jul-05,Adnan al-Bayati,Male,Iraq,Local,Murder
+1-Jul-05,Khaled al-Attar,Male,Iraq,Local,Murder
+28-Jun-05,Ahmed Wael Bakri,Male,Iraq,Local,Crossfire/Combat-Related
+25-Jun-05,Maha Ibrahim,Female,Iraq,Local,Crossfire/Combat-Related
+2-Jun-05,Samir Qassir,Male,Lebanon,Local,Murder
+31-May-05,Jerges Mahmood Mohamad Suleiman,Male,Iraq,Local,Murder
+15-May-05,Ahmed Adam,Male,Iraq,Local,Murder
+15-May-05,Najem Abed Khudair,Male,Iraq,Local,Murder
+23-Apr-05,Saleh Ibrahim,Male,Iraq,Local,Crossfire/Combat-Related
+15-Apr-05,Ahmed al-Rubai'i,Male,Iraq,Local,Murder
+15-Apr-05,Saman Abdullah Izzedine,Male,Iraq,Local,Murder
+14-Apr-05,Fadhil Hazem Fadhil,Male,Iraq,Local,Crossfire/Combat-Related
+14-Apr-05,Ali Ibrahim Issa,Male,Iraq,Local,Crossfire/Combat-Related
+1-Apr-05,Ahmed Jabbar Hashim,Male,Iraq,Local,Murder
+14-Mar-05,Hussam Sarsam,Male,Iraq,Local,Murder
+25-Feb-05,Raeda Wazzan,Female,Iraq,Local,Murder
+30-Nov-04,Wadallah Sarhan,Male,Iraq,Local,Murder
+1-Nov-04,Dhia Najim,Male,Iraq,Local,Crossfire/Combat-Related
+14-Oct-04,Dina Mohammed Hassan,Male,Iraq,Local,Murder
+14-Oct-04,Karam Hussein,Male,Iraq,Local,Murder
+12-Sep-04,Mazen al-Tumeizi,Male,Iraq,Local,Crossfire/Combat-Related
+26-Aug-04,Enzo Baldoni,Male,Iraq,Foreign,Murder
+15-Aug-04,Mahmoud Hamid Abbas,Male,Iraq,Local,Crossfire/Combat-Related
+6-Jun-04,Simon Cumbers,Male,Saudi Arabia,Foreign,Murder
+27-May-04,Shinsuke Hashida,Male,Iraq,Foreign,Crossfire/Combat-Related
+27-May-04,Kotaro Ogawa,Male,Iraq,Foreign,Crossfire/Combat-Related
+21-May-04,Rashid Hamid Wali,Male,Iraq,Local,Crossfire/Combat-Related
+7-May-04,Waldemar Milewicz,Male,Iraq,Foreign,Crossfire/Combat-Related
+7-May-04,Mounir Bouamrane,Male,Iraq,Local,Crossfire/Combat-Related
+19-Apr-04,Asaad Kadhim,Male,Iraq,Local,Crossfire/Combat-Related
+26-Mar-04,Burhan Mohamed Mazhour,Male,Iraq,Local,Crossfire/Combat-Related
+22-Mar-04,Mohamed Abu Halima,Male,Israel and the OPT,Local,Crossfire/Combat-Related
+19-Mar-04,Ali al-Khatib,Male,Iraq,Foreign,Crossfire/Combat-Related
+18-Mar-04,Ali Abdel Aziz,Male,Iraq,Local,Crossfire/Combat-Related
+18-Mar-04,Nadia Nasrat,Female,Iraq,Local,Murder
+1-Feb-04,Abdel Sattar Abdel Karim,Male,Iraq,Local,Crossfire/Combat-Related
+1-Feb-04,Semko Karim Mohyideen,Male,Iraq,Local,Crossfire/Combat-Related
+1-Feb-04,Gharib Mohamed Salih,Male,Iraq,Local,Crossfire/Combat-Related
+1-Feb-04,Ayoub Mohamed,Male,Iraq,Local,Crossfire/Combat-Related
+1-Feb-04,Haymin Mohamed Salih,Male,Iraq,Local,Crossfire/Combat-Related
+1-Feb-04,Safir Nader,Male,Iraq,Local,Crossfire/Combat-Related
+27-Jan-04,Duraid Isa Mohammed,Male,Iraq,Local,Crossfire/Combat-Related
+28-Oct-03,Ahmed Shawkat,Male,Iraq,Local,Murder
+25-Aug-03,Ahmad Kareem,Male,Iraq,Local,Crossfire/Combat-Related
+17-Aug-03,Mazen Dana,Male,Iraq,Foreign,Crossfire/Combat-Related
+10-Jul-03,Zahra Kazemi,Female,Iran,Foreign,Murder
+6-Jul-03,Jeremy Little,Male,Iraq,Foreign,Crossfire/Combat-Related
+5-Jul-03,Richard Wild,Male,Iraq,Foreign,Murder
+2-May-03,James Miller,Male,Israel and the OPT,Foreign,Crossfire/Combat-Related
+19-Apr-03,Nazih Darwazeh,Male,Israel and the OPT,Local,Crossfire/Combat-Related
+8-Apr-03,Taras Protsyuk,Male,Iraq,Local,Crossfire/Combat-Related
+8-Apr-03,José Couso,Male,Iraq,Foreign,Crossfire/Combat-Related
+8-Apr-03,Tareq Ayyoub,Male,Iraq,Foreign,Crossfire/Combat-Related
+7-Apr-03,Christian Liebig,Male,Iraq,Foreign,Crossfire/Combat-Related
+7-Apr-03,Julio Anguita Parrado,Male,Iraq,Foreign,Crossfire/Combat-Related
+3-Apr-03,Michael Kelly,Male,Iraq,Foreign,Crossfire/Combat-Related
+2-Apr-03,Kaveh Golestan,Male,Iraq,Foreign,Crossfire/Combat-Related
+22-Mar-03,Paul Moran,Male,Iraq,Foreign,Crossfire/Combat-Related
+22-Mar-03,Terry Lloyd,Male,Iraq,Foreign,Crossfire/Combat-Related
+22-Sep-02,Issam Tillawi,Male,Israel and the OPT,Local,Dangerous Assignment
+12-Jul-02,Imad Abu Zahra,Male,Israel and the OPT,Local,Crossfire/Combat-Related
+13-Mar-02,Raffaele Ciriello,Male,Israel and the OPT,Foreign,Crossfire/Combat-Related
+31-Jul-01,Muhammad al-Bishawi,Male,Israel and the OPT,Local,Crossfire/Combat-Related
+21-Oct-99,Ahmet Taner Kislali,Male,Turkey,Local,Murder
+28-Feb-99,Ilan Roeh,Male,Lebanon,Foreign,Crossfire/Combat-Related
+22-Feb-97,Ebrahim Zalzadeh,Male,Iran,Local,Murder
+6-Jul-96,Kutlu Adali,Male,Cyprus,Local,Murder
+8-Jan-96,Metin Göktepe,Male,Turkey,Local,Murder
+29-Aug-95,Sayfettin Tepe,Male,Turkey,Local,Murder
+8-Sep-94,Erol Akgun,Male,Turkey,Local,Murder
+3-Apr-94,Lissy Schmidt,Female,Iraq,Foreign,Murder
+12-Mar-94,Nazim Babaoglu,Male,Turkey,Local,Unknown
+7-Aug-93,Aysel Malkac,Female,Turkey,Local,Murder
+28-Jul-93,Ferhat Tepe,Male,Turkey,Local,Murder
+26-Jul-93,Ahmed Haidar,Male,Lebanon,Local,Crossfire/Combat-Related
+25-Feb-93,Kemal Kilic,Male,Turkey,Local,Murder
+27-Jan-93,Ugur Mumcu,Male,Turkey,Local,Murder
+20-Nov-92,Namik Taranci,Male,Turkey,Local,Murder
+20-Sep-92,Musa Anter,Male,Turkey,Local,Murder
+18-Aug-92,Gabrielle Marian Hulsen,Female,Lebanon,Foreign,Murder
+9-Aug-92,Huseyin Deniz,Male,Turkey,Local,Murder
+31-Jul-92,Yahya Orhan,Male,Turkey,Local,Murder
+29-Jul-92,Cetin Abayay,Male,Turkey,Local,Murder
+8-Jun-92,Hafiz Akdemir,Male,Turkey,Local,Murder
+8-Jun-92,Farag Fouda,Male,Egypt,Local,Murder
+23-Mar-92,Izzet Kezer,Male,Turkey,Local,Dangerous Assignment
+24-Feb-92,Cengiz Altun,Male,Turkey,Local,Murder
+9-Feb-92,Halit Gungen,Male,Turkey,Local,Murder
+15-Jan-92,Mustafa Jeha,Male,Lebanon,Local,Murder
+20-Aug-16,Ali Ghani,Male,Iraq,Local,Crossfire/Combat-Related
+30-Jun-16,Mahmoud Shabaan al-Haj Hadhir,Unknown,Syria,,
+20-Apr-15,Monir Aklan,Unknown,Yemen,,
+20-Apr-15,Hazzam Mohamed Zeid,Unknown,Yemen,,
+14-Oct-14,Kadri Ba?du,Unknown,Turkey,,
+13-Aug-14,Ali Abu Afash,Unknown,Israel and the OPT,,
+30-Jul-14,Mohammed Nour al-Din al-Deiri,Unknown,Israel and the OPT,,
+9-Jul-14,Hamid Shihab,Unknown,Israel and the OPT,,
+23-Dec-13,Mohammed Abdul-Hameed,Unknown,Iraq,,
+23-Dec-13,Ahmed Khattab Omar,Unknown,Iraq,,
+26-Dec-12,Abu Yezen al-Hamoui,Unknown,Syria,,
+22-Oct-11,Fuad al-Shamri,Unknown,Yemen,,
+26-Jul-10,Amira Hatem,Unknown,Iraq,,
+26-Jul-10,Mohamed Abd al-Kareem Hadi al-Bayati,Unknown,Iraq,,
+26-Jul-10,Aysar Mahmoud Hamid Zankana,Unknown,Iraq,,
+13-Sep-08,Qaydar Sulaiman,Unknown,Iraq,,
+29-Jan-08,Alaa Aasi,Unknown,Iraq,,
+22-Oct-07,Abdullah [full name unavailable],Unknown,Iraq,,
+14-Oct-07, Khaled Mohammad Nofan,Unknown,Iraq,,
+14-Oct-07,Jassem Mohammad Nofan,Unknown,Iraq,,
+14-Oct-07,Ziad Tarek al-Dibo,Unknown,Iraq,,
+12-Jul-07,Saeed Chmagh,Unknown,Iraq,,
+6-Jul-07,Ali Watan Rozouk al-Hassani,Unknown,Iraq,,
+14-May-07,Mohammad Matar Abdo,Unknown,Israel and the OPT,,
+7-May-07,Imad Abdul-Razzaq al-Obaid,Unknown,Iraq,,
+3-May-07,Adel al-Badri,Unknown,Iraq,,
+6-Apr-07,Hussein Nizar,Unknown,Iraq,,
+7-Feb-07,Azhar Abdullah al-Maliki ,Unknown,Iraq,,
+7-Feb-07, Sabah Salman,Unknown,Iraq,,
+7-Feb-07,Nabras Mohammed Hadi,Unknown,Iraq,,
+29-Oct-06,Anis Qassem,Unknown,Iraq,,
+13-Oct-06,Ali Hlayel,Unknown,Iraq,,
+12-Oct-06,Maher,Unknown,Iraq,,
+12-Oct-06,Sami Nasrallahal-Shimari ,Unknown,Iraq,,
+12-Oct-06,Unidentified,Unknown,Iraq,,
+12-Oct-06,Hassan [full name unavailable],Unknown,Iraq,,
+12-Oct-06, Ahmad [full name unavailable],Unknown,Iraq,,
+12-Oct-06,Ali Jabber,Unknown,Iraq,,
+4-Oct-06,Jassem Hamad Ibrahim,Unknown,Iraq,,
+27-Aug-06,Unidentified,Unknown,Iraq,,
+22-Jul-06,Suleiman al-Chidiac,Unknown,Lebanon,,
+8-May-06,Muazaz Ahmed Barood,Unknown,Iraq,,
+7-May-06,Isma'il Muhammad Khalal,Unknown,Iraq,,
+11-Mar-06,Anwar Turki,Unknown,Iraq,,
+17-Feb-06,Mohammad Siddik,Unknown,Iraq,,
+7-Jan-06,Allan Enwiyah,Unknown,Iraq,,
+21-Sep-05,Ahlam Youssef,Unknown,Iraq,,
+10-Mar-05,Laiq Ibrahim Nowruz al-Kakaie,Unknown,Iraq,,
+25-Feb-05, Unidentified,Unknown,Iraq,,
+7-Oct-04,Ahmed Jassem,Unknown,Iraq,,
+2-Sep-04,Ismail Taher Mohsin,Unknown,Iraq,,
+28-Aug-04,Unidentified ,Unknown,Iraq,,
+29-May-04,Mahmood Daoud,Unknown,Iraq,,
+29-May-04,Samya Abdel Jabar,Unknown,Iraq,,
+27-May-04,Mohamed Najmedin,Unknown,Iraq,,
+19-Apr-04,Hussein Saleh,Unknown,Iraq,,
+26-Mar-04,Omar Kamal,Unknown,Iraq,,
+18-Mar-04,Muhammad Ahmad Sarham,Unknown,Iraq,,
+18-Mar-04,Najeed Rashid,Unknown,Iraq,,
+5-Mar-04,Selwan Abdelghani Medhi al-Niem,Unknown,Iraq,,
+27-Jan-04,Yasser Khatab,Unknown,Iraq,,
+30-Oct-03,Nabil Hussein,Unknown,Iraq,,
+30-Oct-03,Alahin Hussein,Unknown,Iraq,,
+30-Oct-03,Ali Adnan,Unknown,Iraq,,
+30-Oct-03,Ramziya Moushee,Unknown,Iraq,,
+30-Oct-03,Hassan Alwan,Unknown,Iraq,,
+6-Apr-03,Kamaran Abdurazaq Muhamed,Unknown,Iraq,,
+22-Mar-03,Hussein Othman,Unknown,Iraq,,
+13-Aug-16,Widad Hussein,Unknown,Iraq,,
+20-May-16,Alaa Qassem Mohan,Unknown,Iraq,,
+18-Mar-15,Abdel Karim al-Khaiwani,Unknown,Yemen,,
+2-Jan-15,Fayez Abu Halawa,Unknown,Syria,,
+2-Jan-15,Dirar al-Jahad,Unknown,Syria,,
+10-Oct-14,Raed Al-Azzawi,Unknown,Iraq,,
+3-Oct-14,Marwan Shahadat,Unknown,Syria,,
+16-Aug-14,Abdul Rahman Hamid al-Din,Unknown,Yemen,,
+14-Apr-14,Hamza Hajj Hassan,Unknown,Syria,,
+8-Nov-13,Abdullah Sobhi al-Ghazawi,Unknown,Syria,,
+24-Jan-13,Mohamed Abd Al-Rahman,Unknown,Syria,,
+22-Dec-12,Haidar Alsamoudi,Unknown,Syria,,
+17-Nov-12,Samir al-Sheikh Ali,Unknown,Iraq,,
+11-Aug-12,Bara'a Yusuf al-Bushi,Unknown,Syria,,
+31-Jul-12,Ghazwan Anas,Unknown,Iraq,,
+14-Jul-12,Falah Taha,Unknown,Syria,,
+14-Jul-12,Ali Juburi al-Kaabi,Unknown,Syria,,
+2-Apr-12,Kamiran Salaheddin,Unknown,Iraq,,
+3-Jan-12,Shukri Abu al-Burghul,Unknown,Syria,,
+8-Apr-11,Taha Hameed,Unknown,Iraq,,
+17-Feb-11,Hilal al-Ahmadi,Unknown,Iraq,,
+21-Nov-10,Mazen Mardan al-Baghdadi,Unknown,Iraq,,
+4-Apr-10,Metin Alata?,Unknown,Turkey,,
+10-Oct-08,Dyar Abas Ahmed,Unknown,Iraq,,
+13-Mar-08,Qassim Abdul Hussein al-Iqabi,Unknown,Iraq,,
+12-Feb-08,Hisham Mijawet Hamdan,Unknown,Iraq,,
+15-Dec-07,"Ali Shafeya al-Moussawi,",Unknown,Iraq,,
+23-Sep-07,Jawad al-Daami,Unknown,Iraq,,
+31-May-07,Saif Fakhry,Unknown,Iraq,,
+28-May-07,Mahmoud Hassib al-Qassab,Unknown,Iraq,,
+28-May-07,Abdul Rahman al-Issawi,Unknown,Iraq,,
+20-May-07,Ali Khalil,Unknown,Iraq,,
+16-Mar-07,Hussein al-Jabouri,Unknown,Iraq,,
+26-Dec-06,Yasin al-Dulaimi,Unknown,Iraq,,
+3-Nov-06,Ahmad al-Rashid,Unknown,Iraq,,
+13-Oct-06,Raed Qays,Unknown,Iraq,,
+10-Oct-06,Azad Muhammad Hussein,Unknown,Iraq,,
+12-Sep-06,Hadi Anawi al-Joubouri,Unknown,Iraq,,
+29-Jun-06,Osama Qadir,Unknown,Iraq,,
+28-Jun-06,Alaa Hassan,Unknown,Iraq,,
+5-May-06,Abdel Majid al-Mehmedawi,Unknown,Iraq,,
+9-Feb-05,Abdul-Hussein Khazal,Unknown,Iraq,,
+27-Oct-04,Liqaa Abdul Razzak,Unknown,Iraq,,
+1-Jun-04,Sahar Saad Eddine al-Nuaimi ,Unknown,Iraq,,
+20-Mar-01,Hidaya Sultan al-Salem,Unknown,Kuwait,,
+28-Oct-00,Aziz Al-Tineh,Unknown,Israel and the OPT,,
+24-Nov-98,Majid Sharif,Unknown,Iran,,
+17-Sep-94,Labib Ibrahim,Unknown,Egypt,,
+10-Nov-92,Yasar Aktay,Unknown,Turkey,,
+2-Jun-92,Mecit Akgun,Unknown,Turkey,,

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>killed Journalists in Middle East Countries</title>
+
+	<script type="text/javascript" src="d3.min.js"></script>
+
+	<style>
+
+		div.tooltip {
+			position: absolute;
+			margin-left: 5px;
+			padding: 5px;
+			font: 10px sans-serif;
+			color: blueviolet;
+			background: whitesmoke;
+			border: 0px;
+			border-radius: 2px;
+		}
+	</style>
+
+</head>
+
+<body>
+	<svg></svg>
+	<div id="tooltip"></div>
+	<script>
+		window.onload = function () {
+			var margin = {
+				top: 20,
+				left: 100,
+				bottom: 30,
+				right: 20
+			};
+			var width = window.innerWidth - margin.left - margin.right;
+			var height = window.innerHeight - margin.top - margin.bottom;
+
+			// Define the div for the tooltip 這個是我寫tooltip div 的初始化設定
+			var div = d3.select("body").append("div")
+				.attr("class", "tooltip")
+				.style("opacity", 0);
+
+			var svg = d3.select('svg')
+				.attr('width', width + margin.left + margin.right)
+				.attr('height', height + margin.top + margin.bottom)
+				.append('g')
+				.attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+			//我想要Y軸是中東國家，X軸是時間軸(只顯示年分)，中間畫出圓形的有透明度的點點，代表在那時候被殺的人，滑鼠移過去會顯示名字/性別/跟type_death
+			//我不知道為什麼現在的時間軸長得不太對，也不知道要怎麼畫出圈圈...
+
+			//var colorPetal = d3.scaleThreshold()
+				//.domain([1, 2, 3])
+				//.range(['yellow', 'orange', 'red']);
+
+			var countries = [];
+			var parseTime = d3.timeParse("%d-%b-%y"); // 轉換時間格式 15-Apr-2017 格式
+			var formatTime = d3.timeParse("%e %B");
+			// var parseTime = d3.timeParse('%d-%b-%Y');
+
+			var x = d3.scaleTime()
+				.rangeRound([0, width]);
+			var y = d3.scalePoint()
+				.rangeRound([height, 0])
+				.padding(1)
+				.domain(['Bahrain', 'Cyprus', 'Egypt', 'Iran', 'Iraq', 'Israel and the OPT', 'Kuwait', 'Lebanon', 'Saudi Arabia', 'Syria',
+					'Turkey', 'Yemen'
+				]);
+			d3.csv('journalists_kills_edit.csv',
+				function (error, data) {
+					var helper1 = {};
+					var countries = [];
+					//我不知道下面這邊代表什麼，不知道是不是多餘的	
+					data.forEach(function (d) {
+						d.date = parseTime(d.date);
+						if (helper1[d.country_killed] === undefined) {
+							countries.push(d.country_killed)
+							helper1[d.country_killed] = 1;
+							helper1[d.country_killed] = helper1[d.country_killed] + 1;
+
+						}
+						// 對 x 的 axis 叫出 date的資料出來
+						//.domain([new Date(1992, 0, 1), new Date(2017, 0, 1)]) 這個是寫死的格式
+						x.domain(d3.extent(data, function (d) {
+							return d.date;
+						}));
+						
+					})
+
+					countries.sort();
+
+					svg.append('g')
+						.attr('transform', 'translate(0,' + height + ')')
+						.call(d3.axisBottom(x));
+
+					svg.append('g')
+						.call(d3.axisLeft(y))
+						.append('text')
+						.attr('fill', 'grey')
+						.attr('transform', 'rotate(0)')
+						.attr('x', -9)
+						.attr('y', -4)
+						.attr('dy', '0.71em')
+						.attr('text-anchor', 'end')
+						.text('(Mid-East Country)');
+
+					svg.selectAll('.dot')
+						.data(data) // 這裡要把data叫進來，不然資料出不來哦 !!
+						.enter().append('circle')
+						.attr('class', 'dot')
+						.attr('r', 5)
+						.attr('cy', function (d) {
+							return y(d.country_killed);
+						})
+						.attr('cx', function (d) {
+							return x(d.date);
+						})
+						.style('fill', 'red')
+						.style('fill-opacity', 0.5)
+
+						.on('mouseover', function (d) {
+							svg.selectAll('.dot')
+								.style('opacity', 0.2);
+							d3.select(this)
+								.style('opacity', 1)
+								.attr('r', 7);
+							div.html('Name: '+d.name+ '<br>' +'Sex: '+d.sex) // 顯示 tooltip的 Html 國家名稱 
+								.style('opacity', 0.8) // tooltip的屬性咯
+								.style("left", (d3.event.pageX) + 2 + "px")
+								.style("top", (d3.event.pageY - 20) + "px");
+						})
+						.on('mouseout', function (d) {
+							svg.selectAll('.dot')
+								.style('opacity', 0.5)
+								.attr('r', 5);
+							div.html(d.name)
+								.style('opacity', 0);
+						})
+
+					
+				});
+
+		};
+	</script>
+</body>
+
+</html>

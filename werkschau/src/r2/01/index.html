@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Loading Datasets</title>
+	<!-- <script src="https://d3js.org/d3.v4.min.js"></script> -->
+	<script src="library/d3.min.js"></script>
+
+	<style>
+		h1 {
+			font-size: 18px;
+			font-style: normal;
+			font-family: sans-serif;
+			margin-left: 60px;
+			margin-top: 20px;
+		}
+
+		p {
+			font-size: 14px;
+			font-family: sans-serif;
+		}
+
+		body {
+			background-color: #bfbfbf;
+		}
+
+		.dot {
+			stroke-width: 1px;
+		}
+
+		.legend {
+			font-size: 12px;
+			font-style: normal;
+			font-family: sans-serif;
+		}
+
+		circle {
+			cursor: pointer;
+		}
+
+		.tooltip {
+			position: absolute;
+			visibility: hidden;
+			padding: 1em;
+			background: #ededed;
+			border-radius: 4px;
+			pointer-events: none;
+			font-family: sans-serif;
+		}
+	</style>
+
+</head>
+<body>
+<h1>Journalist Deaths from 2010-2016</h1>
+<div class="tooltip"></div>
+<script>
+
+	var margin = {top: 70, bottom: 60, left: 160, right: 17};
+	var width = window.innerWidth * 0.9 - margin.left - margin.right;
+	var height = window.innerHeight * 0.75 - margin.top - margin.bottom;
+
+	var tooltip = d3.select(".tooltip");
+
+	var svg = d3.select('body').append('svg')
+		.attr('height', height + margin.top + margin.bottom)
+		.attr('width', width + margin.left + margin.right)
+		.append('g')
+		.attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+	var color = d3.scaleThreshold()
+		.domain([2.5, 4])
+		.range(['#564d4d', '#512626', "#a30303"])
+
+	var legendRectSize = 16;
+	var legendSpacing = 4;
+
+	window.onload = function () {
+		d3.csv(
+			'journalists_kills.csv',
+			function (err, data) {
+				if (err) {
+					console.log(err);
+				}
+
+				var CrossfireCombatRelated = 0;
+				var Murder = 0;
+				var Unknown = 0;
+				var others = 0;
+
+				var Murder2011 = {};
+				var Murder = [];
+
+				data.forEach(function (d) {
+					d.Date_number = +d.Date_number;
+					d.Number = +d.Number;
+					d.Date_original = new Date(d.Date_original);
+
+					switch (d.Type_death) {
+						case 'Crossfire/Combat-Related':
+							CrossfireCombatRelated++;
+							break;
+						case 'Murder':
+							Murder++;
+							break;
+						case 'Unknown':
+							Unknown++;
+							break;
+						default:
+							others++;
+					}
+
+					if (Murder2011[d.Type_death] === 'Murder' && d.Date_number === '2011') {
+						if (d.Type_death === 'Murder' && +d.Date_number === 2011) {
+							Murder.push(d);
+							if (Murder2011[d.Type_death] === undefined) {
+								Murder2011[d.Type_death] = 0;
+							}
+							Murder2011[d.Type_death] = Murder2011[d.Type_death] + 1;
+						}
+					}
+				});
+
+
+				var x = d3.scaleTime()
+					.range([0, width])
+					.domain([0, d3.extent(data, function (d) {
+						return d.Date_original;
+					})]);
+
+				var y = d3.scalePoint()
+					.range([height, 0])
+					.padding(1)
+					.domain([0, d3.map(data, function (d) {
+						return d.Type_death;
+					})]);
+
+				x.domain(d3.extent(data, function (d) {
+					return d.Date_original;
+				}));
+
+				y.domain(d3.extent(data, function (d) {
+					return d.Type_death;
+				}));
+
+				color.domain(d3.extent(data, function (d) {
+					return d.Sex;
+				}));
+
+				svg.append('g')
+					.attr('class', 'axis axis--x')
+					.attr('transform', 'translate(0,' + height + ')')
+					.call(d3.axisBottom(x)
+						.ticks(5)
+					);
+
+				svg.append('text')
+					.attr('transform',
+						'translate(' + (width - 70) + ' ,' +
+						(height + 40) + ')')
+					.style('text-anchor', 'middle')
+					.style('font-family', 'sans-serif')
+					.style('font-size', 12)
+					.text('Date of Death');
+
+				svg.append('g')
+					.attr('class', 'axis axis--y')
+					.call(d3.axisLeft(y));
+
+				svg.append('text')
+					.attr('transform', 'rotate(-90)')
+					.attr('y', 0 - margin.left)
+					.attr('x', 0 - 60)
+					.attr('dy', '1em')
+					.style('text-anchor', 'middle')
+					.style('font-family', 'sans-serif')
+					.style('font-size', 12)
+					.text('Type of Death');
+
+				svg.selectAll('.dot')
+					.data(data)
+					.enter()
+					.append('circle')
+					.attr('r', 5)
+					.attr('class', 'dot')
+					.attr('cx', function (d) {
+						return x(d.Date_original);
+					})
+					.attr('cy', function (d) {
+						return y(d.Type_death);
+					})
+					.style('fill-opacity', 0.75)
+					.style('fill', function (d) {
+						return color(d.Sex);
+					})
+					.on('mouseover', mouseover)
+					.on('mousemove', mousemove)
+					.on('mouseout', mouseout);
+
+				function mouseover(d) {
+					tooltip.html('Name: ' + d.Name + '<br>' +
+						'Country: ' + d.Country_killed + '<p>' +
+						'Organization: ' + d.Organization + '<br>' +
+						'Nationality: ' + d.Nationality + '<br>' +
+						'Job: ' + d.Job);
+					tooltip.style('visibility', 'visible');
+				}
+
+				function mousemove() {
+					return tooltip
+						.style('top', (d3.event.pageY - 10) + 'px')
+						.style('left', (d3.event.pageX + 10) + 'px');
+				}
+
+				function mouseout(d) {
+					tooltip.style('visibility', 'hidden');
+				}
+
+				var legend = svg.selectAll('.legend')
+					.data(color.domain())
+					.enter()
+					.append('g')
+					.attr('class', 'legend')
+					.attr('transform', function (d, i) {
+						var height = legendRectSize + legendSpacing;
+						var offset = height * color.domain().length + 10;
+						var horz = width - offset;
+						var vert = i * height - 60;
+						return 'translate(' + horz + ',' + vert + ')';
+					});
+
+				legend.append('rect')
+					.attr('width', legendRectSize)
+					.attr('height', legendRectSize)
+					.style('fill', color)
+					.style('stroke', color);
+
+				legend.append('text')
+					.attr('x', legendRectSize + legendSpacing)
+					.attr('y', legendRectSize - legendSpacing)
+					.text(function (d) {
+						return d;
+					});
+			})
+	};
+</script>
+</body>
+</html>

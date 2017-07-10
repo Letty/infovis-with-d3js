@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>journalists killed | top25 countries</title>
+
+	<script type="text/javascript" src="d3.min.js"></script>
+
+	<style>
+		body {
+			font-family: "Roboto";
+			font-size: 10px;
+		}
+
+		svg text {
+			font-family: "Roboto";
+			font-size: 10px;
+		}
+
+		#tooltip {
+			position: absolute;
+			visibility: hidden;
+			background: #e3e3e3;
+			font-size: 12px;
+			padding: 5px 15px
+		}
+	</style>
+
+</head>
+<body>
+
+<div id="tooltip"></div>
+
+<script type="text/javascript">
+
+	window.onload = function () {
+
+		var cWidth = window.innerWidth
+			|| document.documentElement.clientWidth
+			|| document.body.clientWidth
+
+		var cHeight = window.innerHeight
+			|| document.documentElement.clientHeight
+			|| document.body.clientHeight
+
+		var margin = {top: 10, left: 100, bottom: 20, right: 220};
+
+		var height = (cHeight - margin.top - margin.bottom) - 20,
+			width = (cWidth - margin.left - margin.right) - 18;
+		var svg = d3.select('body')
+			.append('svg')
+			.attr('width', width + margin.left + margin.right)
+			.attr('height', height + margin.top + margin.bottom)
+			.append('g')
+			.attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+		var color = d3.scaleOrdinal(d3.schemeCategory20);
+
+		var tooltip = d3.select('#tooltip');
+
+		d3.csv('journalists_kills_top25.csv', function (error, data) {	// load dataset
+
+			data.forEach(function (d) {
+				d.date = new Date(d.date); // string to date
+			});
+
+			// x-Achse
+
+			var x = d3.scaleTime()
+				.range([0, width])
+				.domain(d3.extent(data, function (d) {
+					return d.date;
+				}));
+
+			// y-Achse
+
+			var helper = {}; //helper object
+			var countries = [];
+
+			data.forEach(function (d) {	// clean countries so there is one of each
+				if (helper[d.country_killed] === undefined) {
+					countries.push(d.country_killed)
+					helper[d.country_killed] = 1;
+				}
+				helper[d.country_killed] = helper[d.country_killed] + 1;
+			});
+
+			// countries.sort();
+
+
+			var y = d3.scaleBand()
+				.range([height, 0])
+				.padding(0.8)
+				.domain(countries.map(function (d) {
+					return d;
+				}));
+
+			svg.append('g')
+				.call(d3.axisLeft(y))
+
+			svg.append('g')
+				.attr('transform', 'translate(0,' + height + ')')
+				.call(d3.axisBottom(x))
+
+			// female //////////////////////////////////////////////////////////////////
+
+			data.forEach(function (d) {
+				if (d.sex === 'Female') {
+
+					svg.append('circle')
+						.datum(d)
+						.attr('class', function (d){
+							return 'female '+d.medium;
+						})
+						.attr('r', 6)
+						.attr('cx', function (d) {
+							return x(d.date);
+						})
+
+						.attr('cy', function (d) {
+							return y(d.country_killed);
+						})
+						.style('fill', function (d) {
+							return color(d.medium);
+						})
+						.style('opacity', function (d) {
+							if (d.local_foreign == 'Foreign') {
+								return 1
+							} else {
+								return 0.3
+							}
+						})
+
+						.on('mouseover', function (d) {
+							tooltip
+								.html('Name: ' + d.name + '<br>'
+									+ 'Sex: ' + d.sex + '<br>'
+									+ 'Country killed: ' + d.country_killed + '<br>'
+									+ d.local_foreign + '<br>'
+									+ 'Medium: ' + d.medium + '<br>'
+								)
+								.style('visibility', 'visible')
+								.style('visibility', 'visible')
+								.style("top", (d3.event.pageY - 10) + "px")
+								.style("left", (d3.event.pageX + 10) + "px");
+						})
+						.on('mouseout', function (d) {
+							tooltip.style('visibility', 'hidden');
+						});
+
+				} else {
+
+					// male ////////////////////////////////////////////////////////////////////
+
+					svg.append('rect')
+						.datum(d)
+						.attr('class', function (d){
+							return 'male '+d.medium;
+						})
+						.attr('width', 8)
+						.attr('height', 8)
+						.attr('x', function (d) {
+							return x(d.date);
+						})
+						.attr('y', function (d) {
+							return y(d.country_killed);
+						})
+						.style('fill', function (d) {
+							return color(d.medium);
+						})
+						.style('opacity', function (d) {
+							if (d.local_foreign == 'Foreign') {
+								return 1
+							} else {
+								return 0.3
+							}
+						})
+
+						.on('mouseover', function (d) {
+
+							svg.selectAll('rect')
+							.style('opacity', 0.1)
+
+							svg.selectAll('.Television')
+							.style('opacity', 1)
+
+							tooltip
+							// .html('Name: ' + d.name + '<br>'
+							// 	+ 'Sex: ' + d.sex + '<br>'
+							// 	+ 'Country killed: ' + d.country_killed + '<br>'
+							// 	+ d.local_foreign + '<br>'
+							// 	+ 'Medium: ' + d.medium + '<br>'
+							// )
+								.html(d.name + ', ' + d.sex + '<br>'
+									+ ' killed in ' + d.country_killed + '<br>'
+									+ 'was ' + d.local_foreign + '<br>'
+									+ 'worked for ' + d.medium + '<br>'
+								)
+								.style('visibility', 'visible')
+								.style("top", (d3.event.pageY - 10) + "px")
+								.style("left", (d3.event.pageX + 10) + "px");
+						})
+						.on('mouseout', function (d) {
+							tooltip.style('visibility', 'hidden');
+
+							svg.selectAll('rect')
+							.style('opacity', function(d){
+								if (d.local_foreign == 'Foreign') {
+									return 1
+								} else {
+									return 0.3
+								}
+							})
+						});
+				}
+			})
+
+			// Legend //////////////////////////////////////////////////////////////////
+
+			var legend = svg.append('g')
+				.attr('transform', 'translate(' + (width + 25) + ',0)')
+				.attr('class', 'legend')
+				.selectAll('.info')
+				.data(color.domain())
+				.enter().append('g')
+				.attr('class', 'info')
+				.attr('transform', function (d, i) {
+					return 'translate(0,' + (i * 20) + ')';
+				});
+			legend.append('circle')
+				.attr('r', 6)
+				.attr('cy', 6)
+				.style('fill', function (d) {
+					return color(d);
+				});
+			legend.append('text')
+				.attr("x", 14)
+				.attr("y", 10)
+				.text(function (d) {
+					return d;
+				})
+
+		});
+	};
+</script>
+
+</body>
+</html>

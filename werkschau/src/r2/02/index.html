@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Journalists killed</title>
+
+	<script type="text/javascript" src="d3.min.js">
+	</script>
+
+	<link href="https://fonts.googleapis.com/css?family=BioRhyme:bold" rel="stylesheet">
+
+	<style>
+
+		#tooltip {
+			position: absolute;
+			visibility: hidden;
+			font-size: 12px;
+			padding: 5px 15px
+		}
+
+		text {
+			font-family: 'BioRhyme', serif;
+		}
+
+		.dot {
+			fill: #aabbcc;
+			stroke: steelblue;
+			stroke-width: 1.5px;
+		}
+
+		body {
+			background-color: aliceblue;
+		}
+
+	</style>
+
+</head>
+<body>
+
+<div id="tooltip"></div>
+
+<script type="text/javascript">
+
+	window.onload = function () {
+
+		var margin = {top: 10, left: 130, bottom: 20, right: 10};
+
+		var height = (window.innerHeight - margin.top - margin.bottom),
+			width = (window.innerWidth - margin.left - margin.right);
+		var svg = d3.select('body')
+			.append('svg')
+			.attr('width', width + margin.left + margin.right)
+			.attr('height', height + margin.top + margin.bottom)
+			.append('g')
+			.attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+		var tooltip = d3.select("#tooltip");
+
+		var color = d3.scaleOrdinal()
+			.domain(['Male', 'Female', ''])
+			.range(['#4289c0', '#75eab6', '#8a1b07']);
+
+		var legend = svg.append('g')
+			.attr('transform', 'translate(850,0)')
+			.attr('class', 'legend')
+			.selectAll('.Sex')
+			.data(color.domain())
+			.enter().append('g')
+			.attr('class', 'info')
+			.attr('transform', function (d, i) {
+				return 'translate(0,' + (i * 20) + ')';
+			});
+
+		legend.append('circle')
+			.attr('r', 5)
+			.attr('cy', 5)
+			.attr('cx', 5)
+			.style('fill', function (d) {
+				return color(d)
+			});
+
+		legend.append('text')
+			.attr('class', 'legendstatus')
+			.attr("x", 14)
+			.attr("y", 10)
+			.text(function (d) {
+				return d
+			});
+
+		//load data
+		d3.csv('journalists_kills_org.csv',
+
+			function (d) {
+				return {
+					id: d['#'],
+					date: new Date(d['Date_original']),
+					nationality: d['Nationality'],
+					sex: d['Sex'],
+				}
+			}
+			, function (error, data) {
+
+				var helperNationality = {};
+				var nationality = [];
+				var helperDate = {};
+				var date = [];
+
+				data.forEach(function (d) {
+					if (helperNationality[d.nationality] === undefined) {
+						nationality.push(d.nationality);
+						helperNationality[d.nationality] = 0;
+					}
+
+					if (helperDate[d.date] === undefined) {
+						date.push(d.date);
+						helperDate[d.date] = 0;
+					}
+
+					helperNationality[d.nationality] = helperNationality[d.nationality] + 1;
+					if (d.date !== '') {
+						helperDate[d.date] = helperDate[d.date] + 1;
+					}
+				});
+
+				var x = d3.scaleTime()
+					.range([0, width])
+					.domain(d3.extent(data, function (d) {
+						return d.date;
+					}));
+
+				var y = d3.scaleBand()
+					.rangeRound([height, 0])
+					.domain(nationality.map(function (d) {
+						return d;
+					}));
+
+
+				svg.append('g')
+					.attr('transform', 'translate(0,' + height + ')')
+					.call(d3.axisBottom(x));
+				svg.append('g')
+					.call(d3.axisLeft(y))
+					.select(".tick:first-of-type text")
+					.select(function () {
+						return this.parentNode.appendChild(this.cloneNode());
+					})
+					.attr("x", -25)
+					.attr("y", 20)
+					.attr("font-weight", "bold")
+					.attr('font-size', 12)
+					.text("Date");
+
+				svg.selectAll('.circle')
+					.data(data)
+					.enter().append('circle')
+					.attr('class', 'circle')
+					.attr('r', 4.5)
+					.attr('cx', function (d) {
+						return x(d.date);
+					})
+					.attr('cy', function (d) {
+						return y(d.nationality);
+					})
+					.attr('fill', function (d) {
+						return color(d.sex);
+					})
+					.style('fill-opacity', '0.9')
+					.style('stroke', 'black')
+					.style('stroke-width', 1)
+					.on("mouseover", function (d) {
+						tooltip.html(d.nationality)
+							.style("visibility", 'visible')
+							.style("left", (d3.event.pageX + 5) + "px")
+							.style("top", (d3.event.pageY - 28) + "px")
+					})
+					.on("mouseout", function (d) {
+						tooltip.style("visibility", 'hidden');
+					});
+			})
+
+	};
+</script>
+
+</body>
+</html>

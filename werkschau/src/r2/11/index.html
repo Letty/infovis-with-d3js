@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Journalists Killed</title>
+
+	<script src="d3.min.js"></script>
+
+	<style>
+
+		svg text {
+			font-family: "FHPTheSans Text";
+		}
+
+		.dot {
+			stroke: #000;
+		}
+
+		.tooltip {
+			position: absolute;
+			text-align: center;
+			padding: 7px;
+			font: 12px "FHPTheSans letter";
+			background: #ecf2f9;
+			border: 0px;
+			border-radius: 6px;
+			pointer-events: none;
+		}
+
+	</style>
+</head>
+<body>
+
+<script type="text/javascript">
+	window.onload = function () {
+
+
+		var margin = {top: 25, left: 180, bottom: 30, right: 15};
+		var legendWidth = 200;
+		 var width = window.innerWidth - margin.left - margin.right;
+		 var height = window.innerHeight - margin.top - margin.bottom;
+
+		var svg = d3.select('body')
+			.append('svg')
+			.attr('width', width + margin.left + margin.right)
+			.attr('height', height + margin.top + margin.bottom)
+			.append('g')
+			.attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+		var color = d3.scaleOrdinal(d3.schemeCategory20);
+
+
+		var tooltip = d3.select('body').append('div')
+			.attr('class', 'tooltip')
+			.style('opacity', 0);
+
+
+		d3.csv('journalists_killed.csv', function (error, data) {
+
+
+				var cleanedData = data.filter(function (d) {
+					return d.Date && !isNaN(new Date(d.Date).getTime())
+				})
+					.map(function (d) {
+						return Object.assign({}, d, {
+							Date: new Date(d.Date),
+							Sex: (d.Sex || '').trim() || 'Unknown'
+						})
+					});
+
+				var sexes = cleanedData.reduce(function (sexes, d) {
+					if (sexes.indexOf(d.Sex) === -1
+					) {
+						return [].concat(sexes, [d.Sex])
+					}
+
+					return sexes
+				}, [])
+
+
+				var x = d3.scaleTime()
+					.range([0, width - legendWidth])
+					.domain(d3.extent(cleanedData, function (d) {
+						return d.Date
+					}));
+
+
+				var helper = {};
+				var countries = [];
+
+				cleanedData.forEach(function (d) {
+					if (!d.Medium) {
+						return
+					}
+
+					if (!helper[d.Medium]) {
+						countries.push(d.Medium)
+						helper[d.Medium] = 1;
+					}
+					helper[d.Medium] += 1;
+				});
+
+				countries.sort();
+
+				var y = d3.scaleBand()
+					.range([height, 0])
+					.padding(1)
+					.domain(countries);
+
+				svg.append('g')
+					.call(d3.axisLeft(y));
+
+				svg.append('g')
+					.attr('transform', 'translate(0,' + height + ')')
+					.call(d3.axisBottom(x));
+
+				var legend = svg.append('g')
+					.attr('transform', 'translate(' + (width - legendWidth + 25) + ',0)')
+					.attr('class', 'legend')
+					.selectAll('.info')
+					.data(sexes)
+					.enter().append('g')
+					.attr('class', 'info')
+					.attr('transform', function (d, i) {
+						return 'translate(0,' + (i * 20) + ')';
+					});
+				legend.append('circle')
+					.attr('r', 6)
+					.attr('cy', 6)
+					.style('fill', function (d) {
+						return color(d);
+					})
+				legend.append('text')
+					.attr('x', 14)
+					.attr('y', 10)
+					.text(function (d) {
+						return d;
+					});
+
+
+				svg.append('g')
+					.call(d3.axisLeft(y))
+					.append('text')
+					.attr('y', 0)
+					.attr('x', -10)
+					.attr('fill', '#000')
+					.attr('font-size', '16px')
+					.text('Medium');
+
+				svg.selectAll('.dot')
+					.data(cleanedData)
+					.enter().append('circle')
+					.attr('class', 'dot')
+					.attr('r', 3)
+					.attr('cy', function (d) {
+						return y(d.Medium);
+					})
+					.attr('cx', function (d) {
+						return x(d.Date);
+					})
+					.style('fill', function (d) {
+						return color(d.Sex)
+					})
+					.style('opacity', '0.5')
+					.style('stroke', 'none')
+					.on('mouseover', function (d) {
+						d3.select(this).attr('r', 8)
+
+						tooltip.transition()
+							.duration(200)
+							.style('opacity', .9);
+						tooltip.html(d.Name + '<br/>' + ' was killed in ' + d.Country_killed + '<br/> (' + d.Date.toLocaleString('en', {
+								day: 'numeric',
+								month: 'long',
+								year: 'numeric'
+							}) + ')')
+							.style('left', (d3.event.pageX + 3) + 'px')
+							.style('top', (d3.event.pageY - 70) + 'px');
+					})
+					.on('mouseout', function (d) {
+						d3.select(this).attr('r', 3)
+						tooltip.transition()
+							.duration(500)
+							.style('opacity', 0);
+					})
+
+			}
+		)
+	}
+	;
+</script>
+
+</body>
+</html>
