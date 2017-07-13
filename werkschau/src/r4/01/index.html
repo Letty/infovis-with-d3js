@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Journalist Dataset</title>
+	<script src="library/d3.min.js"></script>
+
+	<style>
+		h1 {
+		font-size: 24px;
+    font-style: normal;
+		font-family: sans-serif;
+		margin-top: 20px;
+		}
+
+		body {
+		font-size: 14px;
+		font-family: sans-serif;
+		background-color: #eaebed;
+		}
+
+	  .bar {
+    fill: #bfbfbf;
+	  }
+
+		.container {
+			display: flex;
+		}
+
+		.headline-container {
+			display: flex;
+			margin: auto;
+		}
+
+		#remove-selection{
+			cursor: pointer;
+			margin: auto;
+		}
+
+		rect {
+    cursor: pointer;
+	  }
+
+		.legend {
+    font-size: 12px;
+    font-style: normal;
+		font-family: sans-serif;
+    }
+
+	  #tooltip {
+    position: absolute;
+    visibility: hidden;
+    padding: 1em;
+    background: #ededed;
+    border-radius: 4px;
+    pointer-events: none;
+		font-family: sans-serif;
+	  }
+	</style>
+
+</head>
+<body>
+	<h1>Journalist Deaths from 2010-2016</h1>
+	<div id="tooltip"></div>
+
+	<div class="container">
+			<div>
+				<div><b>Type of the deaths</b></div>
+				<div class="type-container" id="type-viz"></div>
+			</div>
+			<div>
+				<div class="headline-container">
+					<div><b>Killed for each year: </b>&ensp;</div>
+					<div id="selection"> all types visible &emsp;</div>
+					<div id="remove-selection">remove all</div>
+				</div>
+				<div class="mf-container" id="mf-viz"></div>
+			</div>
+	</div>
+
+
+
+<script>
+
+	window.onload = function () {
+
+		var mf_reload_data;
+
+		var margin = {top: 20, bottom: 60, left: 50, right: 17};
+		var width = window.innerWidth * 0.85 /2 - margin.left - margin.right;
+		var height = window.innerHeight * 0.85 - margin.top - margin.bottom;
+
+		var tooltip = d3.select("#tooltip");
+		var selectionName = d3.select('#selection');
+
+		var removeSelection = d3.select('#remove-selection')
+			.on('click', function () {
+				selectionName.html('all types visible');
+				d3.select(this).style('visibility', 'hidden');
+				updateMFViz(mf_reload_data);
+			});
+
+		var svgType = d3.select('#type-viz')
+			.append('svg')
+			.attr('height', height + margin.top + margin.bottom)
+			.attr('width', width + margin.left + margin.right)
+			.append('g')
+			.attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+		var legendRectSize = 16;
+		var legendSpacing = 4;
+
+		var x = d3.scaleBand()
+			.range([0, width])
+			.padding(0.1)
+
+		var	xAxis = d3.axisBottom(x);
+
+		var svgMF = d3.select('#mf-viz')
+			.append('svg')
+			.attr('width', width + margin.left + margin.right)
+			.attr('height', height + margin.top + margin.bottom);
+
+		var g = svgMF.append('g')
+			.attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+		var gx = g.append('g')
+			.attr('class', 'x-axis')
+			.attr('transform', 'translate(0,' + height + ')')
+			.call(xAxis);
+
+		var color = d3.scaleThreshold()
+			.domain([2.5, 4])
+			.range(['#564d4d', '#512626', "#a30303"])
+
+
+		d3.csv(
+			'journalists_kills.csv'
+			, function (d) {
+					 d.Date_number = +d.Date_number;
+					 d.Number = +d.Number;
+					 d.Date_original = new Date(d.Date_original);
+					 return d;
+				}
+			,function (err, da) {
+				mf_reload_data = da;
+
+				var Type_death_count = {};
+				var newDataType = [];
+
+				mf_reload_data.forEach(function (d) {
+					if (Type_death_count[d.Type_death]) {
+						Type_death_count[d.Type_death] = Type_death_count[d.Type_death] + 1;
+					} else {
+			   		Type_death_count[d.Type_death] = 1;
+						newDataType.push({ Type_death: d.Type_death });
+				  }
+				});
+
+				newDataType.forEach(function (d) {
+					d.Count = Type_death_count[d.Type_death]
+				});
+
+				var newDataMF = {};
+
+				mf_reload_data.forEach(function (d) {
+					if(newDataMF[d.Type_death] === undefined){
+						newDataMF[d.Type_death] = {};
+					}
+					if(newDataMF[d.Type_death][d.Date_number] === undefined){
+						newDataMF[d.Type_death][d.Date_number] = [];
+					}
+					newDataMF[d.Type_death][d.Date_number].push(d);
+				});
+
+				drawTypeBarChat(newDataType, svgType);
+				updateMFViz(mf_reload_data, newDataMF, svgMF);
+			}
+		);
+
+			function drawTypeBarChat(data, svg){
+				var x = d3.scaleBand()
+					.range([0, width])
+					.padding(0.1)
+					.domain(data.map(function (d) {
+						return d.Type_death;
+					}));
+
+				var y = d3.scalePow()
+					.domain([10, 100000])
+					.range([height, 0])
+					.exponent(0.5)
+					.domain([0, d3.max(data, function (d) {
+						return d.Count;
+					})]);
+
+				svg.append('g')
+		      .attr("class", "axis axis--x")
+		      .attr("transform", "translate(0," + height + ")")
+		      .call(d3.axisBottom(x));
+
+				svg.append('g')
+						.call(d3.axisLeft(y));
+
+				svg.selectAll('.bar')
+						.data(data)
+						.enter().append('rect')
+						.attr('class', 'bar')
+						.attr('x', function (d) {
+							return x(d.Type_death);
+						})
+						.attr('y', function (d) {
+							return y(d.Count)
+						})
+						.attr('width', x.bandwidth())
+						.attr('height', function (d) {
+							return height - y(d.Count);
+						})
+						.style('fill', '#495360')
+						.on('click', function (d) {
+							selectionName.html('Type ' + d.Type_death + ' selected');
+							removeSelection.style('visibility', 'visible');
+							var reduceData_data = reduceData(mf_reload_data, d.Type_death);
+							updateMFViz(reduceData_data);
+						});
+
+				svg.append('text')
+			      .attr('transform',
+			            'translate(' + (width - 70) + ' ,' +
+			                           (height + 40) + ')')
+			      .style('text-anchor', 'middle')
+						.style('font-family', 'sans-serif')
+						.style('font-size', 12)
+			      .text('Type of Death');
+
+				svg.append('text')
+			      .attr('transform', 'rotate(-90)')
+			      .attr('y', 0 - margin.left)
+			      .attr('x', 0 - 60)
+			      .attr('dy', '1em')
+			      .style('text-anchor', 'middle')
+						.style('font-family', 'sans-serif')
+						.style('font-size', 12)
+			      .text('Amount');
+
+				};
+
+			function updateMFViz(data) {
+
+				var color = d3.scaleThreshold()
+					.range(['#564d4d', '#d10202', "#0b3975"])
+
+				color.domain(d3.extent(data, function(d) {
+					return d.Sex;
+				}));
+
+				var rectSize = 10;
+
+				data.sort(function (a, b)
+				{ if (a.Date_number > b.Date_number) {
+					return 1;
+				}
+					if (a.Date_number < b.Date_number) {
+					return -1;
+				}
+					return 0;
+				}
+			)
+			var year_ar = [];
+			var extent = d3.extent(data, function(d){
+				return d.Date_number;
+			})
+
+			for (var i = extent[0]; i <= extent[1]; i++){
+				year_ar.push(i);
+			}
+
+
+			x.domain(year_ar.map(function(d){
+				return d;
+			}))
+
+			gx.transition()
+				.duration(1500)
+				.call(xAxis);
+
+			var j = -1;
+			var year = undefined;
+
+			g.selectAll(".rect2").remove()
+
+			for(var i=0; i< data.length; i++){
+
+				if(year != data[i].Date_number ){
+					 year = data[i].Date_number;
+					 j = 0;
+				  }
+
+			g.append("rect")
+			.datum(data[i])
+			.attr('class', function(d) { return 'rect2 y_' + d.Date_number })
+			.attr("width", rectSize)
+      .attr("height", rectSize/2)
+			.attr("x", function(d) { return x(d.Date_number); })
+			.attr("y", function(){ return height - (j * rectSize/2 + 2 * j + 2) - 8})
+			.style('fill', function(d) {
+						return color(d.Sex);
+			 })
+			.on('mouseover', mouseover)
+			.on('mousemove', mousemove)
+			.on('mouseout', mouseout);
+
+			j++;
+
+			function mouseover(d) {
+					tooltip.html('Name: ' + d.Name + '<br>' +
+											'Country: ' + d.Country_killed + '<p>' +
+											'Organization: ' + d.Organization + '<br>'+
+											'Nationality: ' + d.Nationality + '<br>'+
+											'Gender: ' + d.Sex + '<br>'+
+											'Job: ' + d.Job);
+					tooltip.style('visibility', 'visible');
+			}
+
+			function mousemove() {
+					return tooltip
+							.style('top', (d3.event.pageY-10)+'px')
+							.style('left',(d3.event.pageX+10)+'px');
+			}
+
+			function mouseout(d) {
+					tooltip.style('visibility', 'hidden');
+			}
+			var legend = g.selectAll('.legend')
+				.data(color.domain())
+				.append('g')
+				.attr('class', 'legend')
+				.attr('transform', function(d, i) {
+					var height = legendRectSize + legendSpacing;
+					var offset =  height * color.domain().length + 10;
+					var horz = width - offset;
+					var vert = i * height - 60;
+					return 'translate(' + horz + ',' + vert + ')';
+				});
+
+			legend.append('rect')
+				.attr('width', legendRectSize)
+				.attr('height', legendRectSize)
+				.style('fill', color)
+				.style('stroke', color);
+
+			legend.append('text')
+				.attr('x', legendRectSize + legendSpacing)
+				.attr('y', legendRectSize - legendSpacing)
+				.text(function(d) {
+					return d;
+				});
+
+
+		};
+		}
+			function reduceData(data, TypeOfDeath) {
+				var array = [];
+
+				data.forEach(function (d) {
+					if (d.Type_death === TypeOfDeath) {
+						array.push(d);
+					}
+				});
+
+				return array;
+			}
+
+	};
+</script>
+</body>
+</html>
